@@ -6,57 +6,97 @@ var ExtractTextPlugin = require('extract-text-webpack-plugin')
 var smartgrid = require('smart-grid')
 
 module.exports = {
-  entry: './src/main.js',
+  entry: ['babel-polyfill', './src/main.js'],
   output: {
     path: path.resolve(__dirname, './dist'),
     publicPath: '/',
-    filename: 'build.js'
+    filename: 'build.js',
   },
+
   module: {
     rules: [
       {
         test: /\.css$/,
         use: [
           'vue-style-loader',
-          'css-loader'
+          'css-loader',
         ],
-      },      {
-        test: /\.vue$/,
-        loader: 'vue-loader',
-        options: {
-          loaders: {
-          }
-          // other vue-loader options go here
-        }
       },
       {
-        test: /\.less$/,
+        test: /\.scss$/,
         use: [
           'vue-style-loader',
           'css-loader',
-          'less-loader'
-        ]
+          'sass-loader',
+        ],
+      },
+      {
+        test: /\.sass$/,
+        use: [
+          'vue-style-loader',
+          'css-loader',
+          'sass-loader?indentedSyntax',
+        ],
+      },
+      {
+        test: /\.vue$/,
+        use: [
+          {
+            loader: 'vue-loader',
+            options: {
+              extractCSS: true,
+              loaders: {
+                'scss': [
+                  'vue-style-loader',
+                  'css-loader',
+                  'sass-loader',
+                ],
+                'sass': [
+                  'vue-style-loader',
+                  'css-loader',
+                  'sass-loader?indentedSyntax',
+                ],
+              },
+            },
+          },
+          {
+            loader: 'vue-svg-inline-loader',
+          },
+        ],
       },
       {
         test: /\.js$/,
         loader: 'babel-loader',
-        exclude: /node_modules/
+        include: [
+          path.resolve('src'),
+          path.resolve('test'),
+          path.resolve('node_modules/vue-particles')]
       },
       {
         test: /\.(png|jpg|gif|svg)$/,
         loader: 'file-loader',
         options: {
-          name: '[name].[ext]?[hash]'
-        }
-      }
-    ]
+          limit: 10000,
+          name: '[name].[ext]?[hash]',
+          outputPath: 'css/img',
+        },
+      },
+      {
+        test: /\.(ttf|eot|woff|woff2)$/,
+        loader: 'file-loader',
+        options: {
+          name: '[name].[ext]',
+          outputPath: 'css/fonts/',
+        },
+      },
+    ],
   },
   plugins: [
     new CopyWebpackPlugin([
-      /*{
+      {
         from: './src/assets/.htaccess',
         to: '[name].[ext]',
-      },*/
+      },
       {
         from: './src/assets/img',
         to: 'img/[path][name].[ext]',
@@ -72,19 +112,26 @@ module.exports = {
   ],
   resolve: {
     alias: {
-      'vue$': 'vue/dist/vue.esm.js'
+      'vue$': 'vue/dist/vue.esm.js',
+      components: path.resolve('./src/components'),
+      assets: path.resolve('./src/assets'),
     },
-    extensions: ['*', '.js', '.vue', '.json']
+    modules: [
+      path.resolve('./src/assets'),
+      path.resolve('./node_modules'),
+    ],
+    extensions: ['*', '.js', '.vue', '.json'],
   },
   devServer: {
+    contentBase: path.join(__dirname, 'dist'),
     historyApiFallback: true,
     noInfo: true,
-    overlay: true
+    overlay: true,
   },
   performance: {
-    hints: false
+    hints: false,
   },
-  devtool: '#eval-source-map'
+  devtool: '#eval-source-map',
 }
 
 if (process.env.NODE_ENV === 'production') {
@@ -93,18 +140,18 @@ if (process.env.NODE_ENV === 'production') {
   module.exports.plugins = (module.exports.plugins || []).concat([
     new webpack.DefinePlugin({
       'process.env': {
-        NODE_ENV: '"production"'
-      }
+        NODE_ENV: '"production"',
+      },
     }),
     new webpack.optimize.UglifyJsPlugin({
       sourceMap: true,
       compress: {
-        warnings: false
-      }
+        warnings: false,
+      },
     }),
     new webpack.LoaderOptionsPlugin({
-      minimize: true
-    })
+      minimize: true,
+    }),
   ])
 }
 
@@ -137,3 +184,4 @@ var smartgridSettings = {
 };
 
 smartgrid('./src/assets/less', smartgridSettings);
+
