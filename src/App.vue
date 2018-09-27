@@ -1,16 +1,26 @@
 <template>
   <div id="app">
-    <p class="light">Hello World</p>
-    <p class="regular">Hello World</p>
-    <p class="bold">Hello World</p>
+    <header-block/>
+    <main>
+      <bid-block/>
+    </main>
+    <footer-block/>
   </div>
 </template>
 
 <script>
-  import Vue from 'vue'
+import HeaderBlock from 'components/header'
 
+import BidBlock from 'components/b-bid'
+
+import FooterBlock from 'components/footer'
 export default {
   name: 'app',
+  components: {
+    HeaderBlock,
+    BidBlock,
+    FooterBlock
+  },
   data () {
     return {
     }
@@ -19,7 +29,8 @@ export default {
 </script>
 
 <style lang="less">
-  @import "assets/less/main.less";
+  @import "assets/less/main";
+
   p {
     font-size: 10px;
     &.light {
