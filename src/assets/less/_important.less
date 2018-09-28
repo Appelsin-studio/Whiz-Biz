@@ -1,12 +1,11 @@
 .reset();
 html{
   font-size: 10px;
-  .md-block({font-size: 8px;});
-  .xs-block({ font-size: 6px;});
+  .md-block({ font-size: 8px; });
+  .xs-block({ font-size: 6px; });
 }
 body {
   font-family: @fontProxima;
-  min-height: 100vh;
   background-color: #fff;
   color: #fff;
 }
@@ -14,7 +13,23 @@ body {
   position: relative;
   .wrapper();
 }
-a{
+a {
   text-decoration: none;
 }
-
+.g-number {
+  margin-bottom: 5px;
+  font-family: @fontBebas;
+  font-weight: 600;
+  font-size: 2.4rem;
+  letter-spacing: 0.17rem;
+}
+.g-caption-section {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 20px;
+  font-family: @fontBebas;
+  font-weight: 600;
+  font-size: 6rem;
+  letter-spacing: 0.4rem;
+  text-transform: uppercase;
+}

@@ -9,7 +9,7 @@
                             <li>02</li>
                             <li>03</li>
                         </ul>
-                        <h1 class="caption"><span class="red">Криптофонд</span> по поддержке бизнеса в индустрии
+                        <h1 class="caption"><strong class="red">Криптофонд</strong> по поддержке бизнеса в индустрии
                             кино и
                             искусства</h1>
                     </div>
@@ -20,7 +20,8 @@
                     </div>
                     <div class="description-block">
                         <div class="number">01</div>
-                        <p class="description"><b>GTCinema</b> - это компания по производству финансовых технологий,
+                        <p class="description"><strong>GTCinema</strong> - это компания по производству финансовых
+                            технологий,
                             ориентированная на использование технологии blockchain и криптографических токенов</p>
                     </div>
                 </div>
@@ -38,22 +39,22 @@
     @import "~assets/less/_vars";
     .b-bid {
         position: relative;
-        margin-bottom: -150px;
-        height: 100vh;
+        margin-bottom: -40vh;
+        height: 120vh;
+        min-height: 960px;
         overflow: hidden;
         background: url("/img/bg-main.jpg");
         background-repeat: no-repeat;
-        background-position: center;
+        background-position: top center;
         .bg-gradient {
             height: 100%;
             width: 100%;
             background:
                 linear-gradient(to bottom, #000000 -7%, rgba(255, 255, 255, 0) 81%),
-                linear-gradient(to bottom, rgba(255, 255, 255, 0) 71%, #000000 104%)
                 rgba(45,25,25,0.5);
         }
         .container {
-            padding-top: 250px;
+            padding-top: 25vh;
         }
         .wrapper {
             position: relative;
@@ -74,18 +75,12 @@
                     justify-content: space-between;
                     font-size: 2.4rem;
                     letter-spacing: 0.17rem;
-                    .red {
-                        color: @redMain;
-                    }
                 }
                 .caption {
                     font-size: 6rem;
                     font-weight: 600;
                     letter-spacing: 0.3rem;
                     text-transform: uppercase;
-                    .red {
-                        color: @redMain;
-                    }
                 }
             }
             .coub-block {
@@ -127,16 +122,7 @@
                     line-height: 16rem;
                     letter-spacing: 1.1rem;
                     text-align: right;
-                    &::before {
-                        position: absolute;
-                        content: '';
-                        right: -40px;
-                        top: 50%;
-                        transform: translateX(100%);
-                        height: 1px;
-                        width: 100%;
-                        background-color: #fff;
-                    }
+                    .line-after--right();
                 }
                 .description {
                     font-family: @fontProxima;
@@ -154,10 +140,11 @@
             position: absolute;
             display: block;
             left: 50%;
-            bottom: 50px;
+            bottom: 20vh;
             transform: translateX(-50%);
             -webkit-filter: drop-shadow(0 0 8px rgba(196,45,45,1));
             filter: drop-shadow(0 0 8px rgba(196,45,45,1));
+            z-index: 55;
             .sm-block({bottom: 20px;});
             .mouse {
                 margin-bottom: 5px;

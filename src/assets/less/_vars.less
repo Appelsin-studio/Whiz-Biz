@@ -1,7 +1,41 @@
 @import "smart-grid";
 @fontProxima: 'ProximaNova', 'Arial', sans-serif;
 @fontBebas: 'BebasNeue', 'Arial', sans-serif;
+
 @redMain: #c42d2d;
+@blackMain: #0E0808;
+
+.red {
+  color: @redMain;
+  font-weight: 600;
+}
+
 .transition(@time: 0.3s) {
   transition: all @time ease;
+}
+
+/*line after*/
+.line-after--left(@left: -40px, @transform: -100%) {
+  &::after {
+    position: absolute;
+    content: '';
+    left: @left;
+    top: 50%;
+    transform: translateX(@transform);
+    height: 1px;
+    width: 100vw;
+    background-color: #fff;
+  }
+}
+.line-after--right(@right: -40px, @transform: 100%) {
+  &::after {
+    position: absolute;
+    content: '';
+    right: @right;
+    top: 50%;
+    transform: translateX(@transform);
+    height: 1px;
+    width: 100vw;
+    background-color: #fff;
+  }
 }
