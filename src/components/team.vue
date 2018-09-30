@@ -80,8 +80,7 @@
                 .name {
                     flex-grow: 1;
                     margin-bottom: 20px;
-                    font-family: @fontBebas;
-                    font-weight: 600;
+                    font-family: @BebasBold;
                     font-size: 3.5rem;
                     letter-spacing: 0.25rem;
                     color: #000;
@@ -90,8 +89,7 @@
                 .profession,
                 .country,
                 .link {
-                    font-family: @fontProxima;
-                    font-weight: 200;
+                    font-family: @ProximaLight;
                     font-size: 2rem;
                     letter-spacing: 0.15rem;
                     text-align: center;

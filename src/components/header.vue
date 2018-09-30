@@ -41,8 +41,7 @@
             align-items: flex-end;
             a {
                 display: inline-block;
-                font-family: @fontBebas;
-                font-weight: 600;
+                font-family: @BebasBold;
                 color: #fff;
                 &.gtc {
                     padding: 50px 25px 5px;
@@ -91,8 +90,7 @@
                 color: #fff;
                 text-transform: uppercase;
                 font-size: 2.6rem;
-                font-family: @fontBebas;
-                font-weight: 600;
+                font-family: @BebasBold;
                 line-height: 2.6rem;
                 letter-spacing: 0.18rem;
             }

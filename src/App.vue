@@ -11,6 +11,10 @@
       </div>
       <team-block/>
       <list-popular/>
+      <film-block/>
+      <idea-film/>
+      <reference-block/>
+      <statistics-block/>
     </main>
     <footer-block/>
   </div>
@@ -24,6 +28,10 @@ import DescriptionFond from 'components/description-fond'
 import MissionFond from 'components/mission-fond'
 import TeamBlock from 'components/team'
 import ListPopular from 'components/list-popular'
+import FilmBlock from 'components/film'
+import IdeaFilm from 'components/idea-film'
+import ReferenceBlock from 'components/reference'
+import StatisticsBlock from 'components/statistics'
 
 import FooterBlock from 'components/footer'
 
@@ -36,6 +44,10 @@ export default {
     MissionFond,
     TeamBlock,
     ListPopular,
+    FilmBlock,
+    IdeaFilm,
+    ReferenceBlock,
+    StatisticsBlock,
     FooterBlock
   },
   data () {
@@ -47,7 +59,7 @@ export default {
 
 <style lang="less">
   @import "assets/less/main";
-  .gradient-wrpper {
+  .gradient-wrapper {
     background: #0E0808;
   }
   .gradient-wrapper--top {

@@ -35,8 +35,7 @@
                     .line-after--left();
                 }
                 .description {
-                    font-family: @fontProxima;
-                    font-weight: 200;
+                    font-family: @ProximaLight;
                     font-size: 2.6rem;
                     letter-spacing: 0.18rem;
                     .red {
@@ -46,7 +45,6 @@
             }
             .red-coub {
                 position: relative;
-                margin: 5px;
                 width: 730px;
                 height: 420px;
                 box-sizing: border-box;

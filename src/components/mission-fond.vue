@@ -44,15 +44,13 @@
                     }
                 }
                 .description {
-                    font-family: @fontProxima;
-                    font-weight: 200;
+                    font-family: @ProximaLight;
                     font-size: 2rem;
                     letter-spacing: 0.14rem;
                 }
             }
             .red-coub {
                 position: relative;
-                margin: 5px;
                 width: 730px;
                 height: 540px;
                 box-sizing: border-box;

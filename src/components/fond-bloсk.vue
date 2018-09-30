@@ -65,8 +65,7 @@
                 left: 80px;
                 top: 80px;
                 max-width: 750px;
-                font-family: @fontBebas;
-                font-weight: 600;
+                font-family: @BebasBold;
                 .number-list {
                     display: flex;
                     padding: 10px 0;
@@ -97,8 +96,7 @@
                         padding: 35px 50px;
                         font-size: 2.6rem;
                         letter-spacing: 0.18rem;
-                        font-family: @fontBebas;
-                        font-weight: 600;
+                        font-family: @BebasBold;
                         color: #fff;
                         background-color: @redMain;
                         text-transform: uppercase;
@@ -116,19 +114,18 @@
                 .number {
                     position: relative;
                     margin-bottom: 15px;
-                    font-family: @fontBebas;
-                    font-weight: 600;
+                    margin-right: -15px;
+                    font-family: @BebasBold;
                     font-size: 16rem;
                     line-height: 16rem;
                     letter-spacing: 1.1rem;
                     text-align: right;
-                    .line-after--right();
+                    .line-after--right(-45px);
                 }
                 .description {
-                    font-family: @fontProxima;
+                    font-family: @ProximaLight;
                     font-size: 2.4rem;
                     letter-spacing: 0.17rem;
-                    font-weight: 200;
                     b {
                         text-transform: uppercase;
                         font-weight: 600;

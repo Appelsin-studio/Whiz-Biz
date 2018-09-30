@@ -1,13 +1,21 @@
 @import "smart-grid";
-@fontProxima: 'ProximaNova', 'Arial', sans-serif;
-@fontBebas: 'BebasNeue', 'Arial', sans-serif;
+@ProximaReg: 'ProximaNovaReg', 'Arial', sans-serif;
+@ProximaThin: 'ProximaNovaThin', 'Arial', sans-serif;
+@ProximaLight: 'ProximaNovaLight', 'Arial', sans-serif;
+@ProximaLightIt: 'ProximaNovaLightIt', 'Arial', sans-serif;
+@ProximaSemiBold: 'ProximaNovaSemiBold', 'Arial', sans-serif;
+@ProximaBold: 'ProximaNovaBold', 'Arial', sans-serif;
+@ProximaExtraBold: 'ProximaNovaExtraBold', 'Arial', sans-serif;
+
+@BebasLight: 'BebasNeueLight', 'Arial', sans-serif;
+@BebasReg: 'BebasNeueReg', 'Arial', sans-serif;
+@BebasBold: 'BebasNeueBold', 'Arial', sans-serif;
 
 @redMain: #c42d2d;
 @blackMain: #0E0808;
 
 .red {
   color: @redMain;
-  font-weight: 600;
 }
 
 .transition(@time: 0.3s) {
@@ -15,27 +23,27 @@
 }
 
 /*line after*/
-.line-after--left(@left: -40px, @transform: -100%) {
+.line-after--left(@left: -30px, @top: 50%, @color: #fff) {
   &::after {
     position: absolute;
     content: '';
     left: @left;
-    top: 50%;
-    transform: translateX(@transform);
+    top: @top;
+    transform: translateX(-100%);
     height: 1px;
     width: 100vw;
-    background-color: #fff;
+    background-color: @color;
   }
 }
-.line-after--right(@right: -40px, @transform: 100%) {
+.line-after--right(@right: -30px, @top: 50%, @color: #fff) {
   &::after {
     position: absolute;
     content: '';
     right: @right;
-    top: 50%;
-    transform: translateX(@transform);
+    top: @top;
+    transform: translateX(100%);
     height: 1px;
     width: 100vw;
-    background-color: #fff;
+    background-color: @color;
   }
 }
