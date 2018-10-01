@@ -1,0 +1,166 @@
+<template>
+    <section class="b-terms-cooperation">
+        <div class="container">
+            <p class="g-number">12</p>
+            <p class="g-caption-section">Как вы можете быть
+                <span class="red">частью нас</span>
+            </p>
+            <p class="secondary-caption">Как стать инвестором</p>
+            <div class="instruction-arrow">
+                <span class="text">Оставьте заявку </span>
+                <span class="arrow"></span>
+                <span class="text">Приобретите паи фонда</span>
+                <span class="arrow"></span>
+                <span class="text">Получайте прибыль</span>
+            </div>
+            <div class="conditions-wrapper">
+                <p class="secondary-caption">Условия сотрудничества</p>
+                <ul class="conditions-list">
+                    <li class="item">
+                        <span class="line"></span>
+                        <span class="bold">Доступный порог входа &#8212; </span>
+                        <span class="light">Минимальный размер инвестиций 1BTC</span>
+                    </li>
+                    <li class="item">
+                        <span class="line"></span>
+                        <span class="bold">Выгодное распределение прибыли &#8212; </span>
+                        <span class="light">Инвестор получает x% прибыли от дохода кино</span>
+                    </li>
+                    <li class="item">
+                        <span class="line"></span>
+                        <span class="bold">Долгострочная стратегия &#8212; </span>
+                        <span class="light"></span>
+                    </li>
+                    <li class="item">
+                        <span class="line"></span>
+                        <span class="bold">Постоянный источник дохода &#8212; </span>
+                        <span class="light">Возможность завещать доход своим детям</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</template>
+<style scoped lang="less">
+    @import "~assets/less/_vars";
+    .b-terms-cooperation {
+        padding: 150px 0;
+        background: url("/img/bg-terms.jpg") no-repeat center / cover;
+        .g-caption-section {
+            margin-bottom: 100px;
+            .line-after--left();
+        }
+        .secondary-caption {
+            margin-bottom: 45px;
+            font-family: @ProximaExtraBold;
+            font-size: 3rem;
+            letter-spacing: 0.2rem;
+            text-transform: uppercase;
+        }
+        .instruction-arrow {
+            display: flex;
+            margin-bottom: 110px;
+            justify-content: flex-start;
+            align-items: center;
+            .text {
+                display: inline-block;
+                font-family: @ProximaLight;
+                font-size: 2.4rem;
+                letter-spacing: 0.17rem;
+            }
+            .arrow {
+                display: inline-flex;
+                padding-left: 10px;
+                padding-right: 15px;
+                flex-grow: 2;
+                justify-content: center;
+                align-items: center;
+                height: 20px;
+                &::before {
+                    content: '';
+                    display: inline-block;
+                    width: 60px;
+                    height: 4px;
+                    background: radial-gradient(ellipse at center, #c42d2d 2px, #c42d2d 2px, transparent 23%);
+                    background-size: 15px 15px;
+                    background-repeat: repeat-x;
+                    background-position: 0 center;
+                }
+                &::after {
+                    content: '';
+                    display: inline-block;
+                    margin-left: -10px;
+                    width: 20px;
+                    height: 20px;
+                    border-right: 3px solid @redMain;
+                    border-bottom: 3px solid @redMain;
+                    transform: rotate(-45deg);
+                }
+            }
+        }
+        .conditions-wrapper {
+            .conditions-list {
+                display: flex;
+                position: relative;
+                flex-direction: column;
+                .item {
+                    position: relative;
+                    display: flex;
+                    padding-bottom: 25px;
+                    padding-left: 70px;
+                    &:first-child {
+                        &::after {
+                            top: 10px;
+                        }
+                    }
+                    &:last-child {
+                        padding-bottom: 0;
+                        &::after {
+                            top: 0;
+                        }
+                    }
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        bottom: 0;
+                        width: 1px;
+                        background-color: #fff;
+                    }
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        left: 42px;
+                        top: 4px;
+                        width: 14px;
+                        height: 14px;
+                        background-color: #000;
+                        border: 3px solid @redMain;
+                        border-radius: 50%;
+                        box-sizing: border-box;
+                    }
+                    .line {
+                        position: absolute;
+                        left: 0;
+                        top: 10px;
+                        width: 40px;
+                        height: 1px;
+                        background-color: #fff;
+                    }
+                    .bold {
+                        font-family: @ProximaExtraBold;
+                        font-size: 2rem;
+                        letter-spacing: 0.14rem;
+                        text-transform: uppercase;
+                    }
+                    .light {
+                        font-family: @ProximaLight;
+                        font-size: 2rem;
+                        letter-spacing: 0.14rem;
+                    }
+                }
+            }
+        }
+    }
+</style>

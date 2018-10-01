@@ -6,10 +6,22 @@
                 <span class="red">Американская статистика</span>
                 <span>прибыли кино</span>
             </p>
-            <p></p>
+            <p class="number-films">1600 выпущенных фильмов в 2010-2015 гг.</p>
+            <div class="graph">
+                <img src="/img/quantity-films.png" alt="">
+            </div>
         </div>
     </section>
 </template>
+<script>
+    export  default {
+      data () {
+        return {
+
+        }
+      }
+    }
+</script>
 <style scoped lang="less">
     @import "~assets/less/_vars";
 
@@ -25,6 +37,15 @@
             span {
                 display: block;
             }
+        }
+        .number-films {
+            margin-bottom: 70px;
+            font-family: @ProximaExtraBold;
+            font-size: 3rem;
+            letter-spacing: 0.2rem;
+        }
+        .graph {
+            padding-left: 50px;
         }
     }
 </style>

@@ -15,6 +15,10 @@
       <idea-film/>
       <reference-block/>
       <statistics-block/>
+      <finance-films/>
+      <table-gtc/>
+      <terms-cooperation/>
+      <investor-income/>
     </main>
     <footer-block/>
   </div>
@@ -32,6 +36,10 @@ import FilmBlock from 'components/film'
 import IdeaFilm from 'components/idea-film'
 import ReferenceBlock from 'components/reference'
 import StatisticsBlock from 'components/statistics'
+import FinanceFilms from 'components/finance-films'
+import TableGtc from 'components/table-gtc'
+import TermsCooperation from 'components/terms-cooperation'
+import InvestorIncome from 'components/investor-income'
 
 import FooterBlock from 'components/footer'
 
@@ -48,6 +56,10 @@ export default {
     IdeaFilm,
     ReferenceBlock,
     StatisticsBlock,
+    FinanceFilms,
+    TableGtc,
+    TermsCooperation,
+    InvestorIncome,
     FooterBlock
   },
   data () {

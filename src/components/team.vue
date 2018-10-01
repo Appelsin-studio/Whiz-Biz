@@ -5,38 +5,31 @@
             <p class="g-caption-section"><span class="black">Наша</span> команда</p>
             <div class="wrapper">
                 <div class="person">
-                    <div class="img" style="background-image: url(/img/person.jpg)"></div>
-                    <p class="name">Иван Алексеев</p>
+                    <div class="img" style="background-image: url(/img/person-1.jpg)"></div>
+                    <p class="name">Грей Фредериксон</p>
+                    <p class="profession">Генеральный продюсер</p>
+                    <p class="country">США</p>
+                    <a class="link" href="#" target="_blank">linkedin.com/ivan_alexeev</a>
+                </div>
+                <div class="person">
+                    <div class="img" style="background-image: url(/img/person-2.jpg)"></div>
+                    <p class="name">Саламат Мухаммед-Али</p>
+                    <p class="profession">Кинопроизводитель</p>
+                    <p class="country">Казахстан</p>
+                    <a class="link" href="#" target="_blank">linkedin.com/ivan_alexeev</a>
+                </div>
+                <div class="person">
+                    <div class="img" style="background-image: url(/img/person-3.jpg)"></div>
+                    <p class="name">Питер Жмутский</p>
                     <p class="profession">Кинопроизводитель</p>
                     <p class="country">США</p>
                     <a class="link" href="#" target="_blank">linkedin.com/ivan_alexeev</a>
                 </div>
                 <div class="person">
-                    <div class="img" style="background-image: url(/img/person.jpg)"></div>
-                    <p class="name">Константин Абдурахманович</p>
-                    <p class="profession">Верстальщик</p>
-                    <p class="country">Россия</p>
-                    <a class="link" href="#" target="_blank">linkedin.com/ivan_alexeev</a>
-                </div>
-                <div class="person">
-                    <div class="img" style="background-image: url(/img/person.jpg)"></div>
-                    <p class="name">Валера Товаров</p>
-                    <p class="profession">Оператор</p>
-                    <p class="country">Австрия</p>
-                    <a class="link" href="#" target="_blank">linkedin.com/ivan_alexeev</a>
-                </div>
-                <div class="person">
-                    <div class="img"></div>
-                    <p class="name">Валера Товаров</p>
-                    <p class="profession">Оператор</p>
-                    <p class="country">Австрия</p>
-                    <a class="link" href="#" target="_blank">linkedin.com/ivan_alexeev</a>
-                </div>
-                <div class="person">
-                    <div class="img"></div>
-                    <p class="name">Валера Товаров</p>
-                    <p class="profession">Оператор</p>
-                    <p class="country">Австрия</p>
+                    <div class="img" style="background-image: url(/img/person-4.jpg)"></div>
+                    <p class="name">Динара Батырова</p>
+                    <p class="profession">Продюсер</p>
+                    <p class="country">Казахстан</p>
                     <a class="link" href="#" target="_blank">linkedin.com/ivan_alexeev</a>
                 </div>
             </div>
