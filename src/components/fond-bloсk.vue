@@ -1,25 +1,25 @@
 <template>
-    <section class="b-bid">
+    <section class="b-fond-block">
         <div class="bg-gradient">
+            <div class="container--flex-center">
             <div class="container">
                 <div class="wrapper">
-                    <div class="caption-absolute">
-                        <ul class="number-list">
-                            <li class="red">01</li>
-                            <li>02</li>
-                            <li>03</li>
-                        </ul>
-                        <h1 class="caption"><strong class="red">Криптофонд</strong> по поддержке бизнеса в индустрии
-                            кино и
-                            искусства</h1>
-                    </div>
-                    <div class="coub-block">
-                        <div class="red-coub">
-                            <a href="#" class="btn">Подать заявку</a>
+                    <div class="caption-wrapper">
+                        <div class="caption-block">
+                            <ul class="number-list">
+                                <li class="red">01</li>
+                                <li>02</li>
+                                <li>03</li>
+                            </ul>
+                            <h1 class="caption"><strong class="red">Криптофонд</strong> по поддержке бизнеса в индустрии
+                                кино и
+                                искусства</h1>
                         </div>
-                    </div>
-                    <div class="description-block">
                         <div class="number">01</div>
+                    </div>
+                    <div class="red-coub"></div>
+                    <div class="description-block">
+                        <a href="#" class="btn">Подать заявку</a>
                         <p class="description"><strong>GTCinema</strong> - это компания по производству финансовых
                             технологий,
                             ориентированная на использование технологии blockchain и криптографических токенов</p>
@@ -32,20 +32,22 @@
                     <img svg-inline src="~src/assets/img/icon/down-arrow2.svg" alt="">
                 </div>
             </div>
+            </div>
         </div>
     </section>
 </template>
 <style scoped lang="less">
     @import "~assets/less/_vars";
-    .b-bid {
+    .b-fond-block {
         position: relative;
-        margin-bottom: -40vh;
-        height: 120vh;
+        margin-bottom: -300px;
+        height: 100vh;
         min-height: 960px;
         overflow: hidden;
         background: url("/img/bg-main.jpg");
         background-repeat: no-repeat;
         background-position: top center;
+        background-size: cover;
         .bg-gradient {
             height: 100%;
             width: 100%;
@@ -54,63 +56,73 @@
                 rgba(45,25,25,0.5);
         }
         .container {
-            padding-top: 25vh;
+            width: 100%;
+            &--flex-center {
+                height: 100vh;
+                display: flex;
+                align-items: center;
+            }
         }
         .wrapper {
             position: relative;
             display: flex;
-            .caption-absolute {
+            flex-direction: column;
+            padding-left: 85px;
+            padding-top: 70px;
+            z-index: 9999;
+            .lg-block({
+                padding-left: 0;
+            });
+            .red-coub {
                 position: absolute;
-                display: flex;
-                left: 80px;
-                top: 80px;
-                max-width: 750px;
-                font-family: @BebasBold;
-                .number-list {
-                    display: flex;
-                    padding: 10px 0;
-                    margin-right: 65px;
-                    flex-direction: column;
-                    justify-content: space-between;
-                    font-size: 2.4rem;
-                    letter-spacing: 0.17rem;
-                }
-                .caption {
-                    font-size: 6rem;
-                    font-weight: 600;
-                    letter-spacing: 0.3rem;
-                    text-transform: uppercase;
-                }
+                top: 0;
+                left: 0;
+                padding: 65px 75px;
+                width: 560px;
+                height: 500px;
+                border: 5px solid @redMain;
+                box-sizing: border-box;
+                z-index: 1;
+                .lg-block({
+                    display: none;
+                });
             }
-            .coub-block {
-                .red-coub {
+            .caption-wrapper {
+                display: flex;
+                position: relative;
+                margin-bottom: 60px;
+                align-items: flex-start;
+                justify-content: space-between;
+                z-index: 5;
+                .lg-block({
+                    justify-content: center;
+                });
+                .caption-block {
                     display: flex;
-                    padding: 65px 75px;
-                    width: 560px;
-                    height: 500px;
-                    align-items: flex-end;
-                    border: 5px solid @redMain;
-                    box-sizing: border-box;
-                    .btn {
-                        flex-grow: 5;
-                        padding: 35px 50px;
-                        font-size: 2.6rem;
-                        letter-spacing: 0.18rem;
-                        font-family: @BebasBold;
-                        color: #fff;
-                        background-color: @redMain;
+                    max-width: 750px;
+                    font-family: @BebasBold;
+                    .number-list {
+                        display: flex;
+                        padding: 10px 0;
+                        margin-right: 65px;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        font-size: 2.4rem;
+                        letter-spacing: 0.17rem;
+                        .lg-block({
+                            display: none;
+                        });
+                    }
+                    .caption {
+                        font-size: 6rem;
+                        font-weight: 600;
+                        letter-spacing: 0.3rem;
                         text-transform: uppercase;
-                        text-align: center;
-                        .transition();
-                        &:hover {
-                            box-shadow: 0 0 25px 0 rgba(196,45,45,1);
-                        }
+                        .lg-block({
+                            text-align: center;
+                        });
                     }
                 }
-            }
-            .description-block {
-                padding-top: 80px;
-                padding-left: 70px;
                 .number {
                     position: relative;
                     margin-bottom: 15px;
@@ -121,11 +133,54 @@
                     letter-spacing: 1.1rem;
                     text-align: right;
                     .line-after--right(-45px);
+                    .lg-block({
+                        display: none;
+                    });
+                }
+            }
+
+            .description-block {
+                display: flex;
+                position: relative;
+                justify-content: space-between;
+                align-items: flex-start;
+                z-index: 5;
+                .lg-block({
+                    flex-direction: column;
+                    align-items: center;
+                });
+                .btn {
+                    width: 390px;
+                    flex-shrink: 0;
+                    padding: 30px 0;
+                    font-size: 2.6rem;
+                    letter-spacing: 0.18rem;
+                    font-family: @BebasBold;
+                    color: #fff;
+                    background-color: @redMain;
+                    text-transform: uppercase;
+                    text-align: center;
+                    .transition();
+                    .lg-block({
+                        order: 2;
+                    });
+                    &:hover {
+                        box-shadow: 0 0 25px 0 rgba(196,45,45,1);
+                    }
                 }
                 .description {
+                    max-width: 540px;
+                    transform: translateY(-75px);
                     font-family: @ProximaLight;
                     font-size: 2.4rem;
                     letter-spacing: 0.17rem;
+                    .lg-block({
+                        max-width: 70%;
+                        transform: translateY(0);
+                        order: 1;
+                        margin-bottom: 50px;
+                        text-align: center;
+                    });
                     b {
                         text-transform: uppercase;
                         font-weight: 600;
@@ -137,7 +192,7 @@
             position: absolute;
             display: block;
             left: 50%;
-            bottom: 20vh;
+            bottom: 7vh;
             transform: translateX(-50%);
             -webkit-filter: drop-shadow(0 0 8px rgba(196,45,45,1));
             filter: drop-shadow(0 0 8px rgba(196,45,45,1));

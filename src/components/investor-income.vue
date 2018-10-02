@@ -13,6 +13,36 @@
                     <span class="red">100 инвесторам</span>
                 </p>
             </div>
+            <div class="wrapper">
+                <div class="item item--1">
+                    <p class="number red">01</p>
+                    <div class="text-wrapper">
+                        <p class="text">Токены GTC на сумму <span class="bold">0.3 BTC</span></p>
+                        <span class="line">o</span>
+                        <img src="/img/icon/income-1.png" alt="">
+                    </div>
+                </div>
+                <div class="item item--2">
+                    <p class="number red">02</p>
+                    <div class="text-wrapper">
+                        <p class="text">Участие в распределении <span class="bold">15% доли</span> среди всех
+                            со-продюсеров</p>
+                        <span class="line">o</span>
+                        <img src="/img/icon/income-2.png" alt="">
+                    </div>
+                </div>
+                <div class="item item--3">
+                    <p class="number red">03</p>
+                    <div class="text-wrapper">
+                        <p class="text">Участие в распределении <span class="bold">7% доли</span> от каждой серии среди
+                            всех со-продюсеров</p>
+                        <span class="line">o</span>
+                        <img src="/img/icon/income-3.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <p class="target-desc">Планируется снять <span class="bold">28 сезонов</span> по 12 серий в каждом
+                сезоне</p>
         </div>
     </section>
 </template>
@@ -26,13 +56,14 @@
         }
         .g-caption-section {
             margin-bottom: 40px;
-            .line-after--left(-30px, 25%, #ccc);
+            .line-after--left(-30px, 50%, #ccc);
             .black {
                 color: #000;
             }
         }
         .description {
             display: flex;
+            margin-bottom: 70px;
             justify-content: space-between;
             align-items: flex-start;
             .bold {
@@ -58,6 +89,71 @@
                         letter-spacing: 0.17rem;
                     }
                 }
+            }
+        }
+        .wrapper {
+            display: flex;
+            margin-bottom: 80px;
+            flex-direction: column;
+            .item {
+                margin-bottom: 60px;
+                max-width: 800px;
+                width: 100%;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+                &--1 {
+                    align-self: flex-start;
+                }
+                &--2 {
+                    align-self: center;
+                }
+                &--3 {
+                    align-self: flex-end;
+                }
+                .number {
+                    font-family: @BebasBold;
+                    font-size: 6rem;
+                    letter-spacing: 0.4rem;
+                }
+                .text-wrapper {
+                    display: flex;
+                    align-items: flex-start;
+                    .text {
+                        position: relative;
+                        max-width: 380px;
+                        font-family: @ProximaLight;
+                        font-size: 2rem;
+                        letter-spacing: 0.14rem;
+                        color: #000;
+                        .bold {
+                            font-family: @ProximaExtraBold;
+                        }
+                    }
+                    .line {
+                        display: inline-block;
+                        margin: 0 33px;
+                        flex-grow: 5;
+                        font-size: 2rem;
+                        color: transparent;
+                        background: radial-gradient(ellipse at center, #a8a8a8 2px, #a8a8a8 2px, transparent 23%);
+                        background-size: 15px 15px;
+                        background-repeat: repeat-x;
+                        background-position: 0 center;
+                    }
+                    img {
+                        margin-top: -5%;
+                    }
+                }
+            }
+        }
+        .target-desc {
+            font-family: @ProximaLight;
+            font-size: 2.4rem;
+            letter-spacing: 0.17rem;
+            color: #000;
+            .bold {
+                font-family: @ProximaExtraBold;
             }
         }
     }

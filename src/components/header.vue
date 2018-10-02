@@ -56,6 +56,10 @@
                 &.presentation {
                     font-size: 2.6rem;
                     letter-spacing: 0.18rem;
+                    .transition();
+                    &:hover {
+                        color: @redMain;
+                    }
                 }
             }
         }

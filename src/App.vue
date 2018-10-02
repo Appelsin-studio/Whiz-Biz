@@ -9,16 +9,17 @@
           <mission-fond/>
         </div>
       </div>
-      <team-block/>
-      <list-popular/>
-      <film-block/>
-      <idea-film/>
-      <reference-block/>
-      <statistics-block/>
-      <finance-films/>
-      <table-gtc/>
-      <terms-cooperation/>
-      <investor-income/>
+      <!--<team-block/>-->
+      <!--<list-popular/>-->
+      <!--<film-block/>-->
+      <!--<idea-film/>-->
+      <!--<reference-block/>-->
+      <!--<statistics-block/>-->
+      <!--<finance-films/>-->
+      <!--<table-gtc/>-->
+      <!--<terms-cooperation/>-->
+      <!--<investor-income/>-->
+      <!--<road-map/>-->
     </main>
     <footer-block/>
   </div>
@@ -40,6 +41,7 @@ import FinanceFilms from 'components/finance-films'
 import TableGtc from 'components/table-gtc'
 import TermsCooperation from 'components/terms-cooperation'
 import InvestorIncome from 'components/investor-income'
+import RoadMap from 'components/road-map'
 
 import FooterBlock from 'components/footer'
 
@@ -60,6 +62,7 @@ export default {
     TableGtc,
     TermsCooperation,
     InvestorIncome,
+    RoadMap,
     FooterBlock
   },
   data () {
@@ -76,7 +79,7 @@ export default {
   }
   .gradient-wrapper--top {
     position: relative;
-    padding-top: 30vh;
+    padding-top: 400px;
     background: linear-gradient(to bottom, rgba(255, 255, 255,0) 0%, rgba(14,8,8,1) 12%);
     z-index: 50;
     overflow: hidden;
