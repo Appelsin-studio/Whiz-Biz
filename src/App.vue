@@ -9,17 +9,17 @@
           <mission-fond/>
         </div>
       </div>
-      <!--<team-block/>-->
-      <!--<list-popular/>-->
-      <!--<film-block/>-->
-      <!--<idea-film/>-->
-      <!--<reference-block/>-->
-      <!--<statistics-block/>-->
-      <!--<finance-films/>-->
-      <!--<table-gtc/>-->
-      <!--<terms-cooperation/>-->
-      <!--<investor-income/>-->
-      <!--<road-map/>-->
+      <team-block/>
+      <list-popular/>
+      <film-block/>
+      <idea-film/>
+      <reference-block/>
+      <statistics-block/>
+      <finance-films/>
+      <table-gtc/>
+      <terms-cooperation/>
+      <investor-income/>
+      <road-map/>
     </main>
     <footer-block/>
   </div>
