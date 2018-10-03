@@ -2,8 +2,8 @@
     <section class="b-list-popular">
         <div class="container">
             <p class="g-number">05</p>
-            <p class="g-caption-section">Почему <span class="red">крипто фонд обретает популярность</span> и что
-                повлияет на рост токена Gtc?</p>
+            <h3 class="g-caption-section">Почему <span class="red">крипто фонд обретает популярность</span> и что
+                повлияет на рост токена Gtc?</h3>
             <div class="wrapper-list">
                 <div class="item open">
                     <p class="item-name">1. будет снято несколько десятков фильмов</p>
@@ -43,9 +43,15 @@
     .b-list-popular {
         padding: 150px 0 100px;
         background: url("/img/bg-list-popular.jpg") no-repeat top center / cover, @blackMain;
+        .sm-block({
+            padding: 120px 0 80px;
+        });
         .g-caption-section {
             margin-bottom: 80px;
             .line-after--left(-30px, 25%);
+            .xs-block({
+                margin-bottom: 65px;
+            });
         }
         .wrapper-list {
             display: flex;
@@ -55,6 +61,13 @@
                 position: relative;
                 margin-bottom: 50px;
                 padding-left: 100px;
+                .sm-block({
+                    padding-left: 60px;
+                });
+                .xs-block({
+                    padding-left: 40px;
+                    margin-bottom: 30px;
+                });
                 &:last-child {
                     margin-bottom: 0;
                 }
@@ -67,13 +80,34 @@
                     left: 0;
                     top: -5px;
                     border-radius: 50%;
+                    .sm-block({
+                        width: 30px;
+                        height: 30px;
+                        top: 0;
+                    });
+                    .xs-block({
+                        width: 25px;
+                        height: 25px;
+                    });
                 }
                 &::after {
                     background: linear-gradient(@blackMain, @blackMain) 50% 50% no-repeat / 18px 4px @redMain;
+                    .sm-block({
+                        background: linear-gradient(@blackMain, @blackMain) 50% 50% no-repeat / 13px 3px @redMain;
+                    });
+                    .xs-block({
+                        background: linear-gradient(@blackMain, @blackMain) 50% 50% no-repeat / 10px 2px @redMain;
+                    });
                 }
                 &::before {
                     background: linear-gradient(@blackMain, @blackMain) 50% 50% no-repeat / 4px 18px;
                     z-index: 2;
+                    .sm-block({
+                        background: linear-gradient(@blackMain, @blackMain) 50% 50% no-repeat / 3px 13px;
+                    });
+                    .xs-block({
+                        background: linear-gradient(@blackMain, @blackMain) 50% 50% no-repeat / 2px 10px;
+                    });
                 }
                 &.open {
                     &::before {

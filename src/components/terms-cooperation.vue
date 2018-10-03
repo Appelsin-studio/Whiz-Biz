@@ -46,9 +46,15 @@
     .b-terms-cooperation {
         padding: 150px 0;
         background: url("/img/bg-terms.jpg") no-repeat center / cover;
+        .sm-block({
+            padding: 120px 0;
+        });
         .g-caption-section {
             margin-bottom: 100px;
             .line-after--left();
+            .sm-block({
+                margin-bottom: 80px;
+            });
         }
         .secondary-caption {
             margin-bottom: 45px;
@@ -62,6 +68,11 @@
             margin-bottom: 110px;
             justify-content: flex-start;
             align-items: center;
+            .sm-block({
+                margin-bottom: 70px;
+                flex-direction: column;
+                align-items: center;
+            });
             .text {
                 display: inline-block;
                 font-family: @ProximaLight;
@@ -76,15 +87,22 @@
                 justify-content: center;
                 align-items: center;
                 height: 20px;
+                .sm-block({
+                    height: 45px;
+                    padding: 10px 0;
+                });
                 &::before {
                     content: '';
                     display: inline-block;
                     width: 60px;
                     height: 4px;
-                    background: radial-gradient(ellipse at center, #c42d2d 2px, #c42d2d 2px, transparent 23%);
-                    background-size: 15px 15px;
+                    background: radial-gradient(ellipse at center, #c42d2d 2px, #c42d2d 2px, transparent 20%);
+                    background-size: 14px 15px;
                     background-repeat: repeat-x;
                     background-position: 0 center;
+                    .sm-block({
+                        display: none;
+                    });
                 }
                 &::after {
                     content: '';
@@ -95,6 +113,9 @@
                     border-right: 3px solid @redMain;
                     border-bottom: 3px solid @redMain;
                     transform: rotate(-45deg);
+                    .sm-block({
+                        transform: rotate(45deg);
+                    });
                 }
             }
         }
@@ -105,21 +126,23 @@
                 flex-direction: column;
                 .item {
                     position: relative;
-                    display: flex;
                     padding-bottom: 25px;
                     padding-left: 70px;
-                    &:first-child {
+                    .xs-block({
+                        padding-left: 30px;
+                    });
+                    /*&:first-child {
                         &::after {
                             top: 10px;
                         }
-                    }
+                    }*/
                     &:last-child {
                         padding-bottom: 0;
-                        &::after {
+                        /*&::after {
                             top: 0;
-                        }
+                        }*/
                     }
-                    &::after {
+                    /*&::after {
                         content: '';
                         position: absolute;
                         left: 0;
@@ -127,11 +150,11 @@
                         bottom: 0;
                         width: 1px;
                         background-color: #fff;
-                    }
+                    }*/
                     &::before {
                         content: '';
                         position: absolute;
-                        left: 42px;
+                        left: 35px;
                         top: 4px;
                         width: 14px;
                         height: 14px;
@@ -139,6 +162,11 @@
                         border: 3px solid @redMain;
                         border-radius: 50%;
                         box-sizing: border-box;
+                        z-index: 5;
+                        .xs-block({
+                            top: 0;
+                            left: 0;
+                        });
                     }
                     .line {
                         position: absolute;
@@ -147,6 +175,10 @@
                         width: 40px;
                         height: 1px;
                         background-color: #fff;
+                        z-index: 4;
+                        .xs-block({
+                            display: none;
+                        });
                     }
                     .bold {
                         font-family: @ProximaExtraBold;

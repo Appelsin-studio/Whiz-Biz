@@ -37,6 +37,12 @@
     .b-idea-film {
         padding: 150px 0;
         background: @redMain;
+        .sm-block({
+            padding: 120px 0;
+        });
+        .xs-block({
+            padding: 100px 0;
+        });
         .black {
             color: #000;
         }
@@ -49,6 +55,7 @@
             .description-wrapper {
                 .col();
                 .size(7);
+                .size-sm(12);
                 display: flex;
                 flex-direction: column;
                 .characteristics {
@@ -56,6 +63,9 @@
                     margin-bottom: 30px;
                     font-size: 2rem;
                     letter-spacing: 0.14px;
+                    .sm-block({
+                        font-size: 14px;
+                    });
                     .black {
                         font-family: @ProximaExtraBold;
                     }
@@ -86,6 +96,7 @@
                         align-self: flex-start;
                         margin-top: -100px;
                     }
+                    .sm-block({ display: none;});
                 }
             }
         }

@@ -18,12 +18,10 @@
                         <div class="number">01</div>
                     </div>
                     <div class="red-coub"></div>
-                    <div class="description-block">
-                        <a href="#" class="btn">Подать заявку</a>
-                        <p class="description"><strong>GTCinema</strong> - это компания по производству финансовых
-                            технологий,
-                            ориентированная на использование технологии blockchain и криптографических токенов</p>
-                    </div>
+                    <p class="description"><strong>GTCinema</strong> - это компания по производству финансовых
+                        технологий,
+                        ориентированная на использование технологии blockchain и криптографических токенов</p>
+                    <a href="#" class="btn">Подать заявку</a>
                 </div>
             </div>
             <div class="page-down">
@@ -42,12 +40,13 @@
         position: relative;
         margin-bottom: -300px;
         height: 100vh;
-        min-height: 960px;
+        min-height: 750px;
         overflow: hidden;
         background: url("/img/bg-main.jpg");
         background-repeat: no-repeat;
         background-position: top center;
         background-size: cover;
+        .md-block({min-height: 600px;});
         .bg-gradient {
             height: 100%;
             width: 100%;
@@ -58,9 +57,12 @@
         .container {
             width: 100%;
             &--flex-center {
+                position: relative;
                 height: 100vh;
+                min-height: 750px;
                 display: flex;
                 align-items: center;
+                .md-block({min-height: 600px;});
             }
         }
         .wrapper {
@@ -69,9 +71,12 @@
             flex-direction: column;
             padding-left: 85px;
             padding-top: 70px;
-            z-index: 9999;
+            z-index: 99;
             .lg-block({
                 padding-left: 0;
+            });
+            .md-block({
+                padding-top: 0;
             });
             .red-coub {
                 position: absolute;
@@ -97,10 +102,16 @@
                 .lg-block({
                     justify-content: center;
                 });
+                .sm-block({
+                    margin-bottom: 20px;
+                });
                 .caption-block {
                     display: flex;
                     max-width: 750px;
                     font-family: @BebasBold;
+                    .lg-block({
+                        max-width: 900px;
+                    });
                     .number-list {
                         display: flex;
                         padding: 10px 0;
@@ -121,6 +132,12 @@
                         .lg-block({
                             text-align: center;
                         });
+                        /*.sm-block({
+                            font-size: 5rem;
+                        });
+                        .xs-block({
+                            font-size: 4rem;
+                        });*/
                     }
                 }
                 .number {
@@ -138,53 +155,58 @@
                     });
                 }
             }
-
-            .description-block {
-                display: flex;
-                position: relative;
-                justify-content: space-between;
-                align-items: flex-start;
-                z-index: 5;
+            .description {
+                align-self: flex-end;
+                max-width: 540px;
+                transform: translateY(-75px);
+                font-family: @ProximaLight;
+                font-size: 2.4rem;
+                letter-spacing: 0.17rem;
                 .lg-block({
-                    flex-direction: column;
-                    align-items: center;
-                });
-                .btn {
-                    width: 390px;
-                    flex-shrink: 0;
-                    padding: 30px 0;
-                    font-size: 2.6rem;
-                    letter-spacing: 0.18rem;
-                    font-family: @BebasBold;
-                    color: #fff;
-                    background-color: @redMain;
-                    text-transform: uppercase;
+                    max-width: 70%;
+                    transform: translateY(0);
+                    align-self: center;
+                    margin-bottom: 50px;
                     text-align: center;
-                    .transition();
-                    .lg-block({
-                        order: 2;
-                    });
-                    &:hover {
-                        box-shadow: 0 0 25px 0 rgba(196,45,45,1);
-                    }
+                });
+                .md-block({
+                    max-width: 100%;
+                    font-size: 16px;
+                });
+                .xs-block({
+                    max-width: 100%;
+                    font-size: 14px;
+                });
+                b {
+                    text-transform: uppercase;
+                    font-weight: 600;
                 }
-                .description {
-                    max-width: 540px;
-                    transform: translateY(-75px);
-                    font-family: @ProximaLight;
-                    font-size: 2.4rem;
-                    letter-spacing: 0.17rem;
-                    .lg-block({
-                        max-width: 70%;
-                        transform: translateY(0);
-                        order: 1;
-                        margin-bottom: 50px;
-                        text-align: center;
-                    });
-                    b {
-                        text-transform: uppercase;
-                        font-weight: 600;
-                    }
+            }
+            .btn {
+                width: 100%;
+                max-width: 390px;
+                flex-shrink: 0;
+                padding: 30px 0;
+                font-size: 2.6rem;
+                letter-spacing: 0.18rem;
+                font-family: @BebasBold;
+                color: #fff;
+                background-color: @redMain;
+                text-transform: uppercase;
+                text-align: center;
+                transform: translateY(-124px);
+                transition: box-shadow 0.3s ease;
+                z-index: 6;
+                .lg-block({
+                    transform: translateY(0);
+                    align-self: center;
+                });
+                .md-block({
+                    padding: 25px 0;
+                    max-width: 300px;
+                });
+                &:hover {
+                    box-shadow: 0 0 25px 0 rgba(196,45,45,1);
                 }
             }
         }
@@ -192,7 +214,7 @@
             position: absolute;
             display: block;
             left: 50%;
-            bottom: 7vh;
+            bottom: 45px;
             transform: translateX(-50%);
             -webkit-filter: drop-shadow(0 0 8px rgba(196,45,45,1));
             filter: drop-shadow(0 0 8px rgba(196,45,45,1));

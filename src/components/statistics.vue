@@ -28,15 +28,19 @@
     .b-statistics {
         padding-top: 150px;
         color: #000;
+        .sm-block({
+            padding-top: 120px;
+        });
         .g-number {
             color: #cccccc;
         }
         .g-caption-section {
             margin-bottom: 110px;
+            max-width: 640px;
             .line-after--left(-30px, 25%, #ccc);
-            span {
-                display: block;
-            }
+            .sm-block({
+                margin-bottom: 80px;
+            });
         }
         .number-films {
             margin-bottom: 70px;

@@ -19,7 +19,10 @@
                     <div class="text-wrapper">
                         <p class="text">Токены GTC на сумму <span class="bold">0.3 BTC</span></p>
                         <span class="line">o</span>
-                        <img src="/img/icon/income-1.png" alt="">
+                        <div class="img">
+                            <img src="/img/icon/income-1.png" alt="">
+                        </div>
+                       <!-- <img src="/img/icon/income-1.png" alt="">-->
                     </div>
                 </div>
                 <div class="item item--2">
@@ -28,7 +31,10 @@
                         <p class="text">Участие в распределении <span class="bold">15% доли</span> среди всех
                             со-продюсеров</p>
                         <span class="line">o</span>
-                        <img src="/img/icon/income-2.png" alt="">
+                        <div class="img">
+                            <img src="/img/icon/income-2.png" alt="">
+                        </div>
+                        <!--<img src="/img/icon/income-2.png" alt="">-->
                     </div>
                 </div>
                 <div class="item item--3">
@@ -37,7 +43,10 @@
                         <p class="text">Участие в распределении <span class="bold">7% доли</span> от каждой серии среди
                             всех со-продюсеров</p>
                         <span class="line">o</span>
-                        <img src="/img/icon/income-3.png" alt="">
+                        <div class="img">
+                            <img src="/img/icon/income-3.png" alt="">
+                        </div>
+                        <!--<img src="/img/icon/income-3.png" alt="">-->
                     </div>
                 </div>
             </div>
@@ -48,11 +57,11 @@
 </template>
 <style scoped lang="less">
     @import "~assets/less/_vars";
-
     .b-investor-income {
         padding: 150px 0;
+        .sm-block({ padding: 120px 0; });
         .g-number {
-            color: #cccccc;
+            color: #ccc;
         }
         .g-caption-section {
             margin-bottom: 40px;
@@ -66,22 +75,35 @@
             margin-bottom: 70px;
             justify-content: space-between;
             align-items: flex-start;
+            .sm-block({
+                margin-bottom: 50px;
+                flex-direction: column;
+                justify-content: flex-start; });
             .bold {
                 font-family: @ProximaExtraBold;
                 font-size: 3rem;
                 letter-spacing: 0.2rem;
                 color: #000;
                 text-transform: uppercase;
+                .sm-block({
+                    margin-bottom: 10px;
+                });
             }
             .bonus {
-                >span {
+                > span {
                     display: block;
+                    .sm-block({
+                        display: inline-block;
+                    });
                     &.light {
                         margin-bottom: 10px;
                         font-family: @ProximaLight;
                         font-size: 2.4rem;
                         letter-spacing: 0.17rem;
                         color: #000;
+                        .sm-block({
+                            margin-bottom: 0;
+                            margin-right: 5px; });
                     }
                     &.red {
                         font-family: @ProximaExtraBold;
@@ -95,10 +117,16 @@
             display: flex;
             margin-bottom: 80px;
             flex-direction: column;
+            .sm-block({
+                margin-bottom: 50px;
+            });
             .item {
                 margin-bottom: 60px;
                 max-width: 800px;
                 width: 100%;
+                .sm-block({
+                    margin-bottom: 30px;
+                });
                 &:last-child {
                     margin-bottom: 0;
                 }
@@ -119,6 +147,9 @@
                 .text-wrapper {
                     display: flex;
                     align-items: flex-start;
+                    .sm-block({
+                        justify-content: space-between;
+                    });
                     .text {
                         position: relative;
                         max-width: 380px;
@@ -132,7 +163,7 @@
                     }
                     .line {
                         display: inline-block;
-                        margin: 0 33px;
+                        margin-left: 33px;
                         flex-grow: 5;
                         font-size: 2rem;
                         color: transparent;
@@ -140,10 +171,35 @@
                         background-size: 15px 15px;
                         background-repeat: repeat-x;
                         background-position: 0 center;
+                        .sm-block({
+                            display: none;
+                        });
                     }
-                    img {
-                        margin-top: -5%;
+                    .img {
+                        display: flex;
+                        margin-left: 33px;
+                        flex-shrink: 0;
+                        width: 100px;
+                        height: 100px;
+                        align-items: center;
+                        justify-content: flex-start;
+                        transform: translateY(-43%);
+                        .sm-block({
+                            width: 70px;
+                            height: 70px;
+                        });
+                        .sm-block({
+                            margin-left: 20px;
+                            width: 50px;
+                            height: 50px;
+                        });
+                        img {
+                            max-height: 100%;
+                        }
                     }
+                    /*img {
+                        transform: translateY(-43%);
+                    }*/
                 }
             }
         }

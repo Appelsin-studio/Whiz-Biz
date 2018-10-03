@@ -34,7 +34,7 @@
         top: 0;
         left: 0;
         right: 0;
-        z-index: 5;
+        z-index: 999;
         .wrapper {
             display: flex;
             justify-content: space-between;
@@ -48,9 +48,17 @@
                     font-size: 3.5rem;
                     background-color: @redMain;
                     .transition();
+                    .md-block({
+                        padding: 35px 15px 5px;
+                    });
                     &:hover {
                         box-shadow: 0 0 25px 0 rgba(196,45,45,1);
                     }
+                }
+                &.bid {
+                    .sm-block({
+                        display: none;
+                    });
                 }
                 &.bid,
                 &.presentation {

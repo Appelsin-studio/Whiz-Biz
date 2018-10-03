@@ -7,66 +7,57 @@
                 <span class="white">прогноз роста Gtc </span> за 7 лет
             </p>
             <table class="table">
-                <tr>
+                <tr class="caption-table">
                     <th colspan="2" class="capt">МИНИМАЛЬНЫЙ ПРОГНОЗ
                         ТОКЕНА GTC В БЛИЖАЙШИЕ 7 ЛЕТ</th>
-                    <th  colspan="1" class="width"></th>
                     <th colspan="2" class="capt">МАКСИМАЛЬНЫЙ ПРОГНОЗ
                         ТОКЕНА GTC В БЛИЖАЙШИЕ 7 ЛЕТ</th>
                 </tr>
                 <tr class="red">
                     <td class="light">0 год, 2019г</td>
                     <td class="bold">$0,133</td>
-                    <td class="width"></td>
                     <td class="light">0 год, 2019г</td>
                     <td class="bold">$0,133</td>
                 </tr>
                 <tr class="pink">
                     <td class="light">1 год, 2020г</td>
                     <td class="bold">$0,266</td>
-                    <td class="width"></td>
                     <td class="light">1 год, 2020г</td>
                     <td class="bold">$0,266</td>
                 </tr>
                 <tr class="red">
                     <td class="light">2 год, 2021г</td>
                     <td class="bold">$0,533</td>
-                    <td class="width"></td>
                     <td class="light">2 год, 2021г</td>
                     <td class="bold">$0,533</td>
                 </tr>
                 <tr class="pink">
                     <td class="light">3 год, 2022г</td>
                     <td class="bold">$1,066</td>
-                    <td class="width"></td>
                     <td class="light">3 год, 2022г</td>
                     <td class="bold">$1,066</td>
                 </tr>
                 <tr class="red">
                     <td class="light">4 год, 2023г</td>
                     <td class="bold">$2,133</td>
-                    <td class="width"></td>
                     <td class="light">4 год, 2023г</td>
                     <td class="bold">$2,133</td>
                 </tr>
                 <tr class="pink">
                     <td class="light">5 год, 2024г</td>
                     <td class="bold">$4,266</td>
-                    <td class="width"></td>
                     <td class="light">5 год, 2024г</td>
                     <td class="bold">$4,266</td>
                 </tr>
                 <tr class="red">
                     <td class="light">6 год, 2025г</td>
                     <td class="bold">$8,533</td>
-                    <td class="width"></td>
                     <td class="light">6 год, 2025г</td>
                     <td class="bold">$8,533</td>
                 </tr>
                 <tr class="pink">
                     <td class="light">7 год, 2026г</td>
                     <td class="bold">$17,06</td>
-                    <td class="width"></td>
                     <td class="light">7 год, 2026г</td>
                     <td class="bold">$17,06</td>
                 </tr>
@@ -80,11 +71,17 @@
     .b-table-gtc {
         padding: 150px 0;
         background: @redMain;
+        .sm-block({
+            padding: 120px 0;
+        });
         .g-caption-section {
             margin-bottom: 70px;
-            max-width: 80%;
+            max-width: 780px;
             color: #000;
             .line-after--left(-30px, 25%, #fff);
+            .sm-block({
+                margin-bottom: 55px;
+            });
             .white {
                 color: #fff;
             }
@@ -94,20 +91,31 @@
             border-collapse: collapse;
             tr {
                 display: flex;
-                align-items: flex-start;
+                align-items: center;
+                justify-content: space-between;
                 th {
                     font-family: @ProximaBold;
                     font-size: 2.4rem;
                     letter-spacing: 0.14rem;
+                    .sm-block({
+                        font-size: 14px;
+                    });
+                    .xs-block({
+                        font-size: 12px;
+                    });
+                }
+                &.caption-table {
+                    justify-content: space-around;
                 }
                 .capt {
                     max-width: 44%;
-                    padding-left: 45px;
                     padding-bottom: 45px;
                     box-sizing: border-box;
-                }
-                .width {
-                    flex-grow: 1;
+                    text-align: center;
+                    .sm-block({
+                        max-width: 48%;
+                        padding-bottom: 25px;
+                    });
                 }
             }
             td {
@@ -115,6 +123,15 @@
                 font-size: 2rem;
                 letter-spacing: 0.14rem;
                 box-sizing: border-box;
+                .sm-block({
+                    padding: 8px 0 8px 8px;
+                    font-size: 14px;
+                    letter-spacing: 0;
+                });
+                .xs-block({
+                    padding: 5px 0 5px 5px;
+                    font-size: 12px;
+                });
                 &.light {
                     width: 22%;
                     flex-shrink: 0;

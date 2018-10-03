@@ -27,15 +27,19 @@
     .b-finance-films {
         padding: 150px 0 50px;
         color: #000;
+        .sm-block({
+            padding: 120px 0 40px;
+        });
         .g-number {
             color: #cccccc;
         }
         .g-caption-section {
             margin-bottom: 110px;
+            max-width: 650px;
             .line-after--left(-30px, 25%, #ccc);
-            span {
-                display: block;
-            }
+            .sm-block({
+                margin-bottom: 80px;
+            });
         }
         .pie {
             text-align: center;

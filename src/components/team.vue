@@ -42,9 +42,15 @@
     .b-team {
         padding: 100px 0 90px;
         background: @redMain;
+        .sm-block({
+            padding: 80px 0 70px;
+        });
         .g-caption-section {
             margin-bottom: 80px;
             .line-after--left();
+            .sm-block({
+                margin-bottom: 65px;
+            });
             .black {
                 color: #000;
             }
@@ -56,6 +62,7 @@
                 .col();
                 .size(4);
                 .size-md(6);
+                .size-sm(12);
                 display: flex;
                 margin-bottom: 60px;
                 flex-direction: column;
@@ -69,6 +76,11 @@
                     background-repeat: no-repeat;
                     background-position: center;
                     background-size: cover;
+                    .sm-block({
+                        margin-bottom: 30px;
+                        width: 200px;
+                        height: 200px;
+                    });
                 }
                 .name {
                     flex-grow: 1;
@@ -78,6 +90,9 @@
                     letter-spacing: 0.25rem;
                     color: #000;
                     text-align: center;
+                    .sm-block({
+                        font-size: 28px;
+                    });
                 }
                 .profession,
                 .country,
@@ -86,6 +101,9 @@
                     font-size: 2rem;
                     letter-spacing: 0.15rem;
                     text-align: center;
+                    .sm-block({
+                        font-size: 16px;
+                    });
                 }
                 .profession,
                 .country {

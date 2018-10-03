@@ -21,6 +21,9 @@
 
     .b-description-fond {
         margin-bottom: 170px;
+        .sm-block({
+            margin-bottom: 135px;
+        });
         .wrapper {
             position: relative;
             display: flex;
@@ -31,6 +34,13 @@
                 max-width: 55%;
                 left: 0;
                 z-index: 99;
+                .md-block({
+                    padding-left: 10px;
+                    max-width: 70%;
+                });
+                .sm-block({
+                    max-width: 100%;
+                });
                 .g-caption-section {
                     .line-after--left();
                 }
@@ -45,7 +55,8 @@
             }
             .red-coub {
                 position: relative;
-                width: 730px;
+                max-width: 730px;
+                width: 100%;
                 height: 420px;
                 box-sizing: border-box;
                 z-index: 5;
@@ -58,10 +69,18 @@
                 background-size: 100% 5px;
                 background-position: 0 0, 0 100%;
                 background-repeat: no-repeat;
+                .xs-block({
+                    height: 375px;
+                });
                 .img {
                     position: absolute;
                     top: -75px;
                     right: -215px;
+                    .md-block({
+                        top: -40px;
+                        right: -200px;
+                        filter: brightness(10%);
+                    });
                 }
             }
         }

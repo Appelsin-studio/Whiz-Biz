@@ -62,8 +62,11 @@
 <style scoped lang="less">
     @import "~assets/less/_vars";
     .b-reference {
-        padding: 150px 0 0;
+        padding-top: 150px;
         background: url("/img/reference.jpg") no-repeat center / cover;
+        .sm-block({
+            padding-top: 120px;
+        });
         .g-caption-section {
             margin-bottom: 70px;
             .line-after--left(-30px, 25%);
@@ -76,7 +79,9 @@
             .item {
                 .col();
                 .size(6);
+                .size-xs(12);
                 margin-bottom: 100px;
+                .xs-block({ margin-bottom: 50px;});
                 .number {
                     margin-bottom: 20px;
                     font-family: @BebasBold;
@@ -89,6 +94,9 @@
                     font-family: @BebasBold;
                     font-size: 3.5rem;
                     letter-spacing: 0.25rem;
+                    .xs-block({
+                        font-size: 24px;
+                    });
                 }
                 .money {
                     display: flex;
@@ -96,6 +104,9 @@
                     justify-content: flex-start;
                     font-size: 2rem;
                     letter-spacing: 0.15rem;
+                    .xs-block({
+                        font-size: 16px;
+                    });
                     .bold {
                         font-family: @ProximaExtraBold;
                     }

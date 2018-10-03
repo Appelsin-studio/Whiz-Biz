@@ -11,7 +11,7 @@
                 <strong class="bold">&#10077;Ghost Town&#10078;</strong></p>
             <div class="road-wrapper">
                 <div class="road">
-                    <div class="step-start-finish">
+                    <div class="step-start-finish start">
                         <p class="text-start-finish">start</p>
                     </div>
                     <div class="step">
@@ -26,7 +26,7 @@
                         <p class="number">03</p>
                         <p class="text">Собрать бюджет 100 BTC через продажи CGEN для запуска PR кампании</p>
                     </div>
-                    <div class="step-start-finish">
+                    <div class="step-start-finish finish">
                         <p class="text-start-finish">finish</p>
                     </div>
                 </div>
@@ -54,6 +54,9 @@
     .b-road-map {
         padding: 150px 0;
         background: #b53131;
+        .sm-block({
+            padding: 120px 0;
+        });
         .g-number {
             color: #fff;
         }
@@ -70,6 +73,9 @@
         .description--top {
             font-size: 3rem;
             letter-spacing: 0.2rem;
+            .sm-block({
+                margin-bottom: 50px;
+            });
             .light {
                 display: block;
                 font-family: @ProximaLight;
@@ -81,17 +87,33 @@
         .road-wrapper {
             padding: 250px 40px 0;
             margin-bottom: 80px;
+            .sm-block({
+                padding: 0 0 0 10px;
+            });
             .road {
                 display: flex;
                 justify-content: space-between;
                 align-items: flex-start;
                 border-top: 8px solid #a62828;
+                .sm-block({
+                    flex-direction: column;
+                    border-top: none;
+                    border-left: 8px solid #a62828;
+                });
                 .step {
                     display: flex;
                     max-width: 250px;
                     margin-top: -15px;
                     flex-direction: column;
                     align-items: flex-start;
+                    .sm-block({
+                        flex-direction: row;
+                        align-items: center;
+                        max-width: 100%;
+                        margin-top: 0;
+                        margin-bottom: 20px;
+                        margin-left: -15px;
+                    });
                     .number {
                         display: flex;
                         margin-bottom: 15px;
@@ -101,6 +123,11 @@
                         font-size: 6rem;
                         letter-spacing: 0.4rem;
                         color: #000;
+                        .sm-block({
+                            flex-direction: row;
+                            align-items: center;
+                            margin-bottom: 0;
+                        });
                         &::before {
                             content: '';
                             display: inline-block;
@@ -111,6 +138,9 @@
                             border: 6px solid #fff;
                             border-radius: 50%;
                             box-sizing: border-box;
+                            .sm-block({
+                                margin-bottom: 0;
+                            });
                         }
                     }
                     .text {
@@ -126,7 +156,22 @@
                     margin-top: -15px;
                     flex-direction: column;
                     align-items: center;
-                    &::before {
+                    .sm-block({
+                        flex-direction: row;
+                        align-items: center;
+                        margin-top: 0;
+                    });
+                    &.start {
+                        .sm-block({
+                            margin-top: -10px;
+                        });
+                    }
+                    &.finish {
+                        .sm-block({
+                            margin-bottom: -10px;
+                        });
+                    }
+                    &::after {
                         content: '';
                         display: inline-block;
                         margin-left: 0;
@@ -136,8 +181,12 @@
                         border: 6px solid #fff;
                         border-radius: 50%;
                         box-sizing: border-box;
+                        .sm-block({
+                            position: absolute;
+                            left: -15px;
+                        });
                     }
-                    &::after {
+                    &::before {
                         content: '';
                         position: absolute;
                         display: inline-block;
@@ -149,6 +198,13 @@
                         background-repeat: repeat-y;
                         background-position: 0 center;
                         box-sizing: border-box;
+                        .sm-block({
+                            position: relative;
+                            top: auto;
+                            width: 100px;
+                            height: 15px;
+                            background-repeat: repeat-x;
+                        });
                     }
                     .text-start-finish {
                         position: absolute;
@@ -158,6 +214,10 @@
                         letter-spacing: 0.2rem;
                         color: #000;
                         text-transform: uppercase;
+                        .sm-block({
+                            position: relative;
+                            top: auto;
+                        });
                     }
                 }
             }
