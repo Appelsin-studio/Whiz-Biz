@@ -59,7 +59,12 @@
     @import "~assets/less/_vars";
     .b-investor-income {
         padding: 150px 0;
-        .sm-block({ padding: 120px 0; });
+        .sm-block({
+            padding: 120px 0;
+        });
+        .xs-block({
+            padding: 90px 0;
+        });
         .g-number {
             color: #ccc;
         }

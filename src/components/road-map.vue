@@ -63,6 +63,9 @@
         .sm-block({
             padding: 120px 0;
         });
+        .xs-block({
+            padding: 90px 0;
+        });
         .g-number {
             color: #fff;
         }
@@ -215,6 +218,7 @@
                         .sm-block({
                             position: relative;
                             top: auto;
+                            margin: 0 10px;
                             width: 100px;
                             height: 15px;
                             background-repeat: repeat-x;

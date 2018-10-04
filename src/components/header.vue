@@ -2,9 +2,9 @@
     <header class="b-header">
         <div class="container">
             <div class="wrapper">
-                <a class="gtc" href="#">GTC</a>
-                <a class="bid" href="#">Подать заявку</a>
-                <a class="presentation" href="#">Записаться на презентацию</a>
+                <a class="gtc" href="#" @click.prevent="modalMessage">GTC</a>
+                <a class="bid" href="#" @click.prevent="modalApply">Подать заявку</a>
+                <a class="presentation" href="#" @click.prevent="modalPresentation">Записаться на презентацию</a>
                 <v-select :options="options" label="langCode" v-model="selected"></v-select>
             </div>
         </div>
@@ -24,7 +24,18 @@
               ],
             selected: {langCode: "En", langName: "Ru"}
           }
+        },
+      methods: {
+        modalApply() {
+          this.$modal.show('apply')
+        },
+        modalPresentation() {
+          this.$modal.show('presentation')
+        },
+        modalMessage() {
+          this.$modal.show('message')
         }
+      }
     }
 </script>
 <style lang="less">

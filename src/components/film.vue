@@ -36,9 +36,13 @@
             65%, rgba(0, 0, 0, 0) 75%), url("/img/bg-film.jpg") no-repeat bottom center;
         });
         .sm-block({
-            margin-top: -100px;
+            margin-top: -80px;
             padding-top: 120px;
             padding-bottom: 100px;
+        });
+        .xs-block({
+            padding-top: 100px;
+            padding-bottom: 80px;
         });
         .g-caption-section {
             margin-bottom: 60px;

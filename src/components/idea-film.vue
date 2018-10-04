@@ -41,7 +41,7 @@
             padding: 120px 0;
         });
         .xs-block({
-            padding: 100px 0;
+            padding: 70px 0;
         });
         .black {
             color: #000;
@@ -83,6 +83,9 @@
                     color: #ffa8a8;
                     font-family: @ProximaLight;
                     font-size: 2rem;
+                    .xs-block({
+                        font-size: 14px;
+                    });
                 }
             }
             .img {

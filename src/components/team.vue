@@ -45,6 +45,9 @@
         .sm-block({
             padding: 80px 0 70px;
         });
+        .sm-block({
+            padding: 80px 0 30px;
+        });
         .g-caption-section {
             margin-bottom: 80px;
             .line-after--left();
@@ -93,6 +96,9 @@
                     .sm-block({
                         font-size: 28px;
                     });
+                    .xs-block({
+                        margin-bottom: 13px;
+                    });
                 }
                 .profession,
                 .country,
@@ -109,6 +115,9 @@
                 .country {
                     margin-bottom: 15px;
                     color: #fff;
+                    .xs-block({
+                        margin-bottom: 10px;
+                    });
                 }
                 .link {
                     color: #ff7d7d;

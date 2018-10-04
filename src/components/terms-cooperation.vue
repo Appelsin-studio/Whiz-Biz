@@ -49,11 +49,17 @@
         .sm-block({
             padding: 120px 0;
         });
+        .xs-block({
+            padding: 80px 0;
+        });
         .g-caption-section {
             margin-bottom: 100px;
             .line-after--left();
             .sm-block({
                 margin-bottom: 80px;
+            });
+            .xs-block({
+                margin-bottom: 60px;
             });
         }
         .secondary-caption {

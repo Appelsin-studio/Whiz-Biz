@@ -23,43 +23,43 @@
                     <td class="light">1 год, 2020г</td>
                     <td class="bold">$0,266</td>
                     <td class="light">1 год, 2020г</td>
-                    <td class="bold">$0,266</td>
+                    <td class="bold">$0,666</td>
                 </tr>
                 <tr class="red">
                     <td class="light">2 год, 2021г</td>
                     <td class="bold">$0,533</td>
                     <td class="light">2 год, 2021г</td>
-                    <td class="bold">$0,533</td>
+                    <td class="bold">$3,333</td>
                 </tr>
                 <tr class="pink">
                     <td class="light">3 год, 2022г</td>
                     <td class="bold">$1,066</td>
                     <td class="light">3 год, 2022г</td>
-                    <td class="bold">$1,066</td>
+                    <td class="bold">$16,66</td>
                 </tr>
                 <tr class="red">
                     <td class="light">4 год, 2023г</td>
                     <td class="bold">$2,133</td>
                     <td class="light">4 год, 2023г</td>
-                    <td class="bold">$2,133</td>
+                    <td class="bold">$83,33</td>
                 </tr>
                 <tr class="pink">
                     <td class="light">5 год, 2024г</td>
                     <td class="bold">$4,266</td>
                     <td class="light">5 год, 2024г</td>
-                    <td class="bold">$4,266</td>
+                    <td class="bold">$416,6</td>
                 </tr>
                 <tr class="red">
                     <td class="light">6 год, 2025г</td>
                     <td class="bold">$8,533</td>
                     <td class="light">6 год, 2025г</td>
-                    <td class="bold">$8,533</td>
+                    <td class="bold">$2083</td>
                 </tr>
                 <tr class="pink">
                     <td class="light">7 год, 2026г</td>
                     <td class="bold">$17,06</td>
                     <td class="light">7 год, 2026г</td>
-                    <td class="bold">$17,06</td>
+                    <td class="bold">$10 416</td>
                 </tr>
             </table>
         </div>
@@ -73,6 +73,9 @@
         background: @redMain;
         .sm-block({
             padding: 120px 0;
+        });
+        .xs-block({
+            padding: 80px 0;
         });
         .g-caption-section {
             margin-bottom: 70px;

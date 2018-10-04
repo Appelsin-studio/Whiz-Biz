@@ -1,0 +1,135 @@
+.modal-default {
+  background-color: #fff;
+  border-radius: 0;
+}
+.modal {
+  padding: 90px 20px;
+  border: 5px solid @redMain;
+  .xs-block({
+    padding: 60px 20px;
+  });
+  .close-modal {
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: #ddd;
+    cursor: pointer;
+    user-select: none;
+    background: @redMain;
+    border: 5px solid @redMain;
+    box-sizing: border-box;
+    .transition();
+    &:hover {
+      background: #fff;
+      color: @redMain;
+    }
+  }
+  .title {
+    font-family: @BebasBold;
+    font-size: 6rem;
+    letter-spacing: 0.4rem;
+    text-transform: uppercase;
+    color: #000;
+    text-align: center;
+  }
+  .form {
+    display: flex;
+    margin: 0 auto;
+    max-width: 425px;
+    flex-direction: column;
+    .input-wrapper {
+      margin-bottom: 125px;
+      .xs-block({
+        margin-bottom: 80px;
+      });
+      .item {
+        display: block;
+        margin-bottom: 25px;
+        padding: 5px 0;
+        width: 100%;
+        font-family: @ProximaReg;
+        font-size: 20px;
+        color: #000;
+        border: none;
+        border-bottom: 1px solid @redMain;
+        outline: none;
+        .xs-block({
+          font-size: 16px;
+          margin-bottom: 15px;
+        });
+        &::placeholder {
+          color: #6c6c6c;
+          font-family: @ProximaLight;
+        }
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+    .btn {
+      width: 100%;
+      flex-shrink: 0;
+      padding: 30px 0;
+      font-size: 2.6rem;
+      letter-spacing: 0.18rem;
+      font-family: @BebasBold;
+      color: #fff;
+      background-color: @redMain;
+      text-transform: uppercase;
+      text-align: center;
+      transition: box-shadow 0.3s ease;
+      z-index: 6;
+      .md-block({
+        padding: 25px 0;
+      });
+      &:hover {
+        box-shadow: 0 0 25px 0 rgba(196,45,45,1);
+      }
+    }
+  }
+}
+.b-modal-apply,
+.b-modal-presentation {
+  .title {
+    margin-bottom: 60px;
+  }
+}
+.b-modal-message {
+  .title {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    .xs-block({
+      margin-top: 30px;
+    });
+  }
+  .message-text {
+    max-width: 450px;
+    margin: 0 auto 70px;
+    font-family: @ProximaLight;
+    font-size: 24px;
+    color: #000;
+    text-align: center;
+    .xs-block({
+      margin: 0 auto 50px;
+      font-size: 20px;
+    });
+  }
+}
+
+
+.pop-out-enter-active,
+.pop-out-leave-active {
+  transition: all 0.3s;
+}
+
+.pop-out-enter,
+.pop-out-leave-active {
+  opacity: 0;
+  transform: translateY(24px);
+}

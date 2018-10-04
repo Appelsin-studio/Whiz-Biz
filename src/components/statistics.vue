@@ -31,6 +31,9 @@
         .sm-block({
             padding-top: 120px;
         });
+        .xs-block({
+            padding-top: 80px;
+        });
         .g-number {
             color: #cccccc;
         }
@@ -41,6 +44,9 @@
             .sm-block({
                 margin-bottom: 80px;
             });
+            .xs-block({
+                margin-bottom: 50px;
+            });
         }
         .number-films {
             margin-bottom: 70px;
@@ -49,7 +55,7 @@
             letter-spacing: 0.2rem;
         }
         .graph {
-            padding-left: 50px;
+            text-align: right;
         }
     }
 </style>

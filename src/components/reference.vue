@@ -67,6 +67,9 @@
         .sm-block({
             padding-top: 120px;
         });
+        .xs-block({
+            padding-top: 80px;
+        });
         .g-caption-section {
             margin-bottom: 70px;
             .line-after--left(-30px, 25%);

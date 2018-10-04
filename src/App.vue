@@ -22,6 +22,10 @@
       <road-map/>
     </main>
     <footer-block/>
+
+    <modal-apply/>
+    <modal-presentation/>
+    <modal-message/>
   </div>
 </template>
 
@@ -43,6 +47,10 @@ import TermsCooperation from 'components/terms-cooperation'
 import InvestorIncome from 'components/investor-income'
 import RoadMap from 'components/road-map'
 
+import ModalApply from 'components/modals/apply'
+import ModalPresentation from 'components/modals/presentation'
+import ModalMessage from 'components/modals/message'
+
 import FooterBlock from 'components/footer'
 
 export default {
@@ -63,7 +71,10 @@ export default {
     TermsCooperation,
     InvestorIncome,
     RoadMap,
-    FooterBlock
+    FooterBlock,
+    ModalApply,
+    ModalPresentation,
+    ModalMessage
   },
   data () {
     return {

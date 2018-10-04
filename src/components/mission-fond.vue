@@ -26,7 +26,13 @@
 
     .b-mission-fond {
         padding-bottom: 160px;
-        background: url("/img/mission-fond-bg.jpg") no-repeat center bottom / contain,;
+        background: url("/img/mission-fond-bg.jpg") no-repeat center bottom / contain;
+        .sm-block({
+            padding-bottom: 135px;
+        });
+        .xs-block({
+            padding-bottom: 80px;
+        });
         .wrapper {
             position: relative;
             display: flex;
@@ -44,6 +50,7 @@
                     padding-left: 20px;
                     padding-right: 20px;
                     max-width: 100%;
+                    text-align: right;
                 });
                 .g-caption-section {
                     .line-after--right(-20px);

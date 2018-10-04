@@ -21,7 +21,7 @@
                     <p class="description"><strong>GTCinema</strong> - это компания по производству финансовых
                         технологий,
                         ориентированная на использование технологии blockchain и криптографических токенов</p>
-                    <a href="#" class="btn">Подать заявку</a>
+                    <a href="#" class="btn" @click.prevent="modalApply">Подать заявку</a>
                 </div>
             </div>
             <div class="page-down">
@@ -34,6 +34,15 @@
         </div>
     </section>
 </template>
+<script>
+    export default {
+      methods: {
+        modalApply() {
+          this.$modal.show('apply')
+        }
+      }
+    }
+</script>
 <style scoped lang="less">
     @import "~assets/less/_vars";
     .b-fond-block {
@@ -132,12 +141,6 @@
                         .lg-block({
                             text-align: center;
                         });
-                        /*.sm-block({
-                            font-size: 5rem;
-                        });
-                        .xs-block({
-                            font-size: 4rem;
-                        });*/
                     }
                 }
                 .number {

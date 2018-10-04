@@ -3,8 +3,8 @@
         <div class="container">
             <div class="top-wrapper">
                 <a class="gtc" href="#">GTC</a>
-                <a class="contact contact--position" href="#">Подать заявку</a>
-                <a class="contact" href="#">Записаться на презентацию</a>
+                <a class="contact contact--position" href="#" @click.prevent="modalApply">Подать заявку</a>
+                <a class="contact" href="#" @click.prevent="modalPresentation">Записаться на презентацию</a>
             </div>
             <div class="bottom-wrapper">
                 <p class="right-reserved">
@@ -37,6 +37,18 @@
         </div>
     </footer>
 </template>
+<script>
+  export default {
+    methods: {
+      modalApply() {
+        this.$modal.show('apply')
+      },
+      modalPresentation() {
+        this.$modal.show('presentation')
+      }
+    }
+  }
+</script>
 <style scoped lang="less">
     @import "~assets/less/_vars";
 

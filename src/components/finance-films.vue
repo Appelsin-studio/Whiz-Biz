@@ -30,6 +30,9 @@
         .sm-block({
             padding: 120px 0 40px;
         });
+        .xs-block({
+            padding: 80px 0 40px;
+        });
         .g-number {
             color: #cccccc;
         }

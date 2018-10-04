@@ -24,6 +24,9 @@
         .sm-block({
             margin-bottom: 135px;
         });
+        .xs-block({
+            margin-bottom: 80px;
+        });
         .wrapper {
             position: relative;
             display: flex;
@@ -78,9 +81,7 @@
                     top: -75px;
                     right: -215px;
                     .md-block({
-                        top: -40px;
-                        right: -200px;
-                        filter: brightness(10%);
+                        display: none;
                     });
                 }
             }
