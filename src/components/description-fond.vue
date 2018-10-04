@@ -35,7 +35,8 @@
                 left: 0;
                 z-index: 99;
                 .md-block({
-                    padding-left: 10px;
+                    padding-left: 20px;
+                    padding-right: 20px;
                     max-width: 70%;
                 });
                 .sm-block({

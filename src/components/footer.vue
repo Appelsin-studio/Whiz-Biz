@@ -51,9 +51,17 @@
             font-family: @BebasBold;
             text-transform: uppercase;
             color: #fff;
+            .sm-block({
+                flex-direction: column;
+                align-items: center;
+                margin-bottom: 0;
+            });
             a {
                 color: #fff;
                 .transition();
+                .sm-block({
+                    margin-bottom: 15px;
+                });
                 &:hover {
                     color: @redMain;
                 }
@@ -69,6 +77,10 @@
                 &--position {
                     margin-left: auto;
                     margin-right: 12%;
+                    .sm-block({
+                        margin-left: 0;
+                        margin-right: 0;
+                    });
                 }
             }
         }
@@ -76,16 +88,27 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            .sm-block({
+                flex-direction: column;
+            });
             .right-reserved {
                 font-family: @ProximaLight;
                 font-size: 2rem;
                 letter-spacing: 0.14rem;
+                .sm-block({
+                    order: 2;
+                    text-align: center;
+                });
                 span {
                     display: block;
                 }
             }
             .social {
                 display: flex;
+                .sm-block({
+                    order: 1;
+                    margin-bottom: 30px;
+                });
                 li {
                     margin-right: 15px;
                     &:last-child {

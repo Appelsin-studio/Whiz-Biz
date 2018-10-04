@@ -15,15 +15,21 @@
                         <p class="text-start-finish">start</p>
                     </div>
                     <div class="step">
-                        <p class="number">01</p>
+                        <p class="number">
+                            <span>01</span>
+                        </p>
                         <p class="text">Производство и продажа фильма</p>
                     </div>
                     <div class="step">
-                        <p class="number">02</p>
+                        <p class="number">
+                            <span>02</span>
+                        </p>
                         <p class="text">Crowdsale GTC Hardcap 9 млн. $</p>
                     </div>
                     <div class="step">
-                        <p class="number">03</p>
+                        <p class="number">
+                            <span>03</span>
+                        </p>
                         <p class="text">Собрать бюджет 100 BTC через продажи CGEN для запуска PR кампании</p>
                     </div>
                     <div class="step-start-finish finish">
@@ -119,14 +125,20 @@
                         margin-bottom: 15px;
                         flex-direction: column;
                         align-items: center;
-                        font-family: @BebasBold;
-                        font-size: 6rem;
-                        letter-spacing: 0.4rem;
-                        color: #000;
+                        span {
+                            font-family: @BebasBold;
+                            font-size: 6rem;
+                            letter-spacing: 0.4rem;
+                            color: #000;
+                            .sm-block({
+                                margin-top: 5px;
+                            });
+                        }
                         .sm-block({
                             flex-direction: row;
                             align-items: center;
                             margin-bottom: 0;
+                            margin-right: 15px;
                         });
                         &::before {
                             content: '';
@@ -140,6 +152,7 @@
                             box-sizing: border-box;
                             .sm-block({
                                 margin-bottom: 0;
+                                margin-right: 10px;
                             });
                         }
                     }
@@ -164,6 +177,7 @@
                     &.start {
                         .sm-block({
                             margin-top: -10px;
+                            margin-bottom: 20px;
                         });
                     }
                     &.finish {

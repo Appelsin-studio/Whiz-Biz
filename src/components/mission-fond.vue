@@ -41,7 +41,8 @@
                     max-width: 70%;
                 });
                 .sm-block({
-                    padding-left: 10px;
+                    padding-left: 20px;
+                    padding-right: 20px;
                     max-width: 100%;
                 });
                 .g-caption-section {
