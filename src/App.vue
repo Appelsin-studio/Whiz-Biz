@@ -3,12 +3,8 @@
     <header-block/>
     <main>
       <fond-block/>
-      <div class="gradient-wrapper--top">
-        <div class="gradient-wrapper">
-          <description-fond/>
-          <mission-fond/>
-        </div>
-      </div>
+      <description-fond/>
+      <mission-fond/>
       <team-block/>
       <list-popular/>
       <film-block/>
@@ -85,14 +81,4 @@ export default {
 
 <style lang="less">
   @import "assets/less/main";
-  .gradient-wrapper {
-    background: #0E0808;
-  }
-  .gradient-wrapper--top {
-    position: relative;
-    padding-top: 400px;
-    background: linear-gradient(to bottom, rgba(255, 255, 255,0) 0%, rgba(14,8,8,1) 12%);
-    z-index: 50;
-    overflow: hidden;
-  }
 </style>

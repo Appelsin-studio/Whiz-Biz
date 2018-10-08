@@ -2,7 +2,7 @@
     <section class="b-team">
         <div class="container">
             <p class="g-number">04</p>
-            <p class="g-caption-section"><span class="black">Наша</span> команда</p>
+            <p class="g-caption-section">Наша <span class="gradient-text">команда</span></p>
             <div class="wrapper">
                 <div class="person">
                     <div class="img" style="background-image: url(/img/person-1.jpg)"></div>
@@ -41,7 +41,6 @@
 
     .b-team {
         padding: 100px 0 90px;
-        background: @redMain;
         .sm-block({
             padding: 80px 0 70px;
         });
@@ -88,7 +87,7 @@
                 .name {
                     flex-grow: 1;
                     margin-bottom: 20px;
-                    font-family: @BebasBold;
+                    font-weight: 600;
                     font-size: 3.5rem;
                     letter-spacing: 0.25rem;
                     color: #000;
@@ -103,7 +102,7 @@
                 .profession,
                 .country,
                 .link {
-                    font-family: @ProximaLight;
+                    font-weight: 200;
                     font-size: 2rem;
                     letter-spacing: 0.15rem;
                     text-align: center;
@@ -114,17 +113,16 @@
                 .profession,
                 .country {
                     margin-bottom: 15px;
-                    color: #fff;
                     .xs-block({
                         margin-bottom: 10px;
                     });
                 }
                 .link {
-                    color: #ff7d7d;
-                    border-bottom: 1px solid #ff7d7d;
+                    color: @blueMain;
+                    border-bottom: 1px solid @blueMain;
                     .transition();
                     &:hover {
-                        color: #fff;
+                        color: @blueMain;
                         border-bottom: 1px solid transparent;
                     }
                 }

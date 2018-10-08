@@ -2,8 +2,8 @@
     <section class="b-terms-cooperation">
         <div class="container">
             <p class="g-number">12</p>
-            <p class="g-caption-section">Как вы можете быть
-                <span class="red">частью нас</span>
+            <p class="g-caption-section">Как вы можете
+                <span class="gradient-text">быть частью нас</span>
             </p>
             <p class="secondary-caption">Как стать инвестором</p>
             <div class="instruction-arrow">
@@ -45,7 +45,6 @@
     @import "~assets/less/_vars";
     .b-terms-cooperation {
         padding: 150px 0;
-        background: url("/img/bg-terms.jpg") no-repeat center / cover;
         .sm-block({
             padding: 120px 0;
         });
@@ -64,10 +63,11 @@
         }
         .secondary-caption {
             margin-bottom: 45px;
-            font-family: @ProximaExtraBold;
+            font-weight: 900;
             font-size: 3rem;
             letter-spacing: 0.2rem;
             text-transform: uppercase;
+            color: #000;
         }
         .instruction-arrow {
             display: flex;
@@ -81,7 +81,7 @@
             });
             .text {
                 display: inline-block;
-                font-family: @ProximaLight;
+                font-weight: 200;
                 font-size: 2.4rem;
                 letter-spacing: 0.17rem;
             }
@@ -102,7 +102,7 @@
                     display: inline-block;
                     width: 60px;
                     height: 4px;
-                    background: radial-gradient(ellipse at center, #c42d2d 2px, #c42d2d 2px, transparent 20%);
+                    background: radial-gradient(ellipse at center, #3545ce 2px, #3545ce 2px, transparent 20%);
                     background-size: 14px 15px;
                     background-repeat: repeat-x;
                     background-position: 0 center;
@@ -116,8 +116,8 @@
                     margin-left: -10px;
                     width: 20px;
                     height: 20px;
-                    border-right: 3px solid @redMain;
-                    border-bottom: 3px solid @redMain;
+                    border-right: 3px solid @blueMain;
+                    border-bottom: 3px solid @blueMain;
                     transform: rotate(-45deg);
                     .sm-block({
                         transform: rotate(45deg);
@@ -137,26 +137,10 @@
                     .xs-block({
                         padding-left: 30px;
                     });
-                    /*&:first-child {
-                        &::after {
-                            top: 10px;
-                        }
-                    }*/
+
                     &:last-child {
                         padding-bottom: 0;
-                        /*&::after {
-                            top: 0;
-                        }*/
                     }
-                    /*&::after {
-                        content: '';
-                        position: absolute;
-                        left: 0;
-                        top: 0;
-                        bottom: 0;
-                        width: 1px;
-                        background-color: #fff;
-                    }*/
                     &::before {
                         content: '';
                         position: absolute;
@@ -164,8 +148,8 @@
                         top: 4px;
                         width: 14px;
                         height: 14px;
-                        background-color: #000;
-                        border: 3px solid @redMain;
+                        background-color: #fff;
+                        border: 4px solid @blueMain;
                         border-radius: 50%;
                         box-sizing: border-box;
                         z-index: 5;
@@ -180,20 +164,21 @@
                         top: 10px;
                         width: 40px;
                         height: 1px;
-                        background-color: #fff;
+                        background-color: @grayMain;
                         z-index: 4;
                         .xs-block({
                             display: none;
                         });
                     }
                     .bold {
-                        font-family: @ProximaExtraBold;
+                        font-weight: 900;
                         font-size: 2rem;
                         letter-spacing: 0.14rem;
                         text-transform: uppercase;
+                        color: #000;
                     }
                     .light {
-                        font-family: @ProximaLight;
+                        font-weight: 200;
                         font-size: 2rem;
                         letter-spacing: 0.14rem;
                     }

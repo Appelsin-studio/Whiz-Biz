@@ -1,25 +1,31 @@
 @import "smart-grid";
-@ProximaReg: 'ProximaNovaReg', 'Arial', sans-serif;
-@ProximaThin: 'ProximaNovaThin', 'Arial', sans-serif;
-@ProximaLight: 'ProximaNovaLight', 'Arial', sans-serif;
-@ProximaLightIt: 'ProximaNovaLightIt', 'Arial', sans-serif;
-@ProximaSemiBold: 'ProximaNovaSemiBold', 'Arial', sans-serif;
-@ProximaBold: 'ProximaNovaBold', 'Arial', sans-serif;
-@ProximaExtraBold: 'ProximaNovaExtraBold', 'Arial', sans-serif;
+@ProximaNova: 'ProximaNova', 'Arial', sans-serif;
 
-@BebasLight: 'BebasNeueLight', 'Arial', sans-serif;
-@BebasReg: 'BebasNeueReg', 'Arial', sans-serif;
-@BebasBold: 'BebasNeueBold', 'Arial', sans-serif;
+@BebasNeue: 'BebasNeue', 'Arial', sans-serif;
 
 @redMain: #c42d2d;
-@blackMain: #0E0808;
 
-.red {
-  color: @redMain;
+@blueMain: #3545ce;
+@blueLight: #3693e0;
+@grayMain: #686868;
+@blackMain: #000;
+
+.black {
+  color: @blackMain;
 }
 
 .transition(@time: 0.3s) {
   transition: all @time ease;
+}
+
+.gradient-text {
+  background: linear-gradient(45deg,#2578bc,#279cfc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #2578bc;
+}
+.gradient {
+  background: linear-gradient(45deg,#2578bc,#279cfc);
 }
 
 /*line after*/

@@ -4,7 +4,7 @@
             <p class="g-number">14</p>
             <p class="g-caption-section">
                 <span class="black">Дорожная</span>
-                <span class="white">карта</span>
+                <span class="gradient-text">карта</span>
             </p>
             <p class="description--top">
                 <span class="light">План реализации проекта </span>
@@ -40,15 +40,17 @@
             <div class="profit-wrapper">
                 <p class="black">Инвестору выгодно с первых дней</p>
                 <div class="btc">
-                    <p class="white">1 BTC = 20 000 000 CGEN</p>
-                    <p class="pink span-block">
+                    <p class="blue">1 BTC = 20 000 000 CGEN</p>
+                    <p class="span-block">
                         <span>20 000 000 CGEN POS mining</span>
                         <span>1 год + 10 000 000 CGEN</span>
                     </p>
                 </div>
                 <div class="prognosis">
-                    <p class="white">Прогноз цены 2020 год =</p>
-                    <p class="pink">0,000001 BTC (100 сатоши)</p>
+                    <p class="blue blue--light">Прогноз цены 2020 год =</p>
+                    <p class="span-block">
+                        <span>0,000001 BTC (100 сатоши)</span>
+                    </p>
                 </div>
             </div>
         </div>
@@ -59,38 +61,32 @@
 
     .b-road-map {
         padding: 150px 0;
-        background: #b53131;
         .sm-block({
             padding: 120px 0;
         });
         .xs-block({
             padding: 90px 0;
         });
-        .g-number {
-            color: #fff;
-        }
         .g-caption-section {
             margin-bottom: 40px;
             .line-after--left(-30px, 50%, #fff);
             .black {
                 color: #000;
             }
-            .white {
-                color: #fff;
-            }
         }
         .description--top {
             font-size: 3rem;
             letter-spacing: 0.2rem;
+            color: #000;
             .sm-block({
                 margin-bottom: 50px;
             });
             .light {
                 display: block;
-                font-family: @ProximaLight;
+                font-weight: 200;
             }
             .bold {
-                font-family: @ProximaExtraBold;
+                font-weight: 900;
             }
         }
         .road-wrapper {
@@ -103,11 +99,11 @@
                 display: flex;
                 justify-content: space-between;
                 align-items: flex-start;
-                border-top: 8px solid #a62828;
+                border-top: 8px solid #ddedfa;
                 .sm-block({
                     flex-direction: column;
                     border-top: none;
-                    border-left: 8px solid #a62828;
+                    border-left: 8px solid #ddedfa;
                 });
                 .step {
                     display: flex;
@@ -129,10 +125,10 @@
                         flex-direction: column;
                         align-items: center;
                         span {
-                            font-family: @BebasBold;
+                            font-weight: 600;
                             font-size: 6rem;
                             letter-spacing: 0.4rem;
-                            color: #000;
+                            color: @blueMain;
                             .sm-block({
                                 margin-top: 5px;
                             });
@@ -149,8 +145,8 @@
                             margin-bottom: 15px;
                             width: 22px;
                             height: 22px;
-                            background-color: #a62828;
-                            border: 6px solid #fff;
+                            background-color: #fff;
+                            border: 6px solid @blueMain;
                             border-radius: 50%;
                             box-sizing: border-box;
                             .sm-block({
@@ -160,10 +156,9 @@
                         }
                     }
                     .text {
-                        font-family: @ProximaLight;
+                        font-weight: 200;
                         font-size: 2rem;
                         letter-spacing: 0.14rem;
-                        color: #ffa8a8;
                     }
                 }
                 .step-start-finish {
@@ -178,13 +173,17 @@
                         margin-top: 0;
                     });
                     &.start {
+                        margin-left: -5px;
                         .sm-block({
+                            margin-left: 0;
                             margin-top: -10px;
                             margin-bottom: 20px;
                         });
                     }
                     &.finish {
+                        margin-right: -5px;
                         .sm-block({
+                            margin-right: 0;
                             margin-bottom: -10px;
                         });
                     }
@@ -194,8 +193,8 @@
                         margin-left: 0;
                         width: 22px;
                         height: 22px;
-                        background-color: #a62828;
-                        border: 6px solid #fff;
+                        background-color: #fff;
+                        border: 6px solid @blueMain;
                         border-radius: 50%;
                         box-sizing: border-box;
                         .sm-block({
@@ -210,7 +209,7 @@
                         top: -106px;
                         width: 15px;
                         height: 100px;
-                        background: radial-gradient(ellipse at center, #fff 2px, #fff 2px, transparent 17%);
+                        background: radial-gradient(ellipse at center, @grayMain 2px, @grayMain 2px, transparent 17%);
                         background-size: 15px 15px;
                         background-repeat: repeat-y;
                         background-position: 0 center;
@@ -227,7 +226,7 @@
                     .text-start-finish {
                         position: absolute;
                         top: -140px;
-                        font-family: @ProximaExtraBold;
+                        font-weight: 900;
                         font-size: 3rem;
                         letter-spacing: 0.2rem;
                         color: #000;
@@ -247,28 +246,28 @@
             }
             .black {
                 margin-bottom: 35px;
-                font-family: @ProximaExtraBold;
+                font-weight: 900;
                 font-size: 2.4rem;
                 letter-spacing: 0.17rem;
                 color: #000;
                 text-transform: uppercase;
             }
-            .white {
+            .blue {
                 margin-bottom: 15px;
-                font-family: @ProximaExtraBold;
+                font-weight: 900;
                 font-size: 2.4rem;
                 letter-spacing: 0.17rem;
-                color: #fff;
+                color: @blueMain;
+                &.blue--light {
+                    color: @blueLight;
+                }
             }
-            .pink {
-                font-family: @ProximaLight;
+            .span-block {
+                font-weight: 200;
                 font-size: 2rem;
                 letter-spacing: 0.14rem;
-                color: #ffa8a8;
-                &.span-block {
-                    span {
-                        display: block;
-                    }
+                span {
+                    display: block;
                 }
             }
         }

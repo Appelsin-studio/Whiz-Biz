@@ -4,7 +4,7 @@
             <div class="wrapper">
                 <div class="description-wrapper">
                     <p class="g-number">07</p>
-                    <p class="g-caption-section">Идея <span class="black">фильма</span></p>
+                    <p class="g-caption-section"><span class="gradient-text">Идея</span> фильма</p>
                     <div class="characteristics">
                         <span class="black">Жанр:&ensp;</span>
                         <span class="light">Found footage/Найденная плёнка, Мистика, Ужасы, Фантастика</span>
@@ -36,7 +36,6 @@
     @import "~assets/less/_vars";
     .b-idea-film {
         padding: 150px 0;
-        background: @redMain;
         .sm-block({
             padding: 120px 0;
         });
@@ -67,21 +66,20 @@
                         font-size: 14px;
                     });
                     .black {
-                        font-family: @ProximaExtraBold;
+                        font-weight: 900;
                     }
                     .light {
-                        font-family: @ProximaLight;
+                        font-weight: 200;
                     }
                 }
                 .company {
                     margin-bottom: 30px;
-                    font-family: @ProximaLight;
+                    font-weight: 200;
                     font-size: 2.4rem;
                     letter-spacing: 0.17rem;
                 }
                 .story-film {
-                    color: #ffa8a8;
-                    font-family: @ProximaLight;
+                    font-weight: 200;
                     font-size: 2rem;
                     .xs-block({
                         font-size: 14px;
@@ -95,6 +93,7 @@
                 flex-direction: column;
                 align-items: flex-end;
                 img {
+                    border-radius: 50%;
                     &.z-index--2 {
                         align-self: flex-start;
                         margin-top: -100px;

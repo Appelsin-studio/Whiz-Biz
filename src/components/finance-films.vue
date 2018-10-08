@@ -3,7 +3,7 @@
         <div class="container">
             <p class="g-number">10</p>
             <p class="g-caption-section">
-                <span class="red">Кинобизнес входит в топ5</span>
+                <span class="gradient-text">Кинобизнес входит в топ5</span>
                 <span>доходных индустрий</span>
             </p>
             <div class="pie">
@@ -33,9 +33,6 @@
         .xs-block({
             padding: 80px 0 40px;
         });
-        .g-number {
-            color: #cccccc;
-        }
         .g-caption-section {
             margin-bottom: 110px;
             max-width: 650px;

@@ -3,19 +3,19 @@
         <div class="container">
             <p class="g-number">13</p>
             <p class="g-caption-section">
-                <span class="red">Доход</span>
+                <span class="gradient-text">Доход</span>
                 <span class="black">инвестора</span>
             </p>
             <div class="description">
                 <p class="bold">Технологические активы</p>
                 <p class="bonus">
                     <span class="light">Бонус первым</span>
-                    <span class="red">100 инвесторам</span>
+                    <span class="blue">100 инвесторам</span>
                 </p>
             </div>
             <div class="wrapper">
                 <div class="item item--1">
-                    <p class="number red">01</p>
+                    <p class="number">01</p>
                     <div class="text-wrapper">
                         <p class="text">Токены GTC на сумму <span class="bold">0.3 BTC</span></p>
                         <span class="line">o</span>
@@ -26,7 +26,7 @@
                     </div>
                 </div>
                 <div class="item item--2">
-                    <p class="number red">02</p>
+                    <p class="number">02</p>
                     <div class="text-wrapper">
                         <p class="text">Участие в распределении <span class="bold">15% доли</span> среди всех
                             со-продюсеров</p>
@@ -38,7 +38,7 @@
                     </div>
                 </div>
                 <div class="item item--3">
-                    <p class="number red">03</p>
+                    <p class="number">03</p>
                     <div class="text-wrapper">
                         <p class="text">Участие в распределении <span class="bold">7% доли</span> от каждой серии среди
                             всех со-продюсеров</p>
@@ -65,9 +65,6 @@
         .xs-block({
             padding: 90px 0;
         });
-        .g-number {
-            color: #ccc;
-        }
         .g-caption-section {
             margin-bottom: 40px;
             .line-after--left(-30px, 50%, #ccc);
@@ -85,7 +82,7 @@
                 flex-direction: column;
                 justify-content: flex-start; });
             .bold {
-                font-family: @ProximaExtraBold;
+                font-weight: 900;
                 font-size: 3rem;
                 letter-spacing: 0.2rem;
                 color: #000;
@@ -102,7 +99,7 @@
                     });
                     &.light {
                         margin-bottom: 10px;
-                        font-family: @ProximaLight;
+                        font-weight: 200;
                         font-size: 2.4rem;
                         letter-spacing: 0.17rem;
                         color: #000;
@@ -110,10 +107,11 @@
                             margin-bottom: 0;
                             margin-right: 5px; });
                     }
-                    &.red {
-                        font-family: @ProximaExtraBold;
+                    &.blue {
+                        font-weight: 900;
                         font-size: 2.4rem;
                         letter-spacing: 0.17rem;
+                        color: @blueMain;
                     }
                 }
             }
@@ -145,9 +143,10 @@
                     align-self: flex-end;
                 }
                 .number {
-                    font-family: @BebasBold;
+                    font-weight: 600;
                     font-size: 6rem;
                     letter-spacing: 0.4rem;
+                    color: @blueMain;
                 }
                 .text-wrapper {
                     display: flex;
@@ -158,12 +157,12 @@
                     .text {
                         position: relative;
                         max-width: 380px;
-                        font-family: @ProximaLight;
+                        font-weight: 200;
                         font-size: 2rem;
                         letter-spacing: 0.14rem;
                         color: #000;
                         .bold {
-                            font-family: @ProximaExtraBold;
+                            font-weight: 900;
                         }
                     }
                     .line {
@@ -202,19 +201,16 @@
                             max-height: 100%;
                         }
                     }
-                    /*img {
-                        transform: translateY(-43%);
-                    }*/
                 }
             }
         }
         .target-desc {
-            font-family: @ProximaLight;
+            font-weight: 200;
             font-size: 2.4rem;
             letter-spacing: 0.17rem;
             color: #000;
             .bold {
-                font-family: @ProximaExtraBold;
+                font-weight: 900;
             }
         }
     }

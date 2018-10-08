@@ -7,11 +7,12 @@
                     <div class="caption-wrapper">
                         <div class="caption-block">
                             <ul class="number-list">
-                                <li class="red">01</li>
+                                <li>01</li>
                                 <li>02</li>
                                 <li>03</li>
                             </ul>
-                            <h1 class="caption"><strong class="red">Криптофонд</strong> по поддержке бизнеса в индустрии
+                            <h1 class="caption"><strong class="gradient-text">Криптофонд</strong> по поддержке бизнеса в
+                                индустрии
                                 кино и
                                 искусства</h1>
                         </div>
@@ -47,7 +48,6 @@
     @import "~assets/less/_vars";
     .b-fond-block {
         position: relative;
-        margin-bottom: -300px;
         height: 100vh;
         min-height: 750px;
         overflow: hidden;
@@ -55,6 +55,7 @@
         background-repeat: no-repeat;
         background-position: top center;
         background-size: cover;
+        color: #fff;
         .md-block({min-height: 600px;});
         .bg-gradient {
             height: 100%;
@@ -108,6 +109,7 @@
                 align-items: flex-start;
                 justify-content: space-between;
                 z-index: 5;
+                font-family: @BebasNeue;
                 .lg-block({
                     justify-content: center;
                 });
@@ -117,7 +119,7 @@
                 .caption-block {
                     display: flex;
                     max-width: 750px;
-                    font-family: @BebasBold;
+                    font-weight: 600;
                     .lg-block({
                         max-width: 900px;
                     });
@@ -132,22 +134,31 @@
                         .lg-block({
                             display: none;
                         });
+                        li {
+                            &:first-child {
+                                color: #3895e5;
+                            }
+                        }
                     }
                     .caption {
-                        font-size: 6rem;
                         font-weight: 600;
+                        font-size: 6rem;
                         letter-spacing: 0.3rem;
                         text-transform: uppercase;
+                        color: #fff;
                         .lg-block({
                             text-align: center;
                         });
+                        strong {
+                            font-weight: 600;
+                        }
                     }
                 }
                 .number {
                     position: relative;
                     margin-bottom: 15px;
                     margin-right: -15px;
-                    font-family: @BebasBold;
+                    font-weight: 600;
                     font-size: 16rem;
                     line-height: 16rem;
                     letter-spacing: 1.1rem;
@@ -162,7 +173,7 @@
                 align-self: flex-end;
                 max-width: 540px;
                 transform: translateY(-75px);
-                font-family: @ProximaLight;
+                font-weight: 200;
                 font-size: 2.4rem;
                 letter-spacing: 0.17rem;
                 .lg-block({
@@ -180,9 +191,9 @@
                     max-width: 100%;
                     font-size: 14px;
                 });
-                b {
+                strong {
                     text-transform: uppercase;
-                    font-weight: 600;
+                    font-weight: 900;
                 }
             }
             .btn {
@@ -190,9 +201,10 @@
                 max-width: 390px;
                 flex-shrink: 0;
                 padding: 30px 0;
+                font-family: @BebasNeue;
                 font-size: 2.6rem;
                 letter-spacing: 0.18rem;
-                font-family: @BebasBold;
+                font-weight: 600;
                 color: #fff;
                 background-color: @redMain;
                 text-transform: uppercase;

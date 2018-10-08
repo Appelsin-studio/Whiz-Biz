@@ -2,7 +2,7 @@
     <section class="b-list-popular">
         <div class="container">
             <p class="g-number">05</p>
-            <h3 class="g-caption-section">Почему <span class="red">крипто фонд обретает популярность</span> и что
+            <h3 class="g-caption-section">Почему <span class="gradient-text">крипто фонд обретает популярность</span> и что
                 повлияет на рост токена Gtc?</h3>
             <div class="wrapper-list">
                 <div class="item">
@@ -56,7 +56,6 @@
 
     .b-list-popular {
         padding: 150px 0 100px;
-        background: url("/img/bg-list-popular.jpg") no-repeat top center / cover, @blackMain;
         .sm-block({
             padding: 120px 0 80px;
         });
@@ -86,10 +85,10 @@
                 .item-name {
                     margin-bottom: 30px;
                     padding-left: 100px;
-                    font-family: @BebasBold;
+                    font-weight: 600;
                     font-size: 3.5rem;
                     letter-spacing: 0.25rem;
-                    color: #fff;
+                    color: #000;
                     text-transform: uppercase;
                     .sm-block({
                         padding-left: 60px;
@@ -122,31 +121,30 @@
                         });
                     }
                     &::after {
-                        background: linear-gradient(@blackMain, @blackMain) 50% 50% no-repeat / 18px 4px @redMain;
+                        background: linear-gradient(#fff, #fff) 50% 50% no-repeat / 18px 4px @blueMain;
                         .sm-block({
-                            background: linear-gradient(@blackMain, @blackMain) 50% 50% no-repeat / 13px 3px @redMain;
+                            background: linear-gradient(#fff, #fff) 50% 50% no-repeat / 13px 3px @blueMain;
                         });
                         .xs-block({
-                            background: linear-gradient(@blackMain, @blackMain) 50% 50% no-repeat / 10px 2px @redMain;
+                            background: linear-gradient(#fff, #fff) 50% 50% no-repeat / 10px 2px @blueMain;
                         });
                     }
                     &::before {
-                        background: linear-gradient(@blackMain, @blackMain) 50% 50% no-repeat / 4px 18px;
+                        background: linear-gradient(#fff, #fff) 50% 50% no-repeat / 4px 18px;
                         z-index: 2;
                         .sm-block({
-                            background: linear-gradient(@blackMain, @blackMain) 50% 50% no-repeat / 3px 13px;
+                            background: linear-gradient(#fff, #fff) 50% 50% no-repeat / 3px 13px;
                         });
                         .xs-block({
-                            background: linear-gradient(@blackMain, @blackMain) 50% 50% no-repeat / 2px 10px;
+                            background: linear-gradient(#fff, #fff) 50% 50% no-repeat / 2px 10px;
                         });
                     }
                 }
                 .item-content {
                     padding-left: 100px;
-                    font-family: @ProximaLight;
+                    font-weight: 200;
                     font-size: 2rem;
                     letter-spacing: 0.14rem;
-                    color: #fff;
                     .sm-block({
                         padding-left: 60px;
                     });

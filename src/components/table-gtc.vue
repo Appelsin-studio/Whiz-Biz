@@ -4,7 +4,7 @@
             <p class="g-number">11</p>
             <p class="g-caption-section">
                 <span>Минимальный и максимальный</span>
-                <span class="white">прогноз роста Gtc </span> за 7 лет
+                <span class="gradient-text">прогноз роста Gtc </span> за 7 лет
             </p>
             <table class="table">
                 <tr class="caption-table">
@@ -13,49 +13,49 @@
                     <th colspan="2" class="capt">МАКСИМАЛЬНЫЙ ПРОГНОЗ
                         ТОКЕНА GTC В БЛИЖАЙШИЕ 7 ЛЕТ</th>
                 </tr>
-                <tr class="red">
+                <tr class="gray">
                     <td class="light">0 год, 2019г</td>
                     <td class="bold">$0,133</td>
                     <td class="light">0 год, 2019г</td>
                     <td class="bold">$0,133</td>
                 </tr>
-                <tr class="pink">
+                <tr>
                     <td class="light">1 год, 2020г</td>
                     <td class="bold">$0,266</td>
                     <td class="light">1 год, 2020г</td>
                     <td class="bold">$0,666</td>
                 </tr>
-                <tr class="red">
+                <tr class="gray">
                     <td class="light">2 год, 2021г</td>
                     <td class="bold">$0,533</td>
                     <td class="light">2 год, 2021г</td>
                     <td class="bold">$3,333</td>
                 </tr>
-                <tr class="pink">
+                <tr>
                     <td class="light">3 год, 2022г</td>
                     <td class="bold">$1,066</td>
                     <td class="light">3 год, 2022г</td>
                     <td class="bold">$16,66</td>
                 </tr>
-                <tr class="red">
+                <tr class="gray">
                     <td class="light">4 год, 2023г</td>
                     <td class="bold">$2,133</td>
                     <td class="light">4 год, 2023г</td>
                     <td class="bold">$83,33</td>
                 </tr>
-                <tr class="pink">
+                <tr>
                     <td class="light">5 год, 2024г</td>
                     <td class="bold">$4,266</td>
                     <td class="light">5 год, 2024г</td>
                     <td class="bold">$416,6</td>
                 </tr>
-                <tr class="red">
+                <tr class="gray">
                     <td class="light">6 год, 2025г</td>
                     <td class="bold">$8,533</td>
                     <td class="light">6 год, 2025г</td>
                     <td class="bold">$2083</td>
                 </tr>
-                <tr class="pink">
+                <tr>
                     <td class="light">7 год, 2026г</td>
                     <td class="bold">$17,06</td>
                     <td class="light">7 год, 2026г</td>
@@ -70,7 +70,6 @@
 
     .b-table-gtc {
         padding: 150px 0;
-        background: @redMain;
         .sm-block({
             padding: 120px 0;
         });
@@ -85,9 +84,6 @@
             .sm-block({
                 margin-bottom: 55px;
             });
-            .white {
-                color: #fff;
-            }
         }
         .table {
             width: 100%;
@@ -97,7 +93,7 @@
                 align-items: center;
                 justify-content: space-between;
                 th {
-                    font-family: @ProximaBold;
+                    font-weight: 700;
                     font-size: 2.4rem;
                     letter-spacing: 0.14rem;
                     .sm-block({
@@ -115,6 +111,7 @@
                     padding-bottom: 45px;
                     box-sizing: border-box;
                     text-align: center;
+                    color: #000;
                     .sm-block({
                         max-width: 48%;
                         padding-bottom: 25px;
@@ -138,21 +135,18 @@
                 &.light {
                     width: 22%;
                     flex-shrink: 0;
-                    font-family: @ProximaLight;
+                    font-weight: 200;
                     color: #000;
                 }
                 &.bold {
                     width: 22%;
                     flex-shrink: 0;
-                    font-family: @ProximaExtraBold;
-                    color: @redMain;
+                    font-weight: 900;
+                    color: @blueMain;
                 }
             }
-            .red {
-                background: #ffcccc;
-            }
-            .pink {
-                background: #ffe3e3;
+            .gray {
+                background: #e5eef7;
             }
         }
     }

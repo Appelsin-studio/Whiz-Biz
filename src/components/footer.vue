@@ -60,7 +60,7 @@
             margin-bottom: 30px;
             justify-content: space-between;
             align-items: flex-end;
-            font-family: @BebasBold;
+            font-weight: 600;
             text-transform: uppercase;
             color: #fff;
             .sm-block({
@@ -104,7 +104,7 @@
                 flex-direction: column;
             });
             .right-reserved {
-                font-family: @ProximaLight;
+                font-weight: 200;
                 font-size: 2rem;
                 letter-spacing: 0.14rem;
                 .sm-block({

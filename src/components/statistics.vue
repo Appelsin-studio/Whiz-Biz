@@ -3,10 +3,11 @@
         <div class="container">
             <p class="g-number">09</p>
             <p class="g-caption-section">
-                <span class="red">Американская статистика</span>
+                <span class="gradient-text">Американская статистика</span>
                 <span>прибыли кино</span>
             </p>
-            <p class="number-films">1600 выпущенных фильмов в 2010-2015 гг.</p>
+            <p class="roi">ROI по отношению к размеру бюджету</p>
+            <p class="films">(1600 выпущенных фильмов в 2010 - 2015 гг.)</p>
             <div class="graph">
                 <img src="/img/quantity-films.png" alt="">
             </div>
@@ -27,16 +28,13 @@
 
     .b-statistics {
         padding-top: 150px;
-        color: #000;
+
         .sm-block({
             padding-top: 120px;
         });
         .xs-block({
             padding-top: 80px;
         });
-        .g-number {
-            color: #cccccc;
-        }
         .g-caption-section {
             margin-bottom: 110px;
             max-width: 640px;
@@ -48,11 +46,17 @@
                 margin-bottom: 50px;
             });
         }
-        .number-films {
-            margin-bottom: 70px;
-            font-family: @ProximaExtraBold;
+        .roi {
+            margin-bottom: 10px;
+            font-weight: 900;
             font-size: 3rem;
             letter-spacing: 0.2rem;
+            color: #000;
+        }
+        .films {
+            margin-bottom: 50px;
+            font-weight: 200;
+            font-size: 2rem;
         }
         .graph {
             text-align: right;

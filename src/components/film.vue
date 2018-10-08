@@ -2,22 +2,22 @@
     <section class="b-film">
         <div class="container">
             <p class="g-number">06</p>
-            <h2 class="g-caption-section">Кинокартина <strong class="red">“ГОРОД ПРИЗРАК”</strong> / ”GHOST TOWN”</h2>
+            <h2 class="g-caption-section">Кинокартина <strong class="gradient-text">“ГОРОД ПРИЗРАК”</strong> / ”GHOST TOWN”</h2>
             <div class="wrapper">
                 <div class="img">
                     <img src="/img/poster.jpg" alt="">
                 </div>
-                <div class="red-coub">
-                    <p class="desc--bold">Началась работа над казахстанско-голливудским кинопроектом <span
-                        class="red">"ГОРОД
+                <div class="wrapper-desc">
+                    <p class="desc--bold black">Началась работа над казахстанско-голливудским кинопроектом <span
+                        class="blue">"ГОРОД
                         ПРИЗРАК"</span></p>
-                    <p class="desc"><b>Режиссеры:</b> Саламат Мухаммед-Али (Salamat Mukhammed-Ali)
+                    <p class="desc"><b class="black">Режиссеры:</b> Саламат Мухаммед-Али (Salamat Mukhammed-Ali)
                         и Питер Жмутский (Peter Zhmutski). </p>
-                    <p class="desc"><b>Генеральный продюсер:</b> Грэй Фредриксон/Gray Frederickson
+                    <p class="desc"><b class="black">Генеральный продюсер:</b> Грэй Фредриксон/Gray Frederickson
                         <i>легенда Голливуда, обладатель
                         кинопремии «Оскар©» и «Эмми», продюсер трилогии "Крестный отец".</i>
                         </p>
-                    <p class="desc"><b>Продюсер:</b> Динара Батырова.</p>
+                    <p class="desc"><b class="black">Продюсер:</b> Динара Батырова.</p>
                 </div>
             </div>
         </div>
@@ -29,12 +29,12 @@
         margin-top: -100px;
         padding-top: 150px;
         padding-bottom: 180px;
-        background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, @blackMain 10%, @blackMain 27%, @blackMain 49%, rgba(0, 0, 0,
+        /*background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, @blackMain 10%, @blackMain 27%, @blackMain 49%, rgba(0, 0, 0,
         0) 67%), url("/img/bg-film.jpg") no-repeat bottom center;
         .lg-block({
             background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, @blackMain 5%, @blackMain 27%, @blackMain
             65%, rgba(0, 0, 0, 0) 75%), url("/img/bg-film.jpg") no-repeat bottom center;
-        });
+        });*/
         .sm-block({
             margin-top: -80px;
             padding-top: 120px;
@@ -66,6 +66,8 @@
                 top: 0;
                 left: 0;
                 z-index: 5;
+                border-radius: 10px;
+                overflow: hidden;
                 .lg-block({
                     position: relative;
                     margin-bottom: 20px;
@@ -74,20 +76,12 @@
                     max-width: 70%;
                 });
             }
-            .red-coub {
+            .wrapper-desc {
                 padding: 65px 15px 65px 150px;
                 max-width: 890px;
                 box-sizing: border-box;
                 z-index: 1;
                 flex-shrink: 0;
-                border-right: 5px solid rgba(196, 45, 45, 1);
-                border-left: 5px solid rgba(196, 45, 45, 0.2);
-                background-image:
-                    linear-gradient(90deg, rgba(196, 45, 45, 0.2), rgba(196, 45, 45, 1)),
-                    linear-gradient(90deg, rgba(196, 45, 45, 0.2), rgba(196, 45, 45, 1));
-                background-size: 100% 5px;
-                background-position: 0 0, 0 100%;
-                background-repeat: no-repeat;
                 .sm-block({
                     padding: 65px 15px 65px 40px
                 });
@@ -96,16 +90,19 @@
                 });
                 .desc--bold {
                     margin-bottom: 30px;
-                    font-family: @ProximaExtraBold;
+                    font-weight: 900;
                     font-size: 2.4rem;
                     letter-spacing: 0.17rem;
                     .sm-block({
                         font-size: 18px;
                     });
+                    .blue {
+                        color: @blueLight;
+                    }
                 }
                 .desc {
                     margin-bottom: 25px;
-                    font-family: @ProximaLight;
+                    font-weight: 200;
                     font-size: 2rem;
                     letter-spacing: 0.14rem;
                     .sm-block({
@@ -115,10 +112,10 @@
                         margin-bottom: 0;
                     }
                     b {
-                        font-family: @ProximaBold;
+                        font-weight: 700;
                     }
                     i {
-                        font-family: @ProximaLightIt;
+                        font-weight: 200;
                     }
                 }
             }

@@ -4,9 +4,10 @@
             <div class="wrapper">
                 <div class="caption-absolute">
                     <p class="g-number">02</p>
-                    <p class="g-caption-section">О криптофонде <strong class="red">GtCinema</strong></p>
+                    <p class="g-caption-section">О криптофонде <strong class="gradient-text">GtCinema</strong></p>
                     <p class="description">
-                        <strong class="red">GtCinema</strong> был создан для улучшения и расширения участия в бизнесе потребителей и финансистов с целью стать ведущей платформой по поддержке бизнеса сфере развлечений и творчества (искусства).
+                        <strong class="black">GTCinema</strong> был создан для улучшения и расширения участия в бизнесе
+                        потребителей и финансистов с целью стать ведущей платформой по поддержке бизнеса сфере развлечений и творчества (искусства).
                     </p>
                 </div>
                 <div class="red-coub">
@@ -21,6 +22,7 @@
 
     .b-description-fond {
         margin-bottom: 170px;
+        overflow: hidden;
         .sm-block({
             margin-bottom: 135px;
         });
@@ -49,11 +51,11 @@
                     .line-after--left();
                 }
                 .description {
-                    font-family: @ProximaLight;
+                    font-weight: 200;
                     font-size: 2.6rem;
                     letter-spacing: 0.18rem;
-                    .red {
-                        font-weight: 600;
+                    .black {
+                        font-weight: 900;
                     }
                 }
             }

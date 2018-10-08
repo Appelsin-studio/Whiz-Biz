@@ -3,7 +3,7 @@
         <div class="container">
             <p class="g-number">08</p>
             <p class="g-caption-section">
-                <span class="red">Референсы</span>
+                <span class="gradient-text">Референсы</span>
                 <span>(фильмы - аналоги)</span>
             </p>
             <div class="wrapper">
@@ -63,7 +63,6 @@
     @import "~assets/less/_vars";
     .b-reference {
         padding-top: 150px;
-        background: url("/img/reference.jpg") no-repeat center / cover;
         .sm-block({
             padding-top: 120px;
         });
@@ -84,19 +83,22 @@
                 .size(6);
                 .size-xs(12);
                 margin-bottom: 100px;
-                .xs-block({ margin-bottom: 50px;});
+                .xs-block({
+                    margin-bottom: 50px;
+                });
                 .number {
                     margin-bottom: 20px;
-                    font-family: @BebasBold;
+                    font-weight: 600;
                     font-size: 6rem;
                     letter-spacing: 0.4rem;
-                    color: @redMain;
+                    color: @blueMain;
                 }
                 .name {
                     margin-bottom: 20px;
-                    font-family: @BebasBold;
+                    font-weight: 600;
                     font-size: 3.5rem;
                     letter-spacing: 0.25rem;
+                    color: #000;
                     .xs-block({
                         font-size: 24px;
                     });
@@ -111,10 +113,11 @@
                         font-size: 16px;
                     });
                     .bold {
-                        font-family: @ProximaExtraBold;
+                        font-weight: 900;
+                        color: #000;
                     }
                     .light {
-                        font-family: @ProximaLight;
+                        font-weight: 200;
                     }
                 }
             }

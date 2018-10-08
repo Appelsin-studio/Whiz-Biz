@@ -2,7 +2,7 @@
     <header class="b-header">
         <div class="container">
             <div class="wrapper">
-                <a class="gtc" href="#" @click.prevent="modalMessage">GTC</a>
+                <a class="gtc gradient" href="#" @click.prevent="modalMessage">GTC</a>
                 <a class="bid" href="#" @click.prevent="modalApply">Подать заявку</a>
                 <a class="presentation" href="#" @click.prevent="modalPresentation">Записаться на презентацию</a>
                 <v-select :options="options" label="langCode" v-model="selected"></v-select>
@@ -46,24 +46,24 @@
         left: 0;
         right: 0;
         z-index: 999;
+        font-family: @BebasNeue;
+        font-weight: 600;
         .wrapper {
             display: flex;
             justify-content: space-between;
             align-items: flex-end;
             a {
                 display: inline-block;
-                font-family: @BebasBold;
                 color: #fff;
                 &.gtc {
                     padding: 50px 25px 5px;
                     font-size: 3.5rem;
-                    background-color: @redMain;
                     .transition();
                     .md-block({
                         padding: 35px 15px 5px;
                     });
                     &:hover {
-                        box-shadow: 0 0 25px 0 rgba(196,45,45,1);
+                        box-shadow: 0 0 25px 0 rgba(54,147,224,1);
                     }
                 }
                 &.bid {
@@ -77,7 +77,7 @@
                     letter-spacing: 0.18rem;
                     .transition();
                     &:hover {
-                        color: @redMain;
+                        color: @blueLight;
                     }
                 }
             }
@@ -113,7 +113,7 @@
                 color: #fff;
                 text-transform: uppercase;
                 font-size: 2.6rem;
-                font-family: @BebasBold;
+                font-weight: 600;
                 line-height: 2.6rem;
                 letter-spacing: 0.18rem;
             }
