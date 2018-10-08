@@ -69,13 +69,14 @@
                 margin-bottom: 0;
             });
             a {
+                font-family: @BebasNeue;
                 color: #fff;
                 .transition();
                 .sm-block({
                     margin-bottom: 15px;
                 });
                 &:hover {
-                    color: @redMain;
+                    color: @blueLight;
                 }
             }
             .gtc {

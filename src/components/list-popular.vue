@@ -85,6 +85,7 @@
                 .item-name {
                     margin-bottom: 30px;
                     padding-left: 100px;
+                    font-family: @BebasNeue;
                     font-weight: 600;
                     font-size: 3.5rem;
                     letter-spacing: 0.25rem;

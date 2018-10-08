@@ -107,7 +107,7 @@
                     }
                 }
                 .open-indicator::before {
-                    border-color: @redMain;
+                    border-color: @blueLight;
                 }
             }
             &.single .selected-tag {

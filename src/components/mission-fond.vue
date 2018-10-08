@@ -2,7 +2,10 @@
     <section class="b-mission-fond">
         <div class="container">
             <div class="wrapper">
-                <div class="caption-absolute">
+                <div class="img">
+                    <img  src="/img/mission-fond.jpg" alt="">
+                </div>
+                <div class="caption-wrapper">
                     <p class="g-number">03</p>
                     <p class="g-caption-section">Наша <strong class="gradient-text">цель</strong></p>
                     <p class="description">
@@ -13,9 +16,6 @@
                         Компания работает в трех основных сегментах: финансирование, производство и продажа. <br><br>
                         Привлечение инвестиции на проект реализуется с помощью платформы CrowdSaleNetwork
                     </p>
-                </div>
-                <div class="img">
-                    <img  src="/img/mission-fond.jpg" alt="">
                 </div>
             </div>
         </div>
@@ -35,22 +35,24 @@
         });
         .wrapper {
             position: relative;
-            display: flex;
             justify-content: flex-start;
             align-items: center;
             .row-flex();
-            .caption-absolute {
+            .md-block({ flex-direction: column;});
+            .caption-wrapper {
                 .col();
-                .size(6);
+                .size(7);
+                .size-md(10);
+                .size-sm(12);
                 z-index: 99;
                 .md-block({
-                    max-width: 70%;
+                    order: 1;
+                    text-align: right;
+                    margin-bottom: 20px;
                 });
                 .sm-block({
                     padding-left: 20px;
                     padding-right: 20px;
-                    max-width: 100%;
-                    text-align: right;
                 });
                 .g-caption-section {
                     .line-after--right(-20px);
@@ -63,20 +65,23 @@
             }
             .img {
                 .col();
-                .size(6);
+                .size(5);
+                .size-md(6);
+                .size-sm(8);
+                display: flex;
+                align-items: center;
                 position: relative;
-                height: 540px;
+                padding: 0 55px;
                 box-sizing: border-box;
                 z-index: 5;
                 flex-shrink: 0;
-                .xs-block({
-                    height: 375px;
+                .md-block({
+                    order: 2;
                 });
                 img {
-                    border-radius: 50%;
-                    .md-block({
+                    /*.md-block({
                         display: none;
-                    });
+                    });*/
                 }
             }
         }

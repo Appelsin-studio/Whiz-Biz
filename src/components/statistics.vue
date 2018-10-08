@@ -59,7 +59,7 @@
             font-size: 2rem;
         }
         .graph {
-            text-align: right;
+            text-align: center;
         }
     }
 </style>

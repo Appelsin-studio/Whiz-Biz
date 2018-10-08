@@ -85,6 +85,7 @@
                     });
                 }
                 .name {
+                    font-family: @BebasNeue;
                     flex-grow: 1;
                     margin-bottom: 20px;
                     font-weight: 600;
@@ -102,6 +103,7 @@
                 .profession,
                 .country,
                 .link {
+
                     font-weight: 200;
                     font-size: 2rem;
                     letter-spacing: 0.15rem;

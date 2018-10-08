@@ -112,7 +112,7 @@
                         margin-bottom: 0;
                     }
                     b {
-                        font-weight: 700;
+                        font-weight: 900;
                     }
                     i {
                         font-weight: 200;

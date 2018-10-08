@@ -125,6 +125,7 @@
                         flex-direction: column;
                         align-items: center;
                         span {
+                            font-family: @BebasNeue;
                             font-weight: 600;
                             font-size: 6rem;
                             letter-spacing: 0.4rem;

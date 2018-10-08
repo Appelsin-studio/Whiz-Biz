@@ -88,6 +88,7 @@
                 });
                 .number {
                     margin-bottom: 20px;
+                    font-family: @BebasNeue;
                     font-weight: 600;
                     font-size: 6rem;
                     letter-spacing: 0.4rem;
@@ -95,6 +96,7 @@
                 }
                 .name {
                     margin-bottom: 20px;
+                    font-family: @BebasNeue;
                     font-weight: 600;
                     font-size: 3.5rem;
                     letter-spacing: 0.25rem;
