@@ -7,8 +7,8 @@
                     <p class="g-caption-section">{{t('About crypto fund')}} <strong class="gradient-text">GtCinema</strong></p>
                     <p class="description">
                         <strong class="black">GTCinema</strong>
-                        {{t('was created to improve and expand participation in the business of consumers and financiers in order to become a leading platform
-                        for supporting business in the field of entertainment and creativity (art)')}}.
+                        {{t('was created to improve and expand participation in the business of consumers and financiers in order to become a leading ' +
+                        'platform for supporting business in the field of entertainment and creativity (art)')}}.
                     </p>
                 </div>
                 <div class="img">
