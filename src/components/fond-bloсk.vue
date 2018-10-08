@@ -2,47 +2,50 @@
     <section class="b-fond-block">
         <div class="bg-gradient">
             <div class="container--flex-center">
-            <div class="container">
-                <div class="wrapper">
-                    <div class="caption-wrapper">
-                        <div class="caption-block">
-                            <ul class="number-list">
-                                <li>01</li>
-                                <li>02</li>
-                                <li>03</li>
-                            </ul>
-                            <h1 class="caption"><strong class="gradient-text">Криптофонд</strong> по поддержке бизнеса в
-                                индустрии
-                                кино и
-                                искусства</h1>
+                <div class="container">
+                    <div class="wrapper">
+                        <div class="caption-wrapper">
+                            <div class="caption-block">
+                                <ul class="number-list">
+                                    <li>01</li>
+                                    <li>02</li>
+                                    <li>03</li>
+                                </ul>
+                                <h1 class="caption">
+                                    <strong class="gradient-text">{{t('Crypto fund')}}</strong>
+                                    {{t('to support business in industrial cinema and art')}}
+                                </h1>
+                            </div>
+                            <div class="number">01</div>
                         </div>
-                        <div class="number">01</div>
+                        <div class="red-coub"></div>
+                        <p class="description"><strong>GTCinema</strong> - это компания по производству финансовых
+                            технологий,
+                            ориентированная на использование технологии blockchain и криптографических токенов</p>
+                        <a href="#" class="btn" @click.prevent="modalApply">Подать заявку</a>
                     </div>
-                    <div class="red-coub"></div>
-                    <p class="description"><strong>GTCinema</strong> - это компания по производству финансовых
-                        технологий,
-                        ориентированная на использование технологии blockchain и криптографических токенов</p>
-                    <a href="#" class="btn" @click.prevent="modalApply">Подать заявку</a>
                 </div>
-            </div>
-            <div class="page-down">
-                <div class="mouse"></div>
-                <div class="arrow">
-                    <img svg-inline src="~src/assets/img/icon/down-arrow2.svg" alt="">
+                <div class="page-down">
+                    <div class="mouse"></div>
+                    <div class="arrow">
+                        <img svg-inline src="~src/assets/img/icon/down-arrow2.svg" alt="">
+                    </div>
                 </div>
-            </div>
             </div>
         </div>
     </section>
 </template>
 <script>
-    export default {
-      methods: {
-        modalApply() {
-          this.$modal.show('apply')
-        }
+  import { LanguageMixin } from 'components/mixins/language-mixin'
+
+  export default {
+    mixins: [LanguageMixin],
+    methods: {
+      modalApply() {
+        this.$modal.show('apply')
       }
     }
+  }
 </script>
 <style scoped lang="less">
     @import "~assets/less/_vars";
@@ -56,13 +59,12 @@
         background-position: top center;
         background-size: cover;
         color: #fff;
-        .md-block({min-height: 600px;});
+        .md-block({ min-height: 600px; });
         .bg-gradient {
             height: 100%;
             width: 100%;
-            background:
-                linear-gradient(to bottom, #000000 -7%, rgba(255, 255, 255, 0) 81%),
-                rgba(45,25,25,0.5);
+            background: linear-gradient(to bottom, #000 -7%, rgba(255, 255, 255, 0) 81%),
+            rgba(45, 25, 25, 0.5);
         }
         .container {
             width: 100%;
@@ -72,7 +74,7 @@
                 min-height: 750px;
                 display: flex;
                 align-items: center;
-                .md-block({min-height: 600px;});
+                .md-block({ min-height: 600px; });
             }
         }
         .wrapper {
@@ -82,12 +84,8 @@
             padding-left: 85px;
             padding-top: 70px;
             z-index: 99;
-            .lg-block({
-                padding-left: 0;
-            });
-            .md-block({
-                padding-top: 0;
-            });
+            .lg-block({ padding-left: 0; });
+            .md-block({ padding-top: 0; });
             .red-coub {
                 position: absolute;
                 top: 0;
@@ -98,9 +96,7 @@
                 border: 5px solid @redMain;
                 box-sizing: border-box;
                 z-index: 1;
-                .lg-block({
-                    display: none;
-                });
+                .lg-block({ display: none; });
             }
             .caption-wrapper {
                 display: flex;
@@ -110,19 +106,13 @@
                 justify-content: space-between;
                 z-index: 5;
                 font-family: @BebasNeue;
-                .lg-block({
-                    justify-content: center;
-                });
-                .sm-block({
-                    margin-bottom: 20px;
-                });
+                .lg-block({ justify-content: center; });
+                .sm-block({ margin-bottom: 20px; });
                 .caption-block {
                     display: flex;
                     max-width: 750px;
                     font-weight: 600;
-                    .lg-block({
-                        max-width: 900px;
-                    });
+                    .lg-block({ max-width: 900px; });
                     .number-list {
                         display: flex;
                         padding: 10px 0;
@@ -131,9 +121,7 @@
                         justify-content: space-between;
                         font-size: 2.4rem;
                         letter-spacing: 0.17rem;
-                        .lg-block({
-                            display: none;
-                        });
+                        .lg-block({ display: none; });
                         li {
                             &:first-child {
                                 color: #3895e5;
@@ -146,9 +134,7 @@
                         letter-spacing: 0.3rem;
                         text-transform: uppercase;
                         color: #fff;
-                        .lg-block({
-                            text-align: center;
-                        });
+                        .lg-block({ text-align: center; });
                         strong {
                             font-weight: 600;
                         }
@@ -164,9 +150,7 @@
                     letter-spacing: 1.1rem;
                     text-align: right;
                     .line-after--right(-45px);
-                    .lg-block({
-                        display: none;
-                    });
+                    .lg-block({ display: none; });
                 }
             }
             .description {
@@ -176,21 +160,9 @@
                 font-weight: 200;
                 font-size: 2.4rem;
                 letter-spacing: 0.17rem;
-                .lg-block({
-                    max-width: 70%;
-                    transform: translateY(0);
-                    align-self: center;
-                    margin-bottom: 50px;
-                    text-align: center;
-                });
-                .md-block({
-                    max-width: 100%;
-                    font-size: 16px;
-                });
-                .xs-block({
-                    max-width: 100%;
-                    font-size: 14px;
-                });
+                .lg-block({ max-width: 70%; transform: translateY(0); align-self: center; margin-bottom: 50px; text-align: center; });
+                .md-block({ max-width: 100%; font-size: 16px; });
+                .xs-block({ max-width: 100%; font-size: 14px; });
                 strong {
                     text-transform: uppercase;
                     font-weight: 900;
@@ -212,16 +184,10 @@
                 transform: translateY(-124px);
                 transition: box-shadow 0.3s ease;
                 z-index: 6;
-                .lg-block({
-                    transform: translateY(0);
-                    align-self: center;
-                });
-                .md-block({
-                    padding: 25px 0;
-                    max-width: 300px;
-                });
+                .lg-block({ transform: translateY(0); align-self: center; });
+                .md-block({ padding: 25px 0; max-width: 300px; });
                 &:hover {
-                    box-shadow: 0 0 25px 0 rgba(196,45,45,1);
+                    box-shadow: 0 0 25px 0 rgba(196, 45, 45, 1);
                 }
             }
         }
@@ -231,10 +197,10 @@
             left: 50%;
             bottom: 45px;
             transform: translateX(-50%);
-            -webkit-filter: drop-shadow(0 0 8px rgba(196,45,45,1));
-            filter: drop-shadow(0 0 8px rgba(196,45,45,1));
+            -webkit-filter: drop-shadow(0 0 8px rgba(196, 45, 45, 1));
+            filter: drop-shadow(0 0 8px rgba(196, 45, 45, 1));
             z-index: 55;
-            .sm-block({bottom: 20px;});
+            .sm-block({ bottom: 20px; });
             .mouse {
                 margin-bottom: 5px;
                 height: 44px;
@@ -255,7 +221,7 @@
             .arrow {
                 width: 27px;
                 text-align: center;
-                >svg {
+                > svg {
                     width: 19px;
                     height: 19px;
                     margin: 0 auto;
@@ -263,20 +229,19 @@
             }
         }
     }
-
     @keyframes mouse-scroll {
 
-        0%   {
-            -webkit-filter: drop-shadow(0 0 5px rgba(196,45,45,0.5));
-            filter: drop-shadow(0 0 5px rgba(196,45,45,0.5));
+        0% {
+            -webkit-filter: drop-shadow(0 0 5px rgba(196, 45, 45, 0.5));
+            filter: drop-shadow(0 0 5px rgba(196, 45, 45, 0.5));
         }
-        50%  {
-            -webkit-filter: drop-shadow(0 0 10px rgba(196,45,45,1));
-            filter: drop-shadow(0 0 10px rgba(196,45,45,1));
+        50% {
+            -webkit-filter: drop-shadow(0 0 10px rgba(196, 45, 45, 1));
+            filter: drop-shadow(0 0 10px rgba(196, 45, 45, 1));
         }
         100% {
-            -webkit-filter: drop-shadow(0 0 5px rgba(196,45,45,0.5));
-            filter: drop-shadow(0 0 5px rgba(196,45,45,0.5));
+            -webkit-filter: drop-shadow(0 0 5px rgba(196, 45, 45, 0.5));
+            filter: drop-shadow(0 0 5px rgba(196, 45, 45, 0.5));
         }
     }
 </style>

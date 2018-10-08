@@ -4,8 +4,9 @@
             <div class="wrapper">
                 <a class="gtc gradient" href="#" @click.prevent="$modal.show('message')">GTC</a>
                 <a class="bid" href="#" @click.prevent="$modal.show('apply')">{{t('Apply')}}</a>
-                <a class="presentation" href="#" @click.prevent="$modal.show('presentation')">Записаться на
-                    презентацию</a>
+                <a class="presentation" href="#" @click.prevent="$modal.show('presentation')">
+                    {{t('Sign up for a presentation')}}
+                </a>
                 <v-select :options="languageSelect" v-model="selected"></v-select>
             </div>
         </div>
