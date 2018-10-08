@@ -2,41 +2,45 @@
     <header class="b-header">
         <div class="container">
             <div class="wrapper">
-                <a class="gtc gradient" href="#" @click.prevent="modalMessage">GTC</a>
-                <a class="bid" href="#" @click.prevent="modalApply">Подать заявку</a>
-                <a class="presentation" href="#" @click.prevent="modalPresentation">Записаться на презентацию</a>
-                <v-select :options="options" label="langCode" v-model="selected"></v-select>
+                <a class="gtc gradient" href="#" @click.prevent="$modal.show('message')">GTC</a>
+                <a class="bid" href="#" @click.prevent="$modal.show('apply')">{{t('Apply')}}</a>
+                <a class="presentation" href="#" @click.prevent="$modal.show('presentation')">Записаться на
+                    презентацию</a>
+                <v-select :options="languageSelect" v-model="selected"></v-select>
             </div>
         </div>
     </header>
 </template>
 <script>
   import vSelect from 'vue-select'
+  import { LanguageMixin } from 'components/mixins/language-mixin'
 
-    export default {
+  export default {
     components: {vSelect},
-      data () {
-          return {
-            options: [
-              { langCode: "Ru", langName: "Ru" },
-              { langCode: "En", langName: "En" },
-              { langCode: "Kz", langName: "Kz" }
-              ],
-            selected: {langCode: "En", langName: "Ru"}
-          }
-        },
-      methods: {
-        modalApply() {
-          this.$modal.show('apply')
-        },
-        modalPresentation() {
-          this.$modal.show('presentation')
-        },
-        modalMessage() {
-          this.$modal.show('message')
-        }
+    mixins: [LanguageMixin],
+    data() {
+      return {
+        languageSelect: [
+          {label: 'Ru', value: 'ru'},
+          {label: 'En', value: 'en'},
+          {label: 'Kz', value: 'kk'}
+        ],
+        selected: null
       }
-    }
+    },
+    created() {
+      this.languageSelect.forEach(item => {
+        if (item.value === this.language) {
+          this.selected = item
+        }
+      })
+    },
+    watch: {
+      selected(newValue) {
+        this.$store.dispatch('language', newValue.value)
+      }
+    },
+  }
 </script>
 <style lang="less">
     @import "~assets/less/_vars";
@@ -59,17 +63,13 @@
                     padding: 50px 25px 5px;
                     font-size: 3.5rem;
                     .transition();
-                    .md-block({
-                        padding: 35px 15px 5px;
-                    });
+                    .md-block({ padding: 35px 15px 5px; });
                     &:hover {
-                        box-shadow: 0 0 25px 0 rgba(54,147,224,1);
+                        box-shadow: 0 0 25px 0 rgba(54, 147, 224, 1);
                     }
                 }
                 &.bid {
-                    .sm-block({
-                        display: none;
-                    });
+                    .sm-block({ display: none; });
                 }
                 &.bid,
                 &.presentation {
