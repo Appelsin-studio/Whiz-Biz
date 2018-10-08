@@ -4,10 +4,11 @@
             <div class="wrapper">
                 <div class="caption-wrapper">
                     <p class="g-number">02</p>
-                    <p class="g-caption-section">О криптофонде <strong class="gradient-text">GtCinema</strong></p>
+                    <p class="g-caption-section">{{t('About crypto fund')}} <strong class="gradient-text">GtCinema</strong></p>
                     <p class="description">
-                        <strong class="black">GTCinema</strong> был создан для улучшения и расширения участия в бизнесе
-                        потребителей и финансистов с целью стать ведущей платформой по поддержке бизнеса сфере развлечений и творчества (искусства).
+                        <strong class="black">GTCinema</strong>
+                        {{t('was created to improve and expand participation in the business of consumers and financiers in order to become a leading platform
+                        for supporting business in the field of entertainment and creativity (art)')}}.
                     </p>
                 </div>
                 <div class="img">
@@ -17,6 +18,13 @@
         </div>
     </section>
 </template>
+<script>
+  import { LanguageMixin } from 'components/mixins/language-mixin'
+
+  export default {
+    mixins: [LanguageMixin]
+  }
+</script>
 <style scoped lang="less">
     @import "~assets/less/_vars";
 

@@ -19,10 +19,9 @@
                             <div class="number">01</div>
                         </div>
                         <div class="red-coub"></div>
-                        <p class="description"><strong>GTCinema</strong> - это компания по производству финансовых
-                            технологий,
-                            ориентированная на использование технологии blockchain и криптографических токенов</p>
-                        <a href="#" class="btn" @click.prevent="modalApply">Подать заявку</a>
+                        <p class="description"><strong>GTCinema</strong> - {{t('is a financial technology company focused on blockchain and cryptographic
+                            tokens')}}</p>
+                        <a href="#" class="btn" @click.prevent="modalApply">{{t('Apply')}}</a>
                     </div>
                 </div>
                 <div class="page-down">

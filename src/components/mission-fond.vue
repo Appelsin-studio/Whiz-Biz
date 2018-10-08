@@ -7,20 +7,26 @@
                 </div>
                 <div class="caption-wrapper">
                     <p class="g-number">03</p>
-                    <p class="g-caption-section">Наша <strong class="gradient-text">цель</strong></p>
+                    <p class="g-caption-section">{{t('Our')}} <strong class="gradient-text">{{t('goal')}}</strong></p>
                     <p class="description">
-                        Целью компании является создание платформы под брендом GTC, стать предпочтительным порталом
-                        для инвестиций в индустрии развлечения и для своих криптографических токенов стать
-                        стандартной валютой в новой голливудской экономике, усиленной преимуществами цифровых
-                        активов. <br><br>
-                        Компания работает в трех основных сегментах: финансирование, производство и продажа. <br><br>
-                        Привлечение инвестиции на проект реализуется с помощью платформы CrowdSaleNetwork
+                        {{t('The company\'s goal is to create a platform under the GTC brand, to become the preferred ' +
+                        'portal for investment in the entertainment industry and for its cryptographic tokens to become the standard currency in ' +
+                        'the new Hollywood economy, enhanced by the advantages of digital assets.')}} <br><br>
+                        {{t('The company operates in three main segments: financing, production and sale.')}} <br><br>
+                        {{t('Attracting investment to the project is implemented using the platform CrowdSaleNetwork')}}
                     </p>
                 </div>
             </div>
         </div>
     </section>
 </template>
+<script>
+  import { LanguageMixin } from 'components/mixins/language-mixin'
+
+  export default {
+    mixins: [LanguageMixin]
+  }
+</script>
 <style scoped lang="less">
     @import "~assets/less/_vars";
 
