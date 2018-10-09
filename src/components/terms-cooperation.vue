@@ -37,6 +37,7 @@
                         <span class="light">Возможность завещать доход своим детям</span>
                     </li>
                 </ul>
+                <a href="#" class="btn btn--orange">Подать заявку</a>
             </div>
         </div>
     </section>
@@ -102,7 +103,7 @@
                     display: inline-block;
                     width: 60px;
                     height: 4px;
-                    background: radial-gradient(ellipse at center, #3545ce 2px, #3545ce 2px, transparent 20%);
+                    background: radial-gradient(ellipse at center, @orangeMain 2px, @orangeMain 2px, transparent 20%);
                     background-size: 14px 15px;
                     background-repeat: repeat-x;
                     background-position: 0 center;
@@ -116,8 +117,8 @@
                     margin-left: -10px;
                     width: 20px;
                     height: 20px;
-                    border-right: 3px solid @blueMain;
-                    border-bottom: 3px solid @blueMain;
+                    border-right: 3px solid @orangeMain;
+                    border-bottom: 3px solid @orangeMain;
                     transform: rotate(-45deg);
                     .sm-block({
                         transform: rotate(45deg);
@@ -128,6 +129,7 @@
         .conditions-wrapper {
             .conditions-list {
                 display: flex;
+                margin-bottom: 70px;
                 position: relative;
                 flex-direction: column;
                 .item {
@@ -149,7 +151,7 @@
                         width: 14px;
                         height: 14px;
                         background-color: #fff;
-                        border: 4px solid @blueMain;
+                        border: 4px solid @orangeMain;
                         border-radius: 50%;
                         box-sizing: border-box;
                         z-index: 5;

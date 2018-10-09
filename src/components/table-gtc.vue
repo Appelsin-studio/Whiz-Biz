@@ -3,15 +3,13 @@
         <div class="container">
             <p class="g-number">11</p>
             <p class="g-caption-section">
-                <span>Минимальный и максимальный</span>
+                <span>Минимальный и оптимальный</span>
                 <span class="gradient-text">прогноз роста Gtc </span> за 7 лет
             </p>
             <table class="table">
                 <tr class="caption-table">
-                    <th colspan="2" class="capt">МИНИМАЛЬНЫЙ ПРОГНОЗ
-                        ТОКЕНА GTC В БЛИЖАЙШИЕ 7 ЛЕТ</th>
-                    <th colspan="2" class="capt">МАКСИМАЛЬНЫЙ ПРОГНОЗ
-                        ТОКЕНА GTC В БЛИЖАЙШИЕ 7 ЛЕТ</th>
+                    <th colspan="2" class="capt">Минимальный прогноз токена GTC в ближайшие 7 лет</th>
+                    <th colspan="2" class="capt">Оптимальный прогноз токена GTC в ближайшие 7 лет</th>
                 </tr>
                 <tr class="gray">
                     <td class="light">0 год, 2019г</td>
@@ -112,6 +110,7 @@
                     box-sizing: border-box;
                     text-align: center;
                     color: #000;
+                    text-transform: uppercase;
                     .sm-block({
                         max-width: 48%;
                         padding-bottom: 25px;
@@ -142,7 +141,7 @@
                     width: 22%;
                     flex-shrink: 0;
                     font-weight: 900;
-                    color: @blueMain;
+                    color: @orangeMain;
                 }
             }
             .gray {

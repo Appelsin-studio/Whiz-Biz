@@ -3,7 +3,7 @@
           >
         <div class="modal b-modal-apply">
             <div class="close-modal" @click="hide" title="Close modal">×</div>
-            <div class="title">Подать <span class="red">заявку</span></div>
+            <div class="title">Подать <span class="gradient-text">заявку</span></div>
             <form class="form form--apply" action="">
                 <div class="input-wrapper">
                     <input class="item" type="text" placeholder="Имя">

@@ -40,14 +40,14 @@
             <div class="profit-wrapper">
                 <p class="black">Инвестору выгодно с первых дней</p>
                 <div class="btc">
-                    <p class="blue">1 BTC = 20 000 000 CGEN</p>
+                    <p class="text text--orange">1 BTC = 20 000 000 CGEN</p>
                     <p class="span-block">
                         <span>20 000 000 CGEN POS mining</span>
                         <span>1 год + 10 000 000 CGEN</span>
                     </p>
                 </div>
                 <div class="prognosis">
-                    <p class="blue blue--light">Прогноз цены 2020 год =</p>
+                    <p class="text text--blue">Прогноз цены 2020 год =</p>
                     <p class="span-block">
                         <span>0,000001 BTC (100 сатоши)</span>
                     </p>
@@ -129,7 +129,7 @@
                             font-weight: 600;
                             font-size: 6rem;
                             letter-spacing: 0.4rem;
-                            color: @blueMain;
+                            color: @orangeMain;
                             .sm-block({
                                 margin-top: 5px;
                             });
@@ -147,7 +147,7 @@
                             width: 22px;
                             height: 22px;
                             background-color: #fff;
-                            border: 6px solid @blueMain;
+                            border: 6px solid @orangeMain;
                             border-radius: 50%;
                             box-sizing: border-box;
                             .sm-block({
@@ -195,7 +195,7 @@
                         width: 22px;
                         height: 22px;
                         background-color: #fff;
-                        border: 6px solid @blueMain;
+                        border: 6px solid @orangeMain;
                         border-radius: 50%;
                         box-sizing: border-box;
                         .sm-block({
@@ -253,14 +253,16 @@
                 color: #000;
                 text-transform: uppercase;
             }
-            .blue {
+            .text {
                 margin-bottom: 15px;
                 font-weight: 900;
                 font-size: 2.4rem;
                 letter-spacing: 0.17rem;
-                color: @blueMain;
-                &.blue--light {
-                    color: @blueLight;
+                &.text--orange {
+                    color: @orangeMain;
+                }
+                &.text--blue{
+                    color: @blueMain;
                 }
             }
             .span-block {

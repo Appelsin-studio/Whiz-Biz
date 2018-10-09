@@ -22,7 +22,7 @@
                         <p class="description"><strong>GTCinema</strong> -
                             {{t('is a financial technology company focused on blockchain and cryptographic tokens')}}
                         </p>
-                        <a href="#" class="btn" @click.prevent="modalApply">{{t('Apply')}}</a>
+                        <a href="#" class="btn btn--orange" @click.prevent="modalApply">{{t('Apply')}}</a>
                     </div>
                 </div>
                 <div class="page-down">
@@ -31,7 +31,9 @@
                         <img svg-inline src="~src/assets/img/icon/down-arrow2.svg" alt="">
                     </div>
                 </div>
-
+                <svg id="main-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 137.02">
+                    <path class="cls-1" d="M0,0A3431,3431,0,0,0,999,137,3429.58,3429.58,0,0,0,1920,0V137H0Z" fill="#fff"/>
+                </svg>
             </div>
         </div>
     </section>
@@ -61,6 +63,10 @@
         background-size: cover;
         color: #fff;
         .md-block({ min-height: 600px; });
+        #main-svg {
+            position: absolute;
+            bottom: 0;
+        }
         .bg-gradient {
             height: 100%;
             width: 100%;
@@ -176,22 +182,14 @@
                 max-width: 390px;
                 flex-shrink: 0;
                 padding: 30px 0;
-                font-family: @BebasNeue;
-                font-size: 2.6rem;
-                letter-spacing: 0.18rem;
-                font-weight: 600;
-                color: #fff;
-                background: linear-gradient(to bottom, rgba(53,69,206,1) 0%, rgba(36,48,171,1) 50%, rgba(28,39,155,1) 73%);
-                text-transform: uppercase;
                 text-align: center;
-                border-radius: 50px;
                 transform: translateY(-124px);
-                transition: box-shadow 0.3s ease;
                 z-index: 6;
+                box-shadow: 0 0 20px 0 rgba(238, 112, 1, 0.4);
                 .lg-block({ transform: translateY(0); align-self: center; });
                 .md-block({ padding: 25px 0; max-width: 300px; });
                 &:hover {
-                    box-shadow: 0 0 25px 0 rgba(255, 255, 255, 0.6);
+                    box-shadow: 0 0 25px 0 rgba(238, 112, 1, 0.8);
                 }
             }
         }
@@ -210,7 +208,7 @@
                 height: 44px;
                 width: 27px;
                 border-radius: 15px;
-                border: 2px solid @redMain;
+                border: 2px solid @blueMain;
                 box-sizing: border-box;
                 &::after {
                     content: '';
@@ -218,7 +216,7 @@
                     height: 11px;
                     width: 2px;
                     margin: 6px auto;
-                    background: @redMain;
+                    background: @blueMain;
                     position: relative;
                 }
             }

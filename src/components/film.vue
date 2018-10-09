@@ -97,7 +97,7 @@
                         font-size: 18px;
                     });
                     .blue {
-                        color: @blueLight;
+                        color: @blueMain;
                     }
                 }
                 .desc {

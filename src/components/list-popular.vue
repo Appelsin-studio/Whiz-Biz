@@ -5,7 +5,7 @@
             <h3 class="g-caption-section">Почему <span class="gradient-text">крипто фонд обретает популярность</span> и что
                 повлияет на рост токена Gtc?</h3>
             <div class="wrapper-list">
-                <div class="item">
+                <div class="item active">
                     <p class="item-name">1. будет снято несколько десятков
                         фильмов</p>
                     <p class="item-content">В течение 7 лет КРИПТО-ФОНДОМ будет снято, несколько десятков
@@ -75,14 +75,28 @@
             align-items: flex-start;
             .item {
                 position: relative;
-                margin-bottom: 50px;
+                padding: 60px 50px 0 50px;
                 .sm-block({
                     margin-bottom: 20px;
                 });
                 &:last-child {
                     margin-bottom: 0;
                 }
+                &.active {
+                    background: #fff;
+                    border-radius: 8px;
+                    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+                    .item-name {
+                        &::before {
+                            display: none;
+                        }
+                    }
+                    .item-content {
+                        display: block;
+                    }
+                }
                 .item-name {
+                    position: relative;
                     margin-bottom: 30px;
                     padding-left: 100px;
                     font-family: @BebasNeue;
@@ -97,11 +111,6 @@
                     .xs-block({
                         padding-left: 40px;
                     });
-                    &.open {
-                        &::before {
-                            display: none;
-                        }
-                    }
                     &::after,
                     &::before {
                         content: '';
@@ -122,12 +131,12 @@
                         });
                     }
                     &::after {
-                        background: linear-gradient(#fff, #fff) 50% 50% no-repeat / 18px 4px @blueMain;
+                        background: linear-gradient(#fff, #fff) 50% 50% no-repeat / 18px 4px @orangeMain;
                         .sm-block({
-                            background: linear-gradient(#fff, #fff) 50% 50% no-repeat / 13px 3px @blueMain;
+                            background: linear-gradient(#fff, #fff) 50% 50% no-repeat / 13px 3px @orangeMain;
                         });
                         .xs-block({
-                            background: linear-gradient(#fff, #fff) 50% 50% no-repeat / 10px 2px @blueMain;
+                            background: linear-gradient(#fff, #fff) 50% 50% no-repeat / 10px 2px @orangeMain;
                         });
                     }
                     &::before {
@@ -142,7 +151,9 @@
                     }
                 }
                 .item-content {
+                    display: none;
                     padding-left: 100px;
+                    padding-bottom: 60px;
                     font-weight: 200;
                     font-size: 2rem;
                     letter-spacing: 0.14rem;

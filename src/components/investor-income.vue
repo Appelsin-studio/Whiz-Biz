@@ -10,7 +10,7 @@
                 <p class="bold">Технологические активы</p>
                 <p class="bonus">
                     <span class="light">Бонус первым</span>
-                    <span class="blue">100 инвесторам</span>
+                    <span class="orange">100 инвесторам</span>
                 </p>
             </div>
             <div class="wrapper">
@@ -107,11 +107,11 @@
                             margin-bottom: 0;
                             margin-right: 5px; });
                     }
-                    &.blue {
+                    &.orange {
                         font-weight: 900;
                         font-size: 2.4rem;
                         letter-spacing: 0.17rem;
-                        color: @blueMain;
+                        color: @orangeMain;
                     }
                 }
             }
@@ -147,7 +147,7 @@
                     font-weight: 600;
                     font-size: 6rem;
                     letter-spacing: 0.4rem;
-                    color: @blueMain;
+                    color: @orangeMain;
                 }
                 .text-wrapper {
                     display: flex;

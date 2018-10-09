@@ -66,7 +66,7 @@
                     .transition();
                     .md-block({ padding: 35px 15px 5px; });
                     &:hover {
-                        box-shadow: 0 0 25px 0 rgba(54, 147, 224, 1);
+                        box-shadow: 0 0 25px 0 rgba(78, 37, 225, 1);
                     }
                 }
                 &.bid {
@@ -78,7 +78,7 @@
                     letter-spacing: 0.18rem;
                     .transition();
                     &:hover {
-                        color: @blueLight;
+                        color: @blueMain;
                     }
                 }
             }
@@ -107,7 +107,7 @@
                     }
                 }
                 .open-indicator::before {
-                    border-color: @blueLight;
+                    border-color: @blueMain;
                 }
             }
             &.single .selected-tag {

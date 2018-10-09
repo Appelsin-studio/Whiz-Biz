@@ -3,7 +3,7 @@
            classes="modal-default">
         <div class="modal b-modal-message">
             <div class="close-modal" @click="hide" title="Close modal">×</div>
-            <div class="title">Ваше сообщение <span class="red">отправлено!</span></div>
+            <div class="title">Ваше сообщение <span class="gradient-text">отправлено!</span></div>
             <p class="message-text">Мы свяжемся с вами в ближайшее
                 время для уточнения деталей</p>
         </div>

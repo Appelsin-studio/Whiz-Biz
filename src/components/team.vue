@@ -4,7 +4,7 @@
             <p class="g-number">04</p>
             <p class="g-caption-section">Наша <span class="gradient-text">команда</span></p>
             <div class="wrapper">
-                <div class="person">
+                <div class="person col-12">
                     <div class="img" style="background-image: url(/img/person-1.jpg)"></div>
                     <p class="name">Грей Фредериксон</p>
                     <p class="profession">Генеральный продюсер</p>
@@ -69,6 +69,9 @@
                 margin-bottom: 60px;
                 flex-direction: column;
                 align-items: center;
+                &.col-12 {
+                    .size(12);
+                }
                 .img {
                     margin-bottom: 40px;
                     width: 240px;
@@ -103,7 +106,6 @@
                 .profession,
                 .country,
                 .link {
-
                     font-weight: 200;
                     font-size: 2rem;
                     letter-spacing: 0.15rem;
@@ -120,11 +122,11 @@
                     });
                 }
                 .link {
-                    color: @blueMain;
-                    border-bottom: 1px solid @blueMain;
+                    color: @orangeMain;
+                    border-bottom: 1px solid @orangeMain;
                     .transition();
                     &:hover {
-                        color: @blueMain;
+                        color: @orangeMain;
                         border-bottom: 1px solid transparent;
                     }
                 }

@@ -15,6 +15,10 @@
                         <span class="light">60 000 $</span>
                     </p>
                     <p class="money">
+                        <span class="bold">Маркетинг:&ensp;</span>
+                        <span class="light"></span>
+                    </p>
+                    <p class="money">
                         <span class="bold">Сборы:&ensp;</span>
                         <span class="light">248 000 $</span>
                     </p>
@@ -25,6 +29,10 @@
                     <p class="money">
                         <span class="bold">Бюджет:&ensp;</span>
                         <span class="light">15 000 $</span>
+                    </p>
+                    <p class="money">
+                        <span class="bold">Маркетинг:&ensp;</span>
+                        <span class="light"></span>
                     </p>
                     <p class="money">
                         <span class="bold">Сборы:&ensp;</span>
@@ -39,6 +47,10 @@
                         <span class="light">3 000 000 $</span>
                     </p>
                     <p class="money">
+                        <span class="bold">Маркетинг:&ensp;</span>
+                        <span class="light"></span>
+                    </p>
+                    <p class="money">
                         <span class="bold">Сборы:&ensp;</span>
                         <span class="light">89 000 000 $</span>
                     </p>
@@ -49,6 +61,10 @@
                     <p class="money">
                         <span class="bold">Бюджет:&ensp;</span>
                         <span class="light">9 000 000 $</span>
+                    </p>
+                    <p class="money">
+                        <span class="bold">Маркетинг:&ensp;</span>
+                        <span class="light"></span>
                     </p>
                     <p class="money">
                         <span class="bold">Сборы:&ensp;</span>
@@ -92,7 +108,7 @@
                     font-weight: 600;
                     font-size: 6rem;
                     letter-spacing: 0.4rem;
-                    color: @blueMain;
+                    color: @orangeMain;
                 }
                 .name {
                     margin-bottom: 20px;

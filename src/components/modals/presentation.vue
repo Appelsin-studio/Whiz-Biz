@@ -3,7 +3,7 @@
            classes="modal-default">
         <div class="modal b-modal-presentation">
             <div class="close-modal" @click="hide" title="Close modal">×</div>
-            <div class="title">Записаться на <span class="red">презентацию</span></div>
+            <div class="title">Записаться на <span class="gradient-text">презентацию</span></div>
             <form class="form form--apply" action="">
                 <div class="input-wrapper">
                     <input class="item" type="text" placeholder="Имя">

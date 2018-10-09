@@ -76,7 +76,7 @@
                     margin-bottom: 15px;
                 });
                 &:hover {
-                    color: @blueLight;
+                    color: @blueMain;
                 }
             }
             .gtc {
