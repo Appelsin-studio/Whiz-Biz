@@ -46,13 +46,21 @@
               },
               title: {
                 text: 'Количество фильмов',
-                style: {}
+                style: {
+                  fontFamily: '\'ProximaNova\', \'Arial\', sans-serif',
+                  fontSize: '18px',
+                  fontWeight: 200
+                }
               },
               min: 0
             }, {
               title: {
                 text: 'ROI',
-                style: {}
+                style: {
+                  fontFamily: '\'ProximaNova\', \'Arial\', sans-serif',
+                  fontSize: '18px',
+                  fontWeight: 200
+                }
               },
               labels: {
                 format: '{value}',
@@ -79,7 +87,7 @@
               type: 'column',
               data: [
                 {
-                  color: '#bc302f',
+                  color: '#f5780a',
                   y: 509,
                   dataLabels: {
                     color: '#ffffff'
@@ -90,10 +98,10 @@
               },
               states: {
                 hover: {
-                  color: '#bc302f'
+                  color: '#f5780a'
                 }
               },
-              color: '#fae6e7',
+              color: '#ffefe3',
               softMin: 0,
               dataLabels: {
                 enabled: true,
@@ -116,6 +124,7 @@
               tooltip: {
                 valueSuffix: ''
               },
+              color: '#5835cd',
               dataLabels: {
                 enabled: true,
                 color: '#000000',

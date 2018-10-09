@@ -50,42 +50,42 @@
                 {
                   name: '<div class="chart-label-custom text-align-left"><i>08</i><span>DVD</span></div>',
                   y: 1,
-                  color: '#c82e2e'
+                  color: '#f58318'
                 },
                 {
                   name: '<div class="chart-label-custom text-align-left"><i>07</i><span>Мерчендайзинг</span></div>',
                   y: 1,
-                  color: '#cd2f2f'
+                  color: '#f68318'
                 },
                 {
                   name: '<div class="chart-label-custom text-align-left"><i>06</i><span>Поезда, самолеты,<br/>гостиницы</span></div>',
                   y: 1,
-                  color: '#d22f2f'
+                  color: '#f78318'
                 },
                 {
                   name: '<div class="chart-label-custom text-align-left"><i>05</i><span>Нетфликс и другие<br/>сервисы проката</span></div>',
                   y: 1,
-                  color: '#d72f2f'
+                  color: '#f88318'
                 },
                 {
                   name: '<div class="chart-label-custom"><i>04</i><span>Продажа интернет-<br/>платформам</span></div>',
                   y: 1,
-                  color: '#dc2f2f'
+                  color: '#f98318'
                 },
                 {
                   name: '<div class="chart-label-custom"><i>03</i><span>Продажа<br/>в другие страны</span></div>',
                   y: 1,
-                  color: '#e12e2e'
+                  color: '#fa8318'
                 },
                 {
                   name: '<div class="chart-label-custom"><i>02</i><span>Продажа<br/>телеканалам</span></div>',
                   y: 1,
-                  color: '#e63030'
+                  color: '#fb8318'
                 },
                 {
                   name: '<div class="chart-label-custom"><i>01</i><span>Кассовые<br/>сборы</span></div>',
                   y: 1,
-                  color: '#eb3333'
+                  color: '#fc9433'
                 }
               ],
               dataLabels: {
@@ -115,7 +115,7 @@
         > i {
             font-family: @BebasNeue;
             font-size: 6.5rem;
-            color: #3895e3;
+            color: @blueMain;
             display: block;
             font-weight: 400;
             font-style: normal;
