@@ -9,9 +9,6 @@
             <p class="roi">ROI по отношению к размеру бюджету</p>
             <p class="films">(1600 выпущенных фильмов в 2010 - 2015 гг.)</p>
             <highcharts :options="chartOptions"></highcharts>
-            <div class="graph">
-                <img src="/img/quantity-films.png" alt="">
-            </div>
         </div>
     </section>
 </template>
@@ -31,7 +28,14 @@
           },
           xAxis: [
             {
-              categories: ['$0-$5M', '$5-$10M', '$10-$15M', '$15-$20M', '$20-$25M', '$25-$50M', '$50-$100M', '$100-$300M']
+              categories: ['$0-$5M', '$5-$10M', '$10-$15M', '$15-$20M', '$20-$25M', '$25-$50M', '$50-$100M', '$100-$300M'],
+              labels: {
+                style: {
+                  fontWeight: 600,
+                  color: '#000000',
+                  fontSize: '12px'
+                }
+              }
             }
           ],
           yAxis: [
@@ -73,9 +77,21 @@
             {
               name: 'Количество фильмов',
               type: 'column',
-              data: [509, 219, 161, 109, 77, 257, 142, 135],
+              data: [
+                {
+                  color: '#bc302f',
+                  y: 509,
+                  dataLabels: {
+                    color: '#ffffff'
+                  }
+                }, 219, 161, 109, 77, 257, 142, 135],
               tooltip: {
                 valueSuffix: ''
+              },
+              states: {
+                hover: {
+                  color: '#bc302f'
+                }
               },
               color: '#fae6e7',
               softMin: 0,
@@ -83,7 +99,7 @@
                 enabled: true,
                 color: '#000000',
                 align: 'center',
-                y: 30, // 10 pixels down from the top
+                y: 30,
                 style: {
                   fontSize: '18px',
                   fontFamily: '\'ProximaNova\', \'Arial\', sans-serif',
@@ -104,7 +120,7 @@
                 enabled: true,
                 color: '#000000',
                 align: 'center',
-                y: -15, // 10 pixels down from the top
+                y: -15,
                 style: {
                   fontSize: '18px',
                   fontFamily: '\'ProximaNova\', \'Arial\', sans-serif',
@@ -141,9 +157,6 @@
             margin-bottom: 50px;
             font-weight: 200;
             font-size: 2rem;
-        }
-        .graph {
-            text-align: center;
         }
     }
 </style>
