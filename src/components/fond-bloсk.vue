@@ -18,7 +18,7 @@
                             </div>
                             <div class="number">01</div>
                         </div>
-                        <div class="red-coub"></div>
+                        <div class="gray-circle"></div>
                         <p class="description"><strong>GTCinema</strong> -
                             {{t('is a financial technology company focused on blockchain and cryptographic tokens')}}
                         </p>
@@ -31,6 +31,7 @@
                         <img svg-inline src="~src/assets/img/icon/down-arrow2.svg" alt="">
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
@@ -86,16 +87,18 @@
             z-index: 99;
             .lg-block({ padding-left: 0; });
             .md-block({ padding-top: 0; });
-            .red-coub {
+            .gray-circle {
                 position: absolute;
-                top: 0;
+                top: -30px;
                 left: 0;
                 padding: 65px 75px;
-                width: 560px;
-                height: 500px;
-                border: 5px solid @redMain;
+                width: 600px;
+                height: 600px;
+                border: 10px solid #fff;
                 box-sizing: border-box;
+                border-radius: 50%;
                 z-index: 1;
+                opacity: 0.6;
                 .lg-block({ display: none; });
             }
             .caption-wrapper {
@@ -178,16 +181,17 @@
                 letter-spacing: 0.18rem;
                 font-weight: 600;
                 color: #fff;
-                background-color: @redMain;
+                background: linear-gradient(to bottom, rgba(53,69,206,1) 0%, rgba(36,48,171,1) 50%, rgba(28,39,155,1) 73%);
                 text-transform: uppercase;
                 text-align: center;
+                border-radius: 50px;
                 transform: translateY(-124px);
                 transition: box-shadow 0.3s ease;
                 z-index: 6;
                 .lg-block({ transform: translateY(0); align-self: center; });
                 .md-block({ padding: 25px 0; max-width: 300px; });
                 &:hover {
-                    box-shadow: 0 0 25px 0 rgba(196, 45, 45, 1);
+                    box-shadow: 0 0 25px 0 rgba(255, 255, 255, 0.6);
                 }
             }
         }
