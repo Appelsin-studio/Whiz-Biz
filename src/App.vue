@@ -4,17 +4,27 @@
         <main>
             <fond-block/>
             <description-fond/>
-            <mission-fond/>
+            <div class="bg-dotty">
+                <mission-fond/>
+            </div>
             <team-block/>
-            <list-popular/>
+            <div class="bg-dotty">
+                <list-popular/>
+            </div>
             <film-block/>
             <idea-film/>
-            <reference-block/>
+            <div class="bg-dotty">
+                <reference-block/>
+            </div>
             <statistics-block/>
             <finance-films/>
-            <table-gtc/>
+            <div class="bg-dotty">
+                <table-gtc/>
+            </div>
             <terms-cooperation/>
-            <investor-income/>
+            <div class="bg-dotty">
+                <investor-income/>
+            </div>
             <road-map/>
         </main>
         <footer-block/>
