@@ -1,5 +1,5 @@
 .reset();
-html{
+html {
   font-size: 10px;
   .md-block({ font-size: 8px; });
   .xs-block({ font-size: 6px; });
@@ -17,7 +17,6 @@ body {
 a {
   text-decoration: none;
 }
-
 .g-number {
   margin-bottom: 5px;
   font-family: @BebasNeue;
@@ -36,12 +35,8 @@ a {
   text-transform: uppercase;
   color: #000;
   font-weight: 600;
-  .sm-block({
-    font-size: 5rem;
-  });
-  .xs-block({
-    font-size: 4rem;
-  });
+  .sm-block({ font-size: 5rem; });
+  .xs-block({ font-size: 4rem; });
   strong {
     font-weight: 600;
   }
@@ -50,12 +45,11 @@ a {
   background: linear-gradient(0deg, #4022a8, #4e24e0);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  color: #4022A8;
+  color: #4022a8;
 }
 .gradient {
   background: linear-gradient(0deg, #4224a6, #4e25e1);
 }
-
 .black {
   color: @blackMain;
 }
@@ -74,9 +68,28 @@ a {
   color: #fff;
   transition: box-shadow 0.3s ease;
   &--orange {
-    background: linear-gradient( 90deg, rgb(186,88,1) 0%, rgb(245,115,3) 100%);
+    background: linear-gradient(90deg, rgb(186, 88, 1) 0%, rgb(245, 115, 3) 100%);
     &:hover {
       box-shadow: 0 0 20px 0 rgba(238, 112, 1, 0.4);
     }
+  }
+}
+.bg-dotty {
+  background: #efebfb url("/img/bg.png");
+  position: relative;
+  &::after, &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 30vh;
+  }
+  &::after {
+    top: 0;
+    background: linear-gradient(to bottom, #fff 0%, transparent 100%);
+  }
+  &::before {
+    bottom: 0;
+    background: linear-gradient(to top, #fff 0%, transparent 100%);
   }
 }

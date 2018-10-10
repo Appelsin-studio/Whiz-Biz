@@ -8,6 +8,8 @@
                 </section>
                 <section class="section-fullpage">
                     <description-fond/>
+                </section>
+                <section class="section-fullpage bg-dotty">
                     <mission-fond/>
                 </section>
                 <section class="section-fullpage">
@@ -110,7 +112,7 @@
       return {
         fullPageOptions: {
           licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
-          scrollBar: false,
+          scrollBar: true,
           responsiveWidth: 320,
           sectionSelector: '.section-fullpage',
           scrollOverflow: true
