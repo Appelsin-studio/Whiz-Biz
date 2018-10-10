@@ -70,8 +70,7 @@
         .bg-gradient {
             height: 100%;
             width: 100%;
-            background: linear-gradient(to bottom, #000 -7%, rgba(255, 255, 255, 0) 81%),
-            rgba(45, 25, 25, 0.5);
+            background: linear-gradient(to bottom, #000 6%, rgba(255, 255, 255, 0) 26%);
         }
         .container {
             width: 100%;
@@ -133,7 +132,7 @@
                         .lg-block({ display: none; });
                         li {
                             &:first-child {
-                                color: #3895e5;
+                                color: @blueMain;
                             }
                         }
                     }
@@ -199,8 +198,8 @@
             left: 50%;
             bottom: 45px;
             transform: translateX(-50%);
-            -webkit-filter: drop-shadow(0 0 8px rgba(196, 45, 45, 1));
-            filter: drop-shadow(0 0 8px rgba(196, 45, 45, 1));
+            -webkit-filter: drop-shadow(0 0 8px rgba(87, 53, 202, 1));
+            filter: drop-shadow(0 0 8px rgba(87, 53, 202, 1));
             z-index: 55;
             .sm-block({ bottom: 20px; });
             .mouse {
@@ -234,16 +233,16 @@
     @keyframes mouse-scroll {
 
         0% {
-            -webkit-filter: drop-shadow(0 0 5px rgba(196, 45, 45, 0.5));
-            filter: drop-shadow(0 0 5px rgba(196, 45, 45, 0.5));
+            -webkit-filter: drop-shadow(0 0 5px rgba(87, 53, 202, 0.5));
+            filter: drop-shadow(0 0 5px rgba(87, 53, 202, 0.5));
         }
         50% {
-            -webkit-filter: drop-shadow(0 0 10px rgba(196, 45, 45, 1));
-            filter: drop-shadow(0 0 10px rgba(196, 45, 45, 1));
+            -webkit-filter: drop-shadow(0 0 10px rgba(87, 53, 202, 1));
+            filter: drop-shadow(0 0 10px rgba(87, 53, 202, 1));
         }
         100% {
-            -webkit-filter: drop-shadow(0 0 5px rgba(196, 45, 45, 0.5));
-            filter: drop-shadow(0 0 5px rgba(196, 45, 45, 0.5));
+            -webkit-filter: drop-shadow(0 0 5px rgba(87, 53, 202, 0.5));
+            filter: drop-shadow(0 0 5px rgba(87, 53, 202, 0.5));
         }
     }
 </style>

@@ -9,13 +9,14 @@
 @orangeMain: #ee7001;
 
 @grayMain: #686868;
+
 @blackMain: #000;
 
 .transition(@time: 0.3s) {
   transition: all @time ease;
 }
 /*line after*/
-.line-after--left(@left: -30px, @top: 50%, @color: #fff) {
+.line-after--left(@left: -30px, @top: 50%, @color: #ced7df) {
   &::after {
     position: absolute;
     content: '';
@@ -27,7 +28,7 @@
     background-color: @color;
   }
 }
-.line-after--right(@right: -30px, @top: 50%, @color: #fff) {
+.line-after--right(@right: -30px, @top: 50%, @color: #ced7df) {
   &::after {
     position: absolute;
     content: '';

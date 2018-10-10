@@ -69,7 +69,7 @@
         });
         .g-caption-section {
             margin-bottom: 40px;
-            .line-after--left(-30px, 50%, #fff);
+            .line-after--left();
             .black {
                 color: #000;
             }
@@ -119,6 +119,9 @@
                         margin-bottom: 20px;
                         margin-left: -15px;
                     });
+                    .xs-block({
+                        margin-left: -12px;
+                    });
                     .number {
                         display: flex;
                         margin-bottom: 15px;
@@ -153,6 +156,11 @@
                             .sm-block({
                                 margin-bottom: 0;
                                 margin-right: 10px;
+                            });
+                            .xs-block({
+                                width: 15px;
+                                height: 15px;
+                                border: 4px solid @orangeMain;
                             });
                         }
                     }
@@ -202,6 +210,12 @@
                             position: absolute;
                             left: -15px;
                         });
+                        .xs-block({
+                            left: -12px;
+                            width: 15px;
+                            height: 15px;
+                            border: 4px solid @orangeMain;
+                        });
                     }
                     &::before {
                         content: '';
@@ -210,7 +224,7 @@
                         top: -106px;
                         width: 15px;
                         height: 100px;
-                        background: radial-gradient(ellipse at center, @grayMain 2px, @grayMain 2px, transparent 17%);
+                        background: radial-gradient(ellipse at center, #b0b0b0 2px, #b0b0b0 2px, transparent 17%);
                         background-size: 15px 15px;
                         background-repeat: repeat-y;
                         background-position: 0 center;

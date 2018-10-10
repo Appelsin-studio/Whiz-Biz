@@ -3,7 +3,7 @@
         <div class="container">
             <p class="g-number">04</p>
             <p class="g-caption-section">Наша <span class="gradient-text">команда</span></p>
-            <div class="wrapper">
+            <div class="wrapper--team">
                 <div class="person col-12">
                     <div class="img" style="background-image: url(/img/person-1.jpg)"></div>
                     <p class="name">Грей Фредериксон</p>
@@ -33,33 +33,37 @@
                     <a class="link" href="#" target="_blank">linkedin.com/ivan_alexeev</a>
                 </div>
             </div>
+            <section class="b-crowdsale">
+                <div class="wrapper--crowdsale">
+                    <p class="text">Проект реализуется при поддержке <strong class="orange">Crowdsale Network</strong>
+                    </p>
+                    <img class="logo-crowdsale" src="/img/crowdsale-logo.png" alt="">
+                    <a class="link" href="https://crowdsale.network/" target="_blank">crowdsale.network</a>
+                </div>
+            </section>
         </div>
     </section>
 </template>
 <style scoped lang="less">
     @import "~assets/less/_vars";
-
     .b-team {
         padding: 100px 0 90px;
-        .sm-block({
-            padding: 80px 0 70px;
-        });
-        .sm-block({
-            padding: 80px 0 30px;
-        });
+        .sm-block({ padding: 80px 0 70px; });
+        .sm-block({ padding: 80px 0 30px; });
         .g-caption-section {
             margin-bottom: 80px;
             .line-after--left();
-            .sm-block({
-                margin-bottom: 65px;
-            });
+            .sm-block({ margin-bottom: 65px; });
             .black {
                 color: #000;
             }
         }
-        .wrapper {
+        .wrapper--team {
             .row-flex();
             justify-content: center;
+            margin-bottom: 160px;
+            .sm-block({ margin-bottom: 120px; });
+            .xs-block({ margin-bottom: 90px; });
             .person {
                 .col();
                 .size(4);
@@ -81,11 +85,7 @@
                     background-repeat: no-repeat;
                     background-position: center;
                     background-size: cover;
-                    .sm-block({
-                        margin-bottom: 30px;
-                        width: 200px;
-                        height: 200px;
-                    });
+                    .sm-block({ margin-bottom: 30px; width: 200px; height: 200px; });
                 }
                 .name {
                     font-family: @BebasNeue;
@@ -96,12 +96,8 @@
                     letter-spacing: 0.25rem;
                     color: #000;
                     text-align: center;
-                    .sm-block({
-                        font-size: 28px;
-                    });
-                    .xs-block({
-                        margin-bottom: 13px;
-                    });
+                    .sm-block({ font-size: 28px; });
+                    .xs-block({ margin-bottom: 13px; });
                 }
                 .profession,
                 .country,
@@ -110,16 +106,12 @@
                     font-size: 2rem;
                     letter-spacing: 0.15rem;
                     text-align: center;
-                    .sm-block({
-                        font-size: 16px;
-                    });
+                    .sm-block({ font-size: 16px; });
                 }
                 .profession,
                 .country {
                     margin-bottom: 15px;
-                    .xs-block({
-                        margin-bottom: 10px;
-                    });
+                    .xs-block({ margin-bottom: 10px; });
                 }
                 .link {
                     color: @orangeMain;
@@ -129,6 +121,44 @@
                         color: @orangeMain;
                         border-bottom: 1px solid transparent;
                     }
+                }
+            }
+        }
+    }
+    .b-crowdsale {
+        .wrapper--crowdsale {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .text {
+                margin-bottom: 40px;
+                font-family: @BebasNeue;
+                font-weight: 600;
+                font-size: 3.5rem;
+                letter-spacing: 0.24rem;
+                color: #000;
+                text-transform: uppercase;
+                text-align: center;
+                .xs-block({ margin-bottom: 25px; });
+                .orange {
+                    color: @orangeMain;
+                    font-weight: 600;
+                }
+            }
+            .logo-crowdsale {
+                margin-bottom: 40px;
+                .xs-block({ margin-bottom: 25px; max-width: 280px });
+            }
+            .link {
+                font-size: 20px;
+                font-weight: 200;
+                letter-spacing: 0.14rem;
+                color: @orangeMain;
+                border-bottom: 1px solid @orangeMain;
+                .transition();
+                .md-block({ font-size: 16px; });
+                &:hover {
+                    border-bottom: 1px solid transparent;
                 }
             }
         }

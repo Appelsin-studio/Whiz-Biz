@@ -13,22 +13,22 @@
                 </p>
                 <ul class="social">
                     <li>
-                        <a href="#" class="social-link vk">
+                        <a href="#" class="social-link vk" target="_blank">
                             <img svg-inline src="~src/assets/img/icon/social/vk.svg" alt="">
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="social-link twitter">
+                        <a href="#" class="social-link twitter" target="_blank">
                             <img svg-inline src="~src/assets/img/icon/social/twitter.svg" alt="">
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="social-link fb">
+                        <a href="#" class="social-link fb" target="_blank">
                             <img svg-inline src="~src/assets/img/icon/social/facebook-logo.svg" alt="">
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="social-link youtube">
+                        <a href="#" class="social-link youtube" target="_blank">
                             <img svg-inline src="~src/assets/img/icon/social/youtube.svg" alt="">
                         </a>
                     </li>

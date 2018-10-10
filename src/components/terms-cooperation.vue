@@ -37,7 +37,7 @@
                         <span class="light">Возможность завещать доход своим детям</span>
                     </li>
                 </ul>
-                <a href="#" class="btn btn--orange">Подать заявку</a>
+                <a href="#" class="btn btn--orange" @click.prevent="$modal.show('apply')">Подать заявку</a>
             </div>
         </div>
     </section>
@@ -59,7 +59,7 @@
                 margin-bottom: 80px;
             });
             .xs-block({
-                margin-bottom: 60px;
+                margin-bottom: 40px;
             });
         }
         .secondary-caption {
@@ -69,6 +69,9 @@
             letter-spacing: 0.2rem;
             text-transform: uppercase;
             color: #000;
+            .xs-block({
+                margin-bottom: 30px;
+            });
         }
         .instruction-arrow {
             display: flex;
@@ -79,6 +82,9 @@
                 margin-bottom: 70px;
                 flex-direction: column;
                 align-items: center;
+            });
+            .xs-block({
+                margin-bottom: 50px;
             });
             .text {
                 display: inline-block;
@@ -97,6 +103,10 @@
                 .sm-block({
                     height: 45px;
                     padding: 10px 0;
+                });
+                .xs-block({
+                    height: 30px;
+                    padding: 5px 0 20px;
                 });
                 &::before {
                     content: '';
@@ -121,6 +131,7 @@
                     border-bottom: 3px solid @orangeMain;
                     transform: rotate(-45deg);
                     .sm-block({
+                        margin-left: 0;
                         transform: rotate(45deg);
                     });
                 }

@@ -67,7 +67,7 @@
         });
         .g-caption-section {
             margin-bottom: 40px;
-            .line-after--left(-30px, 50%, #ccc);
+            .line-after--left();
             .black {
                 color: #000;
             }

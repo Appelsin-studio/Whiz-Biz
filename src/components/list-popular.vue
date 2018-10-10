@@ -77,7 +77,12 @@
                 position: relative;
                 padding: 60px 50px 0 50px;
                 .sm-block({
+                    padding: 40px 30px 0 30px;
                     margin-bottom: 20px;
+                });
+                .xs-block({
+                    padding: 20px 10px 0 10px;
+                    margin-bottom: 10px;
                 });
                 &:last-child {
                     margin-bottom: 0;
@@ -159,9 +164,11 @@
                     letter-spacing: 0.14rem;
                     .sm-block({
                         padding-left: 60px;
+                        padding-bottom: 40px;
                     });
                     .xs-block({
                         padding-left: 40px;
+                        padding-bottom: 20px;
                     });
                 }
             }

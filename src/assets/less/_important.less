@@ -1,14 +1,18 @@
 .reset();
-html{
+html {
   font-size: 10px;
   .md-block({ font-size: 8px; });
   .xs-block({ font-size: 6px; });
 }
 body {
   font-family: @ProximaNova;
-  background-color: #fff;
   font-weight: 400;
   color: @grayMain;
+  background: linear-gradient(#ebf5fd, #ebf5fd) 16.5% center  no-repeat / 1px 100%,
+                    linear-gradient(#ebf5fd, #ebf5fd) 33% center  no-repeat / 1px 100%,
+                    linear-gradient(#ebf5fd, #ebf5fd) 49.5% center  no-repeat / 1px 100%,
+                    linear-gradient(#ebf5fd, #ebf5fd) 66% center  no-repeat / 1px 100%,
+                    linear-gradient(#ebf5fd, #ebf5fd) 82.5% center  no-repeat / 1px 100%, #fff;
 }
 .container {
   position: relative;
@@ -17,7 +21,6 @@ body {
 a {
   text-decoration: none;
 }
-
 .g-number {
   margin-bottom: 5px;
   font-family: @BebasNeue;
@@ -36,12 +39,8 @@ a {
   text-transform: uppercase;
   color: #000;
   font-weight: 600;
-  .sm-block({
-    font-size: 5rem;
-  });
-  .xs-block({
-    font-size: 4rem;
-  });
+  .sm-block({ font-size: 5rem; });
+  .xs-block({ font-size: 4rem; });
   strong {
     font-weight: 600;
   }
@@ -50,12 +49,11 @@ a {
   background: linear-gradient(0deg, #4022a8, #4e24e0);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  color: #4022A8;
+  color: #4022a8;
 }
 .gradient {
   background: linear-gradient(0deg, #4224a6, #4e25e1);
 }
-
 .black {
   color: @blackMain;
 }
@@ -73,8 +71,10 @@ a {
   border-radius: 60px;
   color: #fff;
   transition: box-shadow 0.3s ease;
+  .sm-block({ padding: 25px 80px; });
+  .xs-block({ padding: 20px 60px; });
   &--orange {
-    background: linear-gradient( 90deg, rgb(186,88,1) 0%, rgb(245,115,3) 100%);
+    background: linear-gradient(90deg, rgb(186, 88, 1) 0%, rgb(245, 115, 3) 100%);
     &:hover {
       box-shadow: 0 0 20px 0 rgba(238, 112, 1, 0.4);
     }

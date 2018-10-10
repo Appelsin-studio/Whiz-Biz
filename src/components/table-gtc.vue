@@ -78,7 +78,7 @@
             margin-bottom: 70px;
             max-width: 780px;
             color: #000;
-            .line-after--left(-30px, 25%, #fff);
+            .line-after--left(-30px, 25%);
             .sm-block({
                 margin-bottom: 55px;
             });
@@ -142,6 +142,7 @@
                     flex-shrink: 0;
                     font-weight: 900;
                     color: @orangeMain;
+                    .xs-block({ font-weight: 600;});
                 }
             }
             .gray {
