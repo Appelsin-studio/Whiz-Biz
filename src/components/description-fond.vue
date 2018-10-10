@@ -82,11 +82,24 @@
                     .circle {
                         width: 380px;
                         height: 380px;
-                        background: linear-gradient(180deg, #f57303 0%, #ba5801 100%);
+                        animation: gradient-animate 2s ease infinite;
+                        background: linear-gradient(-45deg, #f57303, #ba5801);
+                        background-size: 400%, 400%;
                         border-radius: 50%;
                         position: absolute;
                         top: 35px;
                         left: -40px;
+                        @keyframes gradient-animate {
+                            0% {
+                                background-position: 0 50%
+                            }
+                            50% {
+                                background-position: 100% 50%
+                            }
+                            100% {
+                                background-position: 0 50%
+                            }
+                        }
                         &::after {
                             content: "";
                             display: block;
