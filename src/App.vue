@@ -1,5 +1,6 @@
 <template>
     <div id="app">
+        <bg-wrapper/>
         <header-block/>
         <main>
             <fond-block/>
@@ -37,6 +38,7 @@
 <script>
   import HeaderBlock from 'components/header'
 
+  import BgWrapper from 'components/bg-wrapper'
   import FondBlock from 'components/fond-bloсk'
   import DescriptionFond from 'components/description-fond'
   import MissionFond from 'components/mission-fond'
@@ -61,6 +63,7 @@
   export default {
     name: 'app',
     components: {
+      BgWrapper,
       HeaderBlock,
       FondBlock,
       DescriptionFond,
@@ -89,4 +92,7 @@
 
 <style lang="less">
     @import "assets/less/main";
+    #app {
+        position: relative;
+    }
 </style>
