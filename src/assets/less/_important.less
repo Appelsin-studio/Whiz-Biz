@@ -80,3 +80,22 @@ a {
     }
   }
 }
+.bg-dotty {
+  background: #efebfb url("/img/bg.png");
+  position: relative;
+  &::after, &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 30vh;
+  }
+  &::after {
+    top: 0;
+    background: linear-gradient(to bottom, #fff 0%, transparent 100%);
+  }
+  &::before {
+    bottom: 0;
+    background: linear-gradient(to top, #fff 0%, transparent 100%);
+  }
+}

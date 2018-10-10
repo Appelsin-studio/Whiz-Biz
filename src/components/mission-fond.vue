@@ -29,16 +29,9 @@
 </script>
 <style scoped lang="less">
     @import "~assets/less/_vars";
-
     .b-mission-fond {
-        padding-bottom: 160px;
         overflow: hidden;
-        .sm-block({
-            padding-bottom: 135px;
-        });
-        .xs-block({
-            padding-bottom: 80px;
-        });
+        padding: 200px 0;
         .wrapper {
             position: relative;
             justify-content: flex-start;

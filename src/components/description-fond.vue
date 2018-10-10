@@ -54,7 +54,7 @@
                 }
                 .description {
                     font-weight: 200;
-                    font-size: 2.6rem;
+                    font-size: 2rem;
                     letter-spacing: 0.18rem;
                     .black {
                         font-weight: 900;
