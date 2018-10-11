@@ -40,7 +40,7 @@
 <script>
   import { LanguageMixin } from 'components/mixins/language-mixin'
 
-    export default {
+  export default {
       mixins: [LanguageMixin],
       data() {
         return {

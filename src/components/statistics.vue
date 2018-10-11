@@ -258,7 +258,6 @@
         .highcharts-block {
             .xm-block({ display: none });
             &-img {
-                display: none;
                 .xm-block({ display: block });
             }
         }

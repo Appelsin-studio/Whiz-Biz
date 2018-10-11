@@ -7,7 +7,8 @@
                 <span>{{t('profitable industries')}}</span>
             </p>
             <div class="pie">
-                <highcharts :options="chartOptions"></highcharts>
+                <highcharts :options="chartOptions" class="highcharts-block"></highcharts>
+                <img src="~src/assets/img/chart-industries.png" alt="" class="highcharts-block-img">
             </div>
         </div>
     </section>
@@ -15,6 +16,7 @@
 <script>
   import { Chart } from 'highcharts-vue'
   import { LanguageMixin } from 'components/mixins/language-mixin'
+
   export default {
     mixins: [LanguageMixin],
     components: {
@@ -25,13 +27,15 @@
         chartOptions: {
           chart: {
             type: 'pie',
-            height: 9 / 12 * 100 + '%'
+            height: 9 / 12 * 100 + '%',
+            backgroundColor: 'transparent'
           },
           title: {
             text: 'Виды дохода от<br/>производства<br/>и продажи кино',
             align: 'center',
             verticalAlign: 'middle',
             y: -20,
+            x: -12,
             style: {
               fontSize: '2.6rem',
               fontFamily: '\'ProximaNova\', \'Arial\', sans-serif',
@@ -94,8 +98,10 @@
                 connectorColor: '#cbcbcb',
                 distance: 70,
                 connectorPadding: 10
-              }
-            }]
+              },
+
+            }
+          ],
         }
       }
     }
@@ -103,6 +109,13 @@
 </script>
 <style lang="less">
     @import "~assets/less/_vars";
+    .highcharts-block {
+        .sm-block({ display: none });
+        &-img {
+            display: none;
+            .sm-block({ display: block });
+        }
+    }
     .chart-label-custom {
         transform: translateY(-50%);
         &.text-align-left {
@@ -121,6 +134,7 @@
             font-weight: 400;
             font-style: normal;
             text-align: right;
+            .md-block({ font-size: 4.5rem; });
         }
         > span {
             font-family: @ProximaNova;
@@ -130,6 +144,7 @@
             text-align: right;
             display: block;
             line-height: 2.6rem;
+            .md-block({ font-size: 1.8rem; });
         }
     }
 </style>
@@ -151,7 +166,7 @@
         .pie {
             width: 80%;
             margin: 0 auto;
-            .sm-block({ width: 100%; });
+            .lg-block({ width: 100%; });
         }
     }
 </style>
