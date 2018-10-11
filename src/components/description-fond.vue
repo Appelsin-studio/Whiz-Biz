@@ -124,12 +124,12 @@
                             animation-name: circle-animate;
                             animation-iteration-count: infinite;
                             animation-timing-function: ease-out;
-                            animation-duration: 4s;
+                            animation-duration: 6s;
                             opacity: 0;
                             &:nth-child(1) {
                             }
                             &:nth-child(2) {
-                                animation-delay: 2s;
+                                animation-delay: 3s;
                             }
                             @keyframes circle-animate {
                                 from {
