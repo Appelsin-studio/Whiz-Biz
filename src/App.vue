@@ -18,8 +18,8 @@
             <div class="bg-dotty">
                 <reference-block/>
             </div>
-            <statistics-block/>
-            <finance-films/>
+            <statistics-block :in-viewport-offset-top='-300' :in-viewport-once='true'/>
+            <finance-films :in-viewport-offset-top='-300' :in-viewport-once='true'/>
             <div class="bg-dotty">
                 <table-gtc/>
             </div>

@@ -7,7 +7,8 @@
                 <span>{{t('profitable industries')}}</span>
             </p>
             <div class="pie">
-                <highcharts :options="chartOptions" class="highcharts-block"></highcharts>
+                <highcharts v-if="inViewport.now" :options="chartOptions" class="highcharts-block"></highcharts>
+                <div v-else style="width: 100%;height: 300px;" class="highcharts-block"></div>
                 <img src="~src/assets/img/chart-industries.png" alt="" class="highcharts-block-img">
             </div>
         </div>
@@ -16,9 +17,10 @@
 <script>
   import { Chart } from 'highcharts-vue'
   import { LanguageMixin } from 'components/mixins/language-mixin'
+  import inViewport from 'vue-in-viewport-mixin'
 
   export default {
-    mixins: [LanguageMixin],
+    mixins: [LanguageMixin, inViewport],
     components: {
       highcharts: Chart
     },
