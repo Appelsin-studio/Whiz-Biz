@@ -3,7 +3,12 @@
         <div class="circle-wrapper"
              v-for="circle in circles"
              :style="styles(circle)">
-            <div class="circle" v-for="n in circle.count"></div>
+            <div class="circle"
+                 v-for="n in circle.count"
+                 :style="{
+                     animationDelay: animationDelay(n,circle.count),
+                     animationDuration: animationDuration + 's'
+                 }"></div>
         </div>
     </section>
 </template>
@@ -12,6 +17,7 @@
   export default {
     data() {
       return {
+        animationDuration: 6,
         circles: [
           {
             size: 400,
@@ -32,7 +38,52 @@
             size: 300,
             top: 35,
             right: -50,
+            count: 3
+          }, {
+            size: 200,
+            top: 40,
+            left: -50,
             count: 2
+          }, {
+            size: 400,
+            top: 44,
+            right: 40,
+            count: 3
+          }, {
+            size: 300,
+            top: 53,
+            left: -150,
+            count: 2
+          }, {
+            size: 200,
+            top: 62,
+            right: -100,
+            count: 2
+          }, {
+            size: 450,
+            top: 68,
+            right: -100,
+            count: 2
+          }, {
+            size: 400,
+            top: 74,
+            left: -150,
+            count: 2
+          }, {
+            size: 300,
+            top: 80,
+            right: -100,
+            count: 2
+          }, {
+            size: 400,
+            top: 87,
+            left: -200,
+            count: 2
+          }, {
+            size: 500,
+            top: 96,
+            right: -200,
+            count: 3
           }
         ]
       }
@@ -51,8 +102,16 @@
           style.right = params.right + 'px'
         }
         return style
+      },
+      animationDelay(n, count) {
+        let delayTime = 0
+        if (n > 1) {
+          delayTime = 6 / count * (n - 1)
+        }
+        return delayTime + 's'
       }
-    }
+    },
+
   }
 </script>
 <style scoped lang="less">
