@@ -3,19 +3,20 @@
         <div class="container">
             <p class="g-number">09</p>
             <p class="g-caption-section">
-                <span class="gradient-text">Американская статистика</span>
-                <span>прибыли кино</span>
+                <span class="gradient-text">{{t('American statistics')}}</span>
+                <span>{{t('cinema profits')}}</span>
             </p>
-            <p class="roi">ROI по отношению к размеру бюджету</p>
-            <p class="films">(1600 выпущенных фильмов в 2010 - 2015 гг.)</p>
+            <p class="roi">ROI {{t('in relation to the size of the budget')}} </p>
+            <p class="films">(1600 {{t('released films in 2010 - 2015')}})</p>
             <highcharts :options="chartOptions"></highcharts>
         </div>
     </section>
 </template>
 <script>
   import { Chart } from 'highcharts-vue'
-
+  import { LanguageMixin } from 'components/mixins/language-mixin'
   export default {
+    mixins: [LanguageMixin],
     components: {
       highcharts: Chart
     },

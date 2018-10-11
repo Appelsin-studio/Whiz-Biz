@@ -2,38 +2,35 @@
     <section class="b-list-popular">
         <div class="container">
             <p class="g-number">05</p>
-            <h3 class="g-caption-section">Почему <span class="gradient-text">крипто фонд обретает популярность</span> и что
-                повлияет на рост токена Gtc?</h3>
+            <h3 class="g-caption-section">{{t('Why')}} <span class="gradient-text">{{t('is the crypto fund gaining popularity')}}</span> {{t('and what will affect the growth of the token')}}и что
+                Gtc?</h3>
             <div class="wrapper-list">
                 <div class="item active">
-                    <p class="item-name">1. будет снято несколько десятков
-                        фильмов</p>
-                    <p class="item-content">В течение 7 лет КРИПТО-ФОНДОМ будет снято, несколько десятков
-                        полнометражных, короткометражных, документальных фильмов и мультфильмов, которые будут участвовать во многих кинофестивалях мира, в конкурсах и будут завоевывать призы. Об этих победах и фильмах будет знать весь мир. О них будут писать критики и мировые издания.</p>
+                    <p class="item-name">1. {{t('several dozen will be shot of films')}}</p>
+                    <p class="item-content">{{t('For 7 years, the CRYPTO-FUND will be shot, several dozen full-length, short, documentary films and cartoons, which will participate in many film festivals of the world, in competitions and will win prizes. The whole world will know about these victories and films. Critics and world publications will write about them.')}}</p>
                 </div>
                 <div class="item">
-                    <p class="item-name" >2. реклама во всех проектах</p>
-                    <p class="item-content">Часто возникает необходимость динамически изменять CSS-классы и
-                        inline-стили элементов в зависимости от состояния приложения. Поскольку и то и другое атрибуты, мы можем использовать v-bind</p>
+                    <p class="item-name" >2. {{t('advertising in all projects')}}</p>
+                    <p class="item-content">{{t('Why')}}</p>
                 </div>
                 <div class="item">
-                    <p class="item-name">3. фильмы будут выходить ПРИ ПОДДЕРЖКЕ КРИПТО ФОНДА</p>
+                    <p class="item-name">3. {{t('Movies will be released with the support of the Crypto Fund')}}</p>
                     <p class="item-content"></p>
                 </div>
                 <div class="item">
-                    <p class="item-name">4. будет сниматься «РЕАЛИТИ ШОУ»</p>
+                    <p class="item-name">4. {{t('will be filmed "reality show"')}}</p>
                     <p class="item-content"></p>
                 </div>
                 <div class="item">
-                    <p class="item-name">5. будем устраивать конкурсы</p>
+                    <p class="item-name">5. {{t('we will hold contests')}}</p>
                     <p class="item-content"></p>
                 </div>
                 <div class="item">
-                    <p class="item-name">6. интервью во всех мировых Топовых изданиях</p>
+                    <p class="item-name">6. {{t('interviews in all world top publications')}}</p>
                     <p class="item-content"></p>
                 </div>
                 <div class="item">
-                    <p class="item-name">7. “от создателя трилогии Крестный отец”</p>
+                    <p class="item-name">7. “{{t('from the creator of the trilogy The Godfather')}}”</p>
                     <p class="item-content"></p>
                 </div>
             </div>
@@ -41,7 +38,10 @@
     </section>
 </template>
 <script>
+  import { LanguageMixin } from 'components/mixins/language-mixin'
+
     export default {
+      mixins: [LanguageMixin],
       data() {
         return {
           open: true

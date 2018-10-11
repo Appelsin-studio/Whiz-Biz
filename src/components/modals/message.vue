@@ -3,15 +3,16 @@
            classes="modal-default">
         <div class="modal b-modal-message">
             <div class="close-modal" @click="hide" title="Close modal">×</div>
-            <div class="title">Ваше сообщение <span class="gradient-text">отправлено!</span></div>
-            <p class="message-text">Мы свяжемся с вами в ближайшее
-                время для уточнения деталей</p>
+            <div class="title">{{t('Your message')}} <span class="gradient-text">{{t('has been sent')}}!</span></div>
+            <p class="message-text">{{t('We will contact you shortly for further details')}}</p>
         </div>
     </modal>
 </template>
 <script>
+  import { LanguageMixin } from 'components/mixins/language-mixin'
 
   export default {
+    mixins: [LanguageMixin],
     data () {
       return {
       }

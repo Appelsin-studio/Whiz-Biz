@@ -4,24 +4,25 @@
             <div class="wrapper">
                 <div class="description-wrapper">
                     <p class="g-number">07</p>
-                    <p class="g-caption-section"><span class="gradient-text">Идея</span> фильма</p>
+                    <p class="g-caption-section"><span class="gradient-text">{{t('Film')}}</span> {{t('idea')
+                        }}</p>
                     <div class="characteristics">
-                        <span class="black">Жанр:&ensp;</span>
-                        <span class="light">Found footage/Найденная плёнка, Мистика, Ужасы, Фантастика</span>
+                        <span class="black">{{t('Genre')}}:&ensp;</span>
+                        <span class="light">{{t('Found footage / Found film, Mystic, Horror, Fiction')}}</span>
                     </div>
                     <div class="characteristics">
-                        <span class="black">Хронометраж:&ensp;</span>
-                        <span class="light">100 минут</span>
+                        <span class="black">{{t('Timing')}}:&ensp;</span>
+                        <span class="light">100 {{t('minutes')}}</span>
                     </div>
                     <div class="characteristics">
-                        <span class="black">График производства картины:&ensp;</span>
-                        <span class="light">12 месяцев</span>
+                        <span class="black">{{t('Picture production schedule')}}:&ensp;</span>
+                        <span class="light">12 {{t('months')}}</span>
                     </div>
                     <p class="company">
-                        Компания «GHOST TOWN PRODUCTIONS, LLC» из штата Оклахома (США), предлагает Вам кинопроект под названием «Город призрак» «GHOST TOWN».
+                        {{t('GHOST TOWN PRODUCTIONS, LLC from Oklahoma (USA) offers you a film project called “Ghost Town”')}}.
                     </p>
                     <p class="story-film">
-                        Эта история о трагедии торнадо 1999 года и города призрака "Безродной Рощи" основаны на реальных событиях. Действие происходит в США, в штате Оклахома. Местные охотники неподалеку от периметра "Безродной Рощи" находят кассеты с любительской записью. На этих кассетах запечатлена вся миссия команды из восьми человек, которые пропали в Городе-призрак 3 Мая 1999 года. В “Безродной рощи” наши герои узнают что они избранные. Они открывают для себя другие цивилизации, миры и параллельные измерения.
+                        {{t('This story of the tragedy of the 1999 Tornadoes and the ghost town of Bezrodnoy Grove is based on real events. The action takes place in the US, in Oklahoma. Local hunters near the perimeter of the Bezrodnaya Grove find tapes with amateur recording. These cassettes captured the entire mission of a team of eight people who disappeared in the Ghost City on May 3, 1999. In “Bezrodnaya groves” our heroes will learn that they are the chosen ones. They discover other civilizations, worlds and parallel dimensions.')}}
                     </p>
                 </div>
                 <div class="img">
@@ -32,6 +33,13 @@
         </div>
     </section>
 </template>
+<script>
+  import { LanguageMixin } from 'components/mixins/language-mixin'
+
+  export default {
+    mixins: [LanguageMixin]
+  }
+</script>
 <style scoped lang="less">
     @import "~assets/less/_vars";
     .b-idea-film {

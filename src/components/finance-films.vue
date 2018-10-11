@@ -3,8 +3,8 @@
         <div class="container">
             <p class="g-number">10</p>
             <p class="g-caption-section">
-                <span class="gradient-text">Кинобизнес входит в топ5</span>
-                <span>доходных индустрий</span>
+                <span class="gradient-text">{{t('Film business is in the top')}} 5</span>
+                <span>{{t('profitable industries')}}</span>
             </p>
             <div class="pie">
                 <highcharts :options="chartOptions"></highcharts>
@@ -14,8 +14,9 @@
 </template>
 <script>
   import { Chart } from 'highcharts-vue'
-
+  import { LanguageMixin } from 'components/mixins/language-mixin'
   export default {
+    mixins: [LanguageMixin],
     components: {
       highcharts: Chart
     },

@@ -110,19 +110,19 @@
     },
     data() {
       return {
-        fullPageOptions: {
+        /*fullPageOptions: {
           licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
           scrollBar: true,
           responsiveWidth: 320,
           sectionSelector: '.section-fullpage',
           scrollOverflow: true
-        }
+        }*/
       }
     }
   }
 </script>
 
 <style lang="less">
-    @import "~fullpage.js/dist/fullpage.min.css";
+    /*@import "~fullpage.js/dist/fullpage.min.css";*/
     @import "assets/less/main";
 </style>

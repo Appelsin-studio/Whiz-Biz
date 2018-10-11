@@ -3,13 +3,13 @@
         <div class="container">
             <div class="top-wrapper">
                 <a class="gtc" href="#">GTC</a>
-                <a class="contact contact--position" href="#" @click.prevent="modalApply">Подать заявку</a>
-                <a class="contact" href="#" @click.prevent="modalPresentation">Записаться на презентацию</a>
+                <a class="contact contact--position" href="#" @click.prevent="modalApply">{{t('Apply')}}</a>
+                <a class="contact" href="#" @click.prevent="modalPresentation">{{t('Sign up for a presentation')}}</a>
             </div>
             <div class="bottom-wrapper">
                 <p class="right-reserved">
                     <span>GTCinema.</span>
-                    <span>Все права защищены</span>
+                    <span>{{t('All rights reserved')}}</span>
                 </p>
                 <ul class="social">
                     <li>
@@ -38,7 +38,10 @@
     </footer>
 </template>
 <script>
+  import { LanguageMixin } from 'components/mixins/language-mixin'
+
   export default {
+    mixins: [LanguageMixin],
     methods: {
       modalApply() {
         this.$modal.show('apply')

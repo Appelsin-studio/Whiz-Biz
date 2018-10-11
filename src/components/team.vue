@@ -2,40 +2,40 @@
     <section class="b-team">
         <div class="container">
             <p class="g-number">04</p>
-            <p class="g-caption-section">Наша <span class="gradient-text">команда</span></p>
+            <p class="g-caption-section">{{t('Our')}} <span class="gradient-text">{{t('team')}}</span></p>
             <div class="wrapper--team">
                 <div class="person col-12">
                     <div class="img" style="background-image: url(/img/person-1.jpg)"></div>
-                    <p class="name">Грей Фредериксон</p>
-                    <p class="profession">Генеральный продюсер</p>
-                    <p class="country">США</p>
+                    <p class="name">{{t('')}}Грей Фредериксон</p>
+                    <p class="profession">{{t('General producer')}}</p>
+                    <p class="country">{{t('USA')}}</p>
                     <a class="link" href="#" target="_blank">linkedin.com/ivan_alexeev</a>
                 </div>
                 <div class="person">
                     <div class="img" style="background-image: url(/img/person-2.jpg)"></div>
-                    <p class="name">Саламат Мухаммед-Али</p>
-                    <p class="profession">Кинопроизводитель</p>
-                    <p class="country">Казахстан</p>
+                    <p class="name">{{t('')}}Саламат Мухаммед-Али</p>
+                    <p class="profession">{{t('Filmmaker')}}</p>
+                    <p class="country">{{t('Kazakhstan')}}</p>
                     <a class="link" href="#" target="_blank">linkedin.com/ivan_alexeev</a>
                 </div>
                 <div class="person">
                     <div class="img" style="background-image: url(/img/person-3.jpg)"></div>
-                    <p class="name">Питер Жмутский</p>
-                    <p class="profession">Кинопроизводитель</p>
-                    <p class="country">США</p>
+                    <p class="name">{{t('')}}Питер Жмутский</p>
+                    <p class="profession">{{t('Filmmaker')}}</p>
+                    <p class="country">{{t('USA')}}</p>
                     <a class="link" href="#" target="_blank">linkedin.com/ivan_alexeev</a>
                 </div>
                 <div class="person">
                     <div class="img" style="background-image: url(/img/person-4.jpg)"></div>
-                    <p class="name">Динара Батырова</p>
-                    <p class="profession">Продюсер</p>
-                    <p class="country">Казахстан</p>
+                    <p class="name">{{t('')}}Динара Батырова</p>
+                    <p class="profession">{{t('Producer')}}</p>
+                    <p class="country">{{t('Kazakhstan')}}</p>
                     <a class="link" href="#" target="_blank">linkedin.com/ivan_alexeev</a>
                 </div>
             </div>
             <section class="b-crowdsale">
                 <div class="wrapper--crowdsale">
-                    <p class="text">Проект реализуется при поддержке <strong class="orange">Crowdsale Network</strong>
+                    <p class="text">{{t('')}}Проект реализуется при поддержке <strong class="orange">Crowdsale Network</strong>
                     </p>
                     <img class="logo-crowdsale" src="/img/crowdsale-logo.png" alt="">
                     <a class="link" href="https://crowdsale.network/" target="_blank">crowdsale.network</a>
@@ -44,6 +44,13 @@
         </div>
     </section>
 </template>
+<script>
+  import { LanguageMixin } from 'components/mixins/language-mixin'
+
+  export default {
+    mixins: [LanguageMixin]
+  }
+</script>
 <style scoped lang="less">
     @import "~assets/less/_vars";
     .b-team {

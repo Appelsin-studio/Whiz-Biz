@@ -3,58 +3,60 @@
         <div class="container">
             <p class="g-number">13</p>
             <p class="g-caption-section">
-                <span class="gradient-text">Доход</span>
-                <span class="black">инвестора</span>
+                <span class="gradient-text">{{t('Investor')}}Доход</span>
+                <span class="black">{{t('income')}}инвестора</span>
             </p>
             <div class="description">
-                <p class="bold">Технологические активы</p>
+                <p class="bold">{{t('Technological assets')}}</p>
                 <p class="bonus">
-                    <span class="light">Бонус первым</span>
-                    <span class="orange">100 инвесторам</span>
+                    <span class="light">{{t('Bonus first')}}</span>
+                    <span class="orange">100 {{t('to investors')}}</span>
                 </p>
             </div>
             <div class="wrapper">
                 <div class="item item--1">
                     <p class="number">01</p>
                     <div class="text-wrapper">
-                        <p class="text">Токены GTC на сумму <span class="bold">0.3 BTC</span></p>
+                        <p class="text">{{t('GTC Tokens in the amount of')}} <span class="bold">0.3 BTC</span></p>
                         <span class="line">o</span>
                         <div class="img">
                             <img src="/img/icon/income-1.png" alt="">
                         </div>
-                       <!-- <img src="/img/icon/income-1.png" alt="">-->
                     </div>
                 </div>
                 <div class="item item--2">
                     <p class="number">02</p>
                     <div class="text-wrapper">
-                        <p class="text">Участие в распределении <span class="bold">15% доли</span> среди всех
-                            со-продюсеров</p>
+                        <p class="text">{{t('Participation in the distribution')}} <span class="bold">15% {{t('shares')}}</span> {{t('among all co-producers')}}</p>
                         <span class="line">o</span>
                         <div class="img">
                             <img src="/img/icon/income-2.png" alt="">
                         </div>
-                        <!--<img src="/img/icon/income-2.png" alt="">-->
                     </div>
                 </div>
                 <div class="item item--3">
                     <p class="number">03</p>
                     <div class="text-wrapper">
-                        <p class="text">Участие в распределении <span class="bold">7% доли</span> от каждой серии среди
-                            всех со-продюсеров</p>
+                        <p class="text">{{t('Participation in the distribution of')}} <span class="bold">7% {{t('share')}}</span> {{t('of each series among all co-producers')}}</p>
                         <span class="line">o</span>
                         <div class="img">
                             <img src="/img/icon/income-3.png" alt="">
                         </div>
-                        <!--<img src="/img/icon/income-3.png" alt="">-->
                     </div>
                 </div>
             </div>
-            <p class="target-desc">Планируется снять <span class="bold">28 сезонов</span> по 12 серий в каждом
-                сезоне</p>
+            <p class="target-desc">{{t('It is planned to shoot')}} <span class="bold">28 {{t('seasons')}}</span>
+                {{t('of 12 episodes in each season.')}}</p>
         </div>
     </section>
 </template>
+<script>
+  import { LanguageMixin } from 'components/mixins/language-mixin'
+
+  export default {
+    mixins: [LanguageMixin]
+  }
+</script>
 <style scoped lang="less">
     @import "~assets/less/_vars";
     .b-investor-income {

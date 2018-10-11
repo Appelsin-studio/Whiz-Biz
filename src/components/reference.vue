@@ -3,78 +3,85 @@
         <div class="container">
             <p class="g-number">08</p>
             <p class="g-caption-section">
-                <span class="gradient-text">Референсы</span>
-                <span>(фильмы - аналоги)</span>
+                <span class="gradient-text">{{t('References')}}</span>
+                <span>({{t('movies - analogs')}})</span>
             </p>
             <div class="wrapper">
                 <div class="item">
                     <p class="number">01</p>
-                    <p class="name">Ведьма из блэр</p>
+                    <p class="name">{{t('Blair witch')}}</p>
                     <p class="money">
-                        <span class="bold">Бюджет:&ensp;</span>
+                        <span class="bold">{{t('Budget')}}:&ensp;</span>
                         <span class="light">60 000 $</span>
                     </p>
                     <p class="money">
-                        <span class="bold">Маркетинг:&ensp;</span>
+                        <span class="bold">{{t('Marketing')}}:&ensp;</span>
                         <span class="light"></span>
                     </p>
                     <p class="money">
-                        <span class="bold">Сборы:&ensp;</span>
+                        <span class="bold">{{t('Fees')}}:&ensp;</span>
                         <span class="light">248 000 $</span>
                     </p>
                 </div>
                 <div class="item">
                     <p class="number">02</p>
-                    <p class="name">Паранормальное явление</p>
+                    <p class="name">{{t('Paranormal Activity')}}</p>
                     <p class="money">
-                        <span class="bold">Бюджет:&ensp;</span>
+                        <span class="bold">{{t('Budget')}}:&ensp;</span>
                         <span class="light">15 000 $</span>
                     </p>
                     <p class="money">
-                        <span class="bold">Маркетинг:&ensp;</span>
+                        <span class="bold">{{t('Marketing')}}:&ensp;</span>
                         <span class="light"></span>
                     </p>
                     <p class="money">
-                        <span class="bold">Сборы:&ensp;</span>
+                        <span class="bold">{{t('Fees')}}:&ensp;</span>
                         <span class="light">193 000 $</span>
                     </p>
                 </div>
                 <div class="item">
                     <p class="number">03</p>
-                    <p class="name">Судная ночь</p>
+                    <p class="name">{{t('Judgment night')}}</p>
                     <p class="money">
-                        <span class="bold">Бюджет:&ensp;</span>
+                        <span class="bold">{{t('Budget')}}:&ensp;</span>
                         <span class="light">3 000 000 $</span>
                     </p>
                     <p class="money">
-                        <span class="bold">Маркетинг:&ensp;</span>
+                        <span class="bold">{{t('Marketing')}}:&ensp;</span>
                         <span class="light"></span>
                     </p>
                     <p class="money">
-                        <span class="bold">Сборы:&ensp;</span>
+                        <span class="bold">{{t('Fees')}}:&ensp;</span>
                         <span class="light">89 000 000 $</span>
                     </p>
                 </div>
                 <div class="item">
                     <p class="number">04</p>
-                    <p class="name">Город призрак</p>
+                    <p class="name">{{t('Ghost town')}}</p>
                     <p class="money">
-                        <span class="bold">Бюджет:&ensp;</span>
+                        <span class="bold">{{t('Budget')}}:&ensp;</span>
                         <span class="light">9 000 000 $</span>
                     </p>
                     <p class="money">
-                        <span class="bold">Маркетинг:&ensp;</span>
+                        <span class="bold">{{t('Marketing')}}:&ensp;</span>
                         <span class="light"></span>
                     </p>
                     <p class="money">
-                        <span class="bold">Сборы:&ensp;</span>
-                        <span class="light">узнаем в 2020 году</span>
+                        <span class="bold">{{t('Fees')}}&ensp;</span>
+                        <span class="light">{{t('find out in 2020')}}</span>
                     </p>
                 </div>
             </div>
         </div>
     </section>
 </template>
+<script>
+  import { LanguageMixin } from 'components/mixins/language-mixin'
+
+  export default {
+    mixins: [LanguageMixin]
+  }
+</script>
 <style scoped lang="less">
     @import "~assets/less/_vars";
     .b-reference {

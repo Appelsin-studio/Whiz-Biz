@@ -3,66 +3,73 @@
         <div class="container">
             <p class="g-number">11</p>
             <p class="g-caption-section">
-                <span>Минимальный и оптимальный</span>
-                <span class="gradient-text">прогноз роста Gtc </span> за 7 лет
+                <span>{{t('Minimum and optimal')}}</span>
+                <span class="gradient-text">{{t('growth forecast')}} Gtc </span> {{t('for 7 years')}}
             </p>
             <table class="table">
                 <tr class="caption-table">
-                    <th colspan="2" class="capt">Минимальный прогноз токена GTC в ближайшие 7 лет</th>
-                    <th colspan="2" class="capt">Оптимальный прогноз токена GTC в ближайшие 7 лет</th>
+                    <th colspan="2" class="capt">{{t('Minimum forecast GTC token in the next 7 years')}}</th>
+                    <th colspan="2" class="capt">{{t('The optimal forecast of the GTC token in the next 7 years')}}</th>
                 </tr>
                 <tr class="gray">
-                    <td class="light">0 год, 2019г</td>
+                    <td class="light">0 {{t('year')}}, 2019</td>
                     <td class="bold">$0,133</td>
-                    <td class="light">0 год, 2019г</td>
+                    <td class="light">0 {{t('year')}}, 2019</td>
                     <td class="bold">$0,133</td>
                 </tr>
                 <tr>
-                    <td class="light">1 год, 2020г</td>
+                    <td class="light">1 {{t('year')}}, 2020</td>
                     <td class="bold">$0,266</td>
-                    <td class="light">1 год, 2020г</td>
+                    <td class="light">1 {{t('year')}}, 2020</td>
                     <td class="bold">$0,666</td>
                 </tr>
                 <tr class="gray">
-                    <td class="light">2 год, 2021г</td>
+                    <td class="light">2 {{t('year')}}, 2021</td>
                     <td class="bold">$0,533</td>
-                    <td class="light">2 год, 2021г</td>
+                    <td class="light">2 {{t('year')}}, 2021</td>
                     <td class="bold">$3,333</td>
                 </tr>
                 <tr>
-                    <td class="light">3 год, 2022г</td>
+                    <td class="light">3 {{t('year')}}, 2022</td>
                     <td class="bold">$1,066</td>
-                    <td class="light">3 год, 2022г</td>
+                    <td class="light">3 {{t('year')}}, 2022</td>
                     <td class="bold">$16,66</td>
                 </tr>
                 <tr class="gray">
-                    <td class="light">4 год, 2023г</td>
+                    <td class="light">4 {{t('year')}}, 2023</td>
                     <td class="bold">$2,133</td>
-                    <td class="light">4 год, 2023г</td>
+                    <td class="light">4 {{t('year')}}, 2023</td>
                     <td class="bold">$83,33</td>
                 </tr>
                 <tr>
-                    <td class="light">5 год, 2024г</td>
+                    <td class="light">5 {{t('year')}}, 2024</td>
                     <td class="bold">$4,266</td>
-                    <td class="light">5 год, 2024г</td>
+                    <td class="light">5 {{t('year')}}, 2024</td>
                     <td class="bold">$416,6</td>
                 </tr>
                 <tr class="gray">
-                    <td class="light">6 год, 2025г</td>
+                    <td class="light">6 {{t('year')}}, 2025</td>
                     <td class="bold">$8,533</td>
-                    <td class="light">6 год, 2025г</td>
+                    <td class="light">6 {{t('year')}}, 2025</td>
                     <td class="bold">$2083</td>
                 </tr>
                 <tr>
-                    <td class="light">7 год, 2026г</td>
+                    <td class="light">7 {{t('year')}}, 2026</td>
                     <td class="bold">$17,06</td>
-                    <td class="light">7 год, 2026г</td>
+                    <td class="light">7 {{t('year')}}, 2026</td>
                     <td class="bold">$10 416</td>
                 </tr>
             </table>
         </div>
     </section>
 </template>
+<script>
+  import { LanguageMixin } from 'components/mixins/language-mixin'
+
+  export default {
+    mixins: [LanguageMixin]
+  }
+</script>
 <style scoped lang="less">
     @import "~assets/less/_vars";
 

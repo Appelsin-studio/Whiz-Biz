@@ -2,46 +2,53 @@
     <section class="b-terms-cooperation">
         <div class="container">
             <p class="g-number">12</p>
-            <p class="g-caption-section">Как вы можете
-                <span class="gradient-text">быть частью нас</span>
+            <p class="g-caption-section">{{t('As you can')}}
+                <span class="gradient-text">{{t('be part of us')}}</span>
             </p>
-            <p class="secondary-caption">Как стать инвестором</p>
+            <p class="secondary-caption">{{t('How to become an investor')}}</p>
             <div class="instruction-arrow">
-                <span class="text">Оставьте заявку </span>
+                <span class="text">{{t('Leave a request')}} </span>
                 <span class="arrow"></span>
-                <span class="text">Приобретите паи фонда</span>
+                <span class="text">{{t('Purchase fund units')}}</span>
                 <span class="arrow"></span>
-                <span class="text">Получайте прибыль</span>
+                <span class="text">{{t('Make profit')}}</span>
             </div>
             <div class="conditions-wrapper">
-                <p class="secondary-caption">Условия сотрудничества</p>
+                <p class="secondary-caption">{{t('Terms of cooperation')}}</p>
                 <ul class="conditions-list">
                     <li class="item">
                         <span class="line"></span>
-                        <span class="bold">Доступный порог входа &#8212; </span>
-                        <span class="light">Минимальный размер инвестиций 1BTC</span>
+                        <span class="bold">{{t('Available entry threshold')}} &#8212; </span>
+                        <span class="light">{{t('Minimum investment')}} 1BTC</span>
                     </li>
                     <li class="item">
                         <span class="line"></span>
-                        <span class="bold">Выгодное распределение прибыли &#8212; </span>
-                        <span class="light">Инвестор получает x% прибыли от дохода кино</span>
+                        <span class="bold">{{t('Profitable profit sharing')}} &#8212; </span>
+                        <span class="light">{{t('Investor gets x% profit from cinema income')}}</span>
                     </li>
                     <li class="item">
                         <span class="line"></span>
-                        <span class="bold">Долгострочная стратегия &#8212; </span>
+                        <span class="bold">{{t('Long-term strategy')}} &#8212; </span>
                         <span class="light"></span>
                     </li>
                     <li class="item">
                         <span class="line"></span>
-                        <span class="bold">Постоянный источник дохода &#8212; </span>
-                        <span class="light">Возможность завещать доход своим детям</span>
+                        <span class="bold">{{t('Permanent source of income')}} &#8212; </span>
+                        <span class="light">{{t('The ability to bequeath income to your children')}}</span>
                     </li>
                 </ul>
-                <a href="#" class="btn btn--orange" @click.prevent="$modal.show('apply')">Подать заявку</a>
+                <a href="#" class="btn btn--orange" @click.prevent="$modal.show('apply')">{{t('Apply')}}</a>
             </div>
         </div>
     </section>
 </template>
+<script>
+  import { LanguageMixin } from 'components/mixins/language-mixin'
+
+  export default {
+    mixins: [LanguageMixin]
+  }
+</script>
 <style scoped lang="less">
     @import "~assets/less/_vars";
     .b-terms-cooperation {

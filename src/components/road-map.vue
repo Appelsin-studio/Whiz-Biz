@@ -3,11 +3,11 @@
         <div class="container">
             <p class="g-number">14</p>
             <p class="g-caption-section">
-                <span class="black">Дорожная</span>
-                <span class="gradient-text">карта</span>
+                <span class="black">{{t('Road')}}</span>
+                <span class="gradient-text">{{t('map')}}</span>
             </p>
             <p class="description--top">
-                <span class="light">План реализации проекта </span>
+                <span class="light">{{t('Project Implementation Plan')}} </span>
                 <strong class="bold">&#10077;Ghost Town&#10078;</strong></p>
             <div class="road-wrapper">
                 <div class="road">
@@ -18,19 +18,19 @@
                         <p class="number">
                             <span>01</span>
                         </p>
-                        <p class="text">Производство и продажа фильма</p>
+                        <p class="text">{{t('Production and sale of the film')}}</p>
                     </div>
                     <div class="step">
                         <p class="number">
                             <span>02</span>
                         </p>
-                        <p class="text">Crowdsale GTC Hardcap 9 млн. $</p>
+                        <p class="text">Crowdsale GTC Hardcap 9 {{t('million')}} $</p>
                     </div>
                     <div class="step">
                         <p class="number">
                             <span>03</span>
                         </p>
-                        <p class="text">Собрать бюджет 100 BTC через продажи CGEN для запуска PR кампании</p>
+                        <p class="text">{{t('Build a budget of 100 BTC through CGEN sales to launch a PR campaign')}}</p>
                     </div>
                     <div class="step-start-finish finish">
                         <p class="text-start-finish">finish</p>
@@ -38,16 +38,16 @@
                 </div>
             </div>
             <div class="profit-wrapper">
-                <p class="black">Инвестору выгодно с первых дней</p>
+                <p class="black">{{t('Investor profitable from the first days')}}</p>
                 <div class="btc">
                     <p class="text text--orange">1 BTC = 20 000 000 CGEN</p>
                     <p class="span-block">
                         <span>20 000 000 CGEN POS mining</span>
-                        <span>1 год + 10 000 000 CGEN</span>
+                        <span>1 {{t('year')}} + 10 000 000 CGEN</span>
                     </p>
                 </div>
                 <div class="prognosis">
-                    <p class="text text--blue">Прогноз цены 2020 год =</p>
+                    <p class="text text--blue">{{t('Forecast price 2020 year')}} =</p>
                     <p class="span-block">
                         <span>0,000001 BTC (100 сатоши)</span>
                     </p>
@@ -56,6 +56,13 @@
         </div>
     </section>
 </template>
+<script>
+  import { LanguageMixin } from 'components/mixins/language-mixin'
+
+  export default {
+    mixins: [LanguageMixin]
+  }
+</script>
 <style scoped lang="less">
     @import "~assets/less/_vars";
 

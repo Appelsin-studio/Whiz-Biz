@@ -3,7 +3,7 @@
           >
         <div class="modal b-modal-apply">
             <div class="close-modal" @click="hide" title="Close modal">×</div>
-            <div class="title">Подать <span class="gradient-text">заявку</span></div>
+            <div class="title"><span class="gradient-text">{{t('apply')}}</span></div>
             <form class="form form--apply" action="">
                 <div class="input-wrapper">
                     <input class="item" type="text" placeholder="Имя">
@@ -11,14 +11,16 @@
                     <input class="item" type="email" placeholder="E-mail">
                     <input class="item" type="text" placeholder="Ваш комментарий">
                 </div>
-                <a href="#" class="btn">Отправить</a>
+                <a href="#" class="btn">{{t('Send')}}</a>
             </form>
         </div>
     </modal>
 </template>
 <script>
+  import { LanguageMixin } from 'components/mixins/language-mixin'
 
   export default {
+    mixins: [LanguageMixin],
     data () {
       return {
       }

@@ -2,27 +2,33 @@
     <section class="b-film">
         <div class="container">
             <p class="g-number">06</p>
-            <h2 class="g-caption-section">Кинокартина <strong class="gradient-text">“ГОРОД ПРИЗРАК”</strong> / ”GHOST TOWN”</h2>
+            <h2 class="g-caption-section">{{t('Film')}} <strong class="gradient-text">“ГОРОД ПРИЗРАК”</strong> / ”GHOST
+                TOWN”</h2>
             <div class="wrapper">
                 <div class="img">
                     <img src="/img/poster.jpg" alt="">
                 </div>
                 <div class="wrapper-desc">
-                    <p class="desc--bold black">Началась работа над казахстанско-голливудским кинопроектом <span
-                        class="blue">"ГОРОД
-                        ПРИЗРАК"</span></p>
-                    <p class="desc"><b class="black">Режиссеры:</b> Саламат Мухаммед-Али (Salamat Mukhammed-Ali)
+                    <p class="desc--bold black">{{t('Work has begun on the Kazakhstan-Hollywood film project')}} <span
+                        class="blue">"{{t('GHOST TOWN')}}"</span></p>
+                    <p class="desc"><b class="black">{{t('Directors')}}:</b> Саламат Мухаммед-Али (Salamat Mukhammed-Ali)
                         и Питер Жмутский (Peter Zhmutski). </p>
-                    <p class="desc"><b class="black">Генеральный продюсер:</b> Грэй Фредриксон/Gray Frederickson
-                        <i>легенда Голливуда, обладатель
-                        кинопремии «Оскар©» и «Эмми», продюсер трилогии "Крестный отец".</i>
+                    <p class="desc"><b class="black">{{t('General producer')}}:</b> Грэй Фредриксон/Gray Frederickson
+                        <i>{{t('Hollywood legend, Oscar and Emmy film awards producer, "The Godfather trilogy')}}</i>
                         </p>
-                    <p class="desc"><b class="black">Продюсер:</b> Динара Батырова.</p>
+                    <p class="desc"><b class="black">{{t('Producer')}}:</b> Динара Батырова.</p>
                 </div>
             </div>
         </div>
     </section>
 </template>
+<script>
+  import { LanguageMixin } from 'components/mixins/language-mixin'
+
+  export default {
+    mixins: [LanguageMixin]
+  }
+</script>
 <style scoped lang="less">
     @import "~assets/less/_vars";
     .b-film {
