@@ -31,11 +31,11 @@
                         <img svg-inline src="~src/assets/img/icon/down-arrow2.svg" alt="">
                     </div>
                 </div>
-                <svg id="main-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 137.02">
-                    <path class="cls-1" d="M0,0A3431,3431,0,0,0,999,137,3429.58,3429.58,0,0,0,1920,0V137H0Z" fill="#fff"/>
-                </svg>
             </div>
         </div>
+        <svg id="main-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 137.02">
+            <path class="cls-1" d="M0,0A3431,3431,0,0,0,999,137,3429.58,3429.58,0,0,0,1920,0V137H0Z" fill="#fff"/>
+        </svg>
     </section>
 </template>
 <script>
@@ -66,10 +66,14 @@
         #main-svg {
             position: absolute;
             bottom: 0;
+            background: linear-gradient(#ebf5fd, #ebf5fd) 16.5% 105vh  no-repeat / 1px 100%,
+            linear-gradient(#ebf5fd, #ebf5fd) 33% 110vh  no-repeat / 1px 100%,
+            linear-gradient(#ebf5fd, #ebf5fd) 49.5% 115vh  no-repeat / 1px 100%,
+            linear-gradient(#ebf5fd, #ebf5fd) 66% 110vh  no-repeat / 1px 100%,
+            linear-gradient(#ebf5fd, #ebf5fd) 82.5% 105vh  no-repeat / 1px 100%, transparent;
         }
         .bg-gradient {
             height: 100%;
-            width: 100%;
             background: linear-gradient(to bottom, #000 6%, rgba(255, 255, 255, 0) 26%);
         }
         .container {

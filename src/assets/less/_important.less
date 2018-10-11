@@ -8,11 +8,20 @@ body {
   font-family: @ProximaNova;
   font-weight: 400;
   color: @grayMain;
-  background: linear-gradient(#ebf5fd, #ebf5fd) 16.5% center  no-repeat / 1px 100%,
-                    linear-gradient(#ebf5fd, #ebf5fd) 33% center  no-repeat / 1px 100%,
-                    linear-gradient(#ebf5fd, #ebf5fd) 49.5% center  no-repeat / 1px 100%,
-                    linear-gradient(#ebf5fd, #ebf5fd) 66% center  no-repeat / 1px 100%,
-                    linear-gradient(#ebf5fd, #ebf5fd) 82.5% center  no-repeat / 1px 100%, #fff;
+  background: #fff;
+}
+.line-document {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: linear-gradient(#ebf5fd, #ebf5fd) 16.5% top  no-repeat / 1px 100%,
+  linear-gradient(#ebf5fd, #ebf5fd) 33% top  no-repeat / 1px 100%,
+  linear-gradient(#ebf5fd, #ebf5fd) 49.5% top  no-repeat / 1px 100%,
+  linear-gradient(#ebf5fd, #ebf5fd) 66% top  no-repeat / 1px 100%,
+  linear-gradient(#ebf5fd, #ebf5fd) 82.5% top  no-repeat / 1px 100%, transparent;
+  z-index: 10;
 }
 .container {
   position: relative;

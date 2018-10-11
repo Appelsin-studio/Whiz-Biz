@@ -1,5 +1,6 @@
 <template>
     <div id="app">
+        <div class="line-document"></div>
         <bg-wrapper/>
         <header-block/>
         <main>
