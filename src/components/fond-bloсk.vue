@@ -209,6 +209,7 @@
                 border-radius: 15px;
                 border: 2px solid @blueMain;
                 box-sizing: border-box;
+                animation: mouse-animate 2s infinite ease-out;
                 &::after {
                     content: '';
                     display: block;
@@ -222,10 +223,22 @@
             .arrow {
                 width: 27px;
                 text-align: center;
+                animation: mouse-animate 2s infinite ease-out;
                 > svg {
                     width: 19px;
                     height: 19px;
                     margin: 0 auto;
+                }
+            }
+            @keyframes mouse-animate {
+                0% {
+                    opacity: 1;
+                }
+                50% {
+                    opacity: 0;
+                }
+                100% {
+                    opacity: 1;
                 }
             }
         }

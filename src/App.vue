@@ -1,55 +1,34 @@
 <template>
     <div id="app">
+        <bg-wrapper/>
+        <header-block/>
         <main>
-            <full-page ref="fullpage" :options="fullPageOptions" id="fullpage">
-                <section class="section-fullpage">
-                    <header-block/>
-                    <fond-block/>
-                </section>
-                <section class="section-fullpage">
-                    <description-fond/>
-                </section>
-                <section class="section-fullpage bg-dotty">
-                    <mission-fond/>
-                </section>
-                <section class="section-fullpage">
-                    <team-block/>
-                </section>
-                <section class="section-fullpage">
-                    <list-popular/>
-                </section>
-                <section class="section-fullpage">
-                    <film-block/>
-                </section>
-                <section class="section-fullpage">
-                    <idea-film/>
-                </section>
-                <section class="section-fullpage">
-                    <reference-block/>
-                </section>
-                <section class="section-fullpage">
-                    <statistics-block/>
-                </section>
-                <section class="section-fullpage">
-                    <finance-films/>
-                </section>
-                <section class="section-fullpage">
-                    <table-gtc/>
-                </section>
-                <section class="section-fullpage">
-                    <terms-cooperation/>
-                </section>
-                <section class="section-fullpage">
-                    <investor-income/>
-                </section>
-                <section class="section-fullpage">
-                    <road-map/>
-                </section>
-                <section class="section-fullpage fp-auto-height">
-                    <footer-block/>
-                </section>
-            </full-page>
+            <fond-block/>
+            <description-fond/>
+            <div class="bg-dotty">
+                <mission-fond/>
+            </div>
+            <team-block/>
+            <div class="bg-dotty">
+                <list-popular/>
+            </div>
+            <film-block/>
+            <idea-film/>
+            <div class="bg-dotty">
+                <reference-block/>
+            </div>
+            <statistics-block/>
+            <finance-films/>
+            <div class="bg-dotty">
+                <table-gtc/>
+            </div>
+            <terms-cooperation/>
+            <div class="bg-dotty">
+                <investor-income/>
+            </div>
+            <road-map/>
         </main>
+        <footer-block/>
         <modal-apply/>
         <modal-presentation/>
         <modal-message/>
@@ -57,9 +36,9 @@
 </template>
 
 <script>
-  import Vue from 'vue'
   import HeaderBlock from 'components/header'
 
+  import BgWrapper from 'components/bg-wrapper'
   import FondBlock from 'components/fond-bloсk'
   import DescriptionFond from 'components/description-fond'
   import MissionFond from 'components/mission-fond'
@@ -81,13 +60,10 @@
 
   import FooterBlock from 'components/footer'
 
-  import VueFullPage from 'vue-fullpage.js'
-  import 'fullpage.js/vendors/scrolloverflow.min'
-
-  Vue.use(VueFullPage)
   export default {
     name: 'app',
     components: {
+      BgWrapper,
       HeaderBlock,
       FondBlock,
       DescriptionFond,
@@ -109,20 +85,14 @@
       ModalMessage
     },
     data() {
-      return {
-        /*fullPageOptions: {
-          licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
-          scrollBar: true,
-          responsiveWidth: 320,
-          sectionSelector: '.section-fullpage',
-          scrollOverflow: true
-        }*/
-      }
+      return {}
     }
   }
 </script>
 
 <style lang="less">
-    /*@import "~fullpage.js/dist/fullpage.min.css";*/
     @import "assets/less/main";
+    #app {
+        position: relative;
+    }
 </style>

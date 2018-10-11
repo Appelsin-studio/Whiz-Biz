@@ -78,6 +78,7 @@
                     order: 2;
                 });
                 img {
+                    border-radius: 50%;
                     /*.md-block({
                         display: none;
                     });*/
