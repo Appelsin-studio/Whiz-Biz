@@ -23,6 +23,16 @@
             top: 14,
             right: -150,
             count: 2
+          }, {
+            size: 500,
+            top: 25,
+            left: -150,
+            count: 2
+          }, {
+            size: 300,
+            top: 35,
+            right: -50,
+            count: 2
           }
         ]
       }
@@ -95,10 +105,10 @@
                         opacity: 1;
                     }
                     to {
-                        width: 160%;
-                        height: 160%;
-                        top: -30%;
-                        left: -30%;
+                        width: 180%;
+                        height: 180%;
+                        top: -40%;
+                        left: -40%;
                         opacity: 0;
                     }
                 }
