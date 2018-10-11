@@ -3,8 +3,8 @@
         <div class="container">
             <p class="g-number">13</p>
             <p class="g-caption-section">
-                <span class="gradient-text">{{t('Investor')}}Доход</span>
-                <span class="black">{{t('income')}}инвестора</span>
+                <span class="gradient-text">{{t('Investor')}}</span>
+                <span class="black">{{t('income')}}</span>
             </p>
             <div class="description">
                 <p class="bold">{{t('Technological assets')}}</p>
@@ -60,7 +60,9 @@
 <style scoped lang="less">
     @import "~assets/less/_vars";
     .b-investor-income {
+        position: relative;
         padding: 150px 0;
+        z-index: 15;
         .sm-block({
             padding: 120px 0;
         });

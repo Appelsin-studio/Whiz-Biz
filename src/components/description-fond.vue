@@ -36,8 +36,10 @@
 <style scoped lang="less">
     @import "~assets/less/_vars";
     .b-description-fond {
+        position: relative;
         padding: 180px 0;
         overflow: hidden;
+        z-index: 15;
         .wrapper {
             position: relative;
             .row-flex();

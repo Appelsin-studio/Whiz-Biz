@@ -55,7 +55,9 @@
     @import "~assets/less/_vars";
 
     .b-list-popular {
+        position: relative;
         padding: 150px 0 100px;
+        z-index: 15;
         .sm-block({
             padding: 120px 0 80px;
         });

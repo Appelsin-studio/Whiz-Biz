@@ -6,10 +6,10 @@
             <div class="title">{{t('Sign up for a')}} <span class="gradient-text">{{t('presentation')}}</span></div>
             <form class="form form--apply" action="">
                 <div class="input-wrapper">
-                    <input class="item" type="text" placeholder="Имя">
-                    <input class="item" type="tel" placeholder="Телефон">
+                    <input class="item" type="text" :placeholder="t('Name')">
+                    <input class="item" type="tel" :placeholder="t('Phone')">
                     <input class="item" type="email" placeholder="E-mail">
-                    <input class="item" type="text" placeholder="Ваш комментарий">
+                    <input class="item" type="text" :placeholder="t('Your comment')">
                 </div>
                 <a href="#" class="btn">{{t('Send')}}</a>
             </form>

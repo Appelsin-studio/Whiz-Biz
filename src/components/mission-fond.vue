@@ -30,8 +30,10 @@
 <style scoped lang="less">
     @import "~assets/less/_vars";
     .b-mission-fond {
+        position: relative;
         overflow: hidden;
         padding: 200px 0;
+        z-index: 15;
         .wrapper {
             position: relative;
             justify-content: flex-start;

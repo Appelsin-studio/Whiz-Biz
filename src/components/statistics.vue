@@ -146,9 +146,11 @@
 <style scoped lang="less">
     @import "~assets/less/_vars";
     .b-statistics {
+        position: relative;
         padding-top: 150px;
         .sm-block({ padding-top: 120px; });
         .xs-block({ padding-top: 80px; });
+        z-index: 15;
         .g-caption-section {
             margin-bottom: 110px;
             max-width: 640px;
