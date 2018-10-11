@@ -81,7 +81,7 @@
                 left: 0;
                 animation-name: circle-animate;
                 animation-iteration-count: infinite;
-                animation-timing-function: ease-out;
+                animation-timing-function: ease-in;
                 animation-duration: 6s;
                 opacity: 0;
                 &:nth-child(2) {
@@ -105,10 +105,10 @@
                         opacity: 1;
                     }
                     to {
-                        width: 180%;
-                        height: 180%;
-                        top: -40%;
-                        left: -40%;
+                        width: 200%;
+                        height: 200%;
+                        top: -50%;
+                        left: -50%;
                         opacity: 0;
                     }
                 }
