@@ -51,10 +51,6 @@ export default {
     ru: 'команда',
     kk: 'команда'
   },
-  'h': {
-    ru: '',
-    kk: ''
-  },
   'General producer': {
     ru: 'Генеральный продюсер',
     kk: 'Бас продюсер'
@@ -164,7 +160,7 @@ export default {
     kk: 'Жанр'
   },
   'Found footage / Found film, Mystic, Horror, Fiction': {
-    ru: 'Found footage/Найденная плёнка, Мистика, Ужасы, Фантастика',
+    ru: 'Found footage / Найденная плёнка, Мистика, Ужасы, Фантастика',
     kk: 'Табылған бейне / табылған фильм, мистик, қасіретін, фантастика'
   },
   'Timing': {
@@ -193,7 +189,7 @@ export default {
   },
   'References': {
     ru: 'Референсы',
-    kk: ''
+    kk: 'Әдебиеттер'
   },
   'movies - analogs': {
     ru: 'фильмы - аналоги',
@@ -423,7 +419,6 @@ export default {
     ru: 'Собрать бюджет 100 BTC через продажи CGEN для запуска PR кампании',
     kk: 'PR-науқаны іске қосу үшін CGEN-тің 100 BTC астам бюджетін құрыңыз'
   },
-
   'Investor profitable from the first days': {
     ru: 'Инвестору выгодно с первых дней',
     kk: 'Алғашқы күннен бастап инвестор пайдалы'

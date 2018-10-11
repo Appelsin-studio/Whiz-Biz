@@ -3,7 +3,7 @@
           >
         <div class="modal b-modal-apply">
             <div class="close-modal" @click="hide" title="Close modal">×</div>
-            <div class="title"><span class="gradient-text">{{t('apply')}}</span></div>
+            <div class="title"><span class="gradient-text">{{t('Apply')}}</span></div>
             <form class="form form--apply" action="">
                 <div class="input-wrapper">
                     <input class="item" type="text" placeholder="Имя">

@@ -4,8 +4,7 @@
             <div class="wrapper">
                 <div class="description-wrapper">
                     <p class="g-number">07</p>
-                    <p class="g-caption-section"><span class="gradient-text">{{t('Film')}}</span> {{t('idea')
-                        }}</p>
+                    <p class="g-caption-section"><span class="gradient-text">{{t('Film')}}</span> {{t('idea')}}</p>
                     <div class="characteristics">
                         <span class="black">{{t('Genre')}}:&ensp;</span>
                         <span class="light">{{t('Found footage / Found film, Mystic, Horror, Fiction')}}</span>
@@ -19,10 +18,10 @@
                         <span class="light">12 {{t('months')}}</span>
                     </div>
                     <p class="company">
-                        {{t('GHOST TOWN PRODUCTIONS, LLC from Oklahoma (USA) offers you a film project called “Ghost Town”')}}.
+                        {{t('GHOST TOWN PRODUCTIONS, LLC from Oklahoma (USA) offers you a film project called "Ghost Town"')}}.
                     </p>
                     <p class="story-film">
-                        {{t('This story of the tragedy of the 1999 Tornadoes and the ghost town of Bezrodnoy Grove is based on real events. The action takes place in the US, in Oklahoma. Local hunters near the perimeter of the Bezrodnaya Grove find tapes with amateur recording. These cassettes captured the entire mission of a team of eight people who disappeared in the Ghost City on May 3, 1999. In “Bezrodnaya groves” our heroes will learn that they are the chosen ones. They discover other civilizations, worlds and parallel dimensions.')}}
+                        {{t('This story of the tragedy of the 1999 Tornadoes and the ghost town of Bezrodnoy Grove is based on real events. The action takes place in the US, in Oklahoma. Local hunters near the perimeter of the Bezrodnaya Grove find tapes with amateur recording. These cassettes captured the entire mission of a team of eight people who disappeared in the Ghost City on May 3, 1999. In "Bezrodnaya groves" our heroes will learn that they are the chosen ones. They discover other civilizations, worlds and parallel dimensions.')}}
                     </p>
                 </div>
                 <div class="img">
