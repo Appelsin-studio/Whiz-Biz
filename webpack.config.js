@@ -163,7 +163,7 @@ var smartgridSettings = {
   mobileFirst: false, /* mobileFirst ? 'min-width' : 'max-width' */
   container: {
     maxWidth: '1170px', /* max-width оn very large screen */
-    fields: '10px' /* side fields */
+    fields: '15px' /* side fields */
   },
   breakPoints: {
     lg: {

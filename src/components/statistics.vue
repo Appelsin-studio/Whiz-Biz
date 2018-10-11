@@ -8,13 +8,15 @@
             </p>
             <p class="roi">ROI {{t('in relation to the size of the budget')}} </p>
             <p class="films">(1600 {{t('released films in 2010 - 2015')}})</p>
-            <highcharts :options="chartOptions"></highcharts>
+            <highcharts :options="chartOptions" class="highcharts-block"></highcharts>
+            <img src="~src/assets/img/chart-roi.svg" alt="" class="highcharts-block-img">
         </div>
     </section>
 </template>
 <script>
   import { Chart } from 'highcharts-vue'
   import { LanguageMixin } from 'components/mixins/language-mixin'
+
   export default {
     mixins: [LanguageMixin],
     components: {
@@ -23,7 +25,10 @@
     data() {
       return {
         chartOptions: {
-          chart: {},
+          chart: {
+            height: 6 / 12 * 100 + '%',
+            backgroundColor: 'transparent'
+          },
           title: {
             text: false
           },
@@ -80,7 +85,12 @@
             x: 120,
             verticalAlign: 'top',
             y: 10,
-            floating: true
+            floating: true,
+            itemStyle: {
+              fontSize: '14px',
+              fontFamily: '\'ProximaNova\', \'Arial\', sans-serif',
+              fontWeight: 200
+            }
           },
           series: [
             {
@@ -137,7 +147,101 @@
                   fontWeight: 600
                 }
               }
-            }]
+            }
+          ],
+          responsive: {
+            rules: [
+              {
+                condition: {
+                  maxWidth: 767
+                },
+                chartOptions: {
+                  legend: {
+                    x: 80,
+                    y: -5,
+                    itemStyle: {
+                      fontSize: '12px'
+                    }
+                  },
+                  yAxis: [
+                    {
+                      title: {
+                        style: {
+                          fontSize: '14px'
+                        }
+                      }
+                    },
+                    {
+                      title: {
+                        style: {
+                          fontSize: '14px'
+                        }
+                      }
+                    }
+                  ],
+                  xAxis: [
+                    {
+                      labels: {
+                        style: {
+                          fontSize: '10px'
+                        }
+                      }
+                    }
+                  ],
+                  series: [
+                    {
+                      dataLabels: {
+                        y: 20,
+                        style: {
+                          fontSize: '14px'
+                        }
+                      }
+
+                    }, {
+                      dataLabels: {
+                        y: 0,
+                        style: {
+                          fontSize: '14px'
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                condition: {
+                  maxWidth: 500
+                },
+                chartOptions: {
+                  chart: {},
+                  legend: {
+                    layout: 'horizontal',
+                    align: 'left',
+                    x: 0,
+                    verticalAlign: 'top',
+                    y: 0,
+                    floating: false
+                  },
+                  yAxis: [
+                    {
+                      title: false
+                    }, {
+                      title: false
+                    }
+                  ],
+                  xAxis: [
+                    {
+                      labels: {
+                        style: {
+                          fontSize: '6px'
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
         }
       }
     }
@@ -149,6 +253,13 @@
         padding-top: 150px;
         .sm-block({ padding-top: 120px; });
         .xs-block({ padding-top: 80px; });
+        .highcharts-block {
+            .xm-block({ display: none });
+            &-img {
+                display: none;
+                .xm-block({ display: block });
+            }
+        }
         .g-caption-section {
             margin-bottom: 110px;
             max-width: 640px;
