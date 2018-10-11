@@ -36,8 +36,15 @@
 <style scoped lang="less">
     @import "~assets/less/_vars";
     .b-description-fond {
+        position: relative;
         padding: 180px 0;
-        overflow: hidden;
+        z-index: 15;
+        .sm-block({
+            padding: 140px 0;
+        });
+        .xs-block({
+            padding: 100px 0;
+        });
         .wrapper {
             position: relative;
             .row-flex();
@@ -66,6 +73,8 @@
                 .col();
                 .size(5);
                 .size-md(6);
+                .size-sm(8);
+                .size-xs(10);
                 display: flex;
                 align-items: center;
                 position: relative;
@@ -89,6 +98,14 @@
                         position: absolute;
                         top: 35px;
                         left: -40px;
+                        .md-block({
+                            width: 300px;
+                            height: 300px;
+                        });
+                        .sm-block({
+                            width: 200px;
+                            height: 200px;
+                        });
                         @keyframes gradient-animate {
                             0% {
                                 background-position: 0 50%
@@ -148,6 +165,10 @@
                                     top: -50%;
                                     left: -50%;
                                     opacity: 0;
+                                    .md-block({
+                                        width: 170%;
+                                        height: 170%;
+                                    });
                                 }
                             }
                         }

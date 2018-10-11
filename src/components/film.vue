@@ -32,15 +32,11 @@
 <style scoped lang="less">
     @import "~assets/less/_vars";
     .b-film {
+        position: relative;
         margin-top: -100px;
         padding-top: 150px;
         padding-bottom: 180px;
-        /*background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, @blackMain 10%, @blackMain 27%, @blackMain 49%, rgba(0, 0, 0,
-        0) 67%), url("/img/bg-film.jpg") no-repeat bottom center;
-        .lg-block({
-            background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, @blackMain 5%, @blackMain 27%, @blackMain
-            65%, rgba(0, 0, 0, 0) 75%), url("/img/bg-film.jpg") no-repeat bottom center;
-        });*/
+        z-index: 15;
         .sm-block({
             margin-top: -80px;
             padding-top: 120px;

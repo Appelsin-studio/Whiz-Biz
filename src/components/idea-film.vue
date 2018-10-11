@@ -42,7 +42,9 @@
 <style scoped lang="less">
     @import "~assets/less/_vars";
     .b-idea-film {
+        position: relative;
         padding: 150px 0;
+        z-index: 15;
         .sm-block({
             padding: 120px 0;
         });

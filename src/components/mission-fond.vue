@@ -30,8 +30,16 @@
 <style scoped lang="less">
     @import "~assets/less/_vars";
     .b-mission-fond {
+        position: relative;
         overflow: hidden;
         padding: 200px 0;
+        z-index: 15;
+        .sm-block({
+            padding: 160px 0;
+        });
+        .xs-block({
+            padding: 100px 0;
+        });
         .wrapper {
             position: relative;
             justify-content: flex-start;
@@ -76,6 +84,8 @@
                 flex-shrink: 0;
                 .md-block({
                     order: 2;
+                    padding: 0;
+                    justify-content: center;
                 });
                 img {
                     border-radius: 50%;

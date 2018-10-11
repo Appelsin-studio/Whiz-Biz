@@ -54,7 +54,9 @@
 <style scoped lang="less">
     @import "~assets/less/_vars";
     .b-team {
+        position: relative;
         padding: 100px 0 90px;
+        z-index: 15;
         .sm-block({ padding: 80px 0 70px; });
         .sm-block({ padding: 80px 0 30px; });
         .g-caption-section {

@@ -56,8 +56,10 @@
     @import "~assets/less/_vars";
 
     .main-footer {
+        position: relative;
         padding: 40px 0 50px;
         background: #111;
+        z-index: 15;
         .top-wrapper {
             display: flex;
             margin-bottom: 30px;

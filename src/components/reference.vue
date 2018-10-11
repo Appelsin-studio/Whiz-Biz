@@ -85,7 +85,9 @@
 <style scoped lang="less">
     @import "~assets/less/_vars";
     .b-reference {
+        position: relative;
         padding-top: 150px;
+        z-index: 15;
         .sm-block({
             padding-top: 120px;
         });
