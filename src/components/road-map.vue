@@ -8,7 +8,7 @@
             </p>
             <p class="description--top">
                 <span class="light">{{t('Project Implementation Plan')}} </span>
-                <strong class="bold">&#10077;Ghost Town&#10078;</strong></p>
+                <strong class="bold">“Ghost Town”</strong></p>
             <div class="road-wrapper">
                 <div class="road">
                     <div class="step-start-finish start">

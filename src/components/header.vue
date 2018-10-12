@@ -26,7 +26,7 @@
           {label: 'En', value: 'en'},
           {label: 'Kz', value: 'kk'}
         ],
-        selected: null
+        selected: {label: 'Ru', value: 'ru'}
       }
     },
     created() {
@@ -81,6 +81,9 @@
                         color: @blueMain;
                     }
                 }
+                &.presentation {
+                    .xs-block({ text-align: center;});
+                }
             }
         }
         .v-select {
@@ -89,6 +92,7 @@
             }
             &.searchable {
                 min-width: 50px;
+                .xs-block({ min-width: 40px;});
                 .dropdown-toggle {
                     height: 100%;
                     border-radius: 0;
@@ -97,26 +101,39 @@
                     color: #fff;
                     padding: 0 0 1px;
                     .vs__actions {
-                        padding: 0 0 0 3px;
+                        padding: 0;
                     }
                     .clear {
                         display: none;
                     }
                     input[type=search] {
-                        display: none;
+                        margin: 0;
+                        padding: 0;
+                        border: none;
+                        position: absolute;
+                        z-index: -1;
                     }
                 }
                 .open-indicator::before {
                     border-color: @blueMain;
                 }
             }
+            .select-tag {
+                margin: 4px 0 0;
+                padding: 0 5px;
+                border: none;
+            }
             &.single .selected-tag {
+                width: 100%;
                 color: #fff;
                 text-transform: uppercase;
                 font-size: 2.6rem;
                 font-weight: 600;
                 line-height: 2.6rem;
                 letter-spacing: 0.18rem;
+                margin: 4px 0 0;
+                padding: 0 7px;
+                border: none;
             }
             &.single.open .selected-tag {
                 position: relative;
@@ -127,11 +144,12 @@
                 overflow: hidden;
                 background: transparent;
                 li > a {
-                    padding: 3px 9px;
+                    padding: 3px 7px;
                     color: #fff;
                     text-transform: uppercase;
                     font-size: 2.6rem;
                     letter-spacing: 0.18rem;
+                    border: none;
                 }
             }
         }
