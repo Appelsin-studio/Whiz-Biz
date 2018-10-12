@@ -5,32 +5,32 @@
             <h3 class="g-caption-section">{{t('Why')}} <span class="gradient-text">{{t('is the crypto fund gaining popularity')}}</span> {{t('and what will affect the growth of the token')}}и что
                 Gtc?</h3>
             <div class="wrapper-list">
-                <div class="item active">
-                    <p class="item-name">1. {{t('several dozen will be shot of films')}}</p>
+                <div class="item active" >
+                    <p class="item-name" @click="item">1. {{t('several dozen will be shot of films')}}</p>
                     <p class="item-content">{{t('For 7 years, the CRYPTO-FUND will be shot, several dozen full-length, short, documentary films and cartoons, which will participate in many film festivals of the world, in competitions and will win prizes. The whole world will know about these victories and films. Critics and world publications will write about them.')}}</p>
                 </div>
                 <div class="item">
-                    <p class="item-name" >2. {{t('advertising in all projects')}}</p>
+                    <p class="item-name" @click="item">2. {{t('advertising in all projects')}}</p>
                     <p class="item-content">{{t('Why')}}</p>
                 </div>
                 <div class="item">
-                    <p class="item-name">3. {{t('Movies will be released with the support of the Crypto Fund')}}</p>
+                    <p class="item-name" @click="item">3. {{t('Movies will be released with the support of the Crypto Fund')}}</p>
                     <p class="item-content"></p>
                 </div>
                 <div class="item">
-                    <p class="item-name">4. {{t('will be filmed "reality show"')}}</p>
+                    <p class="item-name" @click="item">4. {{t('will be filmed "reality show"')}}</p>
                     <p class="item-content"></p>
                 </div>
                 <div class="item">
-                    <p class="item-name">5. {{t('we will hold contests')}}</p>
+                    <p class="item-name" @click="item">5. {{t('we will hold contests')}}</p>
                     <p class="item-content"></p>
                 </div>
                 <div class="item">
-                    <p class="item-name">6. {{t('interviews in all world top publications')}}</p>
+                    <p class="item-name" @click="item">6. {{t('interviews in all world top publications')}}</p>
                     <p class="item-content"></p>
                 </div>
                 <div class="item">
-                    <p class="item-name">7. “{{t('from the creator of the trilogy The Godfather')}}”</p>
+                    <p class="item-name" @click="item">7. “{{t('from the creator of the trilogy The Godfather')}}”</p>
                     <p class="item-content"></p>
                 </div>
             </div>
@@ -44,10 +44,17 @@
       mixins: [LanguageMixin],
       data() {
         return {
-          open: true
+          active: true
         }
       },
       methods:  {
+        item (e) {
+          if(e.target.parentElement.classList.contains('active')) {
+            e.target.parentElement.classList.remove('active')
+          } else {
+            e.target.parentElement.classList.add('active')
+          }
+        }
       }
     }
 </script>
@@ -74,11 +81,10 @@
         .wrapper-list {
             display: flex;
             flex-direction: column;
-            align-items: flex-start;
             .item {
                 position: relative;
                 padding: 60px 50px 0 50px;
-                .sm-block({
+                .md-block({
                     padding: 40px 30px 0 30px;
                     margin-bottom: 20px;
                 });
@@ -90,6 +96,7 @@
                     margin-bottom: 0;
                 }
                 &.active {
+                    margin-bottom: 20px;
                     background: #fff;
                     border-radius: 8px;
                     box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
@@ -112,7 +119,8 @@
                     letter-spacing: 0.25rem;
                     color: #000;
                     text-transform: uppercase;
-                    .sm-block({
+                    cursor: pointer;
+                    .md-block({
                         padding-left: 60px;
                     });
                     .xs-block({
@@ -127,7 +135,7 @@
                         left: 0;
                         top: -5px;
                         border-radius: 50%;
-                        .sm-block({
+                        .md-block({
                             width: 30px;
                             height: 30px;
                             top: 0;
@@ -139,7 +147,7 @@
                     }
                     &::after {
                         background: linear-gradient(#fff, #fff) 50% 50% no-repeat / 18px 4px @orangeMain;
-                        .sm-block({
+                        .md-block({
                             background: linear-gradient(#fff, #fff) 50% 50% no-repeat / 13px 3px @orangeMain;
                         });
                         .xs-block({
@@ -149,7 +157,7 @@
                     &::before {
                         background: linear-gradient(#fff, #fff) 50% 50% no-repeat / 4px 18px;
                         z-index: 2;
-                        .sm-block({
+                        .md-block({
                             background: linear-gradient(#fff, #fff) 50% 50% no-repeat / 3px 13px;
                         });
                         .xs-block({
@@ -164,7 +172,7 @@
                     font-weight: 200;
                     font-size: 2rem;
                     letter-spacing: 0.14rem;
-                    .sm-block({
+                    .md-block({
                         padding-left: 60px;
                         padding-bottom: 40px;
                     });
