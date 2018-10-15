@@ -10,7 +10,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, './dist'),
     publicPath: '/',
-    filename: 'build.js',
+    filename: 'build.js'
   },
 
   module: {
@@ -19,24 +19,24 @@ module.exports = {
         test: /\.css$/,
         use: [
           'vue-style-loader',
-          'css-loader',
-        ],
+          'css-loader'
+        ]
       },
       {
         test: /\.scss$/,
         use: [
           'vue-style-loader',
           'css-loader',
-          'sass-loader',
-        ],
+          'sass-loader'
+        ]
       },
       {
         test: /\.sass$/,
         use: [
           'vue-style-loader',
           'css-loader',
-          'sass-loader?indentedSyntax',
-        ],
+          'sass-loader?indentedSyntax'
+        ]
       },
       {
         test: /\.vue$/,
@@ -49,20 +49,20 @@ module.exports = {
                 'scss': [
                   'vue-style-loader',
                   'css-loader',
-                  'sass-loader',
+                  'sass-loader'
                 ],
                 'sass': [
                   'vue-style-loader',
                   'css-loader',
-                  'sass-loader?indentedSyntax',
-                ],
-              },
-            },
+                  'sass-loader?indentedSyntax'
+                ]
+              }
+            }
           },
           {
-            loader: 'vue-svg-inline-loader',
-          },
-        ],
+            loader: 'vue-svg-inline-loader'
+          }
+        ]
       },
       {
         test: /\.js$/,
@@ -78,61 +78,62 @@ module.exports = {
         options: {
           limit: 10000,
           name: '[name].[ext]?[hash]',
-          outputPath: 'css/img',
-        },
+          outputPath: 'css/img'
+        }
       },
       {
         test: /\.(ttf|eot|woff|woff2|otf)$/,
         loader: 'file-loader',
         options: {
           name: '[name].[ext]',
-          outputPath: 'css/fonts/',
-        },
-      },
-    ],
+          outputPath: 'css/fonts/'
+        }
+      }
+    ]
   },
   plugins: [
     new CopyWebpackPlugin([
       {
         from: './src/assets/.htaccess',
-        to: '[name].[ext]',
+        to: '[name].[ext]'
       },
       {
         from: './src/assets/img',
-        to: 'img/[path][name].[ext]',
-      },
+        to: 'img/[path][name].[ext]'
+      }
     ]),
     new HtmlWebpackPlugin({
       title: 'trading view',
       hash: true,
       template: __dirname + '/index.html',
-      filename: __dirname + '/dist/index.html',
+      filename: __dirname + '/dist/index.html'
     }),
-    new ExtractTextPlugin('styles.css'),
+    new ExtractTextPlugin('styles.css')
   ],
   resolve: {
     alias: {
       'vue$': 'vue/dist/vue.esm.js',
       components: path.resolve('./src/components'),
       assets: path.resolve('./src/assets'),
-      src: path.resolve('./src')
+      src: path.resolve('./src'),
+      helpers: path.resolve('./src/helpers')
     },
     modules: [
       path.resolve('./src/assets'),
-      path.resolve('./node_modules'),
+      path.resolve('./node_modules')
     ],
-    extensions: ['*', '.js', '.vue', '.json'],
+    extensions: ['*', '.js', '.vue', '.json']
   },
   devServer: {
     contentBase: path.join(__dirname, 'dist'),
     historyApiFallback: true,
     noInfo: true,
-    overlay: true,
+    overlay: true
   },
   performance: {
-    hints: false,
+    hints: false
   },
-  devtool: '#eval-source-map',
+  devtool: '#eval-source-map'
 }
 
 if (process.env.NODE_ENV === 'production') {
@@ -141,18 +142,18 @@ if (process.env.NODE_ENV === 'production') {
   module.exports.plugins = (module.exports.plugins || []).concat([
     new webpack.DefinePlugin({
       'process.env': {
-        NODE_ENV: '"production"',
-      },
+        NODE_ENV: '"production"'
+      }
     }),
     new webpack.optimize.UglifyJsPlugin({
       sourceMap: true,
       compress: {
-        warnings: false,
-      },
+        warnings: false
+      }
     }),
     new webpack.LoaderOptionsPlugin({
-      minimize: true,
-    }),
+      minimize: true
+    })
   ])
 }
 
@@ -173,7 +174,7 @@ var smartgridSettings = {
       width: '992px'
     },
     sm: {
-      width: '767px',
+      width: '767px'
     },
     xm: {
       width: '590px',
@@ -184,7 +185,7 @@ var smartgridSettings = {
       fields: '10px'
     }
   }
-};
+}
 
-smartgrid('./src/assets/less', smartgridSettings);
+smartgrid('./src/assets/less', smartgridSettings)
 

@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "babel-plugin-transform-runtime": "^6.23.0",
+    "gsap": "^2.0.2",
     "highcharts": "^6.1.4",
     "highcharts-vue": "^1.2.0",
     "transform-runtime": "0.0.0",

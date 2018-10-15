@@ -21,7 +21,7 @@
             <statistics-block :in-viewport-offset-top='-300' :in-viewport-once='true'/>
             <finance-films :in-viewport-offset-top='-300' :in-viewport-once='true'/>
             <div class="bg-dotty">
-                <table-gtc/>
+                <table-gtc :in-viewport-offset-top='-300' :in-viewport-once='true'/>
             </div>
             <terms-cooperation/>
             <div class="bg-dotty">
