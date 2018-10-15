@@ -470,5 +470,41 @@ export default {
   'Number of films': {
     ru: 'Количество фильмов',
     kk: 'Фильмдердің саны'
+  },
+  'Types of income from the production and sale of cinema': {
+    ru: 'Виды дохода от производства и продажи кино',
+    kk: 'Кинематографты өндіру мен сатудан түсетін табыс түрлері'
+  },
+  'Types of income from<br/>the production<br/>and sale of cinema': {
+    ru: 'Виды дохода от<br/>производства<br/>и продажи кино',
+    kk: 'Кинематографты<br/>өндіру мен сатудан<br/>түсетін табыс түрлері'
+  },
+  'Merchandising': {
+    ru: 'Мерчендайзинг',
+    kk: 'Мерчендайзинг'
+  },
+  'Trains, airplanes, <br/> hotels': {
+    ru: 'Поезда, самолеты,<br/>гостиницы',
+    kk: 'Пойыздар, ұшақтар, <br/> қонақ үйлер'
+  },
+  'Netflix and other<br/>rental services': {
+    ru: 'Нетфликс и другие<br/>сервисы проката',
+    kk: 'Netflix және басқа<br/>жалдау қызметтері'
+  },
+  'Selling Internet-<br/>platforms': {
+    ru: 'Продажа интернет-<br/>платформам',
+    kk: 'Интернет-<br/>платформаларын сату'
+  },
+  'Sale to<br/>other countries': {
+    ru: 'Продажа<br/>в другие страны',
+    kk: 'Басқа<br/>елдерге сату'
+  },
+  'Selling<br/>TV channels': {
+    ru: 'Продажа<br/>телеканалам',
+    kk: 'Теледидар<br/>арналарын сату'
+  },
+  'Cash<br/>fees': {
+    ru: 'Кассовые<br/>сборы',
+    kk: 'Ақшалай<br/>төлемдер'
   }
 }

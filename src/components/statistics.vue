@@ -25,8 +25,11 @@
       highcharts: Chart
     },
     data() {
-      return {
-        chartOptions: {
+      return {}
+    },
+    computed: {
+      chartOptions() {
+        return {
           chart: {
             height: 6 / 12 * 100 + '%',
             backgroundColor: 'transparent'
@@ -53,7 +56,7 @@
                 style: {}
               },
               title: {
-                text: 'Количество фильмов',
+                text: this.t('Number of films'),
                 style: {
                   fontFamily: '\'ProximaNova\', \'Arial\', sans-serif',
                   fontSize: '18px',
@@ -103,7 +106,7 @@
           },
           series: [
             {
-              name: 'Количество фильмов',
+              name: this.t('Number of films'),
               type: 'column',
               data: [
                 {
@@ -253,7 +256,7 @@
           }
         }
       }
-    },
+    }
   }
 </script>
 <style scoped lang="less">

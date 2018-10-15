@@ -155,7 +155,7 @@
                 }
             }
             .gray {
-                background: #e5eef7;
+                background: #e8e4f3;;
             }
         }
     }

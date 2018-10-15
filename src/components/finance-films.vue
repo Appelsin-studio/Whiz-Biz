@@ -9,7 +9,7 @@
             <div class="pie">
                 <highcharts v-if="inViewport.now" :options="chartOptions" class="highcharts-block"></highcharts>
                 <div v-else style="width: 100%;height: 300px;" class="highcharts-block"></div>
-                <img src="~src/assets/img/chart-industries.png" alt="" class="highcharts-block-img">
+                <img :src="'/img/chart-industries-'+language+'.png'" alt="" class="highcharts-block-img">
             </div>
         </div>
     </section>
@@ -25,19 +25,22 @@
       highcharts: Chart
     },
     data() {
-      return {
-        chartOptions: {
+      return {}
+    },
+    computed: {
+      chartOptions() {
+        return {
           chart: {
             type: 'pie',
             height: 9 / 12 * 100 + '%',
             backgroundColor: 'transparent'
           },
           title: {
-            text: 'Виды дохода от<br/>производства<br/>и продажи кино',
+            text: this.t('Types of income from<br/>the production<br/>and sale of cinema'),
             align: 'center',
             verticalAlign: 'middle',
             y: -20,
-            x: -12,
+            x: -5,
             style: {
               fontSize: '2.6rem',
               fontFamily: '\'ProximaNova\', \'Arial\', sans-serif',
@@ -52,7 +55,7 @@
           },
           series: [
             {
-              name: 'Виды дохода от производства и продажи кино',
+              name: this.t('Types of income from the production and sale of cinema'),
               data: [
                 {
                   name: '<div class="chart-label-custom text-align-left"><i>08</i><span>DVD</span></div>',
@@ -60,37 +63,37 @@
                   color: '#f58318'
                 },
                 {
-                  name: '<div class="chart-label-custom text-align-left"><i>07</i><span>Мерчендайзинг</span></div>',
+                  name: '<div class="chart-label-custom text-align-left"><i>07</i><span>' + this.t('Merchandising') + '</span></div>',
                   y: 1,
                   color: '#f68318'
                 },
                 {
-                  name: '<div class="chart-label-custom text-align-left"><i>06</i><span>Поезда, самолеты,<br/>гостиницы</span></div>',
+                  name: '<div class="chart-label-custom text-align-left"><i>06</i><span>' + this.t('Trains, airplanes, <br/> hotels') + '</span></div>',
                   y: 1,
                   color: '#f78318'
                 },
                 {
-                  name: '<div class="chart-label-custom text-align-left"><i>05</i><span>Нетфликс и другие<br/>сервисы проката</span></div>',
+                  name: '<div class="chart-label-custom text-align-left"><i>05</i><span>' + this.t('Netflix and other<br/>rental services') + '</span></div>',
                   y: 1,
                   color: '#f88318'
                 },
                 {
-                  name: '<div class="chart-label-custom"><i>04</i><span>Продажа интернет-<br/>платформам</span></div>',
+                  name: '<div class="chart-label-custom"><i>04</i><span>' + this.t('Selling Internet-<br/>platforms') + '</span></div>',
                   y: 1,
                   color: '#f98318'
                 },
                 {
-                  name: '<div class="chart-label-custom"><i>03</i><span>Продажа<br/>в другие страны</span></div>',
+                  name: '<div class="chart-label-custom"><i>03</i><span>' + this.t('Sale to<br/>other countries') + '</span></div>',
                   y: 1,
                   color: '#fa8318'
                 },
                 {
-                  name: '<div class="chart-label-custom"><i>02</i><span>Продажа<br/>телеканалам</span></div>',
+                  name: '<div class="chart-label-custom"><i>02</i><span>' + this.t('Selling<br/>TV channels') + '</span></div>',
                   y: 1,
                   color: '#fb8318'
                 },
                 {
-                  name: '<div class="chart-label-custom"><i>01</i><span>Кассовые<br/>сборы</span></div>',
+                  name: '<div class="chart-label-custom"><i>01</i><span>' + this.t('Cash<br/>fees') + '</span></div>',
                   y: 1,
                   color: '#fc9433'
                 }
@@ -100,10 +103,10 @@
                 connectorColor: '#cbcbcb',
                 distance: 70,
                 connectorPadding: 10
-              },
+              }
 
             }
-          ],
+          ]
         }
       }
     }
