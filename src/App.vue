@@ -1,5 +1,5 @@
 <template>
-    <div id="app" @load="load">
+    <div id="app">
         <div class="line-document"></div>
         <transition name="fade">
             <div class="preloader-block bg-dotty" v-if="loaderBlock">
