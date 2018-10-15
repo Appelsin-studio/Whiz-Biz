@@ -1,6 +1,11 @@
 <template>
-    <div id="app">
+    <div id="app" @load="load">
         <div class="line-document"></div>
+        <transition name="fade">
+            <div class="preloader-block bg-dotty" v-if="loaderBlock">
+                <img src="/img/load.svg"/>
+            </div>
+        </transition>
         <bg-wrapper/>
         <header-block/>
         <main>
@@ -86,7 +91,14 @@
       ModalMessage
     },
     data() {
-      return {}
+      return {
+        loaderBlock: true
+      }
+    },
+    mounted() {
+      window.addEventListener('load', () => {
+        this.loaderBlock = false
+      })
     }
   }
 </script>
@@ -95,5 +107,19 @@
     @import "assets/less/main";
     #app {
         position: relative;
+    }
+    .preloader-block {
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        z-index: 9999;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+            width: 20vh;
+        }
     }
 </style>
