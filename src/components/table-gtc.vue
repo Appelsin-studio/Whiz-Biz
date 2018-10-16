@@ -90,7 +90,7 @@
     watch: {
       'inViewport.now': function (visible) {
         if (visible) {
-          TweenLite.to(this.$data, 4, {factor: 100})
+          TweenLite.to(this.$data, 2, {factor: 100})
         }
       }
     }

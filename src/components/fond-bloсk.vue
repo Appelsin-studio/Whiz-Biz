@@ -1,5 +1,10 @@
 <template>
     <section class="b-fond-block">
+        <div class="parallax-wrapper">
+            <parallax :speedFactor="0.3">
+                <img src="/img/bg-main.jpg">
+            </parallax>
+        </div>
         <div class="bg-gradient">
             <div class="container--flex-center">
                 <div class="container">
@@ -40,9 +45,11 @@
 </template>
 <script>
   import { LanguageMixin } from 'components/mixins/language-mixin'
+  import Parallax from 'vue-parallaxy'
 
   export default {
     mixins: [LanguageMixin],
+    components: {Parallax},
     methods: {
       modalApply() {
         this.$modal.show('apply')
@@ -57,12 +64,19 @@
         height: 100vh;
         min-height: 750px;
         overflow: hidden;
-        background: url("/img/bg-main.jpg");
-        background-repeat: no-repeat;
-        background-position: top center;
-        background-size: cover;
+        /*background: url("/img/bg-main.jpg");*/
+        /*background-repeat: no-repeat;*/
+        /*background-position: top center;*/
+        /*background-size: cover;*/
         color: #fff;
         .md-block({ min-height: 600px; });
+        .parallax-wrapper {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+        }
         #main-svg {
             position: absolute;
             bottom: 0;
@@ -73,6 +87,8 @@
             linear-gradient(#ebf5fd, #ebf5fd) 82.5% 105vh  no-repeat / 1px 100%, transparent;
         }
         .bg-gradient {
+            position: relative;
+            z-index: 11;
             height: 100%;
             background: linear-gradient(to bottom, #000 6%, rgba(255, 255, 255, 0) 26%);
         }
