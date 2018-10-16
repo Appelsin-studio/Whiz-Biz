@@ -10,7 +10,7 @@
             <p class="films">(1600 {{t('released films in 2010 - 2015')}})</p>
             <highcharts v-if="inViewport.now" :options="chartOptions" class="highcharts-block"></highcharts>
             <div v-else style="width: 100%;height: 300px;" class="highcharts-block"></div>
-            <img src="~src/assets/img/chart-roi.svg" alt="" class="highcharts-block-img">
+            <charts-svg class="highcharts-block-img"/>
         </div>
     </section>
 </template>
@@ -18,11 +18,13 @@
   import { Chart } from 'highcharts-vue'
   import { LanguageMixin } from 'components/mixins/language-mixin'
   import inViewport from 'vue-in-viewport-mixin'
+  import ChartsSvg from 'components/charts-svg'
 
   export default {
     mixins: [LanguageMixin, inViewport],
     components: {
-      highcharts: Chart
+      highcharts: Chart,
+      ChartsSvg
     },
     data() {
       return {}
