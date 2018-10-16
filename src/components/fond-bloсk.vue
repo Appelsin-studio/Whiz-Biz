@@ -1,7 +1,7 @@
 <template>
     <section class="b-fond-block">
         <div class="parallax-wrapper">
-            <parallax :speedFactor="0.3">
+            <parallax :speedFactor="0.35" direction="down" :sectionHeight="100" :breakpoint="''">
                 <img src="/img/bg-main.jpg">
             </parallax>
         </div>
