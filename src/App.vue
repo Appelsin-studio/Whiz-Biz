@@ -23,10 +23,10 @@
             <div class="bg-dotty">
                 <reference-block/>
             </div>
-            <statistics-block :in-viewport-offset-top='-300' :in-viewport-once='true'/>
-            <finance-films :in-viewport-offset-top='-300' :in-viewport-once='true'/>
+            <statistics-block :in-viewport-offset-top='-800' :in-viewport-once='true'/>
+            <finance-films :in-viewport-offset-top='-800' :in-viewport-once='true'/>
             <div class="bg-dotty">
-                <table-gtc :in-viewport-offset-top='-300' :in-viewport-once='true'/>
+                <table-gtc :in-viewport-offset-top='-800' :in-viewport-once='true'/>
             </div>
             <terms-cooperation/>
             <div class="bg-dotty">
