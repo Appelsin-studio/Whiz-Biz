@@ -67,12 +67,12 @@
     @import "~assets/less/_vars";
     .b-list-popular {
         position: relative;
-        padding: 150px 0 100px;
+        padding: 140px 0;
         z-index: 15;
-        .sm-block({ padding: 120px 0 80px; });
-        .xs-block({ padding: 100px 0 60px; });
+        .md-block({ padding: 110px 0; });
+        .xs-block({ padding: 100px 0;});
         .g-caption-section {
-            margin-bottom: 80px;
+            margin-bottom: 50px;
             .line-after--left(-30px, 25%);
             .xs-block({ margin-bottom: 65px; });
         }
@@ -81,7 +81,7 @@
             flex-direction: column;
             .item {
                 position: relative;
-                padding: 60px 50px 0 50px;
+                padding: 60px 50px 0 45px;
                 transition: .6s;
                 .md-block({ padding: 40px 30px 0 30px; margin-bottom: 20px; });
                 .xs-block({ padding: 20px 10px 0 10px; margin-bottom: 10px; });
@@ -102,7 +102,7 @@
                 .item-name {
                     position: relative;
                     margin-bottom: 30px;
-                    padding-left: 100px;
+                    padding-left: 90px;
                     font-family: @BebasNeue;
                     font-weight: 600;
                     font-size: 3.5rem;
@@ -139,7 +139,7 @@
                 }
                 .item-content {
                     display: block;
-                    padding-left: 100px;
+                    padding-left: 90px;
                     padding-bottom: 60px;
                     font-weight: 200;
                     font-size: 2rem;

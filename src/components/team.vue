@@ -55,12 +55,11 @@
     @import "~assets/less/_vars";
     .b-team {
         position: relative;
-        padding: 100px 0 90px;
+        padding-top: 95px;
         z-index: 15;
-        .sm-block({ padding: 80px 0 70px; });
-        .sm-block({ padding: 80px 0 30px; });
+        .md-block({ padding-top: 50px;});
         .g-caption-section {
-            margin-bottom: 80px;
+            margin-bottom: 70px;
             .line-after--left();
             .sm-block({ margin-bottom: 65px; });
             .black {
@@ -70,8 +69,8 @@
         .wrapper--team {
             .row-flex();
             justify-content: center;
-            margin-bottom: 160px;
-            .sm-block({ margin-bottom: 120px; });
+            margin-bottom: 125px;
+            .md-block({ margin-bottom: 90px; });
             .xs-block({ margin-bottom: 90px; });
             .person {
                 .col();
@@ -86,7 +85,7 @@
                     .size(12);
                 }
                 .img {
-                    margin-bottom: 40px;
+                    margin-bottom: 35px;
                     width: 240px;
                     height: 240px;
                     border-radius: 50%;
@@ -99,7 +98,7 @@
                 .name {
                     font-family: @BebasNeue;
                     flex-grow: 1;
-                    margin-bottom: 20px;
+                    margin-bottom: 15px;
                     font-weight: 600;
                     font-size: 3.5rem;
                     letter-spacing: 0.25rem;
@@ -155,7 +154,7 @@
                 }
             }
             .logo-crowdsale {
-                margin-bottom: 40px;
+                margin-bottom: 30px;
                 .xs-block({ margin-bottom: 25px; max-width: 280px });
             }
             .link {

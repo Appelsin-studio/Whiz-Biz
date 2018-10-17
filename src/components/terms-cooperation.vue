@@ -53,18 +53,18 @@
     @import "~assets/less/_vars";
     .b-terms-cooperation {
         position: relative;
-        padding: 150px 0;
+        padding-top: 160px;
         z-index: 15;
-        .sm-block({
-            padding: 120px 0;
+        .md-block({
+            padding-top: 100px;
         });
         .xs-block({
-            padding: 80px 0;
+            padding-top: 60px;
         });
         .g-caption-section {
-            margin-bottom: 100px;
+            margin-bottom: 110px;
             .line-after--left();
-            .sm-block({
+            .md-block({
                 margin-bottom: 80px;
             });
             .xs-block({
@@ -72,7 +72,7 @@
             });
         }
         .secondary-caption {
-            margin-bottom: 45px;
+            margin-bottom: 50px;
             font-weight: 900;
             font-size: 3rem;
             letter-spacing: 0.2rem;
@@ -84,11 +84,13 @@
         }
         .instruction-arrow {
             display: flex;
-            margin-bottom: 110px;
+            margin-bottom: 125px;
             justify-content: flex-start;
             align-items: center;
-            .sm-block({
+            .md-block({
                 margin-bottom: 70px;
+            });
+            .sm-block({
                 flex-direction: column;
                 align-items: center;
             });
@@ -149,9 +151,10 @@
         .conditions-wrapper {
             .conditions-list {
                 display: flex;
-                margin-bottom: 70px;
+                margin-bottom: 100px;
                 position: relative;
                 flex-direction: column;
+                .xs-block({ margin-bottom: 60px;});
                 .item {
                     position: relative;
                     padding-bottom: 25px;

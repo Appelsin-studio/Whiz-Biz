@@ -160,8 +160,8 @@
         padding: 150px 0 50px;
         color: #000;
         z-index: 15;
-        .sm-block({ padding: 120px 0 40px; });
-        .xs-block({ padding: 80px 0 40px; });
+        .md-block({ padding: 80px 0 40px; });
+        .xs-block({ padding: 60px 0 20px; });
         .g-caption-section {
             margin-bottom: 110px;
             max-width: 650px;

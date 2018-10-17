@@ -100,10 +100,10 @@
     @import "~assets/less/_vars";
     .b-table-gtc {
         position: relative;
-        padding: 150px 0;
+        padding-top: 200px;
         z-index: 15;
-        .sm-block({ padding: 120px 0; });
-        .xs-block({ padding: 80px 0; });
+        .md-block({ padding-top: 100px; });
+        .xs-block({ padding-top: 60px;});
         .g-caption-section {
             margin-bottom: 70px;
             max-width: 780px;

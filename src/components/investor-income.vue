@@ -61,16 +61,13 @@
     @import "~assets/less/_vars";
     .b-investor-income {
         position: relative;
-        padding: 150px 0;
+        padding-top: 110px;
         z-index: 15;
-        .sm-block({
-            padding: 120px 0;
-        });
         .xs-block({
-            padding: 90px 0;
+            padding-top: 80px;
         });
         .g-caption-section {
-            margin-bottom: 40px;
+            margin-bottom: 30px;
             .line-after--left();
             .black {
                 color: #000;
@@ -128,12 +125,8 @@
                 margin-bottom: 50px;
             });
             .item {
-                margin-bottom: 60px;
                 max-width: 800px;
                 width: 100%;
-                .sm-block({
-                    margin-bottom: 30px;
-                });
                 &:last-child {
                     margin-bottom: 0;
                 }

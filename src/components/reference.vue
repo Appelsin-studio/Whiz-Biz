@@ -88,14 +88,14 @@
         position: relative;
         padding-top: 150px;
         z-index: 15;
-        .sm-block({
+        .md-block({
             padding-top: 120px;
         });
         .xs-block({
             padding-top: 80px;
         });
         .g-caption-section {
-            margin-bottom: 70px;
+            margin-bottom: 60px;
             .line-after--left(-30px, 25%);
             span {
                 display: block;
@@ -107,12 +107,12 @@
                 .col();
                 .size(6);
                 .size-xs(12);
-                margin-bottom: 100px;
+                margin-bottom: 60px;
                 .xs-block({
-                    margin-bottom: 50px;
+                    margin-bottom: 40px;
                 });
                 .number {
-                    margin-bottom: 20px;
+                    margin-bottom: 10px;
                     font-family: @BebasNeue;
                     font-weight: 600;
                     font-size: 6rem;

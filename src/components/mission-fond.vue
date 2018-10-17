@@ -32,10 +32,13 @@
     .b-mission-fond {
         position: relative;
         overflow: hidden;
-        padding: 200px 0;
+        padding-top: 125px;
+        padding-bottom: 200px;
         z-index: 15;
-        .sm-block({ padding: 160px 0; });
-        .xs-block({ padding: 100px 0; });
+        .md-block({ padding-top: 80px;
+            padding-bottom: 120px; });
+        .xs-block({ padding-top: 60px;
+            padding-bottom: 100px;  });
         .wrapper {
             position: relative;
             justify-content: flex-start;
@@ -53,10 +56,10 @@
                     text-align: right;
                     margin-bottom: 20px;
                 });
-                .sm-block({
+                /*.sm-block({
                     padding-left: 20px;
                     padding-right: 20px;
-                });
+                });*/
                 .g-caption-section {
                     .line-after--right(-20px);
                 }
@@ -80,11 +83,25 @@
                 flex-shrink: 0;
                 .md-block({ order: 2; padding: 0; justify-content: center;
                 });
-                img {
+                &::after {
+                    content: "";
+                    position: absolute;
+                    left: 20px;
+                    width: 300px;
+                    height: 300px;
+                    border: 12px solid @orangeMain;
                     border-radius: 50%;
-                    /*.md-block({
-                        display: none;
-                    });*/
+                    box-sizing: border-box;
+                    .md-block({ width: 250px;
+                        height: 250px;})
+                }
+                img {
+                    position: relative;
+                    bottom: -90px;
+                    right: -20px;
+                    border-radius: 50%;
+                    z-index: 10;
+                    .md-block({ max-height: 300px;})
                 }
             }
         }

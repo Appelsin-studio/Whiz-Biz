@@ -265,9 +265,9 @@
     @import "~assets/less/_vars";
     .b-statistics {
         position: relative;
-        padding-top: 150px;
-        .sm-block({ padding-top: 120px; });
-        .xs-block({ padding-top: 80px; });
+        padding-top: 115px;
+        .md-block({ padding-top: 60px; });
+        .xs-block({ padding-top: 40px; });
         z-index: 15;
         .highcharts-block {
             .xm-block({ display: none });
@@ -276,7 +276,7 @@
             }
         }
         .g-caption-section {
-            margin-bottom: 110px;
+            margin-bottom: 55px;
             max-width: 640px;
             .line-after--left(-30px, 25%);
             .sm-block({ margin-bottom: 80px; });

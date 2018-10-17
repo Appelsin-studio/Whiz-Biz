@@ -61,7 +61,7 @@
                 display: inline-block;
                 color: #fff;
                 &.gtc {
-                    padding: 50px 25px 5px;
+                    padding: 50px 20px 5px;
                     font-size: 3.5rem;
                     .transition();
                     .md-block({ padding: 35px 15px 5px; });

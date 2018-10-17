@@ -57,7 +57,7 @@
 
     .main-footer {
         position: relative;
-        padding: 40px 0 50px;
+        padding: 50px 0 50px;
         background: #111;
         z-index: 15;
         .top-wrapper {

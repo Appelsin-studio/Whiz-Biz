@@ -33,18 +33,17 @@
     @import "~assets/less/_vars";
     .b-film {
         position: relative;
-        margin-top: -100px;
+        margin-top: -65px;
         padding-top: 150px;
-        padding-bottom: 180px;
         z-index: 15;
-        .sm-block({
+        .md-block({
             margin-top: -80px;
-            padding-top: 120px;
-            padding-bottom: 100px;
+            padding-top: 80px;
+            padding-bottom: 20px;
         });
         .xs-block({
-            padding-top: 100px;
-            padding-bottom: 80px;
+            padding-top: 60px;
+            padding-bottom: 0;
         });
         .g-caption-section {
             margin-bottom: 60px;
@@ -59,7 +58,7 @@
             padding-top: 25px;
             justify-content: flex-end;
             align-items: flex-start;
-            .lg-block({
+            .lg-block({ padding-top: 0;
                 flex-direction: column;
                 align-items: center;
             });
@@ -84,11 +83,11 @@
                 box-sizing: border-box;
                 z-index: 1;
                 flex-shrink: 0;
-                .sm-block({
-                    padding: 65px 15px 65px 40px
+                .lg-block({
+                    padding: 65px 40px 0 40px;
                 });
                 .xs-block({
-                    padding: 30px 10px 30px 20px;
+                    padding: 20px 10px 0 10px;
                 });
                 .desc--bold {
                     margin-bottom: 30px;

@@ -43,13 +43,14 @@
     @import "~assets/less/_vars";
     .b-idea-film {
         position: relative;
-        padding: 150px 0;
+        padding-top: 260px;
+
         z-index: 15;
-        .sm-block({
-            padding: 120px 0;
+        .lg-block({
+            padding-top: 130px ;
         });
-        .xs-block({
-            padding: 70px 0;
+        .md-block({
+            padding-top: 90px;
         });
         .black {
             color: #000;

@@ -20,7 +20,7 @@ export default {
     kk: 'Blockchain және криптографиялық белгілерге бағытталған қаржы-технологиялық компания'
   },
   'About crypto fund': {
-    ru: 'О криптофонде',
+    ru: 'О крипто фонде',
     kk: 'Криптондық қор туралы'
   },
   'was created to improve and expand participation in the business of consumers and financiers in order to become a leading platform for supporting business in the field of entertainment and creativity (art)': {
@@ -336,11 +336,11 @@ export default {
     kk: 'Тапсырыс беру'
   },
   'income': {
-    ru: 'Доход',
+    ru: 'инвестора',
     kk: 'Инвесторлардың'
   },
   'Investor': {
-    ru: 'инвестора',
+    ru: 'Доход',
     kk: 'кірісі'
   },
   'Technological assets': {

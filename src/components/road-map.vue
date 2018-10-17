@@ -68,13 +68,16 @@
 
     .b-road-map {
         position: relative;
-        padding: 150px 0;
+        padding-top: 200px;
+        padding-bottom: 150px;
         z-index: 15;
-        .sm-block({
-            padding: 120px 0;
+        .md-block({
+            padding-top: 120px;
+            padding-bottom: 100px;
         });
         .xs-block({
-            padding: 90px 0;
+            padding-top: 80px;
+            padding-bottom: 50px;
         });
         .g-caption-section {
             margin-bottom: 40px;
@@ -99,8 +102,9 @@
             }
         }
         .road-wrapper {
-            padding: 250px 40px 0;
+            padding: 260px 40px 0;
             margin-bottom: 80px;
+            .md-block({padding: 230px 40px 0;});
             .sm-block({
                 padding: 0 0 0 10px;
             });
