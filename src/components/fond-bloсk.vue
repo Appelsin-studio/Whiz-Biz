@@ -23,11 +23,18 @@
                             </div>
                             <div class="number">01</div>
                         </div>
-                        <div class="gray-circle"></div>
-                        <p class="description"><strong>GTCinema</strong> -
-                            {{t('is a financial technology company focused on blockchain and cryptographic tokens')}}
-                        </p>
-                        <a href="#" class="btn btn--orange" @click.prevent="modalApply">{{t('Apply')}}</a>
+                        <div class="gray-circle">
+                            <i></i>
+                            <i></i>
+                        </div>
+                        <div class="desc-wrapper">
+                            <a href="#" class="btn btn--orange" @click.prevent="modalApply">{{t('Apply')}}</a>
+                            <p class="description"><strong>GTCinema</strong> -
+                                {{t('is a financial technology company focused on blockchain and cryptographic tokens')}}
+                            </p>
+
+                        </div>
+
                     </div>
                 </div>
                 <div class="page-down">
@@ -51,10 +58,10 @@
     mixins: [LanguageMixin],
     components: {Parallax},
     methods: {
-      modalApply() {
+      modalApply () {
         this.$modal.show('apply')
-      }
-    }
+      },
+    },
   }
 </script>
 <style scoped lang="less">
@@ -104,7 +111,7 @@
             display: flex;
             flex-direction: column;
             padding-left: 85px;
-            padding-top: 125px;
+            padding-top: 100px;
             z-index: 99;
             .lg-block({ padding-left: 0; });
             .md-block({ padding-top: 0; });
@@ -119,8 +126,48 @@
                 box-sizing: border-box;
                 border-radius: 50%;
                 z-index: 1;
-                opacity: 0.6;
+                opacity: 0.1;
                 .lg-block({ display: none; });
+                i {
+                    display: block;
+                    border: 1px dashed #bed7ec;
+                    border-radius: 50%;
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    top: 0;
+                    left: 0;
+                    animation-name: circle-animate;
+                    animation-iteration-count: infinite;
+                    animation-timing-function: ease-in;
+                    animation-duration: 6s;
+                    opacity: 0;
+                    &:nth-child(1) {
+                    }
+                    &:nth-child(2) {
+                        animation-delay: 3s;
+                    }
+                    @keyframes circle-animate {
+                        from {
+                            width: 100%;
+                            height: 100%;
+                            top: 0;
+                            left: 0;
+                            opacity: 1;
+                        }
+                        90% {
+                            opacity: 1;
+                        }
+                        to {
+                            width: 200%;
+                            height: 200%;
+                            top: -50%;
+                            left: -50%;
+                            opacity: 0;
+                            .md-block({ width: 170%; height: 170%; });
+                        }
+                    }
+                }
             }
             .caption-wrapper {
                 display: flex;
@@ -177,39 +224,40 @@
                     .lg-block({ display: none; });
                 }
             }
-
-                .description {
-                    align-self: flex-end;
-                    max-width: 540px;
-                    margin-top: -25px;
-
-                    font-weight: 200;
-                    font-size: 2.4rem;
-                    letter-spacing: 0.17rem;
-                    .lg-block({ max-width: 70%; align-self: center; margin-bottom: 50px; margin-top: 0;
-                        text-align: center; });
-                    .md-block({ max-width: 100%; font-size: 16px; });
-                    .xs-block({ max-width: 100%; font-size: 14px; });
-                    strong {
-                        text-transform: uppercase;
-                        font-weight: 900;
-                    }
+            .desc-wrapper {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+                .lg-block({ flex-direction: column-reverse;});
+            }
+            .description {
+                align-self: flex-end;
+                max-width: 540px;
+                font-weight: 200;
+                font-size: 2.4rem;
+                letter-spacing: 0.17rem;
+                .lg-block({ max-width: 70%; align-self: center; margin-bottom: 50px; margin-top: 0; text-align: center; });
+                .md-block({ max-width: 100%; font-size: 16px; });
+                .xs-block({ max-width: 100%; font-size: 14px; });
+                strong {
+                    text-transform: uppercase;
+                    font-weight: 900;
                 }
-                .btn {
-                    width: 100%;
-                    max-width: 390px;
-                    flex-shrink: 0;
-                    padding: 30px 0;
-                    text-align: center;
-                    z-index: 6;
-                    transform: translateY(-135px);
-                    box-shadow: 0 0 20px 0 rgba(238, 112, 1, 0.4);
-                    .lg-block({ transform: translateY(0); align-self: center; });
-                    .md-block({ padding: 25px 0; max-width: 300px; });
-                    &:hover {
-                        box-shadow: 0 0 25px 0 rgba(238, 112, 1, 0.8);
-                    }
+            }
+            .btn {
+                width: 100%;
+                max-width: 390px;
+                flex-shrink: 0;
+                padding: 30px 0;
+                text-align: center;
+                z-index: 6;
+                box-shadow: 0 0 20px 0 rgba(238, 112, 1, 0.4);
+                .lg-block({ align-self: center; });
+                .md-block({ padding: 25px 0; max-width: 300px; });
+                &:hover {
+                    box-shadow: 0 0 25px 0 rgba(238, 112, 1, 0.8);
                 }
+            }
 
         }
         .page-down {
