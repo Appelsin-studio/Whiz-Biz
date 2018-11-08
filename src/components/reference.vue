@@ -96,7 +96,7 @@
         });
         .g-caption-section {
             margin-bottom: 60px;
-            .line-after--left(-30px, 25%);
+            .line-after--left();
             span {
                 display: block;
             }

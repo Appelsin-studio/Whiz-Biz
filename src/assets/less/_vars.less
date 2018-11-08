@@ -4,7 +4,9 @@
 @BebasNeue: 'BebasNeue', 'Arial', sans-serif;
 
 
-
+@pinkLight: #f816e0;
+@pinkDark: #e6516d;
+@red: #ff587b;
 @blueMain: #5735ca;
 @orangeMain: #ee7001;
 
@@ -12,31 +14,36 @@
 
 @blackMain: #000;
 
+@gradientDefault: linear-gradient(90deg, @pinkLight, @red);
+
 .transition(@time: 0.3s) {
   transition: all @time ease;
 }
 /*line after*/
-.line-after--left(@left: -30px, @top: 50%, @color: #ced7df) {
+.line-after--left(@color: #fff) {
   &::after {
     position: absolute;
     content: '';
-    left: @left;
-    top: @top;
-    transform: translateX(-100%);
+    top: 50%;
+    right: 55px;
+    left: 0;
     height: 1px;
-    width: 100vw;
-    background-color: @color;
+    background: @color;
   }
 }
-.line-after--right(@right: -30px, @top: 50%, @color: #ced7df) {
+.line-after--right(@color: #fff) {
   &::after {
     position: absolute;
     content: '';
-    right: @right;
-    top: @top;
-    transform: translateX(100%);
+    top: 50%;
+    left: 55px;
+    right: 0;
     height: 1px;
-    width: 100vw;
-    background-color: @color;
+    background: @color;
   }
+}
+.skew-block (@top: -130px, @bottom: -130px, @skewY: -7deg ) {
+  top: @top;
+  bottom: @bottom;
+  transform: skewY(@skewY);
 }

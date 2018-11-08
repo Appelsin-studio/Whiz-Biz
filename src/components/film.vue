@@ -1,5 +1,6 @@
 <template>
     <section class="b-film">
+        <div class="skew-block"></div>
         <div class="container">
             <p class="g-number">06</p>
             <h2 class="g-caption-section">{{t('Film')}} <strong class="gradient-text">“ГОРОД ПРИЗРАК”</strong> / ”GHOST
@@ -35,7 +36,7 @@
         position: relative;
         margin-top: -65px;
         padding-top: 150px;
-        z-index: 15;
+        z-index: 10;
         .md-block({
             margin-top: -80px;
             padding-top: 80px;

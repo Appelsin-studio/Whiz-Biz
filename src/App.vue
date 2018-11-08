@@ -1,23 +1,18 @@
 <template>
     <div id="app">
-        <div class="line-document"></div>
         <transition name="fade">
-            <div class="preloader-block bg-dotty" v-if="loaderBlock">
+            <div class="preloader-block" v-if="loaderBlock">
                 <img src="/img/load.svg"/>
             </div>
         </transition>
-        <bg-wrapper/>
+        <!--<bg-wrapper/>-->
         <header-block/>
         <main>
             <fond-block/>
             <description-fond/>
-            <div class="bg-dotty">
-                <mission-fond/>
-            </div>
+            <mission-fond/>
             <team-block/>
-            <div class="bg-dotty">
-                <list-popular/>
-            </div>
+            <list-popular/>
             <film-block/>
             <idea-film/>
             <div class="bg-dotty">

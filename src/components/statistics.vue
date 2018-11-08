@@ -278,7 +278,7 @@
         .g-caption-section {
             margin-bottom: 55px;
             max-width: 640px;
-            .line-after--left(-30px, 25%);
+            .line-after--left();
             .sm-block({ margin-bottom: 80px; });
             .xs-block({ margin-bottom: 50px; });
         }

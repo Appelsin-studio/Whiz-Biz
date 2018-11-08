@@ -1,36 +1,58 @@
 <template>
     <section class="b-team">
+        <div class="skew-block">
+            <div class="img"></div>
+        </div>
         <div class="container">
             <p class="g-number">04</p>
-            <p class="g-caption-section">{{t('Our')}} <span class="gradient-text">{{t('team')}}</span></p>
+            <h3 class="g-caption-section">
+                <span>{{t('Our')}} </span>
+                <strong class="gradient-text">{{t('team')}}</strong>
+            </h3>
             <div class="wrapper--team">
-                <div class="person col-12">
-                    <div class="img" style="background-image: url(/img/person-1.jpg)"></div>
-                    <p class="name">Грей Фредериксон</p>
-                    <p class="profession">{{t('General producer')}}</p>
-                    <p class="country">{{t('USA')}}</p>
-                    <a class="link" href="#" target="_blank">linkedin.com/ivan_alexeev</a>
+                <div class="person person-12">
+                    <div class="img-wrapper">
+                        <div class="img" style="background-image: url(/img/person-1.png)"></div>
+                    </div>
+                    <div class="profile-wrapper">
+                        <p class="name">Грей Фредериксон</p>
+                        <p class="profession">{{t('General producer')}}</p>
+                        <p class="country">{{t('USA')}}</p>
+                        <a class="link" href="#" target="_blank">linkedin.com/ivan_alexeev</a>
+                    </div>
                 </div>
-                <div class="person">
-                    <div class="img" style="background-image: url(/img/person-2.jpg)"></div>
-                    <p class="name">Саламат Мухаммед-Али</p>
-                    <p class="profession">{{t('Filmmaker')}}</p>
-                    <p class="country">{{t('Kazakhstan')}}</p>
-                    <a class="link" href="#" target="_blank">linkedin.com/ivan_alexeev</a>
+                <div class="person person-4">
+                        <div class="img-wrapper">
+                            <div class="img" style="background-image: url(/img/person-2.png)"></div>
+                        </div>
+                        <div class="profile-wrapper">
+                            <p class="name">Саламат Мухаммед-Али</p>
+                            <p class="profession">{{t('Filmmaker')}}</p>
+                            <p class="country">{{t('Kazakhstan')}}</p>
+                            <a class="link" href="#" target="_blank">linkedin.com/ivan_alexeev</a>
+                        </div>
                 </div>
-                <div class="person">
-                    <div class="img" style="background-image: url(/img/person-3.jpg)"></div>
-                    <p class="name">Питер Жмутский</p>
-                    <p class="profession">{{t('Filmmaker')}}</p>
-                    <p class="country">{{t('USA')}}</p>
-                    <a class="link" href="#" target="_blank">linkedin.com/ivan_alexeev</a>
+                <div class="person person-4">
+                    <div class="img-wrapper">
+                        <div class="img" style="background-image: url(/img/person-3.png)"></div>
+                    </div>
+                    <div class="profile-wrapper">
+                        <p class="name">Питер Жмутский</p>
+                        <p class="profession">{{t('Filmmaker')}}</p>
+                        <p class="country">{{t('USA')}}</p>
+                        <a class="link" href="#" target="_blank">linkedin.com/ivan_alexeev</a>
+                    </div>
                 </div>
-                <div class="person">
-                    <div class="img" style="background-image: url(/img/person-4.jpg)"></div>
-                    <p class="name">Динара Батырова</p>
-                    <p class="profession">{{t('Producer')}}</p>
-                    <p class="country">{{t('Kazakhstan')}}</p>
-                    <a class="link" href="#" target="_blank">linkedin.com/ivan_alexeev</a>
+                <div class="person person-4">
+                    <div class="img-wrapper">
+                        <div class="img" style="background-image: url(/img/person-4.png)"></div>
+                    </div>
+                    <div class="profile-wrapper">
+                        <p class="name">Динара Батырова</p>
+                        <p class="profession">{{t('Producer')}}</p>
+                        <p class="country">{{t('Kazakhstan')}}</p>
+                        <a class="link" href="#" target="_blank">linkedin.com/ivan_alexeev</a>
+                    </div>
                 </div>
             </div>
             <section class="b-crowdsale">
@@ -58,11 +80,22 @@
         padding-top: 95px;
         z-index: 15;
         .md-block({ padding-top: 50px;});
+        .skew-block {
+            .img {
+                width: 100%;
+                height: 100%;
+                transform: skewY(7deg);
+                background: url("/img/cine-film.jpg") no-repeat center 40%;
+            }
+        }
+        .g-number {
+            color: #000;
+            .line-after--right(@gradientDefault);
+        }
         .g-caption-section {
             margin-bottom: 70px;
-            .line-after--left();
             .sm-block({ margin-bottom: 65px; });
-            .black {
+            span {
                 color: #000;
             }
         }
@@ -72,62 +105,137 @@
             margin-bottom: 125px;
             .md-block({ margin-bottom: 90px; });
             .xs-block({ margin-bottom: 90px; });
+            .main-person {
+                .col();
+                .size(12);
+            }
             .person {
                 .col();
-                .size(4);
-                .size-md(6);
-                .size-sm(12);
+                position: relative;
                 display: flex;
-                margin-bottom: 60px;
-                flex-direction: column;
-                align-items: center;
-                &.col-12 {
+                padding: 10px;
+
+                &::after {
+                    position: absolute;
+                    content: '';
+                    left: 10px;
+                    right: 10px;
+                    top: 10px;
+                    bottom: 10px;
+                    border: 1px solid #fff;
+                    z-index: 1;
+                }
+                &.person-12 {
                     .size(12);
+                    margin-bottom: 20px;
+                    background: linear-gradient(to right, #b303fe 0%, #442fe5 25%, #442fe5
+                    40%, rgba(37, 23, 141, 0.45) 60%, rgba(37, 23, 141, 0.55) 100%), #442fe5;
+                    .img-wrapper {
+                        margin: -10px -10px -10px -10px;
+                        width: 100%;
+                        max-width: 380px;
+                        .img {
+                            background-position-y: 50px;
+                            &::after {
+                                bottom: 0;
+                            }
+                        }
+                    }
+                    .profile-wrapper {
+                        padding-left: 0;
+                        padding-bottom: 0;
+                        align-self: center;
+                    }
                 }
-                .img {
-                    margin-bottom: 35px;
-                    width: 240px;
-                    height: 240px;
-                    border-radius: 50%;
-                    background-color: #fff;
-                    background-repeat: no-repeat;
-                    background-position: center;
-                    background-size: cover;
-                    .sm-block({ margin-bottom: 30px; width: 200px; height: 200px; });
+                &.person-4 {
+                    .size(4);
+                    .size-md(6);
+                    .size-sm(12);
+                    flex-direction: column;
+                    background: linear-gradient(to bottom, #b303fe  0%, #442fe5 40%, #442fe5 70%,  rgba(37,23,141,0.95)
+                    100%);
+                    .img-wrapper {
+                        .img {
+                            &::after {
+                                bottom: -20px;
+                            }
+                        }
+                    }
                 }
-                .name {
-                    font-family: @BebasNeue;
+                .img-wrapper {
+                    position: relative;
+                    display: flex;
+                    margin: -10px -10px 0 -10px;
+                    background:  radial-gradient(circle at center, rgba(253,3,239,1) 0%, rgba(253,3,239,1) 120px,
+                    rgba(250,250,250,0) 120px, rgba(250,250,250,0) 100%);
+                    .img {
+                        position: relative;
+                        padding-top: 20px;
+                        width: 100%;
+                        height: 320px;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        .sm-block({width: 200px; height: 200px; });
+                        &::after {
+                            position: absolute;
+                            content: '';
+                            left: 0;
+                            right: 0;
+                            top: 0;
+                            background: radial-gradient(ellipse at center, rgba(250, 255, 253, 0) 0%, rgba(250, 255,
+                            253, 0) 42%, rgba(68, 47, 229, 0.9) 53%, #442fe5 56%, #442fe5 100%);
+                            background-size: 690px 600px;
+                            background-position: -150px -238px;
+                            background-repeat: no-repeat;
+                        }
+                    }
+                }
+                .profile-wrapper {
+                    position: relative;
+                    display: flex;
+                    padding-left: 60px;
+                    padding-right: 50px;
+                    padding-bottom: 60px;
                     flex-grow: 1;
-                    margin-bottom: 15px;
-                    font-weight: 600;
-                    font-size: 3.5rem;
-                    letter-spacing: 0.25rem;
-                    color: #000;
-                    text-align: center;
-                    .sm-block({ font-size: 28px; });
-                    .xs-block({ margin-bottom: 13px; });
-                }
-                .profession,
-                .country,
-                .link {
-                    font-weight: 200;
-                    font-size: 2rem;
-                    letter-spacing: 0.15rem;
-                    text-align: center;
-                    .sm-block({ font-size: 16px; });
-                }
-                .profession,
-                .country {
-                    margin-bottom: 15px;
-                    .xs-block({ margin-bottom: 10px; });
-                }
-                .link {
-                    color: @orangeMain;
-                    border-bottom: 1px solid @orangeMain;
-                    .transition();
-                    &:hover {
-                        color: @orangeMain;
-                        border-bottom: 1px solid transparent;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    z-index: 5;
+                    .name {
+                        flex-grow: 1;
+                        padding-bottom: 23px;
+                        margin-bottom: 15px;
+                        font-weight: 900;
+                        font-size: 2.5rem;
+                        letter-spacing: 0.17rem;
+                        color: #fff;
+                        text-transform: uppercase;
+                        background: linear-gradient(@pinkLight, @pinkLight) 0% 100% no-repeat;
+                        background-size: 40px 3px;
+                        .sm-block({ font-size: 22px; });
+                        .xs-block({ margin-bottom: 14px; });
+                    }
+                    .profession,
+                    .country,
+                    .link {
+                        font-weight: 200;
+                        font-size: 2rem;
+                        letter-spacing: 0.15rem;
+                        .sm-block({ font-size: 16px; });
+                    }
+                    .profession,
+                    .country {
+                        color: #fff;
+                        margin-bottom: 15px;
+                        .xs-block({ margin-bottom: 10px; });
+                    }
+                    .link {
+                        color: @pinkLight;
+                        border-bottom: 1px solid @pinkLight;
+                        .transition();
+                        &:hover {
+                            color: #fff;
+                            border-bottom: 1px solid transparent;
+                        }
                     }
                 }
             }
@@ -140,8 +248,7 @@
             align-items: center;
             .text {
                 margin-bottom: 40px;
-                font-family: @BebasNeue;
-                font-weight: 600;
+                font-weight: 900;
                 font-size: 3.5rem;
                 letter-spacing: 0.24rem;
                 color: #000;
@@ -149,8 +256,8 @@
                 text-align: center;
                 .xs-block({ margin-bottom: 25px; });
                 .orange {
-                    color: @orangeMain;
-                    font-weight: 600;
+                    color: #442FE5;
+                    font-weight: 900;
                 }
             }
             .logo-crowdsale {
@@ -161,8 +268,8 @@
                 font-size: 20px;
                 font-weight: 200;
                 letter-spacing: 0.14rem;
-                color: @orangeMain;
-                border-bottom: 1px solid @orangeMain;
+                color: #442FE5;
+                border-bottom: 1px solid #442FE5;
                 .transition();
                 .md-block({ font-size: 16px; });
                 &:hover {

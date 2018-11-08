@@ -165,7 +165,7 @@
         .g-caption-section {
             margin-bottom: 110px;
             max-width: 650px;
-            .line-after--left(-30px, 25%);
+            .line-after--left();
             .sm-block({ margin-bottom: 80px; });
         }
         .pie {

@@ -20,12 +20,16 @@ export default {
     kk: 'Blockchain және криптографиялық белгілерге бағытталған қаржы-технологиялық компания'
   },
   'About crypto fund': {
-    ru: 'О крипто фонде',
+    ru: 'О криптофонде',
     kk: 'Криптондық қор туралы'
   },
-  'was created to improve and expand participation in the business of consumers and financiers in order to become a leading platform for supporting business in the field of entertainment and creativity (art)': {
-    ru: 'был создан для улучшения и расширения участия в бизнесе потребителей и финансистов с целью стать ведущей платформой по поддержке бизнеса сфере развлечений и творчества (искусства)',
-    kk: 'ойын-сауық және шығармашылық (өнер) саласындағы бизнесті қолдауға арналған жетекші алаң болу үшін тұтынушылар мен қаржыгерлердің бизнесіне қатысуды жақсарту және кеңейту үшін құрылған.'
+  'was created to improve and expand participation in the business of consumers and financiers': {
+    ru: 'был создан для улучшения и расширения участия в бизнесе потребителей и финансистов',
+    kk: 'тұтынушылар мен қаржыгерлердің бизнесіне қатысуды жақсарту және кеңейту үшін құрылған'
+  },
+  'with the goal of becoming a leading platform for business support in the field of entertainment and creativity (art).': {
+    ru: 'с целью стать ведущей платформой по поддержке бизнеса сфере развлечений и творчества (искусства).',
+    kk: 'ойын-сауық және шығармашылық (өнер) саласындағы бизнесті қолдаудың жетекші платформасы болу мақсатымен.'
   },
   'Our': {
     ru: 'Наша',
@@ -35,9 +39,13 @@ export default {
     ru: 'цель',
     kk: 'мақсатымыз'
   },
-  'The company\'s goal is to create a platform under the GTC brand, to become the preferred portal for investment in the entertainment industry and for its cryptographic tokens to become the standard currency in the new Hollywood economy, enhanced by the advantages of digital assets.': {
-    ru: 'Целью компании является создание платформы под брендом GTC, стать предпочтительным порталом для инвестиций в индустрии развлечения и для своих криптографических токенов стать стандартной валютой в новой голливудской экономике, усиленной преимуществами цифровых активов. ',
-    kk: 'Компанияның мақсаты - GTC бренді бойынша платформаны құру, ойын-сауық индустриясына инвестиция салудың қолайлы порталы болу және оның криптографиялық белгілерін жаңа цифрлы активтердің артықшылықтары есебінен дамыған жаңа голливудтық экономикадағы стандартты валюта болу.'
+  'The company\'s goal is to create a platform under the brand GTC, to become the preferred portal for investment': {
+    ru: 'Целью компании является создание платформы под брендом GTC, стать предпочтительным порталом для инвестиций',
+    kk: 'Компанияның мақсаты - GTC маркасымен платформаны құру, инвестициялар үшін қолайлы портал болу'
+  },
+  'in the entertainment industry and for their cryptographic tokens to become the standard currency in the new Hollywood economy, enhanced by the advantages of digital assets.': {
+    ru: 'в индустрии развлечения и для своих криптографических токенов стать стандартной валютой в новой голливудской экономике, усиленной преимуществами цифровых активов.',
+    kk: 'ойын-сауық индустриясында және олардың криптографиялық таңбаларына жаңа цифрлы активтердің артықшылықтары арқасында жаңа Голливудтық экономикадағы стандартты валюта болуға мүмкіндік береді.'
   },
   'The company operates in three main segments: financing, production and sale.': {
     ru: 'Компания работает в трех основных сегментах: финансирование, производство и продажа.',

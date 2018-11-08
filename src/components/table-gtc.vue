@@ -108,7 +108,7 @@
             margin-bottom: 70px;
             max-width: 780px;
             color: #000;
-            .line-after--left(-30px, 25%);
+            .line-after--left();
             .sm-block({ margin-bottom: 55px; });
         }
         .table {

@@ -2,7 +2,10 @@
     <header class="b-header">
         <div class="container">
             <div class="wrapper">
-                <a class="gtc gradient" href="#" @click.prevent="$modal.show('message')">GTC</a>
+                <a class="gtc" href="#" @click.prevent="$modal.show('message')">
+                    <span class="wbc">WBC</span>
+                    <span class="wbc--small">Whizbizcoin</span>
+                </a>
                 <a class="bid" href="#" @click.prevent="$modal.show('apply')">{{t('Apply')}}</a>
                 <a class="presentation" href="#" @click.prevent="$modal.show('presentation')">
                     {{t('Sign up for a presentation')}}
@@ -47,26 +50,38 @@
     @import "~assets/less/_vars";
     .b-header {
         position: absolute;
-        top: 0;
+        top: 20px;
         left: 0;
         right: 0;
         z-index: 999;
-        font-family: @BebasNeue;
-        font-weight: 600;
+        font-weight: 200;
         .wrapper {
             display: flex;
             justify-content: space-between;
-            align-items: flex-end;
+            align-items: center;
             a {
                 display: inline-block;
                 color: #fff;
                 &.gtc {
-                    padding: 50px 20px 5px;
-                    font-size: 3.5rem;
-                    .transition();
-                    .md-block({ padding: 35px 15px 5px; });
-                    &:hover {
-                        box-shadow: 0 0 25px 0 rgba(78, 37, 225, 1);
+                    display: flex;
+                    width: 130px;
+                    height: 130px;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    border-left: 5px solid #ff3ae9;
+                    border-right: 5px solid @red;
+                    box-sizing: border-box;
+                    background-image: linear-gradient(to right, #ff3ae9 0%, @red 100%), linear-gradient(to right, #ff3ae9 0%, @red 100%);
+                    background-size: 100% 5px;
+                    background-position: 0 0, 0 100%;
+                    background-repeat: no-repeat;
+                    .wbc {
+                        font-size: 35px;
+                        font-weight: 900;
+                    }
+                    .wbc--small {
+                        font-size: 14px;
                     }
                 }
                 &.bid {
@@ -74,11 +89,13 @@
                 }
                 &.bid,
                 &.presentation {
-                    font-size: 2.6rem;
-                    letter-spacing: 0.18rem;
+                    font-size: 18px;
+                    letter-spacing: 0.12rem;
+                    border-bottom: 1px solid transparent;
                     .transition();
+                    .sm-block({font-size: 16px;});
                     &:hover {
-                        color: @blueMain;
+                        border-bottom: 1px solid @pinkDark;
                     }
                 }
                 &.presentation {
@@ -115,7 +132,7 @@
                     }
                 }
                 .open-indicator::before {
-                    border-color: @blueMain;
+                    border-color: @pinkDark;
                 }
             }
             .select-tag {
@@ -127,13 +144,14 @@
                 width: 100%;
                 color: #fff;
                 text-transform: uppercase;
-                font-size: 2.6rem;
-                font-weight: 600;
-                line-height: 2.6rem;
-                letter-spacing: 0.18rem;
+                font-size: 18px;
+                font-weight: 200;
+                line-height: 1;
+                letter-spacing: 0.12rem;
                 margin: 4px 0 0;
                 padding: 0 7px;
                 border: none;
+                .sm-block({font-size: 16px;});
             }
             &.single.open .selected-tag {
                 position: relative;
@@ -147,9 +165,10 @@
                     padding: 3px 7px;
                     color: #fff;
                     text-transform: uppercase;
-                    font-size: 2.6rem;
-                    letter-spacing: 0.18rem;
+                    font-size: 18px;
+                    letter-spacing: 0.12rem;
                     border: none;
+                    .sm-block({font-size: 16px;});
                 }
             }
         }
