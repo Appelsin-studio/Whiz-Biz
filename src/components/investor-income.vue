@@ -53,8 +53,8 @@
         z-index: 10;
         padding-top: 270px;
         padding-bottom: 250px;
-        background: linear-gradient(to right, rgba(19, 72, 182, 0.85) 0%, rgba(179, 15, 255, 1) 100%),
-        url("/img/bg-guitar.jpg") no-repeat left top / cover;
+        background: linear-gradient(to right, rgba(19, 72, 182, 0.95) 0%, rgba(179, 15, 255, 0.95) 100%),
+        url("/img/bg-dollar.jpg") no-repeat left top / cover;
         .md-block({ padding-top: 190px; padding-bottom: 190px; });
         .g-number {
             .line-after--right();

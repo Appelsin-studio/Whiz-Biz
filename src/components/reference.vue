@@ -1,6 +1,7 @@
 <template>
     <section class="b-reference">
         <div class="skew-block"></div>
+        <img src="/img/clapperboard.png" class="clapperboard-img" alt="clapperboard">
         <div class="container">
             <p class="g-number">08</p>
             <h3 class="g-caption-section">
@@ -88,6 +89,16 @@
     .b-reference {
         position: relative;
         z-index: 15;
+        .clapperboard-img {
+            position: absolute;
+            right: 0;
+            bottom: -35%;
+            max-width: none;
+            z-index: 22;
+            @media screen and (max-width: 1725px) {
+                display: none;
+            }
+        }
         .g-number {
             color: #000;
             .line-after--right(@gradientDefault);
