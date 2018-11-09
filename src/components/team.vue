@@ -22,15 +22,15 @@
                     </div>
                 </div>
                 <div class="person person-4">
-                        <div class="img-wrapper">
-                            <div class="img" style="background-image: url(/img/person-2.png)"></div>
-                        </div>
-                        <div class="profile-wrapper">
-                            <p class="name">Саламат Мухаммед-Али</p>
-                            <p class="profession">{{t('Filmmaker')}}</p>
-                            <p class="country">{{t('Kazakhstan')}}</p>
-                            <a class="link" href="#" target="_blank">linkedin.com/ivan_alexeev</a>
-                        </div>
+                    <div class="img-wrapper">
+                        <div class="img" style="background-image: url(/img/person-2.png)"></div>
+                    </div>
+                    <div class="profile-wrapper">
+                        <p class="name">Саламат Мухаммед-Али</p>
+                        <p class="profession">{{t('Filmmaker')}}</p>
+                        <p class="country">{{t('Kazakhstan')}}</p>
+                        <a class="link" href="#" target="_blank">linkedin.com/ivan_alexeev</a>
+                    </div>
                 </div>
                 <div class="person person-4">
                     <div class="img-wrapper">
@@ -114,7 +114,6 @@
                 position: relative;
                 display: flex;
                 padding: 10px;
-
                 &::after {
                     position: absolute;
                     content: '';
@@ -134,6 +133,7 @@
                         margin: -10px -10px -10px -10px;
                         width: 100%;
                         max-width: 380px;
+                        .sm-block({max-width: 250px;});
                         .img {
                             background-position-y: 50px;
                             &::after {
@@ -149,17 +149,37 @@
                 }
                 &.person-4 {
                     .size(4);
-                    .size-md(6);
-                    .size-sm(12);
+                    .size-lg(12);
                     flex-direction: column;
                     background: linear-gradient(to bottom, #b303fe  0%, #442fe5 40%, #442fe5 70%,  rgba(37,23,141,0.95)
                     100%);
+                    .lg-block({
+                        flex-direction: row;
+                        margin-bottom: 20px;
+                        background: linear-gradient(to right, #b303fe 0%, #442fe5 25%, #442fe5
+                        40%, rgba(37, 23, 141, 0.45) 60%, rgba(37, 23, 141, 0.55) 100%), #442fe5;
+                    });
+                    .md-block({background: linear-gradient(to right, #b303fe 0%, #442fe5 25%, #442fe5
+                    30%, rgba(37, 23, 141, 0.45) 60%, rgba(37, 23, 141, 0.55) 100%), #442fe5;});
                     .img-wrapper {
+                        .lg-block({
+                            margin: -10px -10px -10px -10px;
+                            width: 100%;
+                            max-width: 380px;
+                        });
+                        .sm-block({max-width: 250px;});
                         .img {
+                            .lg-block({background-position-y: 50px;});
                             &::after {
                                 bottom: -20px;
+                                .lg-block({bottom: 0;});
                             }
                         }
+                    }
+                    .profile-wrapper {
+                        .lg-block({padding-left: 0;
+                            padding-bottom: 0;
+                            align-self: center;});
                     }
                 }
                 .img-wrapper {
@@ -168,6 +188,9 @@
                     margin: -10px -10px 0 -10px;
                     background:  radial-gradient(circle at center, rgba(253,3,239,1) 0%, rgba(253,3,239,1) 120px,
                     rgba(250,250,250,0) 120px, rgba(250,250,250,0) 100%);
+                    .sm-block({background:  radial-gradient(circle at center, rgba(253,3,239,1) 0%, rgba(253,3,239,1)
+                    90px,
+                    rgba(250,250,250,0) 90px, rgba(250,250,250,0) 100%);});
                     .img {
                         position: relative;
                         padding-top: 20px;
@@ -175,7 +198,7 @@
                         height: 320px;
                         background-repeat: no-repeat;
                         background-position: center;
-                        .sm-block({width: 200px; height: 200px; });
+                        .sm-block({height: 250px; background-size: contain;});
                         &::after {
                             position: absolute;
                             content: '';
@@ -187,6 +210,7 @@
                             background-size: 690px 600px;
                             background-position: -150px -238px;
                             background-repeat: no-repeat;
+                            .sm-block({ display: none;});
                         }
                     }
                 }

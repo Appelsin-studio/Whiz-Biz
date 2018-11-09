@@ -40,7 +40,7 @@
             position: relative;
             display: flex;
             justify-content: space-between;
-            .md-block({ flex-direction: column; });
+            .sm-block({ flex-direction: column; });
             .caption-wrapper {
                 max-width: 570px;
                 padding-top: 50px;
@@ -100,7 +100,7 @@
                     position: relative;
                     top: 0;
                     .lg-block({ width: 300px; height: 300px;});
-                    .md-block({ position: absolute; width: 300px; height: 300px; });
+                    .md-block({ position: absolute; });
                     .xs-block({ width: 180px; height: 180px; });
                     z-index: 1;
                     @keyframes gradient-animate {

@@ -34,7 +34,6 @@
     @import "~assets/less/_vars";
     .b-mission-fond {
         position: relative;
-        overflow: hidden;
         padding-top: 260px;
         padding-bottom: 260px;
         background: linear-gradient(to right, rgba(19, 72, 182, 0.85) 0%, rgba(179, 15, 255, 1) 100%),
@@ -48,15 +47,16 @@
             justify-content: space-between;
             align-items: flex-end;
             display: flex;
-            .md-block({ flex-direction: column;});
+            .sm-block({ flex-direction: column;});
             .caption-wrapper {
                 max-width: 70%;
                 z-index: 99;
-                .md-block({
+                .lg-block({
                     order: 1;
                     text-align: right;
                     margin-bottom: 20px;
                 });
+                .sm-block({max-width: 90%; margin-bottom: 50px;});
                 .g-number {
                     color: #fff;
                 }
@@ -79,7 +79,8 @@
                 box-sizing: border-box;
                 z-index: 5;
                 flex-shrink: 0;
-                .md-block({ order: 2; padding: 0; justify-content: center;
+                .lg-block({margin-right: 80px;});
+                .sm-block({ order: 2; padding: 0; justify-content: center; align-self: center;
                 });
                 .coub {
                     width: 390px;
@@ -91,12 +92,18 @@
                     background-position: 0 0, 0 100%;
                     background-repeat: no-repeat;
                     background-size: 100% 10px;
+                    .lg-block({width: 300px;
+                        height: 300px;});
+                    .xs-block({ width: 180px; height: 180px; });
                 }
                 .img {
                     position: absolute;
                     left: -160px;
                     max-width: max-content;
                     z-index: 101;
+                    .lg-block({ max-height: 600px; left: -50px;});
+                    .sm-block({max-height: 400px;});
+                    .xs-block({max-height: 300px;})
                 }
             }
         }

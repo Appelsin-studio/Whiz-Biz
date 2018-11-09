@@ -72,8 +72,8 @@
         padding-bottom: 300px;
         z-index: 10;
         background: linear-gradient(to right, rgba(19, 72, 182, 0.85) 0%, rgba(179, 15, 255, 1) 100%);
-        .md-block({ padding: 110px 0; });
-        .xs-block({ padding: 100px 0;});
+        .lg-block({ padding: 200px 0; });
+        .xs-block({ padding: 120px 0;});
         .planet-big {
             position: absolute;
             top: 50%;
@@ -81,7 +81,7 @@
             transform: translateY(-30%) rotate(-90deg);
             width: 1000px;
             height: 500px;
-            opacity: 0.6;
+            opacity: 0.4;
             background: url("/img/planet-big.png") no-repeat right center / contain;
         }
         .g-number {

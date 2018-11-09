@@ -57,10 +57,12 @@
         background: linear-gradient(to right, rgba(19, 72, 182, 0.85) 0%, rgba(179, 15, 255, 1) 100%),
         url("/img/bg-guitar.jpg") no-repeat left top / cover;
         .lg-block({
-            padding-top: 130px ;
+            padding-top: 200px ;
+            padding-bottom: 200px;
         });
-        .md-block({
-            padding-top: 90px;
+        .xs-block({
+            padding-top: 110px;
+            padding-bottom: 110px;
         });
         .bold {
             font-weight: 900;

@@ -6,8 +6,10 @@
             <h2 class="g-caption-section">{{t('Film')}} <strong class="gradient-text">“ГОРОД ПРИЗРАК”</strong> / ”GHOST
                 TOWN”</h2>
             <div class="wrapper">
-                <img class="img" src="/img/poster.jpg" alt="">
-                <div class="coub"></div>
+                <div class="img-wrapper">
+                    <img class="img" src="/img/poster.jpg" alt="">
+                    <div class="coub"></div>
+                </div>
                 <div class="wrapper-desc">
                     <p class="desc--bold black">{{t('Work has begun on the Kazakhstan-Hollywood film project')}} <span
                         class="blue">"{{t('GHOST TOWN')}}"</span></p>
@@ -33,7 +35,6 @@
     @import "~assets/less/_vars";
     .b-film {
         position: relative;
-        padding-top: 80px;
         z-index: 15;
         .md-block({
         });
@@ -61,42 +62,47 @@
                 flex-direction: column;
                 align-items: center;
             });
-            .img {
+            .img-wrapper {
                 position: relative;
-                z-index: 5;
                 .lg-block({
-                    margin-bottom: 20px;
+                    margin-bottom: 50px;
                 });
                 .sm-block({
                     max-width: 70%;
                 });
+                .img {
+                    position: relative;
+                    z-index: 5;
+                }
+                .coub {
+                    position: absolute;
+                    left: -100px;
+                    bottom: -70px;
+                    width: 390px;
+                    height: 390px;
+                    border-left: 10px solid @pinkLight;
+                    border-right: 10px solid @red;
+                    background-image: linear-gradient(to right, @pinkLight 0%, @red 100%),
+                    linear-gradient(to right, @pinkLight 0%, @red 100%);
+                    background-position: 0 0, 0 100%;
+                    background-repeat: no-repeat;
+                    background-size: 100% 10px;
+                    .lg-block({top: 150px; bottom: auto;});
+                    .sm-block({ width: 220px; height: 220px; left: -60px; bottom: -40px; top: auto; });
+                    z-index: 1;
+                }
             }
-            .coub {
-                position: absolute;
-                left: -70px;
-                bottom: -70px;
-                width: 390px;
-                height: 390px;
-                border-left: 10px solid @pinkLight;
-                border-right: 10px solid @red;
-                background-image: linear-gradient(to right, @pinkLight 0%, @red 100%),
-                linear-gradient(to right, @pinkLight 0%, @red 100%);
-                background-position: 0 0, 0 100%;
-                background-repeat: no-repeat;
-                background-size: 100% 10px;
-                .md-block({ width: 300px; height: 300px; });
-                .xs-block({ width: 180px; height: 180px; });
-                z-index: 1;
-            }
+
             .wrapper-desc {
                 padding: 75px 15px 65px 100px;
                 max-width: 890px;
                 box-sizing: border-box;
                 z-index: 1;
                 flex-shrink: 2;
-                .lg-block({
+                .md-block({
                     padding: 65px 40px 0 40px;
                 });
+                .sm-block({ padding-top: 20px;});
                 .xs-block({
                     padding: 20px 10px 0 10px;
                 });
