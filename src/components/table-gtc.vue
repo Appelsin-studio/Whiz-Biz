@@ -14,7 +14,7 @@
                 <tr v-for="(tr,index) in tableData" :key="index">
                     <td class="light">{{index}} {{t('year')}}, {{new Date().getFullYear() + index + 1}}</td>
                     <td class="bold">${{price(tr.min)}}</td>
-                    <td class="light">0 {{t('year')}}, {{new Date().getFullYear() + index + 1}}</td>
+                    <td class="light">{{index}} {{t('year')}}, {{new Date().getFullYear() + index + 1}}</td>
                     <td class="bold">${{price(tr.max)}}</td>
                 </tr>
             </table>

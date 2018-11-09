@@ -37,16 +37,15 @@
             backgroundColor: 'transparent'
           },
           title: {
-            text: this.t('Types of income from<br/>the production<br/>and sale of cinema'),
+            useHTML: true,
+            text:
+              `<div class="title-diagram">${this.t('Types of income')}</div>
+                <div class="desc-diagram">${this.t('from the production<br/>and sale of cinema')}</div>`,
             align: 'center',
             verticalAlign: 'middle',
-            y: -20,
-            x: -5,
-            style: {
-              fontSize: '2.6rem',
-              fontFamily: '\'ProximaNova\', \'Arial\', sans-serif',
-              fontWeight: 900
-            }
+            y: -10,
+            x: 0,
+            style: {}
           },
           plotOptions: {
             pie: {
@@ -61,42 +60,42 @@
                 {
                   name: '<div class="chart-label-custom text-align-left"><i>08</i><span>DVD</span></div>',
                   y: 1,
-                  color: '#f58318'
+                  color: '#ff5489'
                 },
                 {
                   name: '<div class="chart-label-custom text-align-left"><i>07</i><span>' + this.t('Merchandising') + '</span></div>',
                   y: 1,
-                  color: '#f68318'
+                  color: '#ff587c'
                 },
                 {
                   name: '<div class="chart-label-custom text-align-left"><i>06</i><span>' + this.t('Trains, airplanes, <br/> hotels') + '</span></div>',
                   y: 1,
-                  color: '#f78318'
+                  color: '#ff587c'
                 },
                 {
                   name: '<div class="chart-label-custom text-align-left"><i>05</i><span>' + this.t('Netflix and other<br/>rental services') + '</span></div>',
                   y: 1,
-                  color: '#f88318'
+                  color: '#ff4aaf'
                 },
                 {
                   name: '<div class="chart-label-custom"><i>04</i><span>' + this.t('Selling Internet-<br/>platforms') + '</span></div>',
                   y: 1,
-                  color: '#f98318'
+                  color: '#ff42d4'
                 },
                 {
                   name: '<div class="chart-label-custom"><i>03</i><span>' + this.t('Sale to<br/>other countries') + '</span></div>',
                   y: 1,
-                  color: '#fa8318'
+                  color: '#ff42d4'
                 },
                 {
                   name: '<div class="chart-label-custom"><i>02</i><span>' + this.t('Selling<br/>TV channels') + '</span></div>',
                   y: 1,
-                  color: '#fb8318'
+                  color: '#ff3fd6'
                 },
                 {
                   name: '<div class="chart-label-custom"><i>01</i><span>' + this.t('Cash<br/>fees') + '</span></div>',
                   y: 1,
-                  color: '#fc9433'
+                  color: '#ff4ab5'
                 }
               ],
               dataLabels: {
@@ -120,6 +119,20 @@
         &-img {
             display: none;
             .sm-block({ display: block });
+        }
+        .title-diagram {
+            font-size: 2.6rem;
+            text-transform: uppercase;
+            text-align: center;
+            font-weight: 900;
+            font-family: @ProximaNova;
+            margin-bottom: 5px;
+        }
+        .desc-diagram {
+            font-family: @ProximaNova;
+            font-size: 1.7rem;
+            line-height: 1.2;
+            text-align: center;
         }
     }
     .chart-label-custom {
