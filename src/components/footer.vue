@@ -63,6 +63,7 @@
 
         .footer-wrapper {
             .row-flex();
+            align-items: center;
             > li {
                 .col();
                 .size(3);
