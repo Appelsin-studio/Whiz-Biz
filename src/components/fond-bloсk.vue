@@ -1,7 +1,7 @@
 <template>
     <section class="b-fond-block">
         <div class="parallax-wrapper">
-            <parallax :speedFactor="0.35" direction="down" :sectionHeight="heigth" :breakpoint="''"
+            <parallax :speedFactor="0.35" direction="down" :sectionHeight="100" :breakpoint="''"
                       parallaxClass="custom" sectionClass="custom-height">
                 <img src="/img/bg-main.jpg">
             </parallax>
@@ -46,9 +46,7 @@
       },
     },
     data () {
-      return {
-        heigth: '100%'
-      }
+      return {}
     }
   }
 </script>

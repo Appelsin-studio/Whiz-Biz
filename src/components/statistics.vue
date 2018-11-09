@@ -55,14 +55,17 @@
             {
               labels: {
                 format: '{value}',
-                style: {}
+                style: {
+                  color: '#ffffff'
+                }
               },
               title: {
                 text: this.t('Number of films'),
                 style: {
                   fontFamily: '\'ProximaNova\', \'Arial\', sans-serif',
                   fontSize: '18px',
-                  fontWeight: 200
+                  fontWeight: 200,
+                  color: '#ffffff'
                 }
               },
               min: 0
@@ -72,12 +75,15 @@
                 style: {
                   fontFamily: '\'ProximaNova\', \'Arial\', sans-serif',
                   fontSize: '18px',
-                  fontWeight: 200
+                  fontWeight: 200,
+                  color: '#ffffff'
                 }
               },
               labels: {
                 format: '{value}',
-                style: {}
+                style: {
+                  color: '#ffffff'
+                }
               },
               min: 0,
               opposite: true
@@ -103,7 +109,8 @@
             itemStyle: {
               fontSize: '14px',
               fontFamily: '\'ProximaNova\', \'Arial\', sans-serif',
-              fontWeight: 200
+              fontWeight: 200,
+              color: '#ffffff'
             }
           },
           series: [
@@ -126,7 +133,8 @@
                   color: '#f816e0'
                 }
               },
-              color: '#ffefe3',
+              color: '#38019d',
+              borderWidth: 0,
               softMin: 0,
               dataLabels: {
                 enabled: true,
@@ -139,7 +147,6 @@
                   fontWeight: 200
                 }
               }
-
             }, {
               name: 'ROI',
               type: 'line',
