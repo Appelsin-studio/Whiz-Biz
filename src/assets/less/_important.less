@@ -36,7 +36,7 @@ a {
   letter-spacing: 0.35rem;
   text-transform: uppercase;
   font-weight: 900;
-  .sm-block({ font-size: 5rem; });
+  .md-block({ font-size: 4rem; });
   .xs-block({ font-size: 4rem; });
   span {
     color: #fff;
@@ -44,9 +44,11 @@ a {
   strong {
     display: block;
     color: #fff;
-    font-size: 10rem;
+    font-size: 100px;
     letter-spacing: 0.6rem;
     font-weight: 900;
+    .lg-block({ font-size: 70px; letter-spacing: 0.4rem;});
+    .sm-block({ font-size: 45px; letter-spacing: 0.3rem;});
   }
 }
 .gradient-text {
@@ -100,4 +102,39 @@ a {
   right: 0;
   background: #fff;
   z-index: 15;
+  .lg-block({
+    .skew-block(-90px, -90px);
+  });
+  .sm-block({
+    .skew-block(-60px, -60px);
+  });
+}
+a.gtc {
+  display: flex;
+  width: 130px;
+  height: 130px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  border-left: 5px solid #ff3ae9;
+  border-right: 5px solid @red;
+  box-sizing: border-box;
+  background-image: linear-gradient(to right, #ff3ae9 0%, @red 100%), linear-gradient(to right, #ff3ae9 0%, @red 100%);
+  background-size: 100% 5px;
+  background-position: 0 0, 0 100%;
+  background-repeat: no-repeat;
+  .lg-block({ width: 90px; height: 90px; border-left: 3px solid #ff3ae9; border-right: 3px solid @red; background-size: 100% 3px; });
+  .sm-block({ width: 70px; height: 70px; });
+  .wbc {
+    font-size: 35px;
+    font-weight: 900;
+    .lg-block({ font-size: 28px; });
+    .sm-block({ font-size: 22px; });
+  }
+  .wbc--small {
+    font-size: 14px;
+    .lg-block({ font-size: 12px; });
+    .sm-block({ font-size: 10px; });
+  }
 }

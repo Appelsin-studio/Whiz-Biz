@@ -6,8 +6,8 @@
                     <span class="wbc">WBC</span>
                     <span class="wbc--small">Whizbizcoin</span>
                 </a>
-                <a class="bid" href="#" @click.prevent="$modal.show('apply')">{{t('Apply')}}</a>
-                <a class="presentation" href="#" @click.prevent="$modal.show('presentation')">
+                <a class="bid inline-link" href="#" @click.prevent="$modal.show('apply')">{{t('Apply')}}</a>
+                <a class="presentation inline-link" href="#" @click.prevent="$modal.show('presentation')">
                     {{t('Sign up for a presentation')}}
                 </a>
                 <v-select :options="languageSelect" v-model="selected"></v-select>
@@ -55,40 +55,21 @@
         right: 0;
         z-index: 999;
         font-weight: 200;
+        .lg-block({top: 10px});
+        .sm-block({top: 5px});
         .wrapper {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            a {
+            .inline-link {
                 display: inline-block;
                 color: #fff;
-                &.gtc {
-                    display: flex;
-                    width: 130px;
-                    height: 130px;
-                    flex-direction: column;
-                    align-items: center;
-                    justify-content: center;
-                    border-left: 5px solid #ff3ae9;
-                    border-right: 5px solid @red;
-                    box-sizing: border-box;
-                    background-image: linear-gradient(to right, #ff3ae9 0%, @red 100%), linear-gradient(to right, #ff3ae9 0%, @red 100%);
-                    background-size: 100% 5px;
-                    background-position: 0 0, 0 100%;
-                    background-repeat: no-repeat;
-                    .wbc {
-                        font-size: 35px;
-                        font-weight: 900;
-                    }
-                    .wbc--small {
-                        font-size: 14px;
-                    }
-                }
                 &.bid {
                     .sm-block({ display: none; });
                 }
                 &.bid,
                 &.presentation {
+                    padding: 0 10px;
                     font-size: 18px;
                     letter-spacing: 0.12rem;
                     border-bottom: 1px solid transparent;
