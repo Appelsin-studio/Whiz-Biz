@@ -2,10 +2,10 @@
     <section class="b-statistics">
         <div class="container">
             <p class="g-number">09</p>
-            <p class="g-caption-section">
-                <span class="gradient-text">{{t('American statistics')}}</span>
-                <span>{{t('cinema profits')}}</span>
-            </p>
+            <h3 class="g-caption-section">
+                <span>{{t('American statistics')}}</span>
+                <strong class="gradient-text">{{t('cinema profits')}}</strong>
+            </h3>
             <p class="roi">ROI {{t('in relation to the size of the budget')}} </p>
             <p class="films">(1600 {{t('released films in 2010 - 2015')}})</p>
             <highcharts v-if="inViewport.now" :options="chartOptions" class="highcharts-block"></highcharts>
@@ -45,7 +45,7 @@
               labels: {
                 style: {
                   fontWeight: 600,
-                  color: '#000000',
+                  color: '#ffffff',
                   fontSize: '12px'
                 }
               }
@@ -112,7 +112,7 @@
               type: 'column',
               data: [
                 {
-                  color: '#f5780a',
+                  color: '#f816e0',
                   y: 509,
                   dataLabels: {
                     color: '#ffffff'
@@ -123,14 +123,14 @@
               },
               states: {
                 hover: {
-                  color: '#f5780a'
+                  color: '#f816e0'
                 }
               },
               color: '#ffefe3',
               softMin: 0,
               dataLabels: {
                 enabled: true,
-                color: '#000000',
+                color: '#ffffff',
                 align: 'center',
                 y: 30,
                 style: {
@@ -149,10 +149,10 @@
               tooltip: {
                 valueSuffix: ''
               },
-              color: '#5835cd',
+              color: '#f816e0',
               dataLabels: {
                 enabled: true,
-                color: '#000000',
+                color: '#ffffff',
                 align: 'center',
                 y: -15,
                 style: {
@@ -265,20 +265,24 @@
     @import "~assets/less/_vars";
     .b-statistics {
         position: relative;
-        padding-top: 115px;
+        padding-top: 255px;
+        padding-bottom: 200px;
+        background: linear-gradient(to right, rgba(19, 72, 182, 0.85) 0%, rgba(179, 15, 255, 1) 100%),
+        url("/img/bg-guitar.jpg") no-repeat left top / cover;
         .md-block({ padding-top: 60px; });
         .xs-block({ padding-top: 40px; });
-        z-index: 15;
+        z-index: 10;
         .highcharts-block {
             .xm-block({ display: none });
             &-img {
                 .xm-block({ display: block });
             }
         }
+        .g-number {
+            .line-after--right();
+        }
         .g-caption-section {
             margin-bottom: 55px;
-            max-width: 640px;
-            .line-after--left();
             .sm-block({ margin-bottom: 80px; });
             .xs-block({ margin-bottom: 50px; });
         }
@@ -287,7 +291,7 @@
             font-weight: 900;
             font-size: 3rem;
             letter-spacing: 0.2rem;
-            color: #000;
+            color: #fff;
         }
         .films {
             margin-bottom: 50px;

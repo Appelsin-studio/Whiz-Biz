@@ -2,10 +2,10 @@
     <section class="b-table-gtc">
         <div class="container">
             <p class="g-number">11</p>
-            <p class="g-caption-section">
+            <h3 class="g-caption-section">
                 <span>{{t('Minimum and optimal')}}</span>
-                <span class="gradient-text">{{t('growth forecast')}} Gtc </span> {{t('for 7 years')}}
-            </p>
+                <strong class="gradient-text">{{t('growth forecast')}} Gtc </strong> {{t('for 7 years')}}
+            </h3>
             <table class="table">
                 <tr class="caption-table">
                     <th colspan="2" class="capt">{{t('Minimum forecast GTC token in the next 7 years')}}</th>
@@ -100,16 +100,22 @@
     @import "~assets/less/_vars";
     .b-table-gtc {
         position: relative;
-        padding-top: 200px;
-        z-index: 15;
+        padding-top: 255px;
+        padding-bottom: 200px;
+        background: linear-gradient(to right, rgba(19, 72, 182, 0.85) 0%, rgba(179, 15, 255, 1) 100%),
+        url("/img/planet-big.png") no-repeat center bottom;
+        z-index: 10;
         .md-block({ padding-top: 100px; });
         .xs-block({ padding-top: 60px;});
+        .g-number {
+            .line-after--right();
+        }
         .g-caption-section {
             margin-bottom: 70px;
-            max-width: 780px;
-            color: #000;
-            .line-after--left();
             .sm-block({ margin-bottom: 55px; });
+            strong {
+                display: block;
+            }
         }
         .table {
             width: 100%;
@@ -127,18 +133,19 @@
                 }
                 &.caption-table {
                     justify-content: space-around;
+                    background: @gradientDefault;
                 }
                 .capt {
                     max-width: 44%;
-                    padding-bottom: 45px;
+                    padding: 25px 0;
                     box-sizing: border-box;
                     text-align: center;
-                    color: #000;
+                    color: #fff;
                     text-transform: uppercase;
-                    .sm-block({ max-width: 48%; padding-bottom: 25px; });
+                    .sm-block({ max-width: 48%;});
                 }
                 &:nth-child(2n) {
-                    background: #e8e4f3;
+                    background: rgba(79, 41, 175, 0.5);
                 }
             }
             td {
@@ -152,13 +159,13 @@
                     width: 22%;
                     flex-shrink: 0;
                     font-weight: 200;
-                    color: #000;
+                    color: #fff;
                 }
                 &.bold {
                     width: 22%;
                     flex-shrink: 0;
                     font-weight: 900;
-                    color: @orangeMain;
+                    color: @pinkLight;
                     .xs-block({ font-weight: 600; });
                 }
 

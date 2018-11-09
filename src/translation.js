@@ -159,9 +159,9 @@ export default {
     ru: 'фильма',
     kk: 'идеясы'
   },
-  'Film': {
+  'Filma': {
     ru: 'Идея',
-    kk: 'Фильм'
+    kk: 'идеясы'
   },
   'Genre': {
     ru: 'Жанр',
@@ -191,9 +191,13 @@ export default {
     ru: 'Компания «GHOST TOWN PRODUCTIONS, LLC» из штата Оклахома (США), предлагает Вам кинопроект под названием «Город призрак»',
     kk: '(АҚШ) Оклахомадан (АҚШ) «САҒАТ ТАУНА ӨНДІРІСІ» ЖШС сізге «Ghost Town»'
   },
-  'This story of the tragedy of the 1999 Tornadoes and the ghost town of Bezrodnoy Grove is based on real events. The action takes place in the US, in Oklahoma. Local hunters near the perimeter of the Bezrodnaya Grove find tapes with amateur recording. These cassettes captured the entire mission of a team of eight people who disappeared in the Ghost City on May 3, 1999. In "Bezrodnaya groves" our heroes will learn that they are the chosen ones. They discover other civilizations, worlds and parallel dimensions.': {
-    ru: 'Эта история о трагедии торнадо 1999 года и города призрака "Безродной Рощи" основаны на реальных событиях. Действие происходит в США, в штате Оклахома. Местные охотники неподалеку от периметра "Безродной Рощи" находят кассеты с любительской записью. На этих кассетах запечатлена вся миссия команды из восьми человек, которые пропали в Городе-призрак 3 Мая 1999 года. В “Безродной рощи” наши герои узнают что они избранные. Они открывают для себя другие цивилизации, миры и параллельные измерения.',
-    kk: '1999 жылғы трагедиялар мен Безродное Грут қалашығының қайғылы оқиғасы осы оқиғаларға негізделген. Акция АҚШ-та, Оклахома штатында өтеді. Bezrodnaya Grove периметрі жанында жергілікті аңшылар әуесқойлық жазбамен бірге таспаларды табады. Бұл таспалар 1999 жылғы 3 мамырда Ghost City-да жоғалып кеткен сегіз адамның командасының миссиясын тұтастай басып алды. «Безродная горов» -да біздің кейіпкерлеріміз олардың таңдалғандығын біледі. Олар басқа өркениеттерді, әлемді және параллельді өлшемдерді табады.'
+  'The action takes place in the US, in Oklahoma. Local hunters near the perimeter of the Bezrodnaya Grove find tapes with amateur recording. These cassettes captured the entire mission of a team of eight people who disappeared in the Ghost City on May 3, 1999. In "Bezrodnaya groves" our heroes will learn that they are the chosen ones. They discover other civilizations, worlds and parallel dimensions.': {
+    ru: 'Действие происходит в США, в штате Оклахома. Местные охотники неподалеку от периметра "Безродной Рощи" находят кассеты с любительской записью. На этих кассетах запечатлена вся миссия команды из восьми человек, которые пропали в Городе-призрак 3 Мая 1999 года. В “Безродной рощи” наши герои узнают что они избранные. Они открывают для себя другие цивилизации, миры и параллельные измерения.',
+    kk: 'Акция АҚШ-та, Оклахома штатында өтеді. Bezrodnaya Grove периметрі жанында жергілікті аңшылар әуесқойлық жазбамен бірге таспаларды табады. Бұл таспалар 1999 жылғы 3 мамырда Ghost City-да жоғалып кеткен сегіз адамның командасының миссиясын тұтастай басып алды. «Безродная горов» -да біздің кейіпкерлеріміз олардың таңдалғандығын біледі. Олар басқа өркениеттерді, әлемді және параллельді өлшемдерді табады.'
+  },
+  'This story of the tragedy of the 1999 Tornadoes and the ghost town of Bezrodnoy Grove is based on real events.': {
+    ru: 'Эта история о трагедии торнадо 1999 года и города призрака "Безродной Рощи" основаны на реальных событиях.',
+    kk: '1999 жылғы трагедиялар мен Безродное Грут қалашығының қайғылы оқиғасы осы оқиғаларға негізделген.'
   },
   'References': {
     ru: 'Референсы',

@@ -1,11 +1,12 @@
 <template>
     <section class="b-finance-films">
+        <div class="skew-block"></div>
         <div class="container">
             <p class="g-number">10</p>
-            <p class="g-caption-section">
-                <span class="gradient-text">{{t('Film business is in the top')}} 5</span>
-                <span>{{t('profitable industries')}}</span>
-            </p>
+            <h3 class="g-caption-section">
+                <span class="black">{{t('Film business is in the top')}} 5</span>
+                <span class="gradient-text">{{t('profitable industries')}}</span>
+            </h3>
             <div class="pie">
                 <highcharts v-if="inViewport.now" :options="chartOptions" class="highcharts-block"></highcharts>
                 <div v-else style="width: 100%;height: 300px;" class="highcharts-block"></div>
@@ -132,17 +133,16 @@
             }
         }
         > i {
-            font-family: @BebasNeue;
-            font-size: 6.5rem;
-            color: @blueMain;
+            font-family: @ProximaNova;
+            font-size: 4rem;
+            color: @pinkLight;
             display: block;
-            font-weight: 400;
+            font-weight: 600;
             font-style: normal;
             text-align: right;
-            .md-block({ font-size: 4.5rem; });
+            .md-block({ font-size: 2.5rem; });
         }
         > span {
-            font-family: @ProximaNova;
             font-size: 2rem;
             text-transform: initial;
             font-weight: 200;
@@ -162,11 +162,21 @@
         z-index: 15;
         .md-block({ padding: 80px 0 40px; });
         .xs-block({ padding: 60px 0 20px; });
+        .g-number {
+            margin-bottom: 20px;
+            color: #000;
+            .line-after--right(@gradientDefault);
+        }
         .g-caption-section {
             margin-bottom: 110px;
-            max-width: 650px;
-            .line-after--left();
             .sm-block({ margin-bottom: 80px; });
+            > span {
+                color: #000;
+                &.black {
+                    display: block;
+                    margin-bottom: 10px;
+                }
+            }
         }
         .pie {
             width: 80%;

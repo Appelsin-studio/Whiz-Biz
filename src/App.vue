@@ -15,14 +15,10 @@
             <list-popular/>
             <film-block/>
             <idea-film/>
-            <div class="bg-dotty">
-                <reference-block/>
-            </div>
+            <reference-block/>
             <statistics-block :in-viewport-offset-top='-800' :in-viewport-once='true'/>
             <finance-films :in-viewport-offset-top='-800' :in-viewport-once='true'/>
-            <div class="bg-dotty">
-                <table-gtc :in-viewport-offset-top='-800' :in-viewport-once='true'/>
-            </div>
+            <table-gtc :in-viewport-offset-top='-800' :in-viewport-once='true'/>
             <terms-cooperation/>
             <div class="bg-dotty">
                 <investor-income/>

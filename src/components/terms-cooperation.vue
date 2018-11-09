@@ -1,44 +1,60 @@
 <template>
     <section class="b-terms-cooperation">
+        <div class="skew-block"></div>
         <div class="container">
             <p class="g-number">12</p>
-            <p class="g-caption-section">{{t('As you can')}}
-                <span class="gradient-text">{{t('be part of us')}}</span>
-            </p>
+            <h3 class="g-caption-section">
+                <span>{{t('As you can')}}</span>
+                <strong class="gradient-text">{{t('be part of us')}}</strong>
+            </h3>
             <p class="secondary-caption">{{t('How to become an investor')}}</p>
-            <div class="instruction-arrow">
-                <span class="text">{{t('Leave a request')}} </span>
-                <span class="arrow"></span>
-                <span class="text">{{t('Purchase fund units')}}</span>
-                <span class="arrow"></span>
-                <span class="text">{{t('Make profit')}}</span>
+            <div class="step-wrapper">
+                <div class="step">
+                    <div class="img-wrapper">
+                        <div class="img"></div>
+                    </div>
+                    <div class="number">01</div>
+                    <span class="text">{{t('Leave a request')}} </span>
+                </div>
+                <div class="step">
+                    <div class="img-wrapper">
+                        <div class="img"></div>
+                    </div>
+                    <div class="number">02</div>
+                    <span class="text">{{t('Purchase fund units')}}</span>
+                </div>
+                <div class="step">
+                    <div class="img-wrapper">
+                        <div class="img"></div>
+                    </div>
+                    <div class="number">03</div>
+                    <span class="text">{{t('Make profit')}}</span>
+                </div>
             </div>
+            <p class="secondary-caption">{{t('Terms of cooperation')}}</p>
             <div class="conditions-wrapper">
-                <p class="secondary-caption">{{t('Terms of cooperation')}}</p>
-                <ul class="conditions-list">
-                    <li class="item">
-                        <span class="line"></span>
-                        <span class="bold">{{t('Available entry threshold')}} &#8212; </span>
-                        <span class="light">{{t('Minimum investment')}} 1BTC</span>
-                    </li>
-                    <li class="item">
-                        <span class="line"></span>
-                        <span class="bold">{{t('Profitable profit sharing')}} &#8212; </span>
-                        <span class="light">{{t('Investor gets x% profit from cinema income')}}</span>
-                    </li>
-                    <li class="item">
-                        <span class="line"></span>
-                        <span class="bold">{{t('Long-term strategy')}} &#8212; </span>
-                        <span class="light"></span>
-                    </li>
-                    <li class="item">
-                        <span class="line"></span>
-                        <span class="bold">{{t('Permanent source of income')}} &#8212; </span>
-                        <span class="light">{{t('The ability to bequeath income to your children')}}</span>
-                    </li>
-                </ul>
-                <a href="#" class="btn btn--orange" @click.prevent="$modal.show('apply')">{{t('Apply')}}</a>
+                <div class="item">
+                    <span class="line"></span>
+                    <span class="bold">{{t('Available entry threshold')}} &#8212; </span>
+                    <span class="light">{{t('Minimum investment')}} 1BTC</span>
+                </div>
+                <div class="item">
+                    <span class="line"></span>
+                    <span class="bold">{{t('Profitable profit sharing')}} &#8212; </span>
+                    <span class="light">{{t('Investor gets x% profit from cinema income')}}</span>
+                </div>
+                <div class="item">
+                    <span class="line"></span>
+                    <span class="bold">{{t('Long-term strategy')}} &#8212; </span>
+                    <span class="light"></span>
+                </div>
+                <div class="item">
+                    <span class="line"></span>
+                    <span class="bold">{{t('Permanent source of income')}} &#8212; </span>
+                    <span class="light">{{t('The ability to bequeath income to your children')}}</span>
+                </div>
             </div>
+            <a href="#" class="btn btn--orange" @click.prevent="$modal.show('apply')">{{t('Apply')}}</a>
         </div>
     </section>
 </template>
@@ -53,7 +69,7 @@
     @import "~assets/less/_vars";
     .b-terms-cooperation {
         position: relative;
-        padding-top: 160px;
+        padding-top: 80px;
         z-index: 15;
         .md-block({
             padding-top: 100px;
@@ -61,18 +77,25 @@
         .xs-block({
             padding-top: 60px;
         });
+        .g-number {
+            margin-bottom: 20px;
+            color: #000;
+            .line-after--right(@gradientDefault);
+        }
         .g-caption-section {
-            margin-bottom: 110px;
-            .line-after--left();
+            margin-bottom: 80px;
             .md-block({
                 margin-bottom: 80px;
             });
             .xs-block({
                 margin-bottom: 40px;
             });
+            span {
+                color: #000;
+            }
         }
         .secondary-caption {
-            margin-bottom: 50px;
+            margin-bottom: 130px;
             font-weight: 900;
             font-size: 3rem;
             letter-spacing: 0.2rem;
@@ -82,69 +105,57 @@
                 margin-bottom: 30px;
             });
         }
-        .instruction-arrow {
-            display: flex;
-            margin-bottom: 125px;
-            justify-content: flex-start;
-            align-items: center;
-            .md-block({
-                margin-bottom: 70px;
-            });
-            .sm-block({
+        .step-wrapper {
+            .row-flex();
+            margin-bottom: 80px;
+            .step {
+                .col();
+                .size(4);
+                position: relative;
+                display: flex;
+                padding: 10px 30px 60px;
                 flex-direction: column;
                 align-items: center;
-            });
-            .xs-block({
-                margin-bottom: 50px;
-            });
-            .text {
-                display: inline-block;
-                font-weight: 200;
-                font-size: 2.4rem;
-                letter-spacing: 0.17rem;
-            }
-            .arrow {
-                display: inline-flex;
-                padding-left: 10px;
-                padding-right: 15px;
-                flex-grow: 2;
-                justify-content: center;
-                align-items: center;
-                height: 20px;
-                .sm-block({
-                    height: 45px;
-                    padding: 10px 0;
-                });
-                .xs-block({
-                    height: 30px;
-                    padding: 5px 0 20px;
-                });
-                &::before {
-                    content: '';
-                    display: inline-block;
-                    width: 60px;
-                    height: 4px;
-                    background: radial-gradient(ellipse at center, @orangeMain 2px, @orangeMain 2px, transparent 20%);
-                    background-size: 14px 15px;
-                    background-repeat: repeat-x;
-                    background-position: 0 center;
-                    .sm-block({
-                        display: none;
-                    });
-                }
+                background: #3824c1;
                 &::after {
+                    position: absolute;
                     content: '';
+                    top: 10px;
+                    bottom: 10px;
+                    left: 10px;
+                    right: 10px;
+                    border: 1px solid #fff;
+                }
+                .img-wrapper {
+                    display: flex;
+                    margin-bottom: 10px;
+                    width: 100%;
+                    justify-content: center;
+                    .img {
+                        position: relative;
+                        width: 140px;
+                        height: 140px;
+                        transform: translateY(-60px);
+                        border-radius: 50%;
+                        background: @gradientDefault;
+                        z-index: 5;
+                        box-shadow: 0 10px 100px 0 rgba(228, 22, 224, 0.75)
+                    }
+                }
+                .number {
+                    margin-bottom: 40px;
+                    color: @pinkLight;
+                    font-weight: 900;
+                    font-size: 4rem;
+                    letter-spacing: 0.17rem;
+                }
+                .text {
                     display: inline-block;
-                    margin-left: -10px;
-                    width: 20px;
-                    height: 20px;
-                    border-right: 3px solid @orangeMain;
-                    border-bottom: 3px solid @orangeMain;
-                    transform: rotate(-45deg);
-                    .sm-block({
-                        margin-left: 0;
-                        transform: rotate(45deg);
-                    });
+                    font-weight: 900;
+                    font-size: 2.4rem;
+                    letter-spacing: 0.17rem;
+                    text-transform: uppercase;
+                    text-align: center;
                 }
             }
         }

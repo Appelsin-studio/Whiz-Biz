@@ -6,9 +6,8 @@
             <h2 class="g-caption-section">{{t('Film')}} <strong class="gradient-text">“ГОРОД ПРИЗРАК”</strong> / ”GHOST
                 TOWN”</h2>
             <div class="wrapper">
-                <div class="img">
-                    <img src="/img/poster.jpg" alt="">
-                </div>
+                <img class="img" src="/img/poster.jpg" alt="">
+                <div class="coub"></div>
                 <div class="wrapper-desc">
                     <p class="desc--bold black">{{t('Work has begun on the Kazakhstan-Hollywood film project')}} <span
                         class="blue">"{{t('GHOST TOWN')}}"</span></p>
@@ -34,21 +33,19 @@
     @import "~assets/less/_vars";
     .b-film {
         position: relative;
-        margin-top: -65px;
-        padding-top: 150px;
-        z-index: 10;
+        padding-top: 80px;
+        z-index: 15;
         .md-block({
-            margin-top: -80px;
-            padding-top: 80px;
-            padding-bottom: 20px;
         });
         .xs-block({
-            padding-top: 60px;
-            padding-bottom: 0;
         });
+        .g-number {
+            color: #000;
+            .line-after--right(@gradientDefault);
+        }
         .g-caption-section {
             margin-bottom: 60px;
-            .line-after--left();
+            color: #000;
             .xs-block({
                 margin-bottom: 50px;
             });
@@ -59,31 +56,44 @@
             padding-top: 25px;
             justify-content: flex-end;
             align-items: flex-start;
+            color: #000;
             .lg-block({ padding-top: 0;
                 flex-direction: column;
                 align-items: center;
             });
             .img {
-                position: absolute;
-                top: 0;
-                left: 0;
+                position: relative;
                 z-index: 5;
-                border-radius: 10px;
-                overflow: hidden;
                 .lg-block({
-                    position: relative;
                     margin-bottom: 20px;
                 });
                 .sm-block({
                     max-width: 70%;
                 });
             }
+            .coub {
+                position: absolute;
+                left: -70px;
+                bottom: -70px;
+                width: 390px;
+                height: 390px;
+                border-left: 10px solid @pinkLight;
+                border-right: 10px solid @red;
+                background-image: linear-gradient(to right, @pinkLight 0%, @red 100%),
+                linear-gradient(to right, @pinkLight 0%, @red 100%);
+                background-position: 0 0, 0 100%;
+                background-repeat: no-repeat;
+                background-size: 100% 10px;
+                .md-block({ width: 300px; height: 300px; });
+                .xs-block({ width: 180px; height: 180px; });
+                z-index: 1;
+            }
             .wrapper-desc {
-                padding: 65px 15px 65px 150px;
+                padding: 75px 15px 65px 100px;
                 max-width: 890px;
                 box-sizing: border-box;
                 z-index: 1;
-                flex-shrink: 0;
+                flex-shrink: 2;
                 .lg-block({
                     padding: 65px 40px 0 40px;
                 });
@@ -93,13 +103,14 @@
                 .desc--bold {
                     margin-bottom: 30px;
                     font-weight: 900;
-                    font-size: 2.4rem;
+                    font-size: 2.6rem;
                     letter-spacing: 0.17rem;
+                    text-transform: uppercase;
                     .sm-block({
                         font-size: 18px;
                     });
                     .blue {
-                        color: @blueMain;
+                        color: @pinkLight;
                     }
                 }
                 .desc {
@@ -114,6 +125,7 @@
                         margin-bottom: 0;
                     }
                     b {
+                        text-transform: uppercase;
                         font-weight: 900;
                     }
                     i {

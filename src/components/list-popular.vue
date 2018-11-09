@@ -77,10 +77,10 @@
         .planet-big {
             position: absolute;
             top: 50%;
-            right: -50px;
-            transform: translateY(-30%);
-            width: 500px;
-            height: 1000px;
+            right: -300px;
+            transform: translateY(-30%) rotate(-90deg);
+            width: 1000px;
+            height: 500px;
             opacity: 0.6;
             background: url("/img/planet-big.png") no-repeat right center / contain;
         }

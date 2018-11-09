@@ -1,11 +1,12 @@
 <template>
     <section class="b-reference">
+        <div class="skew-block"></div>
         <div class="container">
             <p class="g-number">08</p>
-            <p class="g-caption-section">
-                <span class="gradient-text">{{t('References')}}</span>
+            <h3 class="g-caption-section">
+                <strong class="gradient-text">{{t('References')}}</strong>
                 <span>({{t('movies - analogs')}})</span>
-            </p>
+            </h3>
             <div class="wrapper">
                 <div class="item">
                     <p class="number">01</p>
@@ -86,7 +87,7 @@
     @import "~assets/less/_vars";
     .b-reference {
         position: relative;
-        padding-top: 150px;
+        padding-top: 80px;
         z-index: 15;
         .md-block({
             padding-top: 120px;
@@ -94,11 +95,15 @@
         .xs-block({
             padding-top: 80px;
         });
+        .g-number {
+            color: #000;
+            .line-after--right(@gradientDefault);
+        }
         .g-caption-section {
             margin-bottom: 60px;
-            .line-after--left();
             span {
                 display: block;
+                color: #000;
             }
         }
         .wrapper {
@@ -113,16 +118,14 @@
                 });
                 .number {
                     margin-bottom: 10px;
-                    font-family: @BebasNeue;
-                    font-weight: 600;
+                    font-weight: 900;
                     font-size: 6rem;
                     letter-spacing: 0.4rem;
-                    color: @orangeMain;
+                    color: @pinkLight;
                 }
                 .name {
                     margin-bottom: 20px;
-                    font-family: @BebasNeue;
-                    font-weight: 600;
+                    font-weight: 900;
                     font-size: 3.5rem;
                     letter-spacing: 0.25rem;
                     color: #000;
@@ -142,9 +145,11 @@
                     .bold {
                         font-weight: 900;
                         color: #000;
+                        text-transform: uppercase;
                     }
                     .light {
                         font-weight: 200;
+                        color: #000;
                     }
                 }
             }
