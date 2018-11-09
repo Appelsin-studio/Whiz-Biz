@@ -6,7 +6,7 @@
                 <img src="/img/bg-main.jpg">
             </parallax>
         </div>
-        <div class="bg-gradient container--flex-center">
+
                 <div class="container">
                     <div class="wrapper">
                         <div class="coub"></div>
@@ -30,7 +30,7 @@
                         <div class="number">01</div>
                     </div>
                 </div>
-            </div>
+
     </section>
 </template>
 <script>
@@ -98,15 +98,16 @@
         }
         .container {
             width: 100%;
-            box-sizing: border-box;
+            .lg-block({ box-sizing: border-box;});
         }
         .wrapper {
             position: relative;
             display: grid;
-            grid-template-columns: minmax(0px, 120px)  minmax(0px, 560px) 1fr minmax(0px, 80px);
+            grid-template-columns: minmax(0px, 120px)  minmax(0px, 560px) 1fr minmax(0px, 100px);
             grid-template-rows: minmax(20px, 100px) 1fr minmax(20px, 100px);
             z-index: 99;
-            .lg-block({ padding-left: 0; grid-template-columns: 1fr; grid-template-rows: 1fr; });
+            .lg-block({ padding-left: 0; grid-template-columns: 1fr; grid-template-rows: 1fr; justify-items: center;
+                padding-bottom: 10vh;});
             .md-block({ padding-top: 0; });
             .coub {
                 grid-column: ~"1 / 3";
@@ -142,7 +143,7 @@
                 }
             }
             .content-wrapper {
-                grid-column: ~"2 / 5";
+                grid-column: ~"2 / 4";
                 grid-row: ~"2 / 3";
                 display: flex;
                 position: relative;
@@ -179,6 +180,7 @@
                         text-transform: uppercase;
                         color: #fff;
                         .lg-block({ text-align: center; });
+                        .sm-block({margin-bottom: 15px;});
                         strong {
                             display: block;
                             margin-bottom: 30px;
@@ -186,10 +188,16 @@
                             font-weight: 900;
                             letter-spacing: 0.6rem;
                             line-height: 1;
+                            .md-block({ margin-bottom: 20px; font-size: 70px; letter-spacing: 0.4rem;});
+                            .sm-block({  font-size: 45px; letter-spacing: 0.3rem;});
+                            .xs-block({ margin-bottom: 10px; font-size: 36px; letter-spacing: 0.25rem;});
                         }
                         span {
-                            font-size: 3.6rem;
+                            font-size: 36px;
                             letter-spacing: 0.18rem;
+                            .md-block({ font-size: 32px; letter-spacing: 0.2rem;});
+                            .sm-block({ font-size: 24px; letter-spacing: 0.16rem;});
+                            .xs-block({  font-size: 20px; letter-spacing: 0.14rem;});
                         }
                     }
                 }
@@ -215,13 +223,14 @@
                     z-index: 6;
                     .lg-block({ align-self: center; });
                     .md-block({ padding: 25px 0; max-width: 300px; });
+                    .xs-block({max-width: 250px;});
                     &:hover {
                         box-shadow: 0 0 22px 0 rgba(239, 53, 165, 1);
                     }
                 }
             }
             .number {
-                grid-column: ~"5 / 6";
+                grid-column: ~"4 / 5";
                 grid-row: ~"2 / 2";
                 position: relative;
                 margin-top: 10px;

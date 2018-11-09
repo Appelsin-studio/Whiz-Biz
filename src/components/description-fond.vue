@@ -36,7 +36,6 @@
     @import "~assets/less/_vars";
     .b-description-fond {
         position: relative;
-        padding-bottom: 60px;
         .wrapper {
             position: relative;
             display: flex;
@@ -46,7 +45,7 @@
                 max-width: 570px;
                 padding-top: 50px;
                 padding-right: 20px;
-                .md-block({ margin-bottom: 20px; });
+                .md-block({ margin-bottom: 50px; });
                 .g-number {
                     color: #000;
                     .line-after--right(@gradientDefault);
@@ -75,18 +74,20 @@
                 align-items: flex-start;
                 position: relative;
                 z-index: 20;
+                .md-block({ justify-content: center;});
                 .img-wrapper {
                     position: absolute;
                     right: -360px;
                     top: -100px;
                     z-index: 10;
-                    .md-block({ position: relative; right: auto;});
+                    .lg-block({right: -70px; top: -50px;});
+                    .md-block({ position: relative; right: auto; top: auto;});
                     .sm-block({});
                     img {
                         position: relative;
                         z-index: 1;
                         max-width: none;
-                        .md-block({ max-height: 300px; });
+                        .lg-block({ max-height: 400px; });
                         .xs-block({ max-height: 250px; });
                     }
                 }
@@ -98,6 +99,7 @@
                     background-size: 400%, 400%;
                     position: relative;
                     top: 0;
+                    .lg-block({ width: 300px; height: 300px;});
                     .md-block({ position: absolute; width: 300px; height: 300px; });
                     .xs-block({ width: 180px; height: 180px; });
                     z-index: 1;

@@ -39,7 +39,7 @@
         padding-bottom: 260px;
         background: linear-gradient(to right, rgba(19, 72, 182, 0.85) 0%, rgba(179, 15, 255, 1) 100%),
             url("/img/bg-guitar.jpg") no-repeat left top / cover;
-        .md-block({ padding-top: 80px;
+        .lg-block({ padding-top: 120px;
             padding-bottom: 120px; });
         .xs-block({ padding-top: 60px;
             padding-bottom: 100px;  });
