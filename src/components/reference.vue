@@ -87,14 +87,7 @@
     @import "~assets/less/_vars";
     .b-reference {
         position: relative;
-        padding-top: 80px;
         z-index: 15;
-        .md-block({
-            padding-top: 120px;
-        });
-        .xs-block({
-            padding-top: 80px;
-        });
         .g-number {
             color: #000;
             .line-after--right(@gradientDefault);

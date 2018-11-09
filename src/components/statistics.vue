@@ -273,11 +273,11 @@
     .b-statistics {
         position: relative;
         padding-top: 255px;
-        padding-bottom: 200px;
+        padding-bottom: 280px;
         background: linear-gradient(to right, rgba(19, 72, 182, 0.85) 0%, rgba(179, 15, 255, 1) 100%),
         url("/img/bg-guitar.jpg") no-repeat left top / cover;
-        .md-block({ padding-top: 60px; });
-        .xs-block({ padding-top: 40px; });
+        .lg-block({ padding-top: 180px; padding-bottom: 200px;});
+        .xs-block({ padding-top: 100px; padding-bottom: 100px;});
         z-index: 10;
         .highcharts-block {
             .xm-block({ display: none });

@@ -170,7 +170,7 @@
     @import "~assets/less/_vars";
     .b-finance-films {
         position: relative;
-        padding: 150px 0 50px;
+
         color: #000;
         z-index: 15;
         .md-block({ padding: 80px 0 40px; });
