@@ -60,13 +60,24 @@
         padding: 70px 0;
         background: linear-gradient(180deg, #130828, #1e0b46);
         z-index: 15;
-
+        .md-block({ padding: 50px; padding-bottom: 20px; });
+        .sm-block({ padding: 20px; });
         .footer-wrapper {
             .row-flex();
             align-items: center;
             > li {
                 .col();
                 .size(3);
+                .size-md(4);
+                .size-sm(6);
+                .sm-block({ text-align: center });
+                &:last-child {
+                    .size-md(12);
+                }
+                &:first-child {
+                    .size-sm(12);
+                    .sm-block({ display: flex; justify-content: center; margin-bottom: 25px });
+                }
                 .contact {
                     font-size: 1.8rem;
                     color: #fff;
@@ -74,6 +85,8 @@
                     letter-spacing: 0.12rem;
                     border-bottom: 1px dashed #fff;
                     transition: .3s;
+                    white-space: nowrap;
+                    .sm-block({ white-space: normal; });
                     &:hover {
                         border-color: transparent;
                     }
@@ -81,6 +94,7 @@
                 .social {
                     display: flex;
                     justify-content: flex-end;
+                    .md-block({ justify-content: center; margin-top: 25px; });
                     .sm-block({ order: 1; margin-bottom: 30px; });
                     li {
                         margin-right: 15px;
