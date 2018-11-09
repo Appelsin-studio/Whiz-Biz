@@ -74,6 +74,7 @@
         z-index: 15;
         .md-block({ padding-top: 120px; padding-bottom: 100px; });
         .xs-block({ padding-top: 80px; padding-bottom: 50px; });
+        .sm-block({ padding-bottom: 35px; });
         .g-number {
             margin-bottom: 31px;
             color: #000;
@@ -103,13 +104,14 @@
                 text-transform: uppercase;
                 color: @pinkLight;
                 font-weight: 900;
+                .sm-block({ display: block; })
             }
         }
         .road-wrapper {
             padding: 192px 40px 0;
             margin-bottom: 165px;
             .md-block({ padding: 230px 40px 0; });
-            .sm-block({ padding: 0 0 0 10px; });
+            .sm-block({ padding: 0 0 0 10px; margin-bottom: 60px });
             .road {
                 display: flex;
                 justify-content: space-between;
@@ -160,6 +162,7 @@
                         letter-spacing: 0.14rem;
                         color: @grayMain;
                         line-height: 1.4;
+                        padding: 0 10px;
                     }
                 }
                 .step-start-finish {
@@ -171,6 +174,8 @@
                     .sm-block({ flex-direction: row; align-items: center; margin-top: 0; });
                     &.start {
                         margin-left: -5px;
+                        min-width: 130px;
+                        align-items: normal;
                         .sm-block({ margin-left: 0; margin-top: -10px; margin-bottom: 20px; });
                     }
                     &.finish {
@@ -194,6 +199,7 @@
                     &.finish {
                         .text-start-finish {
                             transform: translateX(-60%);
+                            .sm-block({ transform: translateX(0); });
                         }
                     }
                     .text-start-finish {
@@ -206,7 +212,7 @@
                         letter-spacing: 0.2rem;
                         color: #000;
                         text-transform: uppercase;
-                        .sm-block({ position: relative; top: auto; });
+                        .sm-block({ position: relative; top: auto; padding-left: 20px; transform: translateX(0); });
                     }
                 }
             }
@@ -219,12 +225,15 @@
                 letter-spacing: 0.17rem;
                 color: #000;
                 text-transform: uppercase;
+                .sm-block({ margin-bottom: 25px });
             }
             .prices-list {
                 .row-flex();
                 li {
                     .col();
                     .size(6);
+                    .size-sm(12);
+                    .sm-block({ margin-bottom: 25px });
                     .text {
                         margin-bottom: 15px;
                         font-weight: 900;
