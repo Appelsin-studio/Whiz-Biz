@@ -107,6 +107,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        background: @gradientDefault;
         img {
             width: 20vh;
         }
