@@ -19,7 +19,8 @@
                         <p class="number">
                             <span>01</span>
                         </p>
-                        <p class="text">{{t('Production and sale of the film')}}</p>
+                        <p class="text">{{t('Build a budget of 100 BTC through CGEN sales to launch a PR campaign')}}</p>
+
                     </div>
                     <div class="step">
                         <p class="number">
@@ -31,7 +32,7 @@
                         <p class="number">
                             <span>03</span>
                         </p>
-                        <p class="text">{{t('Build a budget of 100 BTC through CGEN sales to launch a PR campaign')}}</p>
+                        <p class="text">{{t('Production and sale of the film')}}</p>
                     </div>
                     <div class="step-start-finish finish">
                         <p class="text-start-finish">finish</p>
@@ -40,19 +41,19 @@
             </div>
             <div class="profit-wrapper">
                 <p class="black">{{t('Investor profitable from the first days')}}</p>
-                <div class="btc">
-                    <p class="text text--orange">1 BTC = 20 000 000 CGEN</p>
-                    <p class="span-block">
-                        <span>20 000 000 CGEN POS mining</span>
-                        <span>1 {{t('year')}} + 10 000 000 CGEN</span>
-                    </p>
-                </div>
-                <div class="prognosis">
-                    <p class="text text--blue">{{t('Forecast price 2020 year')}} =</p>
-                    <p class="span-block">
-                        <span>0,000001 BTC (100 сатоши)</span>
-                    </p>
-                </div>
+                <ul class="prices-list">
+                    <li>
+                        <p class="text">1 BTC = 20 000 000 CGEN</p>
+                        <p class="span-block">
+                            20 000 000 CGEN POS mining<br/>
+                            1 {{t('year')}} + 10 000 000 CGEN
+                        </p>
+                    </li>
+                    <li>
+                        <p class="text">{{t('Forecast price 2020 year')}} =</p>
+                        <p class="span-block">0,000001 BTC (100 сатоши)</p>
+                    </li>
+                </ul>
             </div>
         </div>
     </section>
@@ -66,122 +67,99 @@
 </script>
 <style scoped lang="less">
     @import "~assets/less/_vars";
-
     .b-road-map {
         position: relative;
-        padding-top: 200px;
-        padding-bottom: 150px;
+        padding-top: 73px;
+        padding-bottom: 170px;
         z-index: 15;
-        .md-block({
-            padding-top: 120px;
-            padding-bottom: 100px;
-        });
-        .xs-block({
-            padding-top: 80px;
-            padding-bottom: 50px;
-        });
+        .md-block({ padding-top: 120px; padding-bottom: 100px; });
+        .xs-block({ padding-top: 80px; padding-bottom: 50px; });
+        .g-number {
+            margin-bottom: 31px;
+            color: #000;
+            .line-after--right(@gradientDefault);
+        }
         .g-caption-section {
-            margin-bottom: 40px;
-            .line-after--left();
-            .black {
+            margin-bottom: 23px;
+            .md-block({ margin-bottom: 80px; });
+            .xs-block({ margin-bottom: 40px; });
+            span {
                 color: #000;
+            }
+            .gradient-text {
+                display: block;
+                font-size: 10rem;
             }
         }
         .description--top {
             font-size: 3rem;
             letter-spacing: 0.2rem;
             color: #000;
-            .sm-block({
-                margin-bottom: 50px;
-            });
+            .sm-block({ margin-bottom: 50px; });
             .light {
-                display: block;
                 font-weight: 200;
             }
             .bold {
+                text-transform: uppercase;
+                color: @pinkLight;
                 font-weight: 900;
             }
         }
         .road-wrapper {
-            padding: 260px 40px 0;
-            margin-bottom: 80px;
-            .md-block({padding: 230px 40px 0;});
-            .sm-block({
-                padding: 0 0 0 10px;
-            });
+            padding: 192px 40px 0;
+            margin-bottom: 165px;
+            .md-block({ padding: 230px 40px 0; });
+            .sm-block({ padding: 0 0 0 10px; });
             .road {
                 display: flex;
                 justify-content: space-between;
                 align-items: flex-start;
-                border-top: 8px solid #ddedfa;
-                .sm-block({
-                    flex-direction: column;
-                    border-top: none;
-                    border-left: 8px solid #ddedfa;
-                });
+                border-top: 8px solid #ffe9f9;
+                .sm-block({ flex-direction: column; border-top: none; border-left: 8px solid #ddedfa; });
                 .step {
                     display: flex;
                     max-width: 250px;
                     margin-top: -15px;
                     flex-direction: column;
                     align-items: flex-start;
-                    .sm-block({
-                        flex-direction: row;
-                        align-items: center;
-                        max-width: 100%;
-                        margin-top: 0;
-                        margin-bottom: 20px;
-                        margin-left: -15px;
-                    });
-                    .xs-block({
-                        margin-left: -12px;
-                    });
+                    .sm-block({ flex-direction: row; align-items: center; max-width: 100%; margin-top: 0; margin-bottom: 20px; margin-left: -15px; });
+                    .xs-block({ margin-left: -12px; });
                     .number {
                         display: flex;
-                        margin-bottom: 15px;
+                        margin-bottom: 24px;
                         flex-direction: column;
                         align-items: center;
                         span {
-                            font-family: @BebasNeue;
-                            font-weight: 600;
+                            color: @pinkLight;
+                            font-weight: 900;
                             font-size: 6rem;
                             letter-spacing: 0.4rem;
-                            color: @orangeMain;
-                            .sm-block({
-                                margin-top: 5px;
-                            });
+                            margin-top: 20px;
+                            .sm-block({ margin-top: 5px; });
                         }
-                        .sm-block({
-                            flex-direction: row;
-                            align-items: center;
-                            margin-bottom: 0;
-                            margin-right: 15px;
-                        });
+                        .sm-block({ flex-direction: row; align-items: center; margin-bottom: 0; margin-right: 15px; });
                         &::before {
                             content: '';
                             display: inline-block;
                             margin-bottom: 15px;
+                            margin-right: 37px;
                             width: 22px;
                             height: 22px;
                             background-color: #fff;
-                            border: 6px solid @orangeMain;
+                            border: 6px solid @pinkLight;
                             border-radius: 50%;
                             box-sizing: border-box;
-                            .sm-block({
-                                margin-bottom: 0;
-                                margin-right: 10px;
-                            });
-                            .xs-block({
-                                width: 15px;
-                                height: 15px;
-                                border: 4px solid @orangeMain;
-                            });
+                            box-shadow: 0 0 20px 0 rgba(248, 22, 224, 0.45);
+                            .sm-block({ margin-bottom: 0; margin-right: 10px; });
+                            .xs-block({ width: 15px; height: 15px; border: 4px solid @pinkLight; });
                         }
                     }
                     .text {
                         font-weight: 200;
                         font-size: 2rem;
                         letter-spacing: 0.14rem;
+                        color: @grayMain;
+                        line-height: 1.4;
                     }
                 }
                 .step-start-finish {
@@ -190,25 +168,14 @@
                     margin-top: -15px;
                     flex-direction: column;
                     align-items: center;
-                    .sm-block({
-                        flex-direction: row;
-                        align-items: center;
-                        margin-top: 0;
-                    });
+                    .sm-block({ flex-direction: row; align-items: center; margin-top: 0; });
                     &.start {
                         margin-left: -5px;
-                        .sm-block({
-                            margin-left: 0;
-                            margin-top: -10px;
-                            margin-bottom: 20px;
-                        });
+                        .sm-block({ margin-left: 0; margin-top: -10px; margin-bottom: 20px; });
                     }
                     &.finish {
                         margin-right: -5px;
-                        .sm-block({
-                            margin-right: 0;
-                            margin-bottom: -10px;
-                        });
+                        .sm-block({ margin-right: 0; margin-bottom: -10px; });
                     }
                     &::after {
                         content: '';
@@ -217,90 +184,64 @@
                         width: 22px;
                         height: 22px;
                         background-color: #fff;
-                        border: 6px solid @orangeMain;
+                        border: 6px solid @pinkLight;
                         border-radius: 50%;
                         box-sizing: border-box;
-                        .sm-block({
-                            position: absolute;
-                            left: -15px;
-                        });
-                        .xs-block({
-                            left: -12px;
-                            width: 15px;
-                            height: 15px;
-                            border: 4px solid @orangeMain;
-                        });
+                        box-shadow: 0 0 20px 0 rgba(248, 22, 224, 0.45);
+                        .sm-block({ position: absolute; left: -15px; });
+                        .xs-block({ left: -12px; width: 15px; height: 15px; border-width: 4px; });
                     }
-                    &::before {
-                        content: '';
-                        position: absolute;
-                        display: inline-block;
-                        top: -106px;
-                        width: 15px;
-                        height: 100px;
-                        background: radial-gradient(ellipse at center, #b0b0b0 2px, #b0b0b0 2px, transparent 17%);
-                        background-size: 15px 15px;
-                        background-repeat: repeat-y;
-                        background-position: 0 center;
-                        box-sizing: border-box;
-                        .sm-block({
-                            position: relative;
-                            top: auto;
-                            margin: 0 10px;
-                            width: 100px;
-                            height: 15px;
-                            background-repeat: repeat-x;
-                        });
+                    &.finish {
+                        .text-start-finish {
+                            transform: translateX(-60%);
+                        }
                     }
                     .text-start-finish {
                         position: absolute;
-                        top: -140px;
+                        top: -66px;
+                        left: 0;
+                        transform: translateX(-20%);
                         font-weight: 900;
                         font-size: 3rem;
                         letter-spacing: 0.2rem;
                         color: #000;
                         text-transform: uppercase;
-                        .sm-block({
-                            position: relative;
-                            top: auto;
-                        });
+                        .sm-block({ position: relative; top: auto; });
                     }
                 }
             }
         }
         .profit-wrapper {
-            max-width: 560px;
-            .btc {
-                margin-bottom: 40px;
-            }
             .black {
-                margin-bottom: 35px;
+                margin-bottom: 62px;
                 font-weight: 900;
-                font-size: 2.4rem;
+                font-size: 3rem;
                 letter-spacing: 0.17rem;
                 color: #000;
                 text-transform: uppercase;
             }
-            .text {
-                margin-bottom: 15px;
-                font-weight: 900;
-                font-size: 2.4rem;
-                letter-spacing: 0.17rem;
-                &.text--orange {
-                    color: @orangeMain;
-                }
-                &.text--blue{
-                    color: @blueMain;
+            .prices-list {
+                .row-flex();
+                li {
+                    .col();
+                    .size(6);
+                    .text {
+                        margin-bottom: 15px;
+                        font-weight: 900;
+                        font-size: 2.4rem;
+                        letter-spacing: 0.17rem;
+                        text-transform: uppercase;
+                        color: @pinkLight;
+                    }
+                    .span-block {
+                        color: @grayMain;
+                        font-weight: 200;
+                        font-size: 2rem;
+                        letter-spacing: 0.14rem;
+                    }
                 }
             }
-            .span-block {
-                font-weight: 200;
-                font-size: 2rem;
-                letter-spacing: 0.14rem;
-                span {
-                    display: block;
-                }
-            }
+
         }
     }
 
