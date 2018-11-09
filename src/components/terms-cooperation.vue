@@ -50,7 +50,9 @@
                     <span class="light">{{t('The ability to bequeath income to your children')}}</span>
                 </li>
             </ul>
-            <a href="#" class="btn btn--orange" @click.prevent="$modal.show('apply')">{{t('Apply')}}</a>
+            <div class="btn-group">
+                <a href="#" class="btn btn--orange" @click.prevent="$modal.show('apply')">{{t('Apply')}}</a>
+            </div>
         </div>
     </section>
 </template>
@@ -89,20 +91,25 @@
             letter-spacing: 0.2rem;
             text-transform: uppercase;
             color: #000;
-            .xs-block({ margin-bottom: 30px; });
+            .md-block({ margin-bottom: 70px; });
+            .xs-block({ margin-bottom: 40px; });
         }
         .step-wrapper {
             .row-flex();
             margin-bottom: 120px;
+            .sm-block({ justify-content: center; });
             .step {
                 .col();
                 .size(4);
+                .size-sm(10);
+                .size-xm(12);
                 position: relative;
                 display: flex;
                 padding: 10px 30px 60px;
                 flex-direction: column;
                 align-items: center;
                 background: #3824c1;
+                .sm-block({ margin-top: 75px; });
                 &::after {
                     position: absolute;
                     content: '';
@@ -112,18 +119,33 @@
                     right: 10px;
                     border: 1px solid #fff;
                 }
+                &:nth-child(1) {
+                    .img {
+                        background: url("/img/icon/terms-01.png") no-repeat center, @gradientDefault;
+                    }
+                }
+                &:nth-child(2) {
+                    .img {
+                        background: url("/img/icon/terms-02.png") no-repeat center, @gradientDefault;
+                    }
+                }
+                &:nth-child(3) {
+                    .img {
+                        background: url("/img/icon/terms-03.png") no-repeat center, @gradientDefault;
+                    }
+                }
                 .img-wrapper {
                     display: flex;
                     margin-bottom: 10px;
                     width: 100%;
                     justify-content: center;
+                    .sm-block({ margin-bottom: -15px; });
                     .img {
                         position: relative;
                         width: 140px;
                         height: 140px;
                         transform: translateY(-60px);
                         border-radius: 50%;
-                        background: @gradientDefault;
                         z-index: 5;
                         box-shadow: 0 10px 100px 0 rgba(228, 22, 224, 0.75)
                     }
@@ -134,6 +156,7 @@
                     font-weight: 900;
                     font-size: 4rem;
                     letter-spacing: 0.17rem;
+                    .sm-block({ margin-bottom: 20px; });
                 }
                 .text {
                     display: inline-block;
@@ -150,10 +173,12 @@
             .row-flex();
             margin-bottom: 40px;
             position: relative;
-            .xs-block({ margin-bottom: 60px; });
+            .md-block({ justify-content: center; });
             .item {
                 .col();
                 .size(6);
+                .size-md(10);
+                .size-xm(12);
                 height: 220px;
                 padding: 45px;
                 padding-left: 140px;
@@ -161,6 +186,8 @@
                 box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.3);
                 margin-bottom: 20px;
                 position: relative;
+                .lg-block({ padding: 45px; padding-left: 110px; });
+                .md-block({ height: 200px });
                 &::after {
                     content: "";
                     position: absolute;
@@ -169,6 +196,7 @@
                     width: 35px;
                     height: 35px;
                     background: url("/img/icon/success.svg") no-repeat center / contain;
+                    .sm-block({ left: 38px; });
                 }
                 .bold {
                     display: block;
@@ -186,6 +214,9 @@
                     color: @grayMain;
                 }
             }
+        }
+        .btn-group {
+            .md-block({ text-align: center; });
         }
 
     }
