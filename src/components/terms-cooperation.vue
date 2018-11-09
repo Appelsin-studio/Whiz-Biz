@@ -32,28 +32,24 @@
                 </div>
             </div>
             <p class="secondary-caption">{{t('Terms of cooperation')}}</p>
-            <div class="conditions-wrapper">
-                <div class="item">
-                    <span class="line"></span>
-                    <span class="bold">{{t('Available entry threshold')}} &#8212; </span>
+            <ul class="conditions-list">
+                <li class="item">
+                    <span class="bold">{{t('Available entry threshold')}}</span>
                     <span class="light">{{t('Minimum investment')}} 1BTC</span>
-                </div>
-                <div class="item">
-                    <span class="line"></span>
-                    <span class="bold">{{t('Profitable profit sharing')}} &#8212; </span>
-                    <span class="light">{{t('Investor gets x% profit from cinema income')}}</span>
-                </div>
-                <div class="item">
-                    <span class="line"></span>
-                    <span class="bold">{{t('Long-term strategy')}} &#8212; </span>
+                </li>
+                <li class="item">
+                    <span class="bold">{{t('Profitable profit sharing')}}</span>
+                    <span class="light">{{t('Investor gets % profit from cinema income')}}</span>
+                </li>
+                <li class="item">
+                    <span class="bold">{{t('Long-term strategy')}}</span>
                     <span class="light"></span>
-                </div>
-                <div class="item">
-                    <span class="line"></span>
-                    <span class="bold">{{t('Permanent source of income')}} &#8212; </span>
+                </li>
+                <li class="item">
+                    <span class="bold">{{t('Permanent source of income')}}</span>
                     <span class="light">{{t('The ability to bequeath income to your children')}}</span>
-                </div>
-            </div>
+                </li>
+            </ul>
             <a href="#" class="btn btn--orange" @click.prevent="$modal.show('apply')">{{t('Apply')}}</a>
         </div>
     </section>
@@ -71,12 +67,8 @@
         position: relative;
         padding-top: 80px;
         z-index: 15;
-        .md-block({
-            padding-top: 100px;
-        });
-        .xs-block({
-            padding-top: 60px;
-        });
+        .md-block({ padding-top: 100px; });
+        .xs-block({ padding-top: 60px; });
         .g-number {
             margin-bottom: 20px;
             color: #000;
@@ -84,12 +76,8 @@
         }
         .g-caption-section {
             margin-bottom: 80px;
-            .md-block({
-                margin-bottom: 80px;
-            });
-            .xs-block({
-                margin-bottom: 40px;
-            });
+            .md-block({ margin-bottom: 80px; });
+            .xs-block({ margin-bottom: 40px; });
             span {
                 color: #000;
             }
@@ -97,17 +85,15 @@
         .secondary-caption {
             margin-bottom: 130px;
             font-weight: 900;
-            font-size: 3rem;
+            font-size: 4rem;
             letter-spacing: 0.2rem;
             text-transform: uppercase;
             color: #000;
-            .xs-block({
-                margin-bottom: 30px;
-            });
+            .xs-block({ margin-bottom: 30px; });
         }
         .step-wrapper {
             .row-flex();
-            margin-bottom: 80px;
+            margin-bottom: 120px;
             .step {
                 .col();
                 .size(4);
@@ -159,67 +145,48 @@
                 }
             }
         }
-        .conditions-wrapper {
-            .conditions-list {
-                display: flex;
-                margin-bottom: 100px;
-                position: relative;
-                flex-direction: column;
-                .xs-block({ margin-bottom: 60px;});
-                .item {
-                    position: relative;
-                    padding-bottom: 25px;
-                    padding-left: 70px;
-                    .xs-block({
-                        padding-left: 30px;
-                    });
 
-                    &:last-child {
-                        padding-bottom: 0;
-                    }
-                    &::before {
-                        content: '';
-                        position: absolute;
-                        left: 35px;
-                        top: 4px;
-                        width: 14px;
-                        height: 14px;
-                        background-color: #fff;
-                        border: 4px solid @orangeMain;
-                        border-radius: 50%;
-                        box-sizing: border-box;
-                        z-index: 5;
-                        .xs-block({
-                            top: 0;
-                            left: 0;
-                        });
-                    }
-                    .line {
-                        position: absolute;
-                        left: 0;
-                        top: 10px;
-                        width: 40px;
-                        height: 1px;
-                        background-color: @grayMain;
-                        z-index: 4;
-                        .xs-block({
-                            display: none;
-                        });
-                    }
-                    .bold {
-                        font-weight: 900;
-                        font-size: 2rem;
-                        letter-spacing: 0.14rem;
-                        text-transform: uppercase;
-                        color: #000;
-                    }
-                    .light {
-                        font-weight: 200;
-                        font-size: 2rem;
-                        letter-spacing: 0.14rem;
-                    }
+        .conditions-list {
+            .row-flex();
+            margin-bottom: 40px;
+            position: relative;
+            .xs-block({ margin-bottom: 60px; });
+            .item {
+                .col();
+                .size(6);
+                height: 220px;
+                padding: 45px;
+                padding-left: 140px;
+                background-color: #fff;
+                box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.3);
+                margin-bottom: 20px;
+                position: relative;
+                &::after {
+                    content: "";
+                    position: absolute;
+                    left: 45px;
+                    top: 45px;
+                    width: 35px;
+                    height: 35px;
+                    background: url("/img/icon/success.svg") no-repeat center / contain;
+                }
+                .bold {
+                    display: block;
+                    font-weight: 900;
+                    font-size: 2.5rem;
+                    letter-spacing: 0.14rem;
+                    text-transform: uppercase;
+                    color: #000;
+                    margin-bottom: 15px;
+                }
+                .light {
+                    font-weight: 200;
+                    font-size: 2rem;
+                    letter-spacing: 0.14rem;
+                    color: @grayMain;
                 }
             }
         }
+
     }
 </style>
