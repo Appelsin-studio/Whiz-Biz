@@ -1,5 +1,6 @@
 <template>
     <section class="b-road-map">
+        <div class="skew-block"></div>
         <div class="container">
             <p class="g-number">14</p>
             <p class="g-caption-section">

@@ -20,9 +20,7 @@
             <finance-films :in-viewport-offset-top='-800' :in-viewport-once='true'/>
             <table-gtc :in-viewport-offset-top='-800' :in-viewport-once='true'/>
             <terms-cooperation/>
-            <div class="bg-dotty">
-                <investor-income/>
-            </div>
+            <investor-income/>
             <road-map/>
         </main>
         <footer-block/>
