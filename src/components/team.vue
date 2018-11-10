@@ -20,9 +20,8 @@
                     </div>
                     <div class="profile-wrapper">
                         <p class="name">Грей Фредериксон</p>
-                        <p class="profession">{{t('General producer')}}</p>
+                        <p class="profession">{{t('Producer, screenwriter, actor')}}</p>
                         <p class="country">{{t('USA')}}</p>
-                        <a class="link" href="#" target="_blank">linkedin.com/ivan_alexeev</a>
                     </div>
                 </div>
                 <div class="person person-4">
@@ -31,9 +30,9 @@
                     </div>
                     <div class="profile-wrapper">
                         <p class="name">Саламат Мухаммед-Али</p>
-                        <p class="profession">{{t('Filmmaker')}}</p>
+                        <p class="profession">{{t('Director, screenwriter')}}</p>
+                        <p class="premium">{{t('The founder of the award for children "Altyn Adam" in the United States.')}}</p>
                         <p class="country">{{t('Kazakhstan')}}</p>
-                        <a class="link" href="#" target="_blank">linkedin.com/ivan_alexeev</a>
                     </div>
                 </div>
                 <div class="person person-4">
@@ -42,9 +41,8 @@
                     </div>
                     <div class="profile-wrapper">
                         <p class="name">Питер Жмутский</p>
-                        <p class="profession">{{t('Filmmaker')}}</p>
-                        <p class="country">{{t('USA')}}</p>
-                        <a class="link" href="#" target="_blank">linkedin.com/ivan_alexeev</a>
+                        <p class="profession">{{t('Producer, Director, Actor, Screenwriter, Composer')}}</p>
+                        <p class="country">{{t('USA')}} {{t('Kazakhstan')}}</p>
                     </div>
                 </div>
                 <div class="person person-4">
@@ -55,7 +53,6 @@
                         <p class="name">Динара Батырова</p>
                         <p class="profession">{{t('Producer')}}</p>
                         <p class="country">{{t('Kazakhstan')}}</p>
-                        <a class="link" href="#" target="_blank">linkedin.com/ivan_alexeev</a>
                     </div>
                 </div>
             </div>
@@ -243,7 +240,7 @@
                     align-items: flex-start;
                     z-index: 5;
                     .name {
-                        flex-grow: 1;
+
                         padding-bottom: 23px;
                         margin-bottom: 15px;
                         font-weight: 900;
@@ -256,6 +253,10 @@
                         .sm-block({ font-size: 22px; });
                         .xs-block({ margin-bottom: 14px; });
                     }
+                    .profession {
+                        flex-grow: 1;
+                    }
+                    .premium,
                     .profession,
                     .country,
                     .link {
@@ -264,6 +265,7 @@
                         letter-spacing: 0.15rem;
                         .sm-block({ font-size: 16px; });
                     }
+                    .premium,
                     .profession,
                     .country {
                         color: #fff;
