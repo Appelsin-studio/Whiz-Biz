@@ -23,21 +23,25 @@ export default {
     ru: 'О криптофонде',
     kk: 'Криптондық қор туралы'
   },
-  'was created to improve and expand participation in the business of consumers and financiers': {
-    ru: 'был создан для улучшения и расширения участия в бизнесе потребителей и финансистов',
-    kk: 'тұтынушылар мен қаржыгерлердің бизнесіне қатысуды жақсарту және кеңейту үшін құрылған'
+  'was created to enable people to participate in the creation of business art, as well as to improve and expand opportunities for profitable investments, with the aim of becoming the leading platform to support various fields of art around the world.': {
+    ru: 'создан для возможности участия Народа при создании бизнес-искусства, а также для улучшения и расширения возможностей выгодных вложений, с целью стать ведущей платформой по поддержке различных сфер деятельности искусства во всем мире.',
+    kk: 'компаниясы әртүрлі өнер салаларын қолдау үшін жетекші платформаға айналу мақсатында адамдарға бизнес өнерін жасауға қатысуға, сондай-ақ тиімді инвестициялар үшін мүмкіндіктерді кеңейтуге және кеңейтуге мүмкіндік беру үшін құрылған.'
   },
-  'with the goal of becoming a leading platform for business support in the field of entertainment and creativity (art).': {
-    ru: 'с целью стать ведущей платформой по поддержке бизнеса сфере развлечений и творчества (искусства).',
-    kk: 'ойын-сауық және шығармашылық (өнер) саласындағы бизнесті қолдаудың жетекші платформасы болу мақсатымен.'
+  'A team of creative people - professionals who have gained a lot of experience in various business fields, as well as art abroad and not only, is working to strengthen and expand the capabilities of the crypto fund.': {
+    ru: 'Над укреплением и расширением возможностей криптофонда работает команда творческих людей – профессионалов, которые получили большой опыт в различных сферах бизнеса, а также искусства за рубежом и не только.',
+    kk: 'Шығармашылық адамдар тобы - кәсіпкерліктің әртүрлі салаларында, сондай-ақ шет елде ғана емес, сонымен қатар крипто қорының мүмкіндіктерін кеңейту және кеңейту үшін үлкен тәжірибе жинаған мамандар.'
   },
-  'Our': {
-    ru: 'Наша',
-    kk: 'Біздің'
+  'Now, we have the opportunity to apply the acquired knowledge and experience in Kazakhstan and other countries of the world where art needs financial support.': {
+    ru: 'Теперь, мы имеем возможность применять полученные знания и опыт на территории Казахстан и других стран мира, где искусство нуждается в финансовой поддержке.',
+    kk: 'Енді біз Қазақстанға және әлемнің басқа елдеріне қолдауға ие болған білім мен тәжірибені қолдана аламыз.'
   },
-  'goal': {
-    ru: 'цель',
-    kk: 'мақсатымыз'
+  'Main goals and objectives': {
+    ru: 'Основные цели и задачи',
+    kk: 'Негізгі мақсаттар мен міндеттер'
+  },
+  'crypto fund': {
+    ru: 'криптофонда',
+    kk: 'криптондық қор'
   },
   'The company\'s goal is to create a platform under the brand GTC, to become the preferred portal for investment': {
     ru: 'Целью компании является создание платформы под брендом GTC, стать предпочтительным порталом для инвестиций',
@@ -55,9 +59,21 @@ export default {
     ru: 'Привлечение инвестиции на проект реализуется с помощью платформы CrowdSaleNetwork',
     kk: 'Инвестициялық жобаны іске асыру CrowdSaleNetwork платформаларымен жүзеге асырылады'
   },
+  'Our': {
+    ru: 'Наша',
+    kk: 'Біздің'
+  },
   'team': {
     ru: 'команда',
     kk: 'команда'
+  },
+  'When it comes to developing a business project - anyone, the most important and most important thing is working in a well-coordinated team and, of course, trust; creative thinking and much more.': {
+    ru: 'Когда речь идет о развитии бизнес-проекта – любого, самое важное и главное – это работа слаженной команды и конечно же доверие, креативное мышление и многое другое.',
+    kk: 'Бизнес-жобаны әзірлеуге келгенде - ең маңыздысы және ең бастысы - үйлестірілген командада жұмыс істеу және, әрине, сену; шығармашылық ойлау және тағы басқалар.'
+  },
+  'The foundation of our foundation consists of creative people - professionals in their field with extensive experience in various fields of activity!': {
+    ru: 'Фундамент нашего фонда состоит из творческих людей – профессионалов своего дела с большим опытом в различных сферах деятельности!',
+    kk: 'Біздің қордың іргетасы шығармашылық адамдардан тұрады - өз саласында әртүрлі қызмет салаларында мол тәжірибесі бар мамандар!'
   },
   'General producer': {
     ru: 'Генеральный продюсер',
@@ -83,9 +99,13 @@ export default {
     ru: 'Проект реализуется при поддержке',
     kk: 'Жоба қолдауымен жүзеге асырылады'
   },
-  'Why': {
-    ru: 'Почему',
-    kk: 'Неліктен'
+  'Fund Promotion and Development Plan': {
+    ru: 'План продвижения и развития фонда',
+    kk: 'Қорды дамыту және дамыту жоспары'
+  },
+  'As well as attracting an audience': {
+    ru: 'А также привлечение аудитории',
+    kk: 'Аудиторияны тарту сияқты'
   },
   'is the crypto fund gaining popularity': {
     ru: 'криптофонд обретает популярность',
@@ -98,6 +118,58 @@ export default {
   'several dozen will be shot of films': {
     ru: 'будет снято несколько десятков фильмов',
     kk: 'бірнеше ондаған фильм түсіріледі'
+  },
+  'Advertising in all projects and film projects created by the crypto fund.': {
+    ru: 'Реклама во всех проектах и кинопроектах созданного криптофонда.',
+    kk: 'Крипток қорымен жасалған барлық жобалар мен кино жобаларындағы жарнама.'
+  },
+  'Within 7 years, several dozen full-length, short, documentary films and cartoons will be shot by the WHIZBIZ crypto fund that will take part in many film festivals of the world, as well as in competitions where prizes and awards will be presented - these victories and films will know all world.': {
+    ru: 'В течение 7 лет криптофондом «WHIZBIZ» будет снято несколько десятков полнометражных, короткометражных, документальных фильмов и мультфильмов, которые будут принимать участие во многих кинофестивалях мира, а также в конкурсах, где будут вручаться призы и награды – об этих победах и фильмах будет знать весь мир.',
+    kk: '7 жыл бойы бірнеше ондаған толық метражды, қысқа, деректі фильмдер мен мультфильмдерді әлемнің көптеген кинофестиваліне қатысатын «WHIZBIZ» криптомалық қоры, сондай-ақ жүлделер мен марапаттар ұсынылатын жарыстарға түсіреді - бұл жеңістер мен фильмдер бәрін біледі әлем.'
+  },
+  'Attracting influential critics, world publications.': {
+    ru: 'Привлечение влиятельных критиков, мировых изданий.',
+    kk: 'Әлемдік басылымдарда ықпалды сыншыларды тарту.'
+  },
+  'All films and projects of the WHIZ BIZ crypto fund will be released with the support of the CROWDSALE NETWORK platform.': {
+    ru: 'Все фильмы и проекты криптофонда «WHIZ BIZ» выйдут в свет при поддержке платформы «CROWDSALE NETWORK».',
+    kk: 'WHIZ BIZ криптографиялық қорының барлық фильмдері мен жобалары CROWDSALE NETWORK платформасының қолдауымен шығарылады.'
+  },
+  'During the work on the movie &#171; Ghost City &#187;, from the very first day of the launch of the film project and until the very premiere, &#171;Reality Show&#187; will be filmed, where viewers will be able to learn and watch all the processes of creating Hollywood cinema.': {
+    ru: 'В ходе работы над кинокартиной «Город призрак», с самого первого дня запуска кинопроекта и до самой премьеры будет сниматься «Реалити-шоу», где зрители смогут обучаться и наблюдать за всеми процессами создания Голливудского кино. ',
+    kk: 'Фильмнің алғашқы күнінен бастап, «Галф Сити» фильмінде жұмыс істегенде, «Reality Show» түсіріліміне дейін, көрермендер Голливуд киносын құрудың барлық процестерін оқып, көре алатын болады.'
+  },
+  'The  &#171;Reality Show&#187; will be broadcast via channels: YouTube, Twitter, Facebook, Instagram.': {
+    ru: 'Транслирование «Реалити-шоу» будет осуществляться по каналам: YouTube, Twitter, Facebook, Instagram.',
+    kk: '«Reality Show» арналары арқылы YouTube, Twitter, Facebook, Instagram арқылы таратылатын болады.'
+  },
+  'During the filming of &#171;Reality Show&#187; there will be competitions for the best ideas, scripts, best artwork, design and much more.': {
+    ru: 'Во время съемок «Реалити-шоу» будут устраиваться конкурсы на лучшие идеи, сценарии, лучшие художественные работы, дизайн и многое другое. ',
+    kk: '«Reality Show» фильмін түсірген кезде үздік идеялар, сценарийлер, үздік шығармалар, дизайн және т.б. үшін конкурстар өткізіледі.'
+  },
+  'Winners will be awarded WHIZ BIZ COIN (WBC) tokens': {
+    ru: 'Победители конкурсов будут награждены токенами WHIZ BIZ COIN (WBC)',
+    kk: 'Жеңімпаздар WHIZ BIZ COIN (WBC) белгілерімен марапатталады'
+  },
+  'The possibility of interviewing celebrities (directors, actors, etc.).': {
+    ru: 'Возможность интервьюирования знаменитостей (режиссеров, актеров и т.д.).',
+    kk: 'Атақты тұлғаларды (директорларды, актерлерді және т.б.) сұхбат алу мүмкіндігі.'
+  },
+  'Attracting journalists (TV, newspapers, magazines, WEB, etc.).': {
+    ru: 'Привлечение журналистов (ТВ, газеты, журналы, ВЕБ т.д.).',
+    kk: 'Журналистерді тарту (теледидар, газет, журналдар, WEB және т.б.).'
+  },
+  'The &#171;Ghost Town&#187; motion picture film will be released from the creator of the &#171;Godfather&#187; trilogy - this is a big breakthrough for the Kazakh-American film industry, which the whole world will learn about.': {
+    ru: 'Кинокартина «Город призрак» выйдет в свет от создателя трилогии «Крестный отец» - это большой рывок для Казахстанско-Американской киноиндустрии, о котором узнает весь мир.',
+    kk: '«Ghost Town» кинофильмі күзетші трилогиясының шығарушысынан шығарылады - бұл бүкіл әлем білетін қазақ-американдық кинематография саласы үшін үлкен серпіліс.'
+  },
+  'The most famous bloggers / bloggers of the world will join the collaboration.': {
+    ru: ' К сотрудничеству присоединятся самые известные блогеры/влогеры мира.',
+    kk: 'Әлемнің танымал блогерлері / блогерлері ынтымақтастыққа қосылады.'
+  },
+  'At the moment, the concept of the game &#171;Ghost Town&#187; is being developed by the number one computer game developers worldwide, such as: Stalker, Tanks.': {
+    ru: 'В данный момент, разрабатывается концепция игры «Город призрак», разработчиками компьютерных игр №1 во всем мире по популярности, таких как: Сталкер, Танки.',
+    kk: 'Қазіргі уақытта «Ghost Town» ойынының тұжырымдамасы бүкіл әлем бойынша 1-ші компьютерлік ойын әзірлеушілері әзірлейді: Stalker, Tanks.'
   },
   'For 7 years, the CRYPTO-FUND will be shot, several dozen full-length, short, documentary films and cartoons, which will participate in many film festivals of the world, in competitions and will win prizes. The whole world will know about these victories and films. Critics and world publications will write about them.': {
     ru: 'В течение 7 лет КРИПТО-ФОНДОМ будет снято, несколько десятков                        полнометражных, короткометражных, документальных фильмов и мультфильмов, которые будут участвовать во многих кинофестивалях мира, в конкурсах и будут завоевывать призы. Об этих победах и фильмах будет знать весь мир. О них будут писать критики и мировые издания.',
@@ -143,16 +215,28 @@ export default {
     ru: 'Режиссеры',
     kk: 'Директорлар'
   },
-  'General producer': {
-    ru: 'Генеральный продюсер',
-    kk: 'Бас продюсер'
+  'Producer, screenwriter, actor': {
+    ru: 'Продюсер, сценарист, актер',
+    kk: 'Өндіруші, сценарий авторы, актер'
+  },
+  'Director, screenwriter': {
+    ru: 'Режиссер, сценарист',
+    kk: 'Директор, сценарийші'
+  },
+  'Producer, Director, Actor, Screenwriter, Composer': {
+    ru: 'Продюсер, режиссер, актер, сценарист, композитор',
+    kk: 'Өндіруші, режиссер, актер, сценарийші, композитор'
+  },
+  'The founder of the award for children "Altyn Adam" in the United States.': {
+    ru: 'Основатель премии для детей «Алтын Адам» в США.',
+    kk: 'Құрама Штаттарда «Алтын Адам» балаларға арналған сыйлықтың негізін қалаушы.'
   },
   'Hollywood legend, Oscar and Emmy film awards producer, "The Godfather trilogy': {
     ru: 'легенда Голливуда, обладатель кинопремии «Оскар©» и «Эмми», продюсер трилогии "Крестный отец"',
     kk: 'Голливудтық аңыз, «Оскар©» және «Эмми» кинофильмдерінің продюсері, The Godfather трилогиясы'
   },
   'Producer': {
-    ru: 'Продюсер',
+    ru: 'Продюсер, со-продюсер ',
     kk: 'Өндіруші'
   },
   'idea': {

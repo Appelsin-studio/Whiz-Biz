@@ -3,13 +3,48 @@
         <div class="planet-big"></div>
         <div class="container">
             <p class="g-number">05</p>
-            <h3 class="g-caption-section">{{t('Why')}}<br>
-                <span class="gradient-text">{{t('is the crypto fund gaining popularity')}}</span>
-                {{t('and what will affect the growth of the token')}} Gtc?</h3>
+            <h3 class="g-caption-section">{{t('Fund Promotion and Development Plan')}}
+                <span class="gradient-text">{{t('As well as attracting an audience')}}</span>
+            </h3>
             <div class="wrapper-list">
-                <div class="item" v-for="(item, index) in accordion" :key="index" :class="{active:activeTab === index}">
-                    <p class="item-name" @click="activeTab = index">{{index + 1}}. {{item.title}}</p>
-                    <p class="item-content" v-if="activeTab === index">{{item.content}}</p>
+                <div class="item">
+                    <p class="item-name">{{t('Advertising in all projects and film projects created by the crypto fund.')}}</p>
+                </div>
+                <div class="item">
+                    <p class="item-name">{{t('Within 7 years, several dozen full-length, short, documentary films and cartoons will be shot by the WHIZBIZ crypto fund that will take part in many film festivals of the world, as well as in competitions where prizes and awards will be presented - these victories and films will know all world.')}}</p>
+                </div>
+                <div class="item">
+                    <p class="item-name">{{t('Attracting influential critics, world publications.')}}</p>
+                </div>
+                <div class="item">
+                    <p class="item-name">{{t('All films and projects of the WHIZ BIZ crypto fund will be released with the support of the CROWDSALE NETWORK platform.')}}</p>
+                </div>
+                <div class="item">
+                    <p class="item-name">{{t('During the work on the movie &#171; Ghost City &#187;, from the very first day of the launch of the film project and until the very premiere, &#171;Reality Show&#187; will be filmed, where viewers will be able to learn and watch all the processes of creating Hollywood cinema.')}}</p>
+                </div>
+                <div class="item">
+                    <p class="item-name">{{t('The  &#171;Reality Show&#187; will be broadcast via channels: YouTube, Twitter, Facebook, Instagram.')}}</p>
+                </div>
+                <div class="item">
+                    <p class="item-name">{{t('During the filming of &#171;Reality Show&#187; there will be competitions for the best ideas, scripts, best artwork, design and much more.')}}</p>
+                </div>
+                <div class="item">
+                    <p class="item-name">{{t('Winners will be awarded WHIZ BIZ COIN (WBC) tokens')}}</p>
+                </div>
+                <div class="item">
+                    <p class="item-name">{{t('The possibility of interviewing celebrities (directors, actors, etc.).')}}</p>
+                </div>
+                <div class="item">
+                    <p class="item-name">{{t('Attracting journalists (TV, newspapers, magazines, WEB, etc.).')}}</p>
+                </div>
+                <div class="item">
+                    <p class="item-name">{{t('The &#171;Ghost Town&#187; motion picture film will be released from the creator of the &#171;Godfather&#187; trilogy - this is a big breakthrough for the Kazakh-American film industry, which the whole world will learn about.')}}</p>
+                </div>
+                <div class="item">
+                    <p class="item-name">{{t('The most famous bloggers / bloggers of the world will join the collaboration.')}}</p>
+                </div>
+                <div class="item">
+                    <p class="item-name">{{t('At the moment, the concept of the game &#171;Ghost Town&#187; is being developed by the number one computer game developers worldwide, such as: Stalker, Tanks.')}}</p>
                 </div>
             </div>
         </div>
@@ -23,43 +58,6 @@
     data() {
       return {
         activeTab: 0
-      }
-    },
-    computed: {
-      accordion() {
-        return [
-          {
-            title: this.t('several dozen will be shot of films'),
-            content: this.t('For 7 years, the CRYPTO-FUND will be shot, several dozen full-length, short, ' +
-              'documentary films and cartoons, which will participate in many film festivals of the world, in ' +
-              'competitions and will win prizes. The whole world will know about these victories and films. ' +
-              'Critics and world publications will write about them.')
-          },
-          {
-            title: this.t('advertising in all projects'),
-            content: this.t('Why')
-          },
-          {
-            title: this.t('Movies will be released with the support of the Crypto Fund'),
-            content: this.t('Why')
-          },
-          {
-            title: this.t('will be filmed "reality show"'),
-            content: this.t('Why')
-          },
-          {
-            title: this.t('we will hold contests'),
-            content: this.t('Why')
-          },
-          {
-            title: this.t('interviews in all world top publications'),
-            content: this.t('Why')
-          },
-          {
-            title: '“' + this.t('from the creator of the trilogy The Godfather') + '”',
-            content: this.t('Why')
-          }
-        ]
       }
     }
   }
@@ -103,28 +101,14 @@
                 &:last-child {
                     margin-bottom: 0;
                 }
-                &.active {
-                    margin-bottom: 20px;
-                    background: #fff;
-                    border-radius: 8px;
-                    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
-                    .item-name {
-                        color: #000;
-                        &::before {
-                            transform: rotate(-90deg);
-                        }
-                    }
-                }
                 .item-name {
                     position: relative;
-                    margin-bottom: 30px;
                     padding-left: 90px;
                     font-weight: 900;
                     font-size: 2.5rem;
                     letter-spacing: 0.17rem;
                     color: #fff;
                     text-transform: uppercase;
-                    cursor: pointer;
                     .md-block({ padding-left: 60px; });
                     .xs-block({ padding-left: 40px; });
                     &::after,

@@ -8,6 +8,7 @@
             <div class="wrapper">
                 <div class="img-wrapper">
                     <img class="img" src="/img/poster.jpg" alt="">
+                    <img class="blood-img" src="/img/blood.png" alt="">
                     <div class="coub"></div>
                 </div>
                 <div class="wrapper-desc">
@@ -73,6 +74,15 @@
                 .img {
                     position: relative;
                     z-index: 5;
+                }
+                .blood-img {
+                    position: absolute;
+                    max-width: none;
+                    bottom: -120px;
+                    left: -230px;
+                    z-index: 4;
+                    .sm-block({max-height: 500px; bottom: -100px;
+                        left: -200px;});
                 }
                 .coub {
                     position: absolute;

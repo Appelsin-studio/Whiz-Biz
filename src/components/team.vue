@@ -9,6 +9,10 @@
                 <span>{{t('Our')}} </span>
                 <strong class="gradient-text">{{t('team')}}</strong>
             </h3>
+            <div class="desc-wrapper">
+                <p class="description-team">{{t('When it comes to developing a business project - anyone, the most important and most important thing is working in a well-coordinated team and, of course, trust; creative thinking and much more.')}}</p>
+                <p class="description-team">{{t('The foundation of our foundation consists of creative people - professionals in their field with extensive experience in various fields of activity!')}}</p>
+            </div>
             <div class="wrapper--team">
                 <div class="person person-12">
                     <div class="img-wrapper">
@@ -16,9 +20,8 @@
                     </div>
                     <div class="profile-wrapper">
                         <p class="name">Грей Фредериксон</p>
-                        <p class="profession">{{t('General producer')}}</p>
+                        <p class="profession">{{t('Producer, screenwriter, actor')}}</p>
                         <p class="country">{{t('USA')}}</p>
-                        <a class="link" href="#" target="_blank">linkedin.com/ivan_alexeev</a>
                     </div>
                 </div>
                 <div class="person person-4">
@@ -27,9 +30,9 @@
                     </div>
                     <div class="profile-wrapper">
                         <p class="name">Саламат Мухаммед-Али</p>
-                        <p class="profession">{{t('Filmmaker')}}</p>
+                        <p class="profession">{{t('Director, screenwriter')}}</p>
+                        <p class="premium">{{t('The founder of the award for children "Altyn Adam" in the United States.')}}</p>
                         <p class="country">{{t('Kazakhstan')}}</p>
-                        <a class="link" href="#" target="_blank">linkedin.com/ivan_alexeev</a>
                     </div>
                 </div>
                 <div class="person person-4">
@@ -38,9 +41,8 @@
                     </div>
                     <div class="profile-wrapper">
                         <p class="name">Питер Жмутский</p>
-                        <p class="profession">{{t('Filmmaker')}}</p>
-                        <p class="country">{{t('USA')}}</p>
-                        <a class="link" href="#" target="_blank">linkedin.com/ivan_alexeev</a>
+                        <p class="profession">{{t('Producer, Director, Actor, Screenwriter, Composer')}}</p>
+                        <p class="country">{{t('USA')}} {{t('Kazakhstan')}}</p>
                     </div>
                 </div>
                 <div class="person person-4">
@@ -51,7 +53,6 @@
                         <p class="name">Динара Батырова</p>
                         <p class="profession">{{t('Producer')}}</p>
                         <p class="country">{{t('Kazakhstan')}}</p>
-                        <a class="link" href="#" target="_blank">linkedin.com/ivan_alexeev</a>
                     </div>
                 </div>
             </div>
@@ -93,12 +94,26 @@
             .line-after--right(@gradientDefault);
         }
         .g-caption-section {
-            margin-bottom: 70px;
-            .sm-block({ margin-bottom: 65px; });
+            margin-bottom: 20px;
+            .sm-block({ margin-bottom: 20px; });
             span {
                 color: #000;
             }
         }
+        .desc-wrapper {
+            margin-bottom: 50px;
+            .sm-block({ margin-bottom: 20px; });
+            .description-team {
+                margin-bottom: 15px;
+                font-size: 2.4rem;
+                color: #000;
+                font-weight: 900;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+
         .wrapper--team {
             .row-flex();
             justify-content: center;
@@ -225,7 +240,7 @@
                     align-items: flex-start;
                     z-index: 5;
                     .name {
-                        flex-grow: 1;
+
                         padding-bottom: 23px;
                         margin-bottom: 15px;
                         font-weight: 900;
@@ -238,6 +253,10 @@
                         .sm-block({ font-size: 22px; });
                         .xs-block({ margin-bottom: 14px; });
                     }
+                    .profession {
+                        flex-grow: 1;
+                    }
+                    .premium,
                     .profession,
                     .country,
                     .link {
@@ -246,6 +265,7 @@
                         letter-spacing: 0.15rem;
                         .sm-block({ font-size: 16px; });
                     }
+                    .premium,
                     .profession,
                     .country {
                         color: #fff;

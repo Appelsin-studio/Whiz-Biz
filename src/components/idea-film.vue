@@ -7,6 +7,7 @@
                 <strong class="gradient-text">{{t('idea')}} </strong>
             </h3>
             <div class="wrapper">
+
                 <div class="top-char">
                     <div class="characteristics">
                         <span class="bold">{{t('Genre')}}:&ensp;</span>
@@ -22,6 +23,7 @@
                     </div>
                 </div>
                 <div class="company-wrapper">
+                    <img class="dvd-img" src="/img/dvd-box.png" alt="dvd">
                     <p class="company">
                         {{t('GHOST TOWN PRODUCTIONS, LLC from Oklahoma (USA) offers you a film project called "Ghost Town"')}}.
                     </p>
@@ -33,10 +35,6 @@
                     {{t('The action takes place in the US, in Oklahoma. Local hunters near the perimeter of the Bezrodnaya Grove find tapes with amateur recording. These cassettes captured the entire mission of a team of eight people who disappeared in the Ghost City on May 3, 1999. In "Bezrodnaya groves" our heroes will learn that they are the chosen ones. They discover other civilizations, worlds and parallel dimensions.')}}
                 </p>
             </div>
-            <!--<div class="img">
-                <img class="z-index&#45;&#45;1" src="/img/idea-film-1.jpg" alt="">
-                <img class="z-index&#45;&#45;2" src="/img/idea-film-2.jpg" alt="">
-            </div>-->
         </div>
     </section>
 </template>
@@ -54,8 +52,8 @@
         padding-top: 260px;
         padding-bottom: 250px;
         z-index: 10;
-        background: linear-gradient(to right, rgba(19, 72, 182, 0.85) 0%, rgba(179, 15, 255, 1) 100%),
-        url("/img/bg-guitar.jpg") no-repeat left top / cover;
+        background: linear-gradient(to right, rgba(19, 72, 182, 0.95) 0%, rgba(179, 0, 255, 0.9) 100%),
+        url("/img/bg-idea.jpg") no-repeat right top / cover;
         .lg-block({
             padding-top: 200px ;
             padding-bottom: 200px;
@@ -81,6 +79,7 @@
         .wrapper {
             display: flex;
             flex-direction: column;
+
             .top-char {
                 display: flex;
                 padding-left: 60px;
@@ -108,6 +107,7 @@
                 }
             }
             .company-wrapper {
+                position: relative;
                 flex-grow: 1;
                 padding: 40px 60px;
                 margin-bottom: 40px;
@@ -115,10 +115,17 @@
                 font-size: 2.4rem;
                 letter-spacing: 0.17rem;
                 text-transform: uppercase;
-                background: linear-gradient(90deg, rgba(248,22,224, 0.8), rgba(255,88,123, 0.8));
+                background: linear-gradient(90deg, rgba(248,22,224, 0.9), rgba(255,88,123, 0.9));
                 .sm-block({ padding: 20px;});
                 .company {
                     max-width: 600px;
+                }
+                .dvd-img {
+                    position: absolute;
+                    right: -150px;
+                    bottom: -100px;
+                    .lg-block({max-height: 550px});
+                    .md-block({ display: none;});
                 }
             }
             .story-film--bold {
