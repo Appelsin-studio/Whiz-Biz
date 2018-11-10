@@ -30,7 +30,7 @@
                 </div>
                 <p class="story-film--bold">
                     {{t('The film is based on real events that occurred in 1999 in Oklahoma, where the most powerful ' +
-                    'tornado left behind serious damage and ledto a series of in explicable events.')}}
+                    'tornado left behind serious damage and led to a series of in explicable events.')}}
                 </p>
                 <p class="story-film--light">
                     {{t('A small group of locals who hunted near the "Ghost Town" will find among the ruins ' +
