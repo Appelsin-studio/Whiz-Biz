@@ -172,7 +172,7 @@
                     .size-lg(12);
                     flex-direction: column;
                     background: @gradientPersonVertical;
-                    .lg-block({ flex-direction: row; margin-bottom: 20px; background: @gradientPersonVertical });
+                    .lg-block({ flex-direction: row; margin-bottom: 20px; background: @gradientPersonHorizontal });
                     .img-wrapper {
                         .lg-block({ margin: -10px -10px -10px -10px; width: 100%; max-width: 380px; });
                         .sm-block({ max-width: 250px; });
