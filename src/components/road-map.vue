@@ -70,11 +70,9 @@
     .b-road-map {
         position: relative;
         padding-top: 73px;
-        padding-bottom: 170px;
         z-index: 15;
-        .md-block({ padding-top: 120px; padding-bottom: 100px; });
-        .xs-block({ padding-top: 80px; padding-bottom: 50px; });
-        .sm-block({ padding-bottom: 35px; });
+        .md-block({ padding-top: 120px;});
+        .xs-block({ padding-top: 80px; });
         .g-number {
             margin-bottom: 31px;
             color: #000;
