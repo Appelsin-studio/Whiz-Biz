@@ -29,10 +29,14 @@
                     </p>
                 </div>
                 <p class="story-film--bold">
-                    {{t('The film is based on real events that occurred in 1999 in Oklahoma, where the most powerful tornado left behind serious damage and led to a series of inexplicable events.')}}
+                    {{t('The film is based on real events that occurred in 1999 in Oklahoma, where the most powerful ' +
+                    'tornado left behind serious damage and ledto a series of in explicable events.')}}
                 </p>
                 <p class="story-film--light">
-                    {{t('A small group of locals who hunted near the "Ghost Town" will find among the ruins amateur tapes, where the film remains on the floor, and a part of the team s eight-person mission, which was lost on May 3, 1999, will be captured. Hunters will find out that they are the chosen ones and will discover other civilizations, worlds and parallel dimensions.')}}
+                    {{t('A small group of locals who hunted near the "Ghost Town" will find among the ruins ' +
+                    'amateur tapes, where the film remains on the floor, and a part of the team s eight-person mission, which was lost ' +
+                    'on May 3, 1999, will be captured. Hunters will find out that they are the chosen ones and will discover ' +
+                    'other civilizations, worlds and parallel dimensions.')}}
                 </p>
             </div>
         </div>

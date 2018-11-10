@@ -71,7 +71,7 @@
         position: relative;
         padding-top: 73px;
         z-index: 15;
-        .md-block({ padding-top: 120px;});
+        .md-block({ padding-top: 120px; });
         .xs-block({ padding-top: 80px; });
         .g-number {
             margin-bottom: 31px;

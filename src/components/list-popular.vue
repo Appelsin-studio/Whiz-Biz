@@ -11,7 +11,11 @@
                     <p class="item-name">{{t('Advertising in all projects and film projects created by the crypto fund.')}}</p>
                 </div>
                 <div class="item">
-                    <p class="item-name">{{t('Within 7 years, several dozen full-length, short, documentary films and cartoons will be shot by the WHIZBIZ crypto fund that will take part in many film festivals of the world, as well as in competitions where prizes and awards will be presented - these victories and films will know all world.')}}</p>
+                    <p class="item-name">
+                        {{t('Within 7 years, several dozen full-length, short, documentary films and cartoons will be shot by ' +
+                        'the WHIZBIZ crypto fund that will take part in many film festivals of the world, as well as in ' +
+                        'competitions where prizes and awards will be presented - these victories and films will know all world.')}}
+                    </p>
                 </div>
                 <div class="item">
                     <p class="item-name">{{t('Attracting influential critics, world publications.')}}</p>
@@ -20,13 +24,20 @@
                     <p class="item-name">{{t('All films and projects of the WHIZ BIZ crypto fund will be released with the support of the CROWDSALE NETWORK platform.')}}</p>
                 </div>
                 <div class="item">
-                    <p class="item-name">{{t('During the work on the movie "Ghost City", from the very first day of the launch of the film project and until the very premiere, "Reality Show" will be filmed, where viewers will be able to learn and watch all the processes of creating Hollywood cinema.')}}</p>
+                    <p class="item-name">
+                        {{t('During the work on the movie "Ghost City", from the very first day of ' +
+                        'the launch of the film project and until the very premiere, "Reality Show" will ' +
+                        'be filmed, where viewers will be able to learn and watch all the processes of creating Hollywood cinema.')}}
+                    </p>
                 </div>
                 <div class="item">
-                    <p class="item-name">{{t('The  "Reality Show" will be broadcast via channels: YouTube, Twitter, Facebook, Instagram.')}}</p>
+                    <p class="item-name">{{t('The "Reality Show" will be broadcast via channels: YouTube, Twitter, Facebook, Instagram.')}}</p>
                 </div>
                 <div class="item">
-                    <p class="item-name">{{t('During the filming of "Reality Show" there will be competitions for the best ideas, scripts, best artwork, design and much more.')}}</p>
+                    <p class="item-name">
+                        {{t('During the filming of "Reality Show" there will be competitions for ' +
+                        'the best ideas, scripts, best artwork, design and much more.')}}
+                    </p>
                 </div>
                 <div class="item">
                     <p class="item-name">{{t('Winners will be awarded WHIZ BIZ COIN (WBC) tokens')}}</p>
@@ -38,13 +49,19 @@
                     <p class="item-name">{{t('Attracting journalists (TV, newspapers, magazines, WEB, etc.).')}}</p>
                 </div>
                 <div class="item">
-                    <p class="item-name">{{t('The "Ghost Town" motion picture film will be released from the creator of the "Godfather" trilogy - this is a big breakthrough for the Kazakh-American film industry, which the whole world will learn about.')}}</p>
+                    <p class="item-name">
+                        {{t('The "Ghost Town" motion picture film will be released from the creator of the "Godfather" ' +
+                        'trilogy - this is a big breakthrough for the Kazakh-American film industry, which the whole world will learn about.')}}
+                    </p>
                 </div>
                 <div class="item">
                     <p class="item-name">{{t('The most famous bloggers / bloggers of the world will join the collaboration.')}}</p>
                 </div>
                 <div class="item">
-                    <p class="item-name">{{t('At the moment, the concept of the game "Ghost Town" is being developed by the number one computer game developers worldwide, such as: Stalker, Tanks.')}}</p>
+                    <p class="item-name">
+                        {{t('At the moment, the concept of the game "Ghost Town" is being developed by the ' +
+                        'number one computer game developers worldwide, such as: Stalker, Tanks.')}}
+                    </p>
                 </div>
             </div>
         </div>
