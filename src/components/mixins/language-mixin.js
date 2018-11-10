@@ -13,6 +13,10 @@ export const LanguageMixin = {
       if (this.language === 'en') {
         return text
       }
+      if (Translation[text] === undefined) {
+        console.log('Translate not found: "' + text + '"')
+        return text
+      }
       return Translation[text][this.language]
     }
   }
