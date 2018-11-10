@@ -7,13 +7,14 @@
                     <p class="g-number">02</p>
                     <h3 class="g-caption-section">
                         <span>{{t('About crypto fund')}}</span>
-                        <strong class="gradient-text">GtCinema</strong>
+                        <strong class="gradient-text">WHIZ BIZ</strong>
                     </h3>
                     <p class="description--bold">
-                        GTCinema
-                        {{t('was created to improve and expand participation in the business of consumers and financiers')}}
+                        WHIZ BIZ
+                        {{t('was created to enable people to participate in the creation of business art, as well as to improve and expand opportunities for profitable investments, with the aim of becoming the leading platform to support various fields of art around the world.')}}
                     </p>
-                    <p class="description--light">{{t('with the goal of becoming a leading platform for business support in the field of entertainment and creativity (art).')}}</p>
+                    <p class="description--light">{{t('A team of creative people - professionals who have gained a lot of experience in various business fields, as well as art abroad and not only, is working to strengthen and expand the capabilities of the crypto fund.')}}</p>
+                    <p class="description--light">{{t('Now, we have the opportunity to apply the acquired knowledge and experience in Kazakhstan and other countries of the world where art needs financial support.')}}</p>
                 </div>
                 <div class="img">
                     <div class="img-wrapper">
@@ -45,7 +46,7 @@
                 max-width: 570px;
                 padding-top: 50px;
                 padding-right: 20px;
-                .md-block({ margin-bottom: 50px; });
+                .md-block({ margin-bottom: 40px; });
                 .g-number {
                     color: #000;
                     .line-after--right(@gradientDefault);
@@ -63,6 +64,7 @@
                     color: #000;
                 }
                 .description--light {
+                    margin-bottom: 1rem;
                     font-size: 2rem;
                     letter-spacing: 0.16rem;
                     font-weight: 200;

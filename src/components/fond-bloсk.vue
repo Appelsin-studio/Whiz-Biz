@@ -18,10 +18,10 @@
                             </ul>
                             <div class="caption-block">
                                 <h1 class="caption">
-                                    <strong class="">{{t('Crypto fund')}}</strong>
+                                    <strong class="">{{t('Crypto fund')}} «WHIZ BIZ» </strong>
                                     <span>{{t('to support business in industrial cinema and art')}}</span>
                                 </h1>
-                                <p class="description"><strong>GTCinema</strong> -
+                                <p class="description"><strong>WHIZ BIZ</strong> -
                                     {{t('is a financial technology company focused on blockchain and cryptographic tokens')}}
                                 </p>
                                 <a href="#" class="btn" @click.prevent="modalApply">{{t('Apply')}}</a>

@@ -9,6 +9,10 @@
                 <span>{{t('Our')}} </span>
                 <strong class="gradient-text">{{t('team')}}</strong>
             </h3>
+            <div class="desc-wrapper">
+                <p class="description-team">{{t('When it comes to developing a business project - anyone, the most important and most important thing is working in a well-coordinated team and, of course, trust; creative thinking and much more.')}}</p>
+                <p class="description-team">{{t('The foundation of our foundation consists of creative people - professionals in their field with extensive experience in various fields of activity!')}}</p>
+            </div>
             <div class="wrapper--team">
                 <div class="person person-12">
                     <div class="img-wrapper">
@@ -93,12 +97,26 @@
             .line-after--right(@gradientDefault);
         }
         .g-caption-section {
-            margin-bottom: 70px;
-            .sm-block({ margin-bottom: 65px; });
+            margin-bottom: 20px;
+            .sm-block({ margin-bottom: 20px; });
             span {
                 color: #000;
             }
         }
+        .desc-wrapper {
+            margin-bottom: 50px;
+            .sm-block({ margin-bottom: 20px; });
+            .description-team {
+                margin-bottom: 15px;
+                font-size: 2.4rem;
+                color: #000;
+                font-weight: 900;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+
         .wrapper--team {
             .row-flex();
             justify-content: center;

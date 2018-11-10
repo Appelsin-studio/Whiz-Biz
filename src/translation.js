@@ -23,21 +23,25 @@ export default {
     ru: 'О криптофонде',
     kk: 'Криптондық қор туралы'
   },
-  'was created to improve and expand participation in the business of consumers and financiers': {
-    ru: 'был создан для улучшения и расширения участия в бизнесе потребителей и финансистов',
-    kk: 'тұтынушылар мен қаржыгерлердің бизнесіне қатысуды жақсарту және кеңейту үшін құрылған'
+  'was created to enable people to participate in the creation of business art, as well as to improve and expand opportunities for profitable investments, with the aim of becoming the leading platform to support various fields of art around the world.': {
+    ru: 'создан для возможности участия Народа при создании бизнес-искусства, а также для улучшения и расширения возможностей выгодных вложений, с целью стать ведущей платформой по поддержке различных сфер деятельности искусства во всем мире.',
+    kk: 'компаниясы әртүрлі өнер салаларын қолдау үшін жетекші платформаға айналу мақсатында адамдарға бизнес өнерін жасауға қатысуға, сондай-ақ тиімді инвестициялар үшін мүмкіндіктерді кеңейтуге және кеңейтуге мүмкіндік беру үшін құрылған.'
   },
-  'with the goal of becoming a leading platform for business support in the field of entertainment and creativity (art).': {
-    ru: 'с целью стать ведущей платформой по поддержке бизнеса сфере развлечений и творчества (искусства).',
-    kk: 'ойын-сауық және шығармашылық (өнер) саласындағы бизнесті қолдаудың жетекші платформасы болу мақсатымен.'
+  'A team of creative people - professionals who have gained a lot of experience in various business fields, as well as art abroad and not only, is working to strengthen and expand the capabilities of the crypto fund.': {
+    ru: 'Над укреплением и расширением возможностей криптофонда работает команда творческих людей – профессионалов, которые получили большой опыт в различных сферах бизнеса, а также искусства за рубежом и не только.',
+    kk: 'Шығармашылық адамдар тобы - кәсіпкерліктің әртүрлі салаларында, сондай-ақ шет елде ғана емес, сонымен қатар крипто қорының мүмкіндіктерін кеңейту және кеңейту үшін үлкен тәжірибе жинаған мамандар.'
   },
-  'Our': {
-    ru: 'Наша',
-    kk: 'Біздің'
+  'Now, we have the opportunity to apply the acquired knowledge and experience in Kazakhstan and other countries of the world where art needs financial support.': {
+    ru: 'Теперь, мы имеем возможность применять полученные знания и опыт на территории Казахстан и других стран мира, где искусство нуждается в финансовой поддержке.',
+    kk: 'Енді біз Қазақстанға және әлемнің басқа елдеріне қолдауға ие болған білім мен тәжірибені қолдана аламыз.'
   },
-  'goal': {
-    ru: 'цель',
-    kk: 'мақсатымыз'
+  'Main goals and objectives': {
+    ru: 'Основные цели и задачи',
+    kk: 'Негізгі мақсаттар мен міндеттер'
+  },
+  'crypto fund': {
+    ru: 'криптофонда',
+    kk: 'криптондық қор'
   },
   'The company\'s goal is to create a platform under the brand GTC, to become the preferred portal for investment': {
     ru: 'Целью компании является создание платформы под брендом GTC, стать предпочтительным порталом для инвестиций',
@@ -55,9 +59,21 @@ export default {
     ru: 'Привлечение инвестиции на проект реализуется с помощью платформы CrowdSaleNetwork',
     kk: 'Инвестициялық жобаны іске асыру CrowdSaleNetwork платформаларымен жүзеге асырылады'
   },
+  'Our': {
+    ru: 'Наша',
+    kk: 'Біздің'
+  },
   'team': {
     ru: 'команда',
     kk: 'команда'
+  },
+  'When it comes to developing a business project - anyone, the most important and most important thing is working in a well-coordinated team and, of course, trust; creative thinking and much more.': {
+    ru: 'Когда речь идет о развитии бизнес-проекта – любого, самое важное и главное – это работа слаженной команды и конечно же доверие, креативное мышление и многое другое.',
+    kk: 'Бизнес-жобаны әзірлеуге келгенде - ең маңыздысы және ең бастысы - үйлестірілген командада жұмыс істеу және, әрине, сену; шығармашылық ойлау және тағы басқалар.'
+  },
+  'The foundation of our foundation consists of creative people - professionals in their field with extensive experience in various fields of activity!': {
+    ru: 'Фундамент нашего фонда состоит из творческих людей – профессионалов своего дела с большим опытом в различных сферах деятельности!',
+    kk: 'Біздің қордың іргетасы шығармашылық адамдардан тұрады - өз саласында әртүрлі қызмет салаларында мол тәжірибесі бар мамандар!'
   },
   'General producer': {
     ru: 'Генеральный продюсер',

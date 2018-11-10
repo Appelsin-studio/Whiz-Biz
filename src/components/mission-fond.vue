@@ -9,8 +9,8 @@
                 <div class="caption-wrapper">
                     <p class="g-number">03</p>
                     <h3 class="g-caption-section">
-                        <span class="gradient-text">{{t('Our')}}</span>
-                        <strong>{{t('goal')}}</strong>
+                        <span class="gradient-text">{{t('Main goals and objectives')}}</span>
+                        <strong>{{t('crypto fund')}} WHIZ BIZ</strong>
                     </h3>
                     <p class="description description--bold">
                         {{t('The company\'s goal is to create a platform under the brand GTC, to become the preferred portal for investment')}}
@@ -42,6 +42,16 @@
             padding-bottom: 120px; });
         .xs-block({ padding-top: 60px;
             padding-bottom: 100px;  });
+        .g-caption-section {
+            font-size: 4rem;
+            .md-block({ font-size: 3rem; });
+            .xs-block({ font-size: 2.5rem; });
+            strong {
+                font-size: 70px;
+                .lg-block({ font-size: 50px; letter-spacing: 0.3rem;});
+                .sm-block({ font-size: 35px; letter-spacing: 0.2rem;});
+            }
+        }
         .wrapper {
             position: relative;
             justify-content: space-between;
@@ -59,6 +69,8 @@
                 .sm-block({max-width: 90%; margin-bottom: 50px;});
                 .g-number {
                     color: #fff;
+                    .line-after--right();
+                    .lg-block({.line-after--left();});
                 }
                 .description {
                     margin-bottom: 3rem;
