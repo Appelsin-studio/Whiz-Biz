@@ -148,8 +148,11 @@
                 }
                 &.person-12 {
                     .size(12);
+                    .size-xm(10);
+                    .size-xs(12);
                     margin-bottom: 20px;
                     background: @gradientPersonHorizontal;
+                    .xm-block({ flex-direction: column; justify-content: center; });
                     .img-wrapper {
                         width: 100%;
                         max-width: 380px;
@@ -165,16 +168,21 @@
                         padding-left: 0;
                         padding-bottom: 0;
                         align-self: center;
+                        .xm-block({ padding: 40px; padding-top: 20px; align-items: flex-start; });
                     }
                 }
                 &.person-4 {
                     .size(4);
                     .size-lg(12);
+                    .size-xm(10);
+                    .size-xs(12);
+                    justify-content: center;
                     flex-direction: column;
                     background: @gradientPersonVertical;
                     .lg-block({ flex-direction: row; margin-bottom: 20px; background: @gradientPersonHorizontal });
+                    .xm-block({ flex-direction: column; });
                     .img-wrapper {
-                        .lg-block({ margin: -10px -10px -10px -10px; width: 100%; max-width: 380px; });
+                        .lg-block({ width: 100%; max-width: 380px; });
                         .sm-block({ max-width: 250px; });
                         .img {
                             .lg-block({ background-position-y: 50px; });
@@ -186,11 +194,13 @@
                     }
                     .profile-wrapper {
                         .lg-block({ padding-left: 0; padding-bottom: 0; align-self: center; });
+                        .xm-block({ padding: 40px; padding-top: 20px; align-items: flex-start; });
                     }
                 }
                 .img-wrapper {
                     position: relative;
                     display: flex;
+                    .xm-block({ margin: 0 auto; });
                     .img {
                         position: relative;
                         padding-top: 20px;
