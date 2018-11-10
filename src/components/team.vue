@@ -158,7 +158,6 @@
                         max-width: 380px;
                         .sm-block({ max-width: 250px; });
                         .img {
-                            background-position-y: 50px;
                             &::after {
                                 bottom: 0;
                             }
@@ -185,7 +184,6 @@
                         .lg-block({ width: 100%; max-width: 380px; });
                         .sm-block({ max-width: 250px; });
                         .img {
-                            .lg-block({ background-position-y: 50px; });
                             &::after {
                                 bottom: -20px;
                                 .lg-block({ bottom: 0; });
