@@ -14,7 +14,7 @@ export const LanguageMixin = {
         return text
       }
       if (Translation[text] === undefined) {
-        console.log('Translate not found: "' + text + '"')
+        console.error('Translate not found: "' + text + '"')
         return text
       }
       return Translation[text][this.language]

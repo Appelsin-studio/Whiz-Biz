@@ -10,6 +10,9 @@
                 <a class="presentation inline-link" href="#" @click.prevent="$modal.show('presentation')">
                     {{t('Sign up for a presentation')}}
                 </a>
+                <a class="inline-link" href="#" @click.prevent="$modal.show('login')">
+                    {{t('Login')}}
+                </a>
                 <v-select :options="languageSelect" v-model="selected"></v-select>
             </div>
         </div>
@@ -64,23 +67,18 @@
             .inline-link {
                 display: inline-block;
                 color: #fff;
+                padding: 0 10px;
+                font-size: 18px;
+                letter-spacing: 0.12rem;
+                border-bottom: 1px solid transparent;
+                .transition();
+                .sm-block({ font-size: 16px; });
+                .xs-block({ text-align: center; });
+                &:hover {
+                    border-bottom: 1px solid @pinkDark;
+                }
                 &.bid {
                     .sm-block({ display: none; });
-                }
-                &.bid,
-                &.presentation {
-                    padding: 0 10px;
-                    font-size: 18px;
-                    letter-spacing: 0.12rem;
-                    border-bottom: 1px solid transparent;
-                    .transition();
-                    .sm-block({font-size: 16px;});
-                    &:hover {
-                        border-bottom: 1px solid @pinkDark;
-                    }
-                }
-                &.presentation {
-                    .xs-block({ text-align: center;});
                 }
             }
         }
