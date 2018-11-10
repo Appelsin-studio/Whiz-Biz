@@ -135,15 +135,15 @@ export default {
     ru: 'Все фильмы и проекты криптофонда «WHIZ BIZ» выйдут в свет при поддержке платформы «CROWDSALE NETWORK».',
     kk: 'WHIZ BIZ криптографиялық қорының барлық фильмдері мен жобалары CROWDSALE NETWORK платформасының қолдауымен шығарылады.'
   },
-  'During the work on the movie &#171; Ghost City &#187;, from the very first day of the launch of the film project and until the very premiere, &#171;Reality Show&#187; will be filmed, where viewers will be able to learn and watch all the processes of creating Hollywood cinema.': {
+  'During the work on the movie "Ghost City", from the very first day of the launch of the film project and until the very premiere, "Reality Show" will be filmed, where viewers will be able to learn and watch all the processes of creating Hollywood cinema.': {
     ru: 'В ходе работы над кинокартиной «Город призрак», с самого первого дня запуска кинопроекта и до самой премьеры будет сниматься «Реалити-шоу», где зрители смогут обучаться и наблюдать за всеми процессами создания Голливудского кино. ',
     kk: 'Фильмнің алғашқы күнінен бастап, «Галф Сити» фильмінде жұмыс істегенде, «Reality Show» түсіріліміне дейін, көрермендер Голливуд киносын құрудың барлық процестерін оқып, көре алатын болады.'
   },
-  'The  &#171;Reality Show&#187; will be broadcast via channels: YouTube, Twitter, Facebook, Instagram.': {
+  'The  "Reality Show" will be broadcast via channels: YouTube, Twitter, Facebook, Instagram.': {
     ru: 'Транслирование «Реалити-шоу» будет осуществляться по каналам: YouTube, Twitter, Facebook, Instagram.',
     kk: '«Reality Show» арналары арқылы YouTube, Twitter, Facebook, Instagram арқылы таратылатын болады.'
   },
-  'During the filming of &#171;Reality Show&#187; there will be competitions for the best ideas, scripts, best artwork, design and much more.': {
+  'During the filming of "Reality Show" there will be competitions for the best ideas, scripts, best artwork, design and much more.': {
     ru: 'Во время съемок «Реалити-шоу» будут устраиваться конкурсы на лучшие идеи, сценарии, лучшие художественные работы, дизайн и многое другое. ',
     kk: '«Reality Show» фильмін түсірген кезде үздік идеялар, сценарийлер, үздік шығармалар, дизайн және т.б. үшін конкурстар өткізіледі.'
   },
@@ -159,7 +159,7 @@ export default {
     ru: 'Привлечение журналистов (ТВ, газеты, журналы, ВЕБ т.д.).',
     kk: 'Журналистерді тарту (теледидар, газет, журналдар, WEB және т.б.).'
   },
-  'The &#171;Ghost Town&#187; motion picture film will be released from the creator of the &#171;Godfather&#187; trilogy - this is a big breakthrough for the Kazakh-American film industry, which the whole world will learn about.': {
+  'The "Ghost Town" motion picture film will be released from the creator of the "Godfather" trilogy - this is a big breakthrough for the Kazakh-American film industry, which the whole world will learn about.': {
     ru: 'Кинокартина «Город призрак» выйдет в свет от создателя трилогии «Крестный отец» - это большой рывок для Казахстанско-Американской киноиндустрии, о котором узнает весь мир.',
     kk: '«Ghost Town» кинофильмі күзетші трилогиясының шығарушысынан шығарылады - бұл бүкіл әлем білетін қазақ-американдық кинематография саласы үшін үлкен серпіліс.'
   },
@@ -167,7 +167,7 @@ export default {
     ru: ' К сотрудничеству присоединятся самые известные блогеры/влогеры мира.',
     kk: 'Әлемнің танымал блогерлері / блогерлері ынтымақтастыққа қосылады.'
   },
-  'At the moment, the concept of the game &#171;Ghost Town&#187; is being developed by the number one computer game developers worldwide, such as: Stalker, Tanks.': {
+  'At the moment, the concept of the game "Ghost Town" is being developed by the number one computer game developers worldwide, such as: Stalker, Tanks.': {
     ru: 'В данный момент, разрабатывается концепция игры «Город призрак», разработчиками компьютерных игр №1 во всем мире по популярности, таких как: Сталкер, Танки.',
     kk: 'Қазіргі уақытта «Ghost Town» ойынының тұжырымдамасы бүкіл әлем бойынша 1-ші компьютерлік ойын әзірлеушілері әзірлейді: Stalker, Tanks.'
   },
@@ -271,17 +271,17 @@ export default {
     ru: 'месяцев',
     kk: 'айлар'
   },
-  'GHOST TOWN PRODUCTIONS, LLC from Oklahoma (USA) offers you a film project called "Ghost Town"': {
-    ru: 'Компания «GHOST TOWN PRODUCTIONS, LLC» из штата Оклахома (США), предлагает Вам кинопроект под названием «Город призрак»',
-    kk: '(АҚШ) Оклахомадан (АҚШ) «САҒАТ ТАУНА ӨНДІРІСІ» ЖШС сізге «Ghost Town»'
+  'The company "GHOST TOWN PRODUCTIONS, LLC"; from Oklahoma (USA), offers you a film project called "Ghost Town".': {
+    ru: 'Компания "GHOST TOWN PRODUCTIONS, LLC" из штата Оклахома (США), предлагает Вам кинопроект под названием "Город призрак".',
+    kk: 'Оклахомадан (АҚШ) «GHOST TOWN PRODUCTIONS, LLC» компаниясы Сізге «Ghost Town» атты кинорежиссерді ұсынады.'
   },
-  'The action takes place in the US, in Oklahoma. Local hunters near the perimeter of the Bezrodnaya Grove find tapes with amateur recording. These cassettes captured the entire mission of a team of eight people who disappeared in the Ghost City on May 3, 1999. In "Bezrodnaya groves" our heroes will learn that they are the chosen ones. They discover other civilizations, worlds and parallel dimensions.': {
-    ru: 'Действие происходит в США, в штате Оклахома. Местные охотники неподалеку от периметра "Безродной Рощи" находят кассеты с любительской записью. На этих кассетах запечатлена вся миссия команды из восьми человек, которые пропали в Городе-призрак 3 Мая 1999 года. В “Безродной рощи” наши герои узнают что они избранные. Они открывают для себя другие цивилизации, миры и параллельные измерения.',
+  'A small group of locals who hunted near the "Ghost Town" will find among the ruins amateur tapes, where the film remains on the floor, and a part of the team s eight-person mission, which was lost on May 3, 1999, will be captured. Hunters will find out that they are the chosen ones and will discover other civilizations, worlds and parallel dimensions.': {
+    ru: 'Небольшая группа местных жителей, охотившихся неподалеку от "Города призрака", обнаружит среди руин любительские кассеты, где на полу сохранившейся пленке, будет запечатлена часть миссии команды, состоящей из восьми человек, которая в последствии бесследно пропала 3 мая 1999 года.  Охотники узнают о том, что они избранные и откроют для себя другие цивилизации, миры и параллельные измерения.',
     kk: 'Акция АҚШ-та, Оклахома штатында өтеді. Bezrodnaya Grove периметрі жанында жергілікті аңшылар әуесқойлық жазбамен бірге таспаларды табады. Бұл таспалар 1999 жылғы 3 мамырда Ghost City-да жоғалып кеткен сегіз адамның командасының миссиясын тұтастай басып алды. «Безродная горов» -да біздің кейіпкерлеріміз олардың таңдалғандығын біледі. Олар басқа өркениеттерді, әлемді және параллельді өлшемдерді табады.'
   },
-  'This story of the tragedy of the 1999 Tornadoes and the ghost town of Bezrodnoy Grove is based on real events.': {
-    ru: 'Эта история о трагедии торнадо 1999 года и города призрака "Безродной Рощи" основаны на реальных событиях.',
-    kk: '1999 жылғы трагедиялар мен Безродное Грут қалашығының қайғылы оқиғасы осы оқиғаларға негізделген.'
+  'The film is based on real events that occurred in 1999 in Oklahoma, where the most powerful tornado left behind serious damage and led to a series of inexplicable events.': {
+    ru: 'Фильм основан на реальных событиях, произошедших в 1999 году в Штате Оклахома, где мощнейший торнадо оставил после себя серьезные разрушения и повлек за собой череду необъяснимых событий.',
+    kk: 'Фильм 1999 жылы Оклахома штатында орын алған нақты оқиғаларға негізделген, онда ең қуатты торнадо елеулі зақымдануды тоқтатып, көптеген оқиғаларға жол бермеді.'
   },
   'References': {
     ru: 'Референсы',
@@ -371,14 +371,6 @@ export default {
     ru: 'Оптимальный прогноз токена GTC в ближайшие 7 лет',
     kk: 'Келесі 7 жылда GTC белгісін оңтайлы болжау'
   },
-  'As you can': {
-    ru: 'Как вы можете',
-    kk: 'Қалай болса да'
-  },
-  'be part of us': {
-    ru: 'быть частью нас',
-    kk: 'бізге қосылыңыз'
-  },
   'How to become an investor': {
     ru: 'Как стать инвестором',
     kk: 'Инвестор болу жолы'
@@ -411,9 +403,9 @@ export default {
     ru: 'Выгодное распределение прибыли',
     kk: 'Табысты пайданы үлестіру'
   },
-  'Investor gets % profit from cinema income': {
-    ru: 'Инвестор получает % прибыли от дохода кино',
-    kk: 'Инвестор кинематографиялық кірістерден % алады'
+  'Investor gets 15% profit from cinema income': {
+    ru: 'Инвестор получает 15% прибыли от дохода кино',
+    kk: 'Инвестор кинематографиялық кірістерден 15% алады'
   },
   'Long-term strategy': {
     ru: 'Долгострочная стратегия',
@@ -618,5 +610,22 @@ export default {
   'Password': {
     ru: 'Пароль',
     kk: 'Құпия сөз'
-  }
+  },
+  'A word in support of': {
+    ru: ' Слово в поддержку',
+    kk: 'Қазақ өнерін қолдауға'
+  },
+  'Kazakhstani art': {
+    ru: 'казахстанского искусства',
+    kk: 'арналған сөз'
+  },
+  'In the modern world, the film industry is developing very rapidly and is one of the most profitable and promising areas of activity. And for sure, if you are reading this block of information now, then most likely you are a creative person and want to achieve something in life. But, any creativity needs financial support, which most often comes from relatives, "from one s own pocket," sponsors, donations, sometimes from the People, and more often this financial support is not. Why, more often than not, a creative person is forced to leave his homeland and suppose he begins to live in Europe? The fact is that many spheres of art are very developed in Europe, especially opera, theater, ballet, but in addition to this, the Europeans themselves support cultural development, and therefore support creative people. Pay attention to any event happening in the theater - there are no empty seats; tickets to buy is not easy. Someone will say: "Here, in Europe the tracks are better, the landscape is more beautiful there, the conditions are better there! There are more opportunities there! "- and this is all true, but all this was created by people who wanted to be in comfortable conditions, took care of nature, developed tourism, laid high-quality asphalt, etc.! But, our homeland - Kazakhstan is also able to have all the same. We have a lot of talented people who can develop and be successful without leaving the country. There are a lot of mysterious and mystical places in Kazakhstan that are perfect for shooting a film in the genre of horrors, mysticism, etc. - a rather popular genre. In Kazakhstan, there are a lot of landscapes that are not inferior in their beauty to either European or Western. Our young people strive to be educated and continue to work in the leading companies of the world. Tourism is developing, and due to this, the economic opportunities of the market are expanding. Kazakhstan has all the prospects in the field of art development, because there is support from the People, who cares about the future.': {
+    ru: 'В современном мире индустрия кино развивается очень стремительно и является одной из самых доходных и перспективных сфер деятельности. И наверняка, если вы сейчас читаете этот блок информации, то скорее всего вы – творческая личность и желаете чего-то добиться в жизни. Но, любое творчество нуждается в финансовой поддержке, которая чаще всего исходит от близких, «из своего кармана», спонсоров, пожертвований, иногда от Народа, а еще чаще этой финансовой поддержки – нет.  Почему же, чаще всего творческий человек вынужденно покидает Родину и предположим, начинает жить в Европе? Дело в том, что в Европе очень развиты многие сферы искусства, особенно – опера, театр, балет, но помимо этого сами европейцы поддерживают культурное развитие, а значит и поддерживают тем самым творческих людей. Обратите внимание на любое событие происходящее в театре – там нет пустых мест; билеты купить непросто. Кто-то скажет: «Вот, в Европе трассы лучше, там ландшафт красивее, там условия лучше! Там возможностей больше!» – и это все так, но все это создали люди, которые желали находиться в комфортных условиях, берегли природу, развивали туризм, стелили качественный асфальт и т.д.! Но, наша родина – Казахстан тоже в состоянии иметь все тоже самое. У нас очень много талантливых людей, которые могут развиваться и быть успешными не покидая страну. В Казахстане очень много загадочных и мистических мест, которые отлично подойдут для съемок фильма в жанре ужасы, мистика и т.д – достаточно востребованный жанр. В Казахстане, множество ландшафтов, которые не уступают по своей красоте ни Европейским, ни Западным.\n' +
+      'Наша молодежь стремится быть образованной и работает в дальнейшем в ведущих компания мира. Туризм развивается, а за счет этого и расширяются экономические возможности рынка. У Казахстана есть все перспективы в сфере развития искусства, потому что есть поддержка Народа, которому не все равно на будущее.\n',
+    kk: 'Қазіргі әлемде киноиндустрия өте қарқынды дамып келе жатыр және қызметтің ең пайдалы және перспективалық бағыттарының бірі болып табылады. Әрине, егер Сіз бұл ақпарат блогын қазір оқып отырсаңыз, онда сен шығармашылық адамсың және өмірдегі нәрсеге қол жеткізгіңіз келеді. Бірақ кез-келген креативтілік көбінесе туыстарынан туындайтын қаржылық көмекке мұқтаж: «өз қалтасынан», демеушілер, қайырымдылық, кейде Адамдардан, және көбіне бұл қаржылай қолдау жоқ. Неге, көбінесе, шығармашылық адам өз отанын тастап кетуге мәжбүр және Еуропада өмір сүре бастайды деп ойлайсыз ба? Өйткені, Еуропадағы көптеген өнер салалары, әсіресе опера, театр, балет, өте дамыған, бірақ бұған қоса, еуропалықтар өздерінің мәдени дамуын қолдайды және шығармашылық адамдарға қолдау көрсетеді. Театрда болған кез-келген оқиғаға назар аударыңыз - бос орын жоқ; сатып алуға билеттер оңай емес. Біреу былай дейді: «Міне, Еуропада жолдар жақсы, пейзажда бұл жерде әдемі, жағдай жақсы! Онда көп мүмкіндіктер бар! »- және бұл бәрі дұрыс, бірақ бұл барлық жағдайды ыңғайлы жағдайда болғысы келетін, табиғатпен қамқорлық жасаған, туризм дамыған, жоғары сапалы асфальт төселген адамдар жасаған! Бірақ біздің отанымыз - Қазақстан да бар. Бізде елден шықпай-ақ дамып, табысты бола алатын дарынды адамдар көп. Қазақстанда, қасіретке, мистикаға және т.б. жанрдағы фильмді түсіруге арналған өте жұмбақ және мистикалық орындары бар - бұл өте танымал жанр. Қазақстанда өздерінің сұлулығымен еуропалық немесе батыс жағынан кем емес пейзаждар көп. Біздің жастар білім алуға және әлемнің жетекші компанияларында жұмыс істеуге ұмтылады. Туризм дамып келеді және осыған байланысты нарықтың экономикалық мүмкіндіктері кеңейді. Қазақстанның өнерді дамыту саласындағы барлық келешегі бар, өйткені болашақ туралы қамқорлық жасайтын Халықтың қолдауы бар.'
+  },
+  'Merchandising': {
+    ru: 'Мерчендайзинг',
+    kk: 'Мерчендайзинг'
+  },
 }

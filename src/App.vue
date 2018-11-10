@@ -22,6 +22,7 @@
             <terms-cooperation/>
             <investor-income/>
             <road-map/>
+            <word-support/>
         </main>
         <footer-block/>
         <modal-apply/>
@@ -49,6 +50,7 @@
   import TermsCooperation from 'components/terms-cooperation'
   import InvestorIncome from 'components/investor-income'
   import RoadMap from 'components/road-map'
+  import WordSupport from 'components/word-support'
 
   import ModalApply from 'components/modals/apply'
   import ModalPresentation from 'components/modals/presentation'
@@ -76,6 +78,7 @@
       TermsCooperation,
       InvestorIncome,
       RoadMap,
+      WordSupport,
       FooterBlock,
       ModalApply,
       ModalPresentation,

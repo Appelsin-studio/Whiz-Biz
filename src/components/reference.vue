@@ -11,62 +11,62 @@
             <div class="wrapper">
                 <div class="item">
                     <p class="number">01</p>
-                    <p class="name">{{t('Blair witch')}}</p>
+                    <p class="name">{{t('Blair witch')}} (1999)</p>
                     <p class="money">
                         <span class="bold">{{t('Budget')}}:&ensp;</span>
                         <span class="light">60 000 $</span>
                     </p>
                     <p class="money">
                         <span class="bold">{{t('Marketing')}}:&ensp;</span>
-                        <span class="light"></span>
+                        <span class="light">25 000 000 $</span>
                     </p>
                     <p class="money">
                         <span class="bold">{{t('Fees')}}:&ensp;</span>
-                        <span class="light">248 000 $</span>
+                        <span class="light">248 639 099 $</span>
                     </p>
                 </div>
                 <div class="item">
                     <p class="number">02</p>
-                    <p class="name">{{t('Paranormal Activity')}}</p>
+                    <p class="name">{{t('Paranormal Activity')}} (2009)</p>
                     <p class="money">
                         <span class="bold">{{t('Budget')}}:&ensp;</span>
                         <span class="light">15 000 $</span>
                     </p>
                     <p class="money">
                         <span class="bold">{{t('Marketing')}}:&ensp;</span>
-                        <span class="light"></span>
+                        <span class="light">10 000 000 $</span>
                     </p>
                     <p class="money">
                         <span class="bold">{{t('Fees')}}:&ensp;</span>
-                        <span class="light">193 000 $</span>
+                        <span class="light">193 355 800 $</span>
                     </p>
                 </div>
                 <div class="item">
                     <p class="number">03</p>
-                    <p class="name">{{t('Judgment night')}}</p>
+                    <p class="name">{{t('Judgment night')}} (2013)</p>
                     <p class="money">
                         <span class="bold">{{t('Budget')}}:&ensp;</span>
                         <span class="light">3 000 000 $</span>
                     </p>
                     <p class="money">
                         <span class="bold">{{t('Marketing')}}:&ensp;</span>
-                        <span class="light"></span>
+                        <span class="light">10 000 000 $</span>
                     </p>
                     <p class="money">
                         <span class="bold">{{t('Fees')}}:&ensp;</span>
-                        <span class="light">89 000 000 $</span>
+                        <span class="light">89 328 627 $</span>
                     </p>
                 </div>
                 <div class="item">
                     <p class="number">04</p>
-                    <p class="name">{{t('Ghost town')}}</p>
+                    <p class="name">{{t('Ghost town')}} (2020)</p>
                     <p class="money">
                         <span class="bold">{{t('Budget')}}:&ensp;</span>
-                        <span class="light">9 000 000 $</span>
+                        <span class="light">2 590 000 $</span>
                     </p>
                     <p class="money">
                         <span class="bold">{{t('Marketing')}}:&ensp;</span>
-                        <span class="light"></span>
+                        <span class="light">7 500 000 $</span>
                     </p>
                     <p class="money">
                         <span class="bold">{{t('Fees')}}&ensp;</span>

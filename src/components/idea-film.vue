@@ -25,14 +25,14 @@
                 <div class="company-wrapper">
                     <img class="dvd-img" src="/img/dvd-box.png" alt="dvd">
                     <p class="company">
-                        {{t('GHOST TOWN PRODUCTIONS, LLC from Oklahoma (USA) offers you a film project called "Ghost Town"')}}.
+                        {{t('The company "GHOST TOWN PRODUCTIONS, LLC"; from Oklahoma (USA), offers you a film project called "Ghost Town".')}}
                     </p>
                 </div>
                 <p class="story-film--bold">
-                    {{t('This story of the tragedy of the 1999 Tornadoes and the ghost town of Bezrodnoy Grove is based on real events.')}}
+                    {{t('The film is based on real events that occurred in 1999 in Oklahoma, where the most powerful tornado left behind serious damage and led to a series of inexplicable events.')}}
                 </p>
                 <p class="story-film--light">
-                    {{t('The action takes place in the US, in Oklahoma. Local hunters near the perimeter of the Bezrodnaya Grove find tapes with amateur recording. These cassettes captured the entire mission of a team of eight people who disappeared in the Ghost City on May 3, 1999. In "Bezrodnaya groves" our heroes will learn that they are the chosen ones. They discover other civilizations, worlds and parallel dimensions.')}}
+                    {{t('A small group of locals who hunted near the "Ghost Town" will find among the ruins amateur tapes, where the film remains on the floor, and a part of the team s eight-person mission, which was lost on May 3, 1999, will be captured. Hunters will find out that they are the chosen ones and will discover other civilizations, worlds and parallel dimensions.')}}
                 </p>
             </div>
         </div>

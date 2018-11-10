@@ -4,10 +4,8 @@
         <div class="container">
             <p class="g-number">12</p>
             <h3 class="g-caption-section">
-                <span>{{t('As you can')}}</span>
-                <strong class="gradient-text">{{t('be part of us')}}</strong>
+                <span>{{t('How to become an investor')}}</span>
             </h3>
-            <p class="secondary-caption">{{t('How to become an investor')}}</p>
             <div class="step-wrapper">
                 <div class="step">
                     <div class="img-wrapper">
@@ -35,11 +33,11 @@
             <ul class="conditions-list">
                 <li class="item">
                     <span class="bold">{{t('Available entry threshold')}}</span>
-                    <span class="light">{{t('Minimum investment')}} 1BTC</span>
+                    <span class="light">1ETH, 1BCH, 1BTC, 10ETC</span>
                 </li>
                 <li class="item">
                     <span class="bold">{{t('Profitable profit sharing')}}</span>
-                    <span class="light">{{t('Investor gets % profit from cinema income')}}</span>
+                    <span class="light">{{t('Investor gets 15% profit from cinema income')}}</span>
                 </li>
                 <li class="item">
                     <span class="bold">{{t('Long-term strategy')}}</span>
@@ -83,16 +81,6 @@
             span {
                 color: #000;
             }
-        }
-        .secondary-caption {
-            margin-bottom: 130px;
-            font-weight: 900;
-            font-size: 4rem;
-            letter-spacing: 0.2rem;
-            text-transform: uppercase;
-            color: #000;
-            .md-block({ margin-bottom: 70px; });
-            .xs-block({ margin-bottom: 40px; });
         }
         .step-wrapper {
             .row-flex();
