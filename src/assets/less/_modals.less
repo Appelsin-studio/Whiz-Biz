@@ -4,10 +4,8 @@
 }
 .modal {
   padding: 90px 20px;
-  border: 5px solid @orangeMain;
-  .xs-block({
-    padding: 60px 20px;
-  });
+  border: 5px solid @pinkLight;
+  .xs-block({ padding: 60px 20px; });
   .close-modal {
     display: flex;
     position: absolute;
@@ -21,17 +19,16 @@
     color: #fff;
     cursor: pointer;
     user-select: none;
-    background: @orangeMain;
-    border: 5px solid @orangeMain;
+    background: @pinkLight;
+    border: 5px solid @pinkLight;
     box-sizing: border-box;
     .transition();
     &:hover {
       background: #fff;
-      color: @orangeMain;
+      color: @pinkLight;
     }
   }
   .title {
-    font-family: @BebasNeue;
     font-weight: 600;
     font-size: 6rem;
     letter-spacing: 0.4rem;
@@ -46,9 +43,7 @@
     flex-direction: column;
     .input-wrapper {
       margin-bottom: 125px;
-      .xs-block({
-        margin-bottom: 80px;
-      });
+      .xs-block({ margin-bottom: 80px; });
       .item {
         display: block;
         margin-bottom: 25px;
@@ -57,12 +52,9 @@
         font-size: 20px;
         color: #000;
         border: none;
-        border-bottom: 1px solid @orangeMain;
+        border-bottom: 1px solid @pinkLight;
         outline: none;
-        .xs-block({
-          font-size: 16px;
-          margin-bottom: 15px;
-        });
+        .xs-block({ font-size: 16px; margin-bottom: 15px; });
         &::placeholder {
           color: #6c6c6c;
           font-weight: 200;
@@ -81,16 +73,14 @@
       letter-spacing: 0.18rem;
       font-weight: 600;
       color: #fff;
-      background-color: @orangeMain;
+      background-color: @pinkLight;
       text-transform: uppercase;
       text-align: center;
       transition: box-shadow 0.3s ease;
       z-index: 6;
-      .md-block({
-        padding: 25px 0;
-      });
+      .md-block({ padding: 25px 0; });
       &:hover {
-        box-shadow: 0 0 25px 0 rgba(196,45,45,1);
+        box-shadow: 0 0 25px 0 rgba(196, 45, 45, 1);
       }
     }
   }
@@ -105,9 +95,7 @@
   .title {
     margin-top: 40px;
     margin-bottom: 20px;
-    .xs-block({
-      margin-top: 30px;
-    });
+    .xs-block({ margin-top: 30px; });
   }
   .message-text {
     max-width: 450px;
@@ -116,19 +104,13 @@
     font-size: 24px;
     color: #000;
     text-align: center;
-    .xs-block({
-      margin: 0 auto 50px;
-      font-size: 20px;
-    });
+    .xs-block({ margin: 0 auto 50px; font-size: 20px; });
   }
 }
-
-
 .pop-out-enter-active,
 .pop-out-leave-active {
   transition: all 0.3s;
 }
-
 .pop-out-enter,
 .pop-out-leave-active {
   opacity: 0;
