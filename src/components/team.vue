@@ -84,9 +84,7 @@
     @import "~assets/less/_vars";
     .b-team {
         position: relative;
-        padding-top: 95px;
         z-index: 15;
-        .md-block({ padding-top: 50px; });
         .skew-block {
             .img {
                 width: 100%;

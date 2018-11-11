@@ -39,21 +39,37 @@ export default {
     ru: 'криптофонда',
     kk: 'криптондық қор'
   },
-  'The company\'s goal is to create a platform under the brand GTC, to become the preferred portal for investment': {
-    ru: 'Целью компании является создание платформы под брендом GTC, стать предпочтительным порталом для инвестиций',
-    kk: 'Компанияның мақсаты - GTC маркасымен платформаны құру, инвестициялар үшін қолайлы портал болу'
+  'To help creative people to develop in the territory of their homeland and in other countries.': {
+    ru: 'Помогать творческим личностям развиваться на территории своей Родины и в других странах.',
+    kk: 'Шығармашылық адамдарға өз Отанының аумағында және басқа елдерде дамуға көмектесу.'
   },
-  'in the entertainment industry and for their cryptographic tokens to become the standard currency in the new Hollywood economy, enhanced by the advantages of digital assets.': {
-    ru: 'в индустрии развлечения и для своих криптографических токенов стать стандартной валютой в новой голливудской экономике, усиленной преимуществами цифровых активов.',
-    kk: 'ойын-сауық индустриясында және олардың криптографиялық таңбаларына жаңа цифрлы активтердің артықшылықтары арқасында жаңа Голливудтық экономикадағы стандартты валюта болуға мүмкіндік береді.'
+  'Finance projects at different stages of readiness.': {
+    ru: 'Финансировать проекты на разных этапах готовности.',
+    kk: 'Әр түрлі сатылардағы қаржы жобалары.'
   },
-  'The company operates in three main segments: financing, production and sale.': {
-    ru: 'Компания работает в трех основных сегментах: финансирование, производство и продажа.',
-    kk: 'Компания үш негізгі сегментте жұмыс істейді: қаржыландыру, өндіру және сату.'
+  'Finance global projects.': {
+    ru: 'Финансировать мировые проекты.',
+    kk: 'Ғаламдық жобаларды қаржыландыру.'
   },
-  'Attracting investment to the project is implemented using the platform CrowdSaleNetwork': {
-    ru: 'Привлечение инвестиции на проект реализуется с помощью платформы CrowdSaleNetwork',
-    kk: 'Инвестициялық жобаны іске асыру CrowdSaleNetwork платформаларымен жүзеге асырылады'
+  'Finance and implement business portals, forums, etc.': {
+    ru: 'Финансировать и реализовывать бизнес-порталы, форумы и т.д.',
+    kk: 'Бизнес-порталдарды, форумдарды және т.б. қаржыландыру және іске асыру.'
+  },
+  'To finance short and full-length films, documentaries, cartoons with their further placement on all world platforms.': {
+    ru: 'Финансировать короткометражные и полнометражные фильмы, документальные фильмы, мультфильмы с дальнейшим их размещением на всех мировых платформах.',
+    kk: 'Қысқа және толық метражды фильмдерді, деректі фильмдерді, мультфильмдерді әрі қарай әлемдік платформаларда орналастыруды қаржыландыру.'
+  },
+  'Become the preferred portal for investing in various fields of art.': {
+    ru: 'Стать предпочтительным порталом для инвестирования различных сфер деятельности искусства.',
+    kk: 'Әр түрлі өнер салаларына инвестициялау үшін артықшылықты портал болыңыз.'
+  },
+  'Become a leading currency in the industry of InterTeing.': {
+    ru: 'Стать ведущей валютой в сфере индустрии Интертейнмента.',
+    kk: 'InterTeing саласының жетекші валютасы болыңыз.'
+  },
+  'Attracting investments for the development of projects with the support of the CrowdSaleNetwork platform.': {
+    ru: 'Привлечение инвестиций для развития проектов при поддержке платформы CrowdSaleNetwork.',
+    kk: 'CrowdSaleNetwork платформасының қолдауымен жобаларды дамытуға инвестициялар тарту.'
   },
   'Our': {
     ru: 'Наша',

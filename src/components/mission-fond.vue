@@ -12,12 +12,14 @@
                         <span class="gradient-text">{{t('Main goals and objectives')}}</span>
                         <strong>{{t('crypto fund')}} WHIZ BIZ</strong>
                     </h3>
-                    <p class="description description--bold">
-                        {{t('The company\'s goal is to create a platform under the brand GTC, to become the preferred portal for investment')}}
-                    </p>
-                    <p class="description">{{t('in the entertainment industry and for their cryptographic tokens to become the standard currency in the new Hollywood economy, enhanced by the advantages of digital assets.')}}</p>
-                    <p class="description">{{t('The company operates in three main segments: financing, production and sale.')}}</p>
-                    <p class="description">{{t('Attracting investment to the project is implemented using the platform CrowdSaleNetwork')}}</p>
+                    <p class="description">{{t('To help creative people to develop in the territory of their homeland and in other countries.')}}</p>
+                    <p class="description">{{t('Finance projects at different stages of readiness.')}}</p>
+                    <p class="description">{{t('Finance global projects.')}}</p>
+                    <p class="description">{{t('Finance and implement business portals, forums, etc.')}}</p>
+                    <p class="description">{{t('To finance short and full-length films, documentaries, cartoons with their further placement on all world platforms.')}}</p>
+                    <p class="description">{{t('Become the preferred portal for investing in various fields of art.')}}</p>
+                    <p class="description">{{t('Become a leading currency in the industry of InterTeing.')}}</p>
+                    <p class="description">{{t('Attracting investments for the development of projects with the support of the CrowdSaleNetwork platform.')}}</p>
                 </div>
             </div>
         </div>
@@ -35,12 +37,12 @@
     .b-mission-fond {
         position: relative;
         padding-top: 260px;
-        padding-bottom: 260px;
+        padding-bottom: 280px;
         background: linear-gradient(to right, rgba(19, 72, 182, 0.85) 0%, rgba(179, 15, 255, 1) 100%),
             url("/img/bg-guitar.jpg") no-repeat left top / cover;
         .lg-block({ padding-top: 120px;
-            padding-bottom: 120px; });
-        .xs-block({ padding-top: 60px;
+            padding-bottom: 140px; });
+        .xs-block({ padding-top: 90px;
             padding-bottom: 100px;  });
         .g-caption-section {
             font-size: 4rem;
@@ -73,7 +75,7 @@
                     .lg-block({.line-after--left();});
                 }
                 .description {
-                    margin-bottom: 3rem;
+                    margin-bottom: 2rem;
                     color: #fff;
                     font-weight: 200;
                     font-size: 2rem;
@@ -86,7 +88,7 @@
             .img-wrapper {
                 position: relative;
                 display: flex;
-                margin-right: 120px;
+                margin-right: 90px;
                 align-items: center;
                 box-sizing: border-box;
                 z-index: 5;
@@ -104,13 +106,14 @@
                     background-position: 0 0, 0 100%;
                     background-repeat: no-repeat;
                     background-size: 100% 10px;
+                    box-sizing: border-box;
                     .lg-block({width: 300px;
                         height: 300px;});
                     .xs-block({ width: 180px; height: 180px; });
                 }
                 .img {
                     position: absolute;
-                    left: -160px;
+                    left: -180px;
                     max-width: max-content;
                     z-index: 101;
                     .lg-block({ max-height: 600px; left: -50px;});
