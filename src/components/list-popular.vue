@@ -21,7 +21,8 @@
                     <p class="item-name">{{t('Attracting influential critics, world publications.')}}</p>
                 </div>
                 <div class="item">
-                    <p class="item-name">{{t('All films and projects of the WHIZ BIZ crypto fund will be released with the support of the CROWDSALE NETWORK platform.')}}</p>
+                    <p class="item-name">{{t('All films and projects of the WHIZ BIZ crypto fund will be released ' +
+                        'with the support of the CROWDSALE NETWORK platform.')}}</p>
                 </div>
                 <div class="item">
                     <p class="item-name">
@@ -88,7 +89,7 @@
         z-index: 10;
         background: @gradientMain;
         .lg-block({ padding: 200px 0; });
-        .xs-block({ padding: 120px 0;});
+        .xs-block({ padding: 120px 0; });
         .planet-big {
             position: absolute;
             top: 50%;
@@ -128,7 +129,6 @@
                     text-transform: uppercase;
                     .md-block({ padding-left: 60px; });
                     .xs-block({ padding-left: 40px; });
-                    &::after,
                     &::before {
                         content: '';
                         position: absolute;
@@ -136,23 +136,14 @@
                         height: 48px;
                         left: 0;
                         top: -5px;
+                        background: url("/img/icon/star.svg") no-repeat center / 28px, @gradientDefault;
                         border-radius: 50%;
                         .md-block({ width: 30px; height: 30px; top: 0; });
                         .xs-block({ width: 25px; height: 25px; });
                         transition: .6s;
                     }
                     &::after {
-                        background: linear-gradient(#fff, #fff) 50% 50% no-repeat / 18px 4px, @gradientDefault;
-                        .md-block({ background: linear-gradient(#fff, #fff) 50% 50% no-repeat / 13px 3px,
-                        @gradientDefault; });
-                        .xs-block({ background: linear-gradient(#fff, #fff) 50% 50% no-repeat / 10px 2px,
-                        @gradientDefault; });
-                    }
-                    &::before {
-                        background: linear-gradient(#fff, #fff) 50% 50% no-repeat / 4px 18px;
-                        z-index: 2;
-                        .md-block({ background: linear-gradient(#fff, #fff) 50% 50% no-repeat / 3px 13px; });
-                        .xs-block({ background: linear-gradient(#fff, #fff) 50% 50% no-repeat / 2px 10px; });
+                        content: '';
                     }
                 }
                 .item-content {
