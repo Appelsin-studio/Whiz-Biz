@@ -1,35 +1,35 @@
 <template>
     <section class="b-fond-block">
         <div class="parallax-wrapper">
-            <parallax :speedFactor="0.35" direction="down" :sectionHeight="100" :breakpoint="''"
+            <parallax :speedFactor="0.35" direction="down" :sectionHeight="110" :breakpoint="''"
                       parallaxClass="custom" sectionClass="custom-height">
                 <img src="/img/bg-main.jpg">
             </parallax>
         </div>
 
-                <div class="container">
-                    <div class="wrapper">
-                        <div class="coub"></div>
-                        <div class="content-wrapper">
-                            <ul class="number-list">
-                                <li>01</li>
-                                <li>02</li>
-                                <li>03</li>
-                            </ul>
-                            <div class="caption-block">
-                                <h1 class="caption">
-                                    <strong class="">{{t('Crypto fund')}} «WHIZ BIZ» </strong>
-                                    <span>{{t('to support business in industrial cinema and art')}}</span>
-                                </h1>
-                                <p class="description"><strong>WHIZ BIZ</strong> -
-                                    {{t('is a financial technology company focused on blockchain and cryptographic tokens')}}
-                                </p>
-                                <a href="#" class="btn" @click.prevent="modalApply">{{t('Apply')}}</a>
-                            </div>
-                        </div>
-                        <div class="number">01</div>
+        <div class="container">
+            <div class="wrapper">
+                <div class="coub"></div>
+                <div class="content-wrapper">
+                    <ul class="number-list">
+                        <li>01</li>
+                        <li>02</li>
+                        <li>03</li>
+                    </ul>
+                    <div class="caption-block">
+                        <h1 class="caption">
+                            <strong class="">{{t('Crypto fund')}} <i>«WHIZ BIZ»</i></strong>
+                            <span>{{t('to support business in industrial cinema and art')}}</span>
+                        </h1>
+                        <p class="description"><strong>WHIZ BIZ</strong> -
+                            {{t('is a financial technology company focused on blockchain and cryptographic tokens')}}
+                        </p>
+                        <a href="#" class="btn" @click.prevent="$modal.show('apply')">{{t('Apply')}}</a>
                     </div>
                 </div>
+                <div class="number">01</div>
+            </div>
+        </div>
 
     </section>
 </template>
@@ -40,14 +40,6 @@
   export default {
     mixins: [LanguageMixin],
     components: {Parallax},
-    methods: {
-      modalApply () {
-        this.$modal.show('apply')
-      },
-    },
-    data () {
-      return {}
-    }
   }
 </script>
 <style scoped lang="less">
@@ -60,8 +52,7 @@
         color: #fff;
         box-sizing: border-box;
         background: linear-gradient(to right, rgba(19, 72, 182, 0.85) 0%, rgba(179, 15, 255, 0.85) 100%);
-        .lg-block({ display: flex; align-items: center; justify-content: center; height: 120vh; padding: 0;
-            min-height: 750px});
+        .lg-block({ display: flex; align-items: center; justify-content: center; height: 120vh; padding: 0; min-height: 750px });
         .md-block({ min-height: 600px; });
         .parallax-wrapper {
             position: absolute;
@@ -75,7 +66,7 @@
             height: 100%;
         }
         .custom {
-            >img {
+            > img {
                 object-position: top left;
             }
         }
@@ -98,16 +89,15 @@
         }
         .container {
             width: 100%;
-            .lg-block({ box-sizing: border-box;});
+            .lg-block({ box-sizing: border-box; });
         }
         .wrapper {
             position: relative;
             display: grid;
-            grid-template-columns: minmax(0px, 120px)  minmax(0px, 560px) 1fr minmax(0px, 100px);
+            grid-template-columns: minmax(0px, 120px) minmax(0px, 560px) 1fr minmax(0px, 100px);
             grid-template-rows: minmax(20px, 100px) 1fr minmax(20px, 100px);
             z-index: 99;
-            .lg-block({ padding-left: 0; grid-template-columns: 1fr; grid-template-rows: 1fr; justify-items: center;
-                padding-bottom: 10vh;});
+            .lg-block({ padding-left: 0; grid-template-columns: 1fr; grid-template-rows: 1fr; justify-items: center; padding-bottom: 10vh; });
             .md-block({ padding-top: 0; });
             .coub {
                 grid-column: ~"1 / 3";
@@ -115,12 +105,12 @@
                 position: relative;
                 border-left: 10px solid #f816e0;
                 background-image: linear-gradient(to right, @pinkLight 0%, @red 100%),
-                                    linear-gradient(to right, @pinkLight 0%, @red 100%);
+                linear-gradient(to right, @pinkLight 0%, @red 100%);
                 background-position: 0 0, 0 100%;
                 background-repeat: no-repeat;
                 background-size: 100% 10px;
                 box-sizing: border-box;
-                .lg-block({ display: none;});
+                .lg-block({ display: none; });
                 &::after {
                     position: absolute;
                     content: '';
@@ -149,7 +139,7 @@
                 position: relative;
                 align-items: flex-start;
                 z-index: 5;
-                .lg-block({ grid-column: ~"1 / 2"; grid-row: ~"1 / 2";});
+                .lg-block({ grid-column: ~"1 / 2"; grid-row: ~"1 / 2"; });
                 .sm-block({ margin-bottom: 20px; });
                 .number-list {
                     display: flex;
@@ -180,24 +170,28 @@
                         text-transform: uppercase;
                         color: #fff;
                         .lg-block({ text-align: center; });
-                        .sm-block({margin-bottom: 15px;});
+                        .sm-block({ margin-bottom: 15px; });
                         strong {
                             display: block;
                             margin-bottom: 30px;
-                            font-size: 9rem;
+                            font-size: 7rem;
                             font-weight: 900;
                             letter-spacing: 0.6rem;
                             line-height: 1;
-                            .md-block({ margin-bottom: 20px; font-size: 70px; letter-spacing: 0.4rem;});
-                            .sm-block({  font-size: 45px; letter-spacing: 0.3rem;});
-                            .xs-block({ margin-bottom: 10px; font-size: 36px; letter-spacing: 0.25rem;});
+                            .md-block({ margin-bottom: 20px; font-size: 6rem; letter-spacing: 0.4rem; });
+                            .sm-block({ letter-spacing: 0.3rem; });
+                            .xs-block({ margin-bottom: 10px; letter-spacing: 0.25rem; });
+                            i {
+                                white-space: nowrap;
+                                font-style: normal;
+                            }
                         }
                         span {
                             font-size: 36px;
                             letter-spacing: 0.18rem;
-                            .md-block({ font-size: 32px; letter-spacing: 0.2rem;});
-                            .sm-block({ font-size: 24px; letter-spacing: 0.16rem;});
-                            .xs-block({  font-size: 20px; letter-spacing: 0.14rem;});
+                            .md-block({ font-size: 32px; letter-spacing: 0.2rem; });
+                            .sm-block({ font-size: 24px; letter-spacing: 0.16rem; });
+                            .xs-block({ font-size: 20px; letter-spacing: 0.14rem; });
                         }
                     }
                 }
@@ -206,9 +200,9 @@
                     font-weight: 200;
                     font-size: 2.4rem;
                     letter-spacing: 0.17rem;
-                    .lg-block({  text-align: center; });
-                    .md-block({  font-size: 16px; });
-                    .xs-block({  font-size: 14px; });
+                    .lg-block({ text-align: center; });
+                    .md-block({ font-size: 16px; });
+                    .xs-block({ font-size: 14px; });
                     strong {
                         text-transform: uppercase;
                         font-weight: 900;
@@ -223,7 +217,7 @@
                     z-index: 6;
                     .lg-block({ align-self: center; });
                     .md-block({ padding: 25px 0; max-width: 300px; });
-                    .xs-block({max-width: 250px;});
+                    .xs-block({ max-width: 250px; });
                     &:hover {
                         box-shadow: 0 0 22px 0 rgba(239, 53, 165, 1);
                     }

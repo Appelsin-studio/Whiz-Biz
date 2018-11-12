@@ -63,7 +63,8 @@
         max-width: 90%;
         font-size: 2.2rem;
         color: #000;
-        text-align: center;
+        text-align: justify;
+        font-weight: 200;
         .lg-block({ max-width: 100% });
     }
 </style>
