@@ -4,9 +4,9 @@
             <div class="wrapper">
                 <div class="logo">
                     <a class="gtc" href="#">
-                    <span class="wbc">WBC</span>
-                    <span class="wbc--small">Whizbizcoin</span>
-                </a>
+                        <span class="wbc">WBC</span>
+                        <span class="wbc--small">Whizbizcoin</span>
+                    </a>
                 </div>
                 <ul class="main-menu">
                     <li>
@@ -58,7 +58,7 @@
       selected(newValue) {
         this.$store.dispatch('language', newValue.value)
       }
-    },
+    }
   }
 </script>
 <style lang="less">
@@ -70,8 +70,8 @@
         right: 0;
         z-index: 999;
         font-weight: 200;
-        .lg-block({top: 10px});
-        .sm-block({top: 5px});
+        .lg-block({ top: 10px });
+        .sm-block({ top: 5px });
         .wrapper {
             display: flex;
             justify-content: space-between;
@@ -108,7 +108,7 @@
             }
             &.searchable {
                 min-width: 50px;
-                .xs-block({ min-width: 40px;});
+                .xs-block({ min-width: 40px; });
                 .dropdown-toggle {
                     height: 100%;
                     border-radius: 0;
@@ -150,7 +150,7 @@
                 margin: 4px 0 0;
                 padding: 0 7px;
                 border: none;
-                .sm-block({font-size: 16px;});
+                .sm-block({ font-size: 16px; });
             }
             &.single.open .selected-tag {
                 position: relative;
@@ -160,14 +160,27 @@
                 min-width: 40px;
                 overflow: hidden;
                 background: transparent;
-                li > a {
-                    padding: 3px 7px;
-                    color: #fff;
-                    text-transform: uppercase;
-                    font-size: 18px;
-                    letter-spacing: 0.12rem;
-                    border: none;
-                    .sm-block({font-size: 16px;});
+                li {
+                    &.highlight {
+                        > a {
+                            background-color: @pinkLight;
+                            color: #fff;
+                        }
+                    }
+                    > a {
+                        display: block;
+                        padding: 3px 7px;
+                        color: #fff;
+                        text-transform: uppercase;
+                        font-size: 18px;
+                        letter-spacing: 0.12rem;
+                        border: none;
+                        .sm-block({ font-size: 16px; });
+                        &:hover {
+                            background-color: @pinkLight;
+                            border: none;
+                        }
+                    }
                 }
             }
         }
