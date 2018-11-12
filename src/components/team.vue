@@ -10,11 +10,11 @@
                 <strong class="gradient-text">{{t('team')}}</strong>
             </h3>
             <div class="desc-wrapper">
-                <p class="description-team">
+                <p>
                     {{t('When it comes to developing a business project - anyone, the most important and most important thing is working in a well-' +
                     'coordinated team and, of course, trust; creative thinking and much more.')}}
                 </p>
-                <p class="description-team">
+                <p>
                     {{t('The foundation of our foundation consists of creative people - professionals in their field with extensive ' +
                     'experience in various fields of activity!')}}
                 </p>
@@ -66,7 +66,7 @@
                 <div class="wrapper--crowdsale">
                     <p class="text">Проект реализуется при поддержке <strong class="orange">Crowdsale Network</strong>
                     </p>
-                    <img class="logo-crowdsale" src="/img/crowdsale-logo.png" alt="">
+                    <a href="https://crowdsale.network/" target="_blank"><img class="logo-crowdsale" src="/img/crowdsale-logo.png" alt=""></a>
                     <a class="link" href="https://crowdsale.network/" target="_blank">crowdsale.network</a>
                 </div>
             </section>
@@ -107,11 +107,12 @@
         .desc-wrapper {
             margin-bottom: 50px;
             .sm-block({ margin-bottom: 20px; });
-            .description-team {
+            p {
                 margin-bottom: 15px;
-                font-size: 2.4rem;
-                color: #000;
-                font-weight: 900;
+                font-weight: 200;
+                font-size: 2rem;
+                color: @grayMain;
+                letter-spacing: 0.14rem;
                 &:last-child {
                     margin-bottom: 0;
                 }

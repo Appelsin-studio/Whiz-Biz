@@ -2,18 +2,30 @@
     <header class="b-header">
         <div class="container">
             <div class="wrapper">
-                <a class="gtc" href="#" @click.prevent="$modal.show('message')">
+                <div class="logo">
+                    <a class="gtc" href="#">
                     <span class="wbc">WBC</span>
                     <span class="wbc--small">Whizbizcoin</span>
                 </a>
-                <a class="bid inline-link" href="#" @click.prevent="$modal.show('apply')">{{t('Apply')}}</a>
-                <a class="presentation inline-link" href="#" @click.prevent="$modal.show('presentation')">
-                    {{t('Sign up for a presentation')}}
-                </a>
-                <a class="inline-link" href="#" @click.prevent="$modal.show('login')">
-                    {{t('Login')}}
-                </a>
-                <v-select :options="languageSelect" v-model="selected"></v-select>
+                </div>
+                <ul class="main-menu">
+                    <li>
+                        <a class="bid inline-link" href="#" @click.prevent="$modal.show('apply')">{{t('Apply')}}</a>
+                    </li>
+                    <li>
+                        <a class="presentation inline-link" href="#" @click.prevent="$modal.show('presentation')">
+                            {{t('Sign up for a presentation')}}
+                        </a>
+                    </li>
+                    <li>
+                        <v-select :options="languageSelect" v-model="selected"></v-select>
+                    </li>
+                    <li>
+                        <a class="inline-link" href="#" @click.prevent="$modal.show('login')">
+                            {{t('Login')}}
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
     </header>
@@ -64,22 +76,30 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            .inline-link {
-                display: inline-block;
-                color: #fff;
-                padding: 0 10px;
-                font-size: 18px;
-                letter-spacing: 0.12rem;
-                border-bottom: 1px solid transparent;
-                .transition();
-                .sm-block({ font-size: 16px; });
-                .xs-block({ text-align: center; });
-                &:hover {
-                    border-bottom: 1px solid @pinkDark;
+            .main-menu {
+                display: flex;
+                justify-content: flex-end;
+                > li {
+                    padding: 0 20px;
+                    a {
+                        display: inline-block;
+                        color: #fff;
+                        padding: 0 10px;
+                        font-size: 18px;
+                        letter-spacing: 0.12rem;
+                        border-bottom: 1px solid transparent;
+                        .transition();
+                        .sm-block({ font-size: 16px; });
+                        .xs-block({ text-align: center; });
+                        &:hover {
+                            border-bottom: 1px solid @pinkDark;
+                        }
+                        &.bid {
+                            .sm-block({ display: none; });
+                        }
+                    }
                 }
-                &.bid {
-                    .sm-block({ display: none; });
-                }
+
             }
         }
         .v-select {
