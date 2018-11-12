@@ -56,7 +56,7 @@
         padding-top: 260px;
         padding-bottom: 250px;
         z-index: 10;
-        background: linear-gradient(to right, rgba(19, 72, 182, 0.95) 0%, rgba(179, 0, 255, 0.9) 100%),
+        background: @gradientMain,
         url("/img/bg-idea.jpg") no-repeat right top / cover;
         .lg-block({
             padding-top: 200px ;
@@ -119,7 +119,7 @@
                 font-size: 2.4rem;
                 letter-spacing: 0.17rem;
                 text-transform: uppercase;
-                background: linear-gradient(90deg, rgba(248,22,224, 0.9), rgba(255,88,123, 0.9));
+                background: @gradientDefault;
                 .sm-block({ padding: 20px;});
                 .company {
                     max-width: 600px;

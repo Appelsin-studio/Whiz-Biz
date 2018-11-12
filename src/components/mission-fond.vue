@@ -38,7 +38,7 @@
         position: relative;
         padding-top: 260px;
         padding-bottom: 280px;
-        background: linear-gradient(to right, rgba(19, 72, 182, 0.85) 0%, rgba(179, 15, 255, 1) 100%),
+        background: @gradientMain,
             url("/img/bg-guitar.jpg") no-repeat left top / cover;
         .lg-block({ padding-top: 120px;
             padding-bottom: 140px; });
@@ -101,8 +101,7 @@
                     height: 390px;
                     border-left: 10px solid @pinkLight;
                     border-right: 10px solid @red;
-                    background-image: linear-gradient(to right, @pinkLight 0%, @red 100%),
-                                        linear-gradient(to right, @pinkLight 0%, @red 100%);
+                    background-image: @gradientDefault;
                     background-position: 0 0, 0 100%;
                     background-repeat: no-repeat;
                     background-size: 100% 10px;

@@ -70,15 +70,6 @@
                 object-position: top left;
             }
         }
-        #main-svg {
-            position: absolute;
-            bottom: 0;
-            background: linear-gradient(#ebf5fd, #ebf5fd) 16.5% 105vh  no-repeat / 1px 100%,
-            linear-gradient(#ebf5fd, #ebf5fd) 33% 110vh  no-repeat / 1px 100%,
-            linear-gradient(#ebf5fd, #ebf5fd) 49.5% 115vh  no-repeat / 1px 100%,
-            linear-gradient(#ebf5fd, #ebf5fd) 66% 110vh  no-repeat / 1px 100%,
-            linear-gradient(#ebf5fd, #ebf5fd) 82.5% 105vh  no-repeat / 1px 100%, transparent;
-        }
         .bg-gradient {
             position: relative;
             z-index: 11;
@@ -104,8 +95,7 @@
                 grid-row: ~"1 / 4";
                 position: relative;
                 border-left: 10px solid #f816e0;
-                background-image: linear-gradient(to right, @pinkLight 0%, @red 100%),
-                linear-gradient(to right, @pinkLight 0%, @red 100%);
+                background-image: @gradientDefault;
                 background-position: 0 0, 0 100%;
                 background-repeat: no-repeat;
                 background-size: 100% 10px;

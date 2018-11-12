@@ -86,7 +86,7 @@
         padding-top: 300px;
         padding-bottom: 300px;
         z-index: 10;
-        background: linear-gradient(to right, rgba(19, 72, 182, 0.85) 0%, rgba(179, 15, 255, 1) 100%);
+        background: @gradientMain;
         .lg-block({ padding: 200px 0; });
         .xs-block({ padding: 120px 0;});
         .planet-big {

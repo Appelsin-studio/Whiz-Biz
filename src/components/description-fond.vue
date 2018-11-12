@@ -97,7 +97,7 @@
                     width: 390px;
                     height: 390px;
                     animation: gradient-animate 2s ease infinite;
-                    background: linear-gradient(-45deg, @pinkLight, @red);
+                    background: @gradientDefault;
                     background-size: 400%, 400%;
                     position: relative;
                     top: 0;

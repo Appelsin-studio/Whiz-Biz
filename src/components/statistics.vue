@@ -274,8 +274,7 @@
         position: relative;
         padding-top: 255px;
         padding-bottom: 280px;
-        background: url("/img/bg-star.png"), linear-gradient(to right, rgba(19, 72, 182, 0.85) 0%, rgba(179, 15, 255,
-        1) 100%);
+        background: url("/img/bg-star.png"), @gradientMain;
         .lg-block({ padding-top: 180px; padding-bottom: 200px;});
         .xs-block({ padding-top: 100px; padding-bottom: 100px;});
         z-index: 10;

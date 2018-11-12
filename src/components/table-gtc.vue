@@ -102,7 +102,7 @@
         position: relative;
         padding-top: 255px;
         padding-bottom: 240px;
-        background: linear-gradient(to right, rgba(19, 72, 182, 0.85) 0%, rgba(179, 15, 255, 1) 100%),
+        background: @gradientMain,
         url("/img/planet-big.png") no-repeat center bottom;
         z-index: 10;
         .lg-block({ padding-top: 180px; padding-bottom: 200px;});
