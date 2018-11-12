@@ -9,23 +9,47 @@
                     </a>
                 </div>
                 <ul class="main-menu">
-                    <li>
-                        <a class="bid inline-link" href="#" @click.prevent="$modal.show('apply')">{{t('Apply')}}</a>
+                    <li class="menu-apply">
+                        <a class="inline-link" href="#" @click.prevent="$modal.show('apply')">{{t('Apply')}}</a>
                     </li>
-                    <li>
+                    <li class="menu-presentation">
                         <a class="presentation inline-link" href="#" @click.prevent="$modal.show('presentation')">
                             {{t('Sign up for a presentation')}}
                         </a>
                     </li>
-                    <li>
+                    <li class="menu-language">
                         <v-select :options="languageSelect" v-model="selected"></v-select>
                     </li>
+                </ul>
+                <ul class="main-menu">
                     <li>
                         <a class="inline-link" href="#" @click.prevent="$modal.show('login')">
                             {{t('Login')}}
                         </a>
                     </li>
                 </ul>
+                <div class="toggle-menu">
+                    <div class="hamburger" :class="{active: showMenu}" @click="showMenu=!showMenu">
+                        <div class="hamburger-box">
+                            <div class="hamburger-inner"></div>
+                        </div>
+                    </div>
+                    <ul v-if="showMenu">
+                        <li>
+                            <a class="bid inline-link" href="#" @click.prevent="$modal.show('apply')">{{t('Apply')}}</a>
+                        </li>
+                        <li>
+                            <a class="presentation inline-link" href="#" @click.prevent="$modal.show('presentation')">
+                                {{t('Sign up for a presentation')}}
+                            </a>
+                        </li>
+                        <li>
+                            <a class="inline-link" href="#" @click.prevent="$modal.show('login')">
+                                {{t('Login')}}
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </header>
@@ -44,7 +68,8 @@
           {label: 'En', value: 'en'},
           {label: 'Kz', value: 'kk'}
         ],
-        selected: {label: 'Ru', value: 'ru'}
+        selected: {label: 'Ru', value: 'ru'},
+        showMenu: false
       }
     },
     created() {
@@ -81,6 +106,14 @@
                 justify-content: flex-end;
                 > li {
                     padding: 0 20px;
+                    .sm-block({ padding: 0 10px; });
+                    .xm-block({ display: none; });
+                    &.menu-apply {
+                        .md-block({ display: none; });
+                    }
+                    &.menu-language {
+                        .xm-block({ display: block; });
+                    }
                     a {
                         display: inline-block;
                         color: #fff;
@@ -94,12 +127,93 @@
                         &:hover {
                             border-bottom: 1px solid @pinkDark;
                         }
-                        &.bid {
-                            .sm-block({ display: none; });
+                    }
+                }
+            }
+            .toggle-menu {
+                display: none;
+                .xm-block({ display: block; });
+                .hamburger {
+                    font: inherit;
+                    display: inline-block;
+                    overflow: visible;
+                    margin: 0;
+                    padding: 15px;
+                    cursor: pointer;
+                    transition-timing-function: linear;
+                    transition-duration: .15s;
+                    transition-property: opacity, filter;
+                    text-transform: none;
+                    color: #fff;
+                    border: 0;
+                    background-color: transparent;
+                    position: relative;
+                    z-index: 100;
+                    &.active {
+                        .hamburger-inner {
+                            transform: translate3d(0, 0, 0) rotate(45deg);
+                            &::before {
+                                transform: rotate(-45deg) translate3d(-5.71429px, -6px, 0);
+                                opacity: 0;
+                            }
+                            &::after {
+                                transform: translate3d(0, -10px, 0) rotate(-90deg);
+                            }
+                        }
+                    }
+                    .hamburger-box {
+                        position: relative;
+                        display: inline-block;
+                        width: 40px;
+                        height: 4px;
+                        .hamburger-inner,
+                        .hamburger-inner:after,
+                        .hamburger-inner:before {
+                            position: absolute;
+                            width: 40px;
+                            height: 4px;
+                            transition-timing-function: ease;
+                            transition-duration: .15s;
+                            transition-property: transform;
+                            border-radius: 4px;
+                            background-color: #fff;
+                        }
+                        .hamburger-inner {
+                            &::after, &::before {
+                                display: block;
+                                content: "";
+                            }
+                            &::after {
+                                bottom: -10px;
+                            }
+                            &::before {
+                                top: -10px;
+                            }
                         }
                     }
                 }
-
+                ul {
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    background: @gradientMain;
+                    z-index: 99;
+                    padding: 20px;
+                    padding-top: 75px;
+                    li > {
+                        display: block;
+                        margin-bottom: 15px;
+                        text-align: center;
+                        > a {
+                            color: #fff;
+                            text-transform: uppercase;
+                            font-size: 3rem;
+                            font-weight: 200;
+                        }
+                    }
+                }
             }
         }
         .v-select {

@@ -51,7 +51,7 @@
         overflow: hidden;
         color: #fff;
         box-sizing: border-box;
-        background: linear-gradient(to right, rgba(19, 72, 182, 0.85) 0%, rgba(179, 15, 255, 0.85) 100%);
+        background: @gradientMain;
         .lg-block({ display: flex; align-items: center; justify-content: center; height: 120vh; padding: 0; min-height: 750px });
         .md-block({ min-height: 600px; });
         .parallax-wrapper {
