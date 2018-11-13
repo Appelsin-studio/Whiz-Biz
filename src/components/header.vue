@@ -34,21 +34,23 @@
                             <div class="hamburger-inner"></div>
                         </div>
                     </div>
-                    <ul v-if="showMenu">
-                        <li>
-                            <a class="bid inline-link" href="#" @click.prevent="$modal.show('apply')">{{t('Apply')}}</a>
-                        </li>
-                        <li>
-                            <a class="presentation inline-link" href="#" @click.prevent="$modal.show('presentation')">
-                                {{t('Sign up for a presentation')}}
-                            </a>
-                        </li>
-                        <li>
-                            <a class="inline-link" href="#" @click.prevent="$modal.show('login')">
-                                {{t('Login')}}
-                            </a>
-                        </li>
-                    </ul>
+                    <transition name="fade">
+                        <ul v-if="showMenu">
+                            <li>
+                                <a class="bid inline-link" href="#" @click.prevent="$modal.show('apply')">{{t('Apply')}}</a>
+                            </li>
+                            <li>
+                                <a class="presentation inline-link" href="#" @click.prevent="$modal.show('presentation')">
+                                    {{t('Sign up for a presentation')}}
+                                </a>
+                            </li>
+                            <li>
+                                <a class="inline-link" href="#" @click.prevent="$modal.show('login')">
+                                    {{t('Login')}}
+                                </a>
+                            </li>
+                        </ul>
+                    </transition>
                 </div>
             </div>
         </div>
@@ -204,9 +206,14 @@
                     padding-top: 75px;
                     li > {
                         display: block;
-                        margin-bottom: 15px;
                         text-align: center;
+                        border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+                        &:last-child {
+                            border-bottom: none;
+                        }
                         > a {
+                            display: block;
+                            padding: 7px 0;
                             color: #fff;
                             text-transform: uppercase;
                             font-size: 3rem;
