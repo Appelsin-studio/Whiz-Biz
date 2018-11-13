@@ -8,6 +8,14 @@
                     <input class="item" type="email" placeholder="E-mail">
                     <input class="item" type="password" :placeholder="t('Password')">
                 </div>
+                <div class="checkbox">
+                    <input id="entersite_remmember" type="checkbox">
+                    <label for="entersite_remmember">{{t('Remember me')}}</label>
+                </div>
+                <div class="helpers">
+                    <a href="#" class="registration" @click.prevent="$modal.show('registration')">{{t('Sign Up')}}</a>
+                    <a href="#" class="access" @click.prevent="$modal.show('access')">{{t('Access recovery')}}</a>
+                </div>
                 <a href="#" class="btn">{{t('Login')}}</a>
             </form>
         </div>

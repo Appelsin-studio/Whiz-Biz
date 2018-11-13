@@ -29,6 +29,8 @@
         <modal-presentation/>
         <modal-message/>
         <modal-login/>
+        <modal-registration/>
+        <modal-access/>
     </div>
 </template>
 
@@ -56,6 +58,8 @@
   import ModalPresentation from 'components/modals/presentation'
   import ModalMessage from 'components/modals/message'
   import ModalLogin from 'components/modals/login'
+  import ModalRegistration from 'components/modals/registration'
+  import ModalAccess from 'components/modals/access'
 
   import FooterBlock from 'components/footer'
 
@@ -83,7 +87,9 @@
       ModalApply,
       ModalPresentation,
       ModalMessage,
-      ModalLogin
+      ModalLogin,
+      ModalRegistration,
+      ModalAccess
     },
     data() {
       return {
