@@ -95,7 +95,7 @@
                 grid-row: ~"1 / 4";
                 position: relative;
                 border-left: 10px solid #f816e0;
-                background-image: @gradientDefault;
+                background-image: @gradientDefault, @gradientDefault;
                 background-position: 0 0, 0 100%;
                 background-repeat: no-repeat;
                 background-size: 100% 10px;
@@ -132,7 +132,7 @@
                 .lg-block({ grid-column: ~"1 / 2"; grid-row: ~"1 / 2"; });
                 .sm-block({ margin-bottom: 20px; });
                 .number-list {
-                    display: flex;
+                    display: none;
                     padding: 10px 0;
                     margin-right: 65px;
                     flex-direction: column;
@@ -167,7 +167,6 @@
                             font-size: 7rem;
                             font-weight: 900;
                             letter-spacing: 0.6rem;
-                            line-height: 1;
                             .md-block({ margin-bottom: 20px; font-size: 6rem; letter-spacing: 0.4rem; });
                             .sm-block({ letter-spacing: 0.3rem; });
                             .xs-block({ margin-bottom: 10px; letter-spacing: 0.25rem; });

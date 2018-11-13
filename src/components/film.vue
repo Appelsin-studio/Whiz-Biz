@@ -92,7 +92,7 @@
                     height: 390px;
                     border-left: 10px solid @pinkLight;
                     border-right: 10px solid @red;
-                    background-image: @gradientDefault;
+                    background-image: @gradientDefault, @gradientDefault;
                     background-position: 0 0, 0 100%;
                     background-repeat: no-repeat;
                     background-size: 100% 10px;
