@@ -10,68 +10,88 @@
             </h3>
             <div class="wrapper">
                 <div class="item">
-                    <p class="number">01</p>
-                    <p class="name">{{t('Blair witch')}} (1999)</p>
-                    <p class="money">
-                        <span class="bold">{{t('Budget')}}:&ensp;</span>
-                        <span class="light">60 000 $</span>
-                    </p>
-                    <p class="money">
-                        <span class="bold">{{t('Marketing')}}:&ensp;</span>
-                        <span class="light">25 000 000 $</span>
-                    </p>
-                    <p class="money">
-                        <span class="bold">{{t('Fees')}}:&ensp;</span>
-                        <span class="light">248 639 099 $</span>
-                    </p>
+                    <div class="img">
+                        <img src="/img/blair_witch.jpg" alt="Blair witch">
+                    </div>
+                    <div class="content">
+                        <p class="number">01</p>
+                        <p class="name">{{t('Blair witch')}} <span class="year">(1999)</span></p>
+                        <p class="money">
+                            <span class="bold">{{t('Budget')}}:&ensp;</span>
+                            <span class="light">60 000 $</span>
+                        </p>
+                        <p class="money">
+                            <span class="bold">{{t('Marketing')}}:&ensp;</span>
+                            <span class="light">25 000 000 $</span>
+                        </p>
+                        <p class="money">
+                            <span class="bold">{{t('Fees')}}:&ensp;</span>
+                            <span class="light">248 639 099 $</span>
+                        </p>
+                    </div>
                 </div>
                 <div class="item">
-                    <p class="number">02</p>
-                    <p class="name">{{t('Paranormal Activity')}} (2009)</p>
-                    <p class="money">
-                        <span class="bold">{{t('Budget')}}:&ensp;</span>
-                        <span class="light">15 000 $</span>
-                    </p>
-                    <p class="money">
-                        <span class="bold">{{t('Marketing')}}:&ensp;</span>
-                        <span class="light">10 000 000 $</span>
-                    </p>
-                    <p class="money">
-                        <span class="bold">{{t('Fees')}}:&ensp;</span>
-                        <span class="light">193 355 800 $</span>
-                    </p>
+                    <div class="img">
+                        <img src="/img/paranormal.jpg" alt="Paranormal Activity">
+                    </div>
+                    <div class="content">
+                        <p class="number">02</p>
+                        <p class="name">{{t('Paranormal Activity')}} <span class="year">(2009)</span></p>
+                        <p class="money">
+                            <span class="bold">{{t('Budget')}}:&ensp;</span>
+                            <span class="light">15 000 $</span>
+                        </p>
+                        <p class="money">
+                            <span class="bold">{{t('Marketing')}}:&ensp;</span>
+                            <span class="light">10 000 000 $</span>
+                        </p>
+                        <p class="money">
+                            <span class="bold">{{t('Fees')}}:&ensp;</span>
+                            <span class="light">193 355 800 $</span>
+                        </p>
+                    </div>
                 </div>
                 <div class="item">
-                    <p class="number">03</p>
-                    <p class="name">{{t('Judgment night')}} (2013)</p>
-                    <p class="money">
-                        <span class="bold">{{t('Budget')}}:&ensp;</span>
-                        <span class="light">3 000 000 $</span>
-                    </p>
-                    <p class="money">
-                        <span class="bold">{{t('Marketing')}}:&ensp;</span>
-                        <span class="light">10 000 000 $</span>
-                    </p>
-                    <p class="money">
-                        <span class="bold">{{t('Fees')}}:&ensp;</span>
-                        <span class="light">89 328 627 $</span>
-                    </p>
+                    <div class="img">
+                        <img src="/img/purge.jpg" alt="The Purge">
+                    </div>
+                    <div class="content">
+                        <p class="number">03</p>
+                        <p class="name">{{t('Judgment night')}} <span class="year">(2013)</span></p>
+                        <p class="money">
+                            <span class="bold">{{t('Budget')}}:&ensp;</span>
+                            <span class="light">3 000 000 $</span>
+                        </p>
+                        <p class="money">
+                            <span class="bold">{{t('Marketing')}}:&ensp;</span>
+                            <span class="light">10 000 000 $</span>
+                        </p>
+                        <p class="money">
+                            <span class="bold">{{t('Fees')}}:&ensp;</span>
+                            <span class="light">89 328 627 $</span>
+                        </p>
+                    </div>
                 </div>
                 <div class="item">
-                    <p class="number">04</p>
-                    <p class="name">{{t('Ghost town')}} (2020)</p>
-                    <p class="money">
-                        <span class="bold">{{t('Budget')}}:&ensp;</span>
-                        <span class="light">2 590 000 $</span>
-                    </p>
-                    <p class="money">
-                        <span class="bold">{{t('Marketing')}}:&ensp;</span>
-                        <span class="light">7 500 000 $</span>
-                    </p>
-                    <p class="money">
-                        <span class="bold">{{t('Fees')}}&ensp;</span>
-                        <span class="light">{{t('find out in 2020')}}</span>
-                    </p>
+                    <div class="img">
+                        <img src="/img/poster.jpg" alt="Ghost Town">
+                    </div>
+                    <div class="content">
+                        <p class="number">04</p>
+                        <p class="name">{{t('Ghost town')}} <span class="year">(2020)</span></p>
+                        <p class="money">
+                            <span class="bold">{{t('Budget')}}:&ensp;</span>
+                            <span class="light">2 590 000 $</span>
+                        </p>
+                        <p class="money">
+                            <span class="bold">{{t('Marketing')}}:&ensp;</span>
+                            <span class="light">7 500 000 $</span>
+                        </p>
+                        <p class="money">
+                            <span class="bold">{{t('Fees')}}&ensp;</span>
+                            <span class="light">{{t('find out in 2020')}}</span>
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -111,49 +131,66 @@
             }
         }
         .wrapper {
-            .row-flex();
+            display: flex;
+            flex-direction: column;
             .item {
-                .col();
-                .size(6);
-                .size-xs(12);
-                margin-bottom: 60px;
+                display: flex;
+                align-items: center;
+                margin-bottom: 85px;
+                .sm-block({ flex-direction: column; align-items: flex-start;});
                 .xs-block({
                     margin-bottom: 40px;
                 });
-                .number {
-                    margin-bottom: 10px;
-                    font-weight: 900;
-                    font-size: 6rem;
-                    letter-spacing: 0.4rem;
-                    color: @pinkLight;
-                }
-                .name {
+                &:last-child {
                     margin-bottom: 20px;
-                    font-weight: 900;
-                    font-size: 3.5rem;
-                    letter-spacing: 0.25rem;
-                    color: #000;
-                    .xs-block({
-                        font-size: 24px;
-                    });
                 }
-                .money {
-                    display: flex;
-                    margin-bottom: 10px;
-                    justify-content: flex-start;
-                    font-size: 2rem;
-                    letter-spacing: 0.15rem;
-                    .xs-block({
-                        font-size: 16px;
-                    });
-                    .bold {
+                .img {
+                    flex-shrink: 0;
+                    max-width: 270px;
+                    margin-right: 90px;
+                    .sm-block({ margin-bottom: 30px; margin-right: 0;});
+                    .xs-block({ max-width: 200px;});
+                }
+                .content {
+                    .number {
+                        margin-bottom: 10px;
                         font-weight: 900;
+                        font-size: 4rem;
+                        letter-spacing: 0.25rem;
+                        color: @pinkLight;
+                    }
+                    .name {
+                        margin-bottom: 20px;
+                        font-weight: 900;
+                        font-size: 4rem;
+                        letter-spacing: 0.25rem;
                         color: #000;
                         text-transform: uppercase;
+                        .xs-block({
+                            font-size: 24px;
+                        });
+                        .year {
+                            color: #c8c8c8;
+                        }
                     }
-                    .light {
-                        font-weight: 200;
-                        color: #000;
+                    .money {
+                        display: flex;
+                        margin-bottom: 10px;
+                        justify-content: flex-start;
+                        font-size: 2rem;
+                        letter-spacing: 0.15rem;
+                        .xs-block({
+                            font-size: 16px;
+                        });
+                        .bold {
+                            font-weight: 900;
+                            color: #000;
+                            text-transform: uppercase;
+                        }
+                        .light {
+                            font-weight: 200;
+                            color: #000;
+                        }
                     }
                 }
             }

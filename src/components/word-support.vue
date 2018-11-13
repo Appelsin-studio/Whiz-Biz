@@ -1,7 +1,7 @@
 <template>
     <section class="b-word-support">
         <div class="container">
-            <p class="g-number">12</p>
+            <p class="g-number">15</p>
             <h3 class="g-caption-section">
                 <span>{{t('A word in support of')}}</span>
                 <strong class="gradient-text">{{t('Kazakhstani art')}}</strong>

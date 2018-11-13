@@ -51,6 +51,18 @@
             <div class="btn-group">
                 <a href="#" class="btn btn--orange" @click.prevent="$modal.show('apply')">{{t('Apply')}}</a>
             </div>
+            <div class="buy-token">
+                <p class="text">
+                    <span class="gradient-text">{{t('Become a co-producer')}}</span>
+                    <span class="black">{{t('buying tokens on')}} 1 BTC</span>
+                </p>
+                <div class="counter">
+                    <span class="bold">{{t('Places:')}}</span>
+                    <span class="number gradient-text">30</span>
+                    <span class="light">{{t('left')}}</span>
+                </div>
+                <a href="#" class="btn">{{t('Buy')}}</a>
+            </div>
         </div>
     </section>
 </template>
@@ -65,10 +77,7 @@
     @import "~assets/less/_vars";
     .b-terms-cooperation {
         position: relative;
-        padding-top: 80px;
         z-index: 15;
-        .md-block({ padding-top: 100px; });
-        .xs-block({ padding-top: 60px; });
         .g-number {
             margin-bottom: 20px;
             color: #000;
@@ -204,8 +213,56 @@
             }
         }
         .btn-group {
+            margin-bottom: 120px;
             .md-block({ text-align: center; });
         }
-
+        .buy-token {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            .text {
+                margin-bottom: 40px;
+                max-width: 740px;
+                font-size: 5rem;
+                letter-spacing: 0.4rem;
+                font-weight: 900;
+                text-transform: uppercase;
+                .sm-block({ font-size: 4rem;});
+                .xs-block({ margin-bottom: 25px;});
+                .black {
+                    color: #000;
+                }
+            }
+            .counter {
+                display: flex;
+                align-items: center;
+                margin-bottom: 40px;
+                .xs-block({ margin-bottom: 30px; align-self: center;});
+                .bold {
+                    font-size: 26px;
+                    font-weight: 900;
+                    color: #000;
+                    .xs-block({ font-size: 22px;});
+                }
+                .number {
+                    margin: 0 15px 0 25px;
+                    padding: 5px 10px;
+                    font-size: 7rem;
+                    font-weight: 900;
+                    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+                    border-radius: 5px;
+                    .xs-block({ font-size: 5rem; margin: 0 10px 0 20px;});
+                }
+                .light {
+                    font-weight: 200;
+                    font-size: 20px;
+                    color: #676767;
+                    .xs-block({ font-size: 16px;});
+                }
+            }
+            .btn {
+                .xs-block({ align-self: center;});
+            }
+        }
     }
 </style>

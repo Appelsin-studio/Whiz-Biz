@@ -78,10 +78,6 @@
                 position: relative;
             }
         }
-        .container {
-            width: 100%;
-            .lg-block({ box-sizing: border-box; });
-        }
         .wrapper {
             position: relative;
             display: grid;
