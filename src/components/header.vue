@@ -200,20 +200,19 @@
                     left: 0;
                     right: 0;
                     bottom: 0;
-                    background: @gradientMain;
+                    .gradientMainOpacity(.95);
                     z-index: 99;
-                    padding: 20px;
                     padding-top: 75px;
                     li > {
                         display: block;
-                        text-align: center;
                         border-bottom: 1px solid rgba(255, 255, 255, 0.4);
                         &:last-child {
                             border-bottom: none;
                         }
                         > a {
+                            text-align: left;
                             display: block;
-                            padding: 7px 0;
+                            padding: 10px 20px;
                             color: #fff;
                             text-transform: uppercase;
                             font-size: 3rem;
