@@ -97,7 +97,7 @@
                     width: 390px;
                     height: 390px;
                     animation: gradient-animate 2s ease infinite;
-                    background: @gradientDefault;
+                    background-image: @gradientDefault, @gradientDefault;
                     background-size: 400%, 400%;
                     position: relative;
                     top: 0;

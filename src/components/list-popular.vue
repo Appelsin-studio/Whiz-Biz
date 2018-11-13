@@ -138,8 +138,8 @@
                         top: -5px;
                         background: url("/img/icon/star.svg") no-repeat center / 28px, @gradientDefault;
                         border-radius: 50%;
-                        .md-block({ width: 30px; height: 30px; top: 0; });
-                        .xs-block({ width: 25px; height: 25px; });
+                        .md-block({ width: 30px; height: 30px; top: 0; background-size: 18px; });
+                        .xs-block({ width: 25px; height: 25px; background-size: 15px; });
                         transition: .6s;
                     }
                     &::after {

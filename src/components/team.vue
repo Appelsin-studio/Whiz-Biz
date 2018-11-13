@@ -66,8 +66,9 @@
                 <div class="wrapper--crowdsale">
                     <p class="text">Проект реализуется при поддержке <strong class="orange">Crowdsale Network</strong>
                     </p>
-                    <a href="https://crowdsale.network/" target="_blank"><img class="logo-crowdsale" src="/img/crowdsale-logo.png" alt=""></a>
-                    <a class="link" href="https://crowdsale.network/" target="_blank">crowdsale.network</a>
+                    <a href="https://crowdsale.network/" target="_blank" title="CrowdSale Network">
+                        <img class="logo-crowdsale" src="/img/crowdsale-logo.png" alt="CrowdSale Network">
+                    </a>
                 </div>
             </section>
         </div>

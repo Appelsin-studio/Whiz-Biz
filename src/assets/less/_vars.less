@@ -3,7 +3,6 @@
 
 @BebasNeue: 'BebasNeue', 'Arial', sans-serif;
 
-
 @pinkLight: #f816e0;
 @pinkDark: #e6516d;
 @red: #ff587b;
@@ -20,6 +19,9 @@
 @gradientPersonHorizontal: linear-gradient(to right, #442fe5 0%, #442fe5 40%, rgba(37, 23, 141, 0.45) 60%, rgba(37, 23, 141, 0.55) 100%), #442fe5;
 .transition(@time: 0.3s) {
   transition: all @time ease;
+}
+.gradientMainOpacity(@opacity: 0.85) {
+  background: linear-gradient(to right, rgba(5, 0, 109, @opacity) 0%, rgba(71, 0, 191, @opacity) 17%, rgba(98, 0, 160, @opacity) 59%, rgba(159, 0, 127, @opacity) 98%);
 }
 /*line after*/
 .line-after--left(@color: #fff) {
