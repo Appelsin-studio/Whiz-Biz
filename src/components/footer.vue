@@ -4,8 +4,9 @@
             <ul class="footer-wrapper">
                 <li>
                     <a class="gtc" href="#">
-                        <span class="wbc">WBC</span>
+                        <span class="wbc">WB</span>
                         <span class="wbc--small">Whizbizcoin</span>
+                        <span class="wbc--small">whizbizfund</span>
                     </a>
                 </li>
                 <li>

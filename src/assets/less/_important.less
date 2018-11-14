@@ -75,6 +75,9 @@ a {
   .sm-block({ padding: 25px 80px; font-size: 18px; });
   .xs-block({ padding: 20px 60px; font-size: 16px; });
   background: @gradientDefault;
+  &:hover {
+    box-shadow: 0 0 22px 0 rgba(239, 53, 165, 1);
+  }
 }
 .bg-dotty {
   background: #efebfb url("/img/bg.png");
@@ -111,8 +114,8 @@ a {
 }
 a.gtc {
   display: flex;
-  width: 130px;
-  height: 130px;
+  width: 120px;
+  height: 120px;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -124,7 +127,7 @@ a.gtc {
   background-size: 100% 5px;
   background-position: 0 0, 0 100%;
   background-repeat: no-repeat;
-  .lg-block({ width: 90px; height: 90px; border-left: 3px solid #ff3ae9; border-right: 3px solid @red; background-size: 100% 3px; });
+  .lg-block({ width: 80px; height: 80px; border-left: 3px solid #ff3ae9; border-right: 3px solid @red; background-size: 100% 3px; });
   .sm-block({ width: 70px; height: 70px; });
   .wbc {
     font-size: 35px;

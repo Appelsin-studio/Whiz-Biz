@@ -203,9 +203,7 @@
                     .lg-block({ align-self: center; });
                     .md-block({ padding: 25px 0; max-width: 300px; });
                     .xs-block({ max-width: 250px; });
-                    &:hover {
-                        box-shadow: 0 0 22px 0 rgba(239, 53, 165, 1);
-                    }
+
                 }
             }
             .number {

@@ -4,8 +4,9 @@
             <div class="wrapper">
                 <div class="logo">
                     <a class="gtc" href="#">
-                        <span class="wbc">WBC</span>
+                        <span class="wbc">WB</span>
                         <span class="wbc--small">Whizbizcoin</span>
+                        <span class="wbc--small">whizbizfund</span>
                     </a>
                 </div>
                 <ul class="main-menu">
