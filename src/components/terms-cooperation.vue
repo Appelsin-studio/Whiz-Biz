@@ -78,6 +78,10 @@
     .b-terms-cooperation {
         position: relative;
         z-index: 15;
+        .container {
+            padding-top: 50px;
+            .md-block({ padding-top: 0;});
+        }
         .g-number {
             margin-bottom: 20px;
             color: #000;

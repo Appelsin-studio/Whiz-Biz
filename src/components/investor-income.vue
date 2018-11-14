@@ -15,7 +15,7 @@
             <ul class="list">
                 <li class="item">
                     <p class="number">01</p>
-                    <p class="text">{{t('GTC Tokens in the amount of')}} <span class="bold">0.3 BTC</span></p>
+                    <p class="text">{{t('WBC Tokens in the amount of')}} <span class="bold">0.3 BTC</span></p>
                 </li>
                 <li class="item">
                     <p class="number">02</p>
@@ -55,7 +55,12 @@
         padding-bottom: 250px;
         background: @gradientMain,
         url("/img/bg-dollar.jpg") no-repeat left top / cover;
-        .md-block({ padding-top: 190px; padding-bottom: 190px; });
+        .lg-block({ padding-top: 190px; padding-bottom: 190px; });
+        .xs-block({ padding-top: 120px;});
+        .container {
+            padding-top: 50px;
+            .md-block({ padding-top: 0;});
+        }
         .g-number {
             .line-after--right();
         }

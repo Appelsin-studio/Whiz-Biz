@@ -69,10 +69,11 @@
     @import "~assets/less/_vars";
     .b-road-map {
         position: relative;
-        padding-top: 73px;
         z-index: 15;
-        .md-block({ padding-top: 120px; });
-        .xs-block({ padding-top: 80px; });
+        .container {
+            padding-top: 50px;
+            .md-block({ padding-top: 0;});
+        }
         .g-number {
             margin-bottom: 31px;
             color: #000;

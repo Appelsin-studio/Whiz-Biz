@@ -66,6 +66,10 @@
             padding-top: 110px;
             padding-bottom: 110px;
         });
+        .container {
+            padding-top: 50px;
+            .md-block({ padding-top: 0;});
+        }
         .bold {
             font-weight: 900;
             text-transform: uppercase;

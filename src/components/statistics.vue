@@ -276,8 +276,12 @@
         padding-bottom: 280px;
         background: url("/img/bg-star.png"), @gradientMain;
         .lg-block({ padding-top: 180px; padding-bottom: 200px;});
-        .xs-block({ padding-top: 100px; padding-bottom: 100px;});
+        .xs-block({ padding-top: 110px; padding-bottom: 100px;});
         z-index: 10;
+        .container {
+            padding-top: 50px;
+            .md-block({ padding-top: 0;});
+        }
         .highcharts-block {
             .xm-block({ display: none });
             &-img {

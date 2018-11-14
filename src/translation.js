@@ -371,13 +371,13 @@ export default {
     ru: 'год',
     kk: 'жыл'
   },
-  'Minimum forecast GTC token in the next 7 years': {
-    ru: 'Минимальный прогноз токена GTC в ближайшие 7 лет',
-    kk: 'Келесі 7 жылда GTC көрсеткіші ең төменгі болжам'
+  'Minimum forecast WBC token in the next 7 years': {
+    ru: 'Минимальный прогноз токена WBC в ближайшие 7 лет',
+    kk: 'Келесі 7 жылда WBC көрсеткіші ең төменгі болжам'
   },
-  'The optimal forecast of the GTC token in the next 7 years': {
-    ru: 'Оптимальный прогноз токена GTC в ближайшие 7 лет',
-    kk: 'Келесі 7 жылда GTC белгісін оңтайлы болжау'
+  'The optimal forecast of the WBC token in the next 7 years': {
+    ru: 'Оптимальный прогноз токена WBC в ближайшие 7 лет',
+    kk: 'Келесі 7 жылда WBC белгісін оңтайлы болжау'
   },
   'How to become an investor': {
     ru: 'Как стать инвестором',
@@ -451,9 +451,9 @@ export default {
     ru: 'инвесторам',
     kk: 'инвесторларға'
   },
-  'GTC Tokens in the amount of': {
-    ru: 'Токены GTC на сумму',
-    kk: 'GTC Tokens мөлшерінде'
+  'WBC Tokens in the amount of': {
+    ru: 'Токены WBC на сумму',
+    kk: 'WBC Tokens мөлшерінде'
   },
   'Participation in the distribution': {
     ru: 'Участие в распределении',

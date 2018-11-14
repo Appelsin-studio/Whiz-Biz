@@ -86,6 +86,8 @@
     .b-team {
         position: relative;
         z-index: 15;
+        padding-top: 50px;
+        .md-block({ padding-top: 0;});
         .skew-block {
             .img {
                 width: 100%;

@@ -4,12 +4,12 @@
             <p class="g-number">11</p>
             <h3 class="g-caption-section">
                 <span>{{t('Minimum and optimal')}}</span>
-                <strong class="gradient-text">{{t('growth forecast')}} Gtc </strong> {{t('for 7 years')}}
+                <strong class="gradient-text">{{t('growth forecast')}} WBC </strong> {{t('for 7 years')}}
             </h3>
             <table class="table">
                 <tr class="caption-table">
-                    <th colspan="2" class="capt">{{t('Minimum forecast GTC token in the next 7 years')}}</th>
-                    <th colspan="2" class="capt">{{t('The optimal forecast of the GTC token in the next 7 years')}}</th>
+                    <th colspan="2" class="capt">{{t('Minimum forecast WBC token in the next 7 years')}}</th>
+                    <th colspan="2" class="capt">{{t('The optimal forecast of the WBC token in the next 7 years')}}</th>
                 </tr>
                 <tr v-for="(tr,index) in tableData" :key="index">
                     <td class="light">{{index}} {{t('year')}}, {{new Date().getFullYear() + index + 1}}</td>
@@ -107,6 +107,11 @@
         z-index: 10;
         .lg-block({ padding-top: 180px; padding-bottom: 200px;});
         .xs-block({ padding-top: 110px; padding-bottom: 100px;});
+        .container {
+            padding-top: 50px;
+            padding-bottom: 50px;
+            .md-block({ padding-top: 0; padding-bottom: 0;});
+        }
         .g-number {
             .line-after--right();
         }

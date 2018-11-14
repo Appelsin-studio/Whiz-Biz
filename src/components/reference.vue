@@ -109,10 +109,12 @@
     .b-reference {
         position: relative;
         z-index: 15;
+        padding-top: 50px;
+        .md-block({ padding-top: 0;});
         .clapperboard-img {
             position: absolute;
             right: 0;
-            bottom: -35%;
+            bottom: -10%;
             max-width: none;
             z-index: 22;
             @media screen and (max-width: 1725px) {

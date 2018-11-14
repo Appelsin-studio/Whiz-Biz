@@ -37,9 +37,8 @@
     .b-film {
         position: relative;
         z-index: 15;
-        .md-block({
-        });
-        .xs-block({
+        padding-top: 50px;
+        .md-block({ padding-top: 0;
         });
         .g-number {
             color: #000;

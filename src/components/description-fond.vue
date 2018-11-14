@@ -46,7 +46,7 @@
                 max-width: 570px;
                 padding-top: 50px;
                 padding-right: 20px;
-                .md-block({ margin-bottom: 40px; });
+                .md-block({ margin-bottom: 40px; padding-top: 0;});
                 .g-number {
                     color: #000;
                     .line-after--right(@gradientDefault);
