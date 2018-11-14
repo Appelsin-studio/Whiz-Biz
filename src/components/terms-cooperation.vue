@@ -48,9 +48,6 @@
                     <span class="light">{{t('The ability to bequeath income to your children')}}</span>
                 </li>
             </ul>
-            <div class="btn-group">
-                <a href="#" class="btn btn--orange" @click.prevent="$modal.show('apply')">{{t('Apply')}}</a>
-            </div>
             <div class="buy-token">
                 <p class="text">
                     <span class="gradient-text">{{t('Become a co-producer')}}</span>
@@ -61,7 +58,7 @@
                     <span class="number gradient-text">30</span>
                     <span class="light">{{t('left')}}</span>
                 </div>
-                <a href="#" class="btn">{{t('Buy')}}</a>
+                <a href="#" class="btn btn--orange" @click.prevent="$modal.show('apply')">{{t('Apply')}}</a>
             </div>
         </div>
     </section>
