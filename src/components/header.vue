@@ -6,7 +6,7 @@
                     <a class="gtc" href="#">
                         <span class="wbc">WB</span>
                         <span class="wbc--small">Whizbizcoin</span>
-                        <span class="wbc--small">whizbizfund</span>
+                        <span class="wbc--small">Whizbizfund</span>
                     </a>
                 </div>
                 <ul class="main-menu">
