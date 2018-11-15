@@ -4,12 +4,12 @@
             <p class="g-number">11</p>
             <h3 class="g-caption-section">
                 <span>{{t('Minimum and optimal')}}</span>
-                <strong class="gradient-text">{{t('growth forecast')}} WBC </strong> {{t('for 7 years')}}
+                <strong class="gradient-text">{{t('growth forecast')}} WB </strong> {{t('for 7 years')}}
             </h3>
             <table class="table">
                 <tr class="caption-table">
-                    <th colspan="2" class="capt">{{t('Minimum forecast WBC token in the next 7 years')}}</th>
-                    <th colspan="2" class="capt">{{t('The optimal forecast of the WBC token in the next 7 years')}}</th>
+                    <th colspan="2" class="capt">{{t('Minimum forecast WB token in the next 7 years')}}</th>
+                    <th colspan="2" class="capt">{{t('The optimal forecast of the WB token in the next 7 years')}}</th>
                 </tr>
                 <tr v-for="(tr,index) in tableData" :key="index">
                     <td class="light">{{index}} {{t('year')}}, {{new Date().getFullYear() + index + 1}}</td>

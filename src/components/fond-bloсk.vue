@@ -81,7 +81,7 @@
         .wrapper {
             position: relative;
             display: grid;
-            grid-template-columns: minmax(0px, 120px) minmax(0px, 560px) 1fr minmax(0px, 100px);
+            grid-template-columns: minmax(0px, 152px) minmax(0px, 528px) 1fr minmax(0px, 100px);
             grid-template-rows: minmax(20px, 100px) 1fr minmax(20px, 100px);
             z-index: 99;
             .lg-block({ padding-left: 0; grid-template-columns: 1fr; grid-template-rows: 1fr; justify-items: center; padding-bottom: 10vh; });

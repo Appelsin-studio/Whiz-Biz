@@ -22,17 +22,17 @@
             <div class="wrapper--team">
                 <div class="person person-12">
                     <div class="img-wrapper">
-                        <div class="img" style="background-image: url(/img/person1.png)"></div>
+                        <div class="img" style="background-image: url(/img/person11.png)"></div>
                     </div>
                     <div class="profile-wrapper">
-                        <p class="name">Грей Фредериксон</p>
+                        <p class="name">ГрЭй Фредериксон</p>
                         <p class="profession">{{t('Producer, screenwriter, actor')}}</p>
                         <p class="country">{{t('USA')}}</p>
                     </div>
                 </div>
                 <div class="person person-4">
                     <div class="img-wrapper">
-                        <div class="img" style="background-image: url(/img/person2.png)"></div>
+                        <div class="img" style="background-image: url(/img/person22.png)"></div>
                     </div>
                     <div class="profile-wrapper">
                         <p class="name">Саламат Мухаммед-Али</p>
@@ -43,7 +43,7 @@
                 </div>
                 <div class="person person-4">
                     <div class="img-wrapper">
-                        <div class="img" style="background-image: url(/img/person3.png)"></div>
+                        <div class="img" style="background-image: url(/img/person33.png)"></div>
                     </div>
                     <div class="profile-wrapper">
                         <p class="name">Питер Жмутский</p>
@@ -53,7 +53,7 @@
                 </div>
                 <div class="person person-4">
                     <div class="img-wrapper">
-                        <div class="img" style="background-image: url(/img/person4.png)"></div>
+                        <div class="img" style="background-image: url(/img/person44.png)"></div>
                     </div>
                     <div class="profile-wrapper">
                         <p class="name">Динара Батырова</p>
@@ -200,6 +200,7 @@
                 .img-wrapper {
                     position: relative;
                     display: flex;
+                    padding-top: 10px;
                     .xm-block({ margin: 0 auto; });
                     .img {
                         position: relative;
@@ -207,7 +208,7 @@
                         width: 100%;
                         height: 320px;
                         background-repeat: no-repeat;
-                        background-position: center;
+                        background-position: center top;
                         .sm-block({ height: 250px; background-size: contain; });
                         z-index: 1;
                     }

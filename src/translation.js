@@ -28,7 +28,7 @@ export default {
     kk: 'Шығармашылық адамдар тобы - кәсіпкерліктің әртүрлі салаларында, сондай-ақ шет елде ғана емес, сонымен қатар крипто қорының мүмкіндіктерін кеңейту және кеңейту үшін үлкен тәжірибе жинаған мамандар.'
   },
   'Now, we have the opportunity to apply the acquired knowledge and experience in Kazakhstan and other countries of the world where art needs financial support.': {
-    ru: 'Теперь, мы имеем возможность применять полученные знания и опыт на территории Казахстан и других стран мира, где искусство нуждается в финансовой поддержке.',
+    ru: 'Теперь, мы имеем возможность применять полученные знания и опыт на территории Казахстана и других стран мира, где искусство нуждается в финансовой поддержке.',
     kk: 'Енді біз Қазақстанға және әлемнің басқа елдеріне қолдауға ие болған білім мен тәжірибені қолдана аламыз.'
   },
   'Main goals and objectives': {
@@ -155,9 +155,9 @@ export default {
     ru: 'Во время съемок «Реалити-шоу» будут устраиваться конкурсы на лучшие идеи, сценарии, лучшие художественные работы, дизайн и многое другое. ',
     kk: '«Reality Show» фильмін түсірген кезде үздік идеялар, сценарийлер, үздік шығармалар, дизайн және т.б. үшін конкурстар өткізіледі.'
   },
-  'Winners will be awarded WHIZ BIZ COIN (WBC) tokens': {
-    ru: 'Победители конкурсов будут награждены токенами WHIZ BIZ COIN (WBC)',
-    kk: 'Жеңімпаздар WHIZ BIZ COIN (WBC) белгілерімен марапатталады'
+  'Contests will be held and winners will be awarded tokens': {
+    ru: 'Будут проводиться конкурсы и победители будут награждены токенами',
+    kk: 'Конкурстар өткізіледі және жеңімпаздар маркалармен марапатталады'
   },
   'The possibility of interviewing celebrities (directors, actors, etc.).': {
     ru: 'Возможность интервьюирования знаменитостей (режиссеров, актеров и т.д.).',
@@ -175,9 +175,9 @@ export default {
     ru: ' К сотрудничеству присоединятся самые известные блогеры/влогеры мира.',
     kk: 'Әлемнің танымал блогерлері / блогерлері ынтымақтастыққа қосылады.'
   },
-  'At the moment, the concept of the game "Ghost Town" is being developed by the number one computer game developers worldwide, such as: Stalker, Tanks.': {
-    ru: 'В данный момент, разрабатывается концепция игры «Город призрак», разработчиками компьютерных игр №1 во всем мире по популярности, таких как: Сталкер, Танки.',
-    kk: 'Қазіргі уақытта «Ghost Town» ойынының тұжырымдамасы бүкіл әлем бойынша 1-ші компьютерлік ойын әзірлеушілері әзірлейді: Stalker, Tanks.'
+  'At the moment, the company "NV Games" is developing the concept of the game "Ghost Town". The company took part in the development of computer games Stalker, World of Tanks, Metro 2033, Eve Online.': {
+    ru: 'В данный момент компания «NV Games», разрабатывает концепцию игры «Город призрак». Компания принимала участие в разработке компьютерных игр Stalker, World of Tanks, Metro 2033, Eve Online.',
+    kk: 'Қазіргі уақытта «NV Games» компаниясы «Ghost Town» ойынының тұжырымдамасын әзірлейді. Компания Stalker, World of Tanks, Metro 2033, Eve Online компьютерлік ойындарын дамытуға қатысты.'
   },
   'For 7 years, the CRYPTO-FUND will be shot, several dozen full-length, short, documentary films and cartoons, which will participate in many film festivals of the world, in competitions and will win prizes. The whole world will know about these victories and films. Critics and world publications will write about them.': {
     ru: 'В течение 7 лет КРИПТО-ФОНДОМ будет снято, несколько десятков                        полнометражных, короткометражных, документальных фильмов и мультфильмов, которые будут участвовать во многих кинофестивалях мира, в конкурсах и будут завоевывать призы. Об этих победах и фильмах будет знать весь мир. О них будут писать критики и мировые издания.',
@@ -371,13 +371,13 @@ export default {
     ru: 'год',
     kk: 'жыл'
   },
-  'Minimum forecast WBC token in the next 7 years': {
-    ru: 'Минимальный прогноз токена WBC в ближайшие 7 лет',
-    kk: 'Келесі 7 жылда WBC көрсеткіші ең төменгі болжам'
+  'Minimum forecast WB token in the next 7 years': {
+    ru: 'Минимальный прогноз токена WB в ближайшие 7 лет',
+    kk: 'Келесі 7 жылда WB көрсеткіші ең төменгі болжам'
   },
-  'The optimal forecast of the WBC token in the next 7 years': {
-    ru: 'Оптимальный прогноз токена WBC в ближайшие 7 лет',
-    kk: 'Келесі 7 жылда WBC белгісін оңтайлы болжау'
+  'The optimal forecast of the WB token in the next 7 years': {
+    ru: 'Оптимальный прогноз токена WB в ближайшие 7 лет',
+    kk: 'Келесі 7 жылда WB белгісін оңтайлы болжау'
   },
   'How to become an investor': {
     ru: 'Как стать инвестором',
@@ -451,9 +451,9 @@ export default {
     ru: 'инвесторам',
     kk: 'инвесторларға'
   },
-  'WBC Tokens in the amount of': {
-    ru: 'Токены WBC на сумму',
-    kk: 'WBC Tokens мөлшерінде'
+  'WB Tokens in the amount of': {
+    ru: 'Токены WB на сумму',
+    kk: 'WB Tokens мөлшерінде'
   },
   'Participation in the distribution': {
     ru: 'Участие в распределении',

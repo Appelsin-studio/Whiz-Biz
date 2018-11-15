@@ -41,7 +41,8 @@
                     </p>
                 </div>
                 <div class="item">
-                    <p class="item-name">{{t('Winners will be awarded WHIZ BIZ COIN (WBC) tokens')}}</p>
+                    <p class="item-name">{{t('Contests will be held and winners will be awarded tokens')}} WHIZ BIZ
+                        COIN (WB).</p>
                 </div>
                 <div class="item">
                     <p class="item-name">{{t('The possibility of interviewing celebrities (directors, actors, etc.).')}}</p>
@@ -60,8 +61,7 @@
                 </div>
                 <div class="item">
                     <p class="item-name">
-                        {{t('At the moment, the concept of the game "Ghost Town" is being developed by the ' +
-                        'number one computer game developers worldwide, such as: Stalker, Tanks.')}}
+                        {{t('At the moment, the company "NV Games" is developing the concept of the game "Ghost Town". The company took part in the development of computer games Stalker, World of Tanks, Metro 2033, Eve Online.')}}
                     </p>
                 </div>
             </div>
@@ -87,7 +87,7 @@
         padding-top: 300px;
         padding-bottom: 300px;
         z-index: 10;
-        background: @gradientMain;
+        .gradientMainOpacityLeft(1);
         .lg-block({ padding: 200px 0; });
         .xs-block({ padding: 120px 0; });
         .planet-big {
