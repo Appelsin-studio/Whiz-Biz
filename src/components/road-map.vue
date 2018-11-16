@@ -26,7 +26,7 @@
                         <p class="number">
                             <span>02</span>
                         </p>
-                        <p class="text">Crowdsale GTC Hardcap 9 {{t('million')}} $</p>
+                        <p class="text">Crowdsale WB Hardcap 9 {{t('million')}} $</p>
                     </div>
                     <div class="step">
                         <p class="number">
