@@ -223,13 +223,29 @@ export default {
     ru: 'Режиссеры',
     kk: 'Директорлар'
   },
+  'Kazakhstan filmmaker': {
+    ru: 'Казахстанский кинопроизводитель',
+    kk: 'Қазақстандық кинорежиссер'
+  },
+  'Responsible for the leadership and strategic vision of the company, controls the comprehensive development of the brand and franchise. The founder of the rock band "Epoch". He worked as a technical director in the TV company "MIK-TV". Produced and directed national commercials, as well as social and documentary films. The 3D-animated video clip of Salamat Mohammed-Ali received the "Audience Award" and the award from the TV channel number 1 "Kazakhstan". The video clip "Aynaldym Elim" won the 1st place in the nomination "The Best Music Video of Kazakhstan" on the topic of patriotism. He worked as a stage director in the projects of the Education Fund of President Nursultan Nazarbayev "Intellectual Olympiads", "IQ - Action", which won in international television competitions. The creator of the movie "The whole world at our feet" / "Diamond cartel". At the Balkan Film Festival "ART Amphora" 2016, he was awarded two main prizes - the best feature film and the best directing work. He is currently developing several feature films and television series with Gray Frederickson and Peter Zhmutsky.': {
+    ru: 'Отвечает за руководство и стратегическое видение компании, контролирует всестороннее развитие бренда и франшизы. Основатель рок-группы «Эпоха».\n' +
+      '                Работал техническим директором в телевизионной компании "МИК-ТВ".\n' +
+      '                Продюсировал и режиссировал национальные рекламные ролики, а также социальные и документальные фильмы.\n' +
+      '                3D-анимационный видеоклип Саламата Мухаммеда-Али получил "Приз зрительских симпатий" и награду от телеканала №1 "Казахстан".\n' +
+      '                Видеоклип "Айналдым елім" завоевал 1-е место в номинации «Лучший музыкальный клип Казахстана» на тему патриотизма.\n' +
+      '                Работал режиссером-постановщиком в проектах Фонда образования президента Нурсултана Назарбаева «Интеллектуальные олимпиады», «IQ–Action», которые победили в международных телевизионных конкурсах.\n' +
+      '                Создатель кинокартины «Весь мир у наших ног»/ «Diamond cartel».\n' +
+      '                На Балканском кинофестивале «АРТ Амфора» 2016, был награжден двумя главными призами – лучший игровой фильм и лучшая режиссёрская работа.\n' +
+      '                В данный момент разрабатывает несколько художественных фильмов и телевизионных сериалов вместе с Грэем Фредериксоном и Питером Жмутским.',
+    kk: 'Компанияның басшылығына және стратегиялық көзқарасына жауапты, бренд пен франчайзингтің кешенді дамуын бақылайды. «Эпоч» рок-тобының негізін қалаушы. «MIK-TV» телекомпаниясында техникалық директор болып жұмыс істеді. Шығарылған және жіберілген ұлттық жарнамалар, сондай-ақ әлеуметтік және деректі фильмдер. Саламат Мұхаммед-Әлидің 3D-анимациялық бейне клипі «Көрермендер көзайымы» номинациясын және «Қазақстан» №1 телеарнасының марапатын алды. «Айналым Елім» бейнеклипі патриотизм тақырыбы бойынша «Қазақстанның үздік музыкалық бейнесі» номинациясы бойынша 1 орынды иеленді. Ол халықаралық теледидар жарыстарында жеңіске жеткен Президент Нұрсұлтан Назарбаевтың «Интеллектуалды олимпиадалар», «IQ - Action» білім беру қорының жобаларындағы сахна директоры болды. «Бүкіл әлем біздің аяғымызда» / «Алмаз картели» фильмінің авторы. «ART Amphora» Балқан кинофестивалінде 2016 жылы ол екі басты жүлде - ең жақсы көркем фильм және үздік режиссура жұмысымен марапатталды. Қазіргі уақытта ол Грей Фредериксон және Питер Жмуцкийдің бірнеше көркем фильмдері мен телехикаяларын дамытады.'
+  },
   'Producer, screenwriter, actor': {
     ru: 'Продюсер, сценарист, актер',
     kk: 'Өндіруші, сценарий авторы, актер'
   },
-  'Director, screenwriter': {
-    ru: 'Режиссер, сценарист',
-    kk: 'Директор, сценарийші'
+  'Award-winning filmmaker, producer, and screenwriter': {
+    ru: 'Удостоенный международных наград кинорежиссер, продюсер, и сценарист',
+    kk: 'Марапатталған кинорежиссер, продюсер және сценарий'
   },
   'Producer, Director, Actor, Screenwriter, Composer': {
     ru: 'Продюсер, режиссер, актер, сценарист, композитор',

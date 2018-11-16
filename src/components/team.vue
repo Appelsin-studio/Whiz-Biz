@@ -29,6 +29,7 @@
                         <p class="profession">{{t('Producer, screenwriter, actor')}}</p>
                         <p class="country">{{t('USA')}}</p>
                     </div>
+                    <a href="#" class="btn-modal" @click.prevent="$modal.show('frederickson')"></a>
                 </div>
                 <div class="person person-4">
                     <div class="img-wrapper">
@@ -36,10 +37,11 @@
                     </div>
                     <div class="profile-wrapper">
                         <p class="name">Саламат Мухаммед-Али</p>
-                        <p class="profession">{{t('Director, screenwriter')}}</p>
+                        <p class="profession">{{t('Award-winning filmmaker, producer, and screenwriter')}}</p>
                         <p class="premium">{{t('The founder of the award for children "Altyn Adam" in the United States.')}}</p>
                         <p class="country">{{t('Kazakhstan')}}</p>
                     </div>
+                    <a href="#" class="btn-modal" @click.prevent="$modal.show('salamat')"></a>
                 </div>
                 <div class="person person-4">
                     <div class="img-wrapper">
@@ -50,6 +52,7 @@
                         <p class="profession">{{t('Producer, Director, Actor, Screenwriter, Composer')}}</p>
                         <p class="country">{{t('USA')}} {{t('Kazakhstan')}}</p>
                     </div>
+                    <a href="#" class="btn-modal" @click.prevent="$modal.show('piter')"></a>
                 </div>
                 <div class="person person-4">
                     <div class="img-wrapper">
@@ -60,6 +63,7 @@
                         <p class="profession">{{t('Producer')}}</p>
                         <p class="country">{{t('Kazakhstan')}}</p>
                     </div>
+                    <a href="#" class="btn-modal" @click.prevent="$modal.show('dinara')"></a>
                 </div>
             </div>
             <section class="b-crowdsale">
@@ -273,6 +277,33 @@
                             color: #fff;
                             border-bottom: 1px solid transparent;
                         }
+                    }
+                }
+                .btn-modal {
+                    position: absolute;
+                    right: 25px;
+                    bottom: 25px;
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    background: linear-gradient(to right, #fff, #fff) no-repeat, @gradientDefault;
+                    background-position: 50% 50%, 0 0;
+                    background-size: 20px 4px, 100% 100%;
+                    z-index: 50;
+                    .transition();
+                    &:hover {
+                        box-shadow: 0 0 20px 0 rgba(239, 53, 165, 1);
+                    }
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        right: 0;
+                        bottom: 0;
+                        width: 40px;
+                        height: 40px;
+                        background: linear-gradient(to bottom, #fff, #fff) no-repeat;
+                        background-position: 50% 50%;
+                        background-size: 4px 20px;
                     }
                 }
             }

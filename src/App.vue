@@ -31,6 +31,10 @@
         <modal-login/>
         <modal-registration/>
         <modal-access/>
+        <modal-salamat/>
+        <modal-dinara/>
+        <modal-frederickson/>
+        <modal-piter/>
     </div>
 </template>
 
@@ -61,6 +65,11 @@
   import ModalRegistration from 'components/modals/registration'
   import ModalAccess from 'components/modals/access'
 
+  import ModalSalamat from 'components/modals/team/salamat_modal'
+  import ModalDinara from 'components/modals/team/dinara_modal'
+  import ModalFrederickson from 'components/modals/team/frederickson_modal'
+  import ModalPiter from 'components/modals/team/piter_modal'
+
   import FooterBlock from 'components/footer'
 
   export default {
@@ -89,7 +98,11 @@
       ModalMessage,
       ModalLogin,
       ModalRegistration,
-      ModalAccess
+      ModalAccess,
+      ModalSalamat,
+      ModalDinara,
+      ModalFrederickson,
+      ModalPiter
     },
     data() {
       return {
