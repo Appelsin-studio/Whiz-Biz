@@ -15,11 +15,11 @@
                     <p class="desc--bold black">{{t('Work has begun on the Kazakhstan-Hollywood film project')}} <span
                         class="blue">"{{t('GHOST TOWN')}}"</span></p>
                     <p class="desc"><b class="black">{{t('Directors')}}:</b> Саламат Мухаммед-Али (Salamat Mukhammed-Ali)
-                        и Питер Жмутский (Peter Zhmutski). </p>
-                    <p class="desc"><b class="black">{{t('General producer')}}:</b> Грей Фредериксон/Gray Frederickson
+                        и Питер Жмутский (Peter Zhmutski) </p>
+                    <p class="desc"><b class="black">{{t('General producer')}}:</b> Грэй Фредериксон/Gray Frederickson
                         <i>{{t('Hollywood legend, Oscar and Emmy film awards producer, "The Godfather trilogy')}}</i>
                         </p>
-                    <p class="desc"><b class="black">{{t('Producer')}}:</b> Динара Батырова.</p>
+                    <p class="desc"><b class="black">{{t('Producer')}}:</b> Динара Батырова</p>
                 </div>
             </div>
         </div>

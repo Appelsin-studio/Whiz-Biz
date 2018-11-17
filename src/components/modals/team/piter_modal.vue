@@ -3,6 +3,7 @@
         <div class="modal modal-team b-modal-piter ">
             <div class="close-modal" @click="$modal.hide('piter')" title="Close modal">×</div>
             <p class="name-person">Питер Жмутский</p>
+            <p class="job">{{t('Award-winning film producer, director, actor, screenwriter, composer')}}</p>
         </div>
     </modal>
 </template>

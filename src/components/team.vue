@@ -25,7 +25,7 @@
                         <div class="img" style="background-image: url(/img/person11.png)"></div>
                     </div>
                     <div class="profile-wrapper">
-                        <p class="name">Грей Фредериксон</p>
+                        <p class="name">Грэй Фредериксон</p>
                         <p class="profession">{{t('Producer, screenwriter, actor')}}</p>
                         <p class="country">{{t('USA')}}</p>
                     </div>
@@ -39,7 +39,7 @@
                         <p class="name">Саламат Мухаммед-Али</p>
                         <p class="profession">{{t('Award-winning filmmaker, producer, and screenwriter')}}</p>
                         <p class="premium">{{t('The founder of the award for children "Altyn Adam" in the United States.')}}</p>
-                        <p class="country">{{t('Kazakhstan')}}</p>
+                        <p class="country">{{t('Kazakhstan')}} {{t('USA')}}</p>
                     </div>
                     <a href="#" class="btn-modal" @click.prevent="$modal.show('salamat')"></a>
                 </div>
@@ -50,7 +50,7 @@
                     <div class="profile-wrapper">
                         <p class="name">Питер Жмутский</p>
                         <p class="profession">{{t('Producer, Director, Actor, Screenwriter, Composer')}}</p>
-                        <p class="country">{{t('USA')}} {{t('Kazakhstan')}}</p>
+                        <p class="country">{{t('Kazakhstan')}} {{t('USA')}}</p>
                     </div>
                     <a href="#" class="btn-modal" @click.prevent="$modal.show('piter')"></a>
                 </div>
