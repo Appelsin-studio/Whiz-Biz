@@ -221,13 +221,18 @@
     text-align: center;
   }
   .person-desc {
+    margin-bottom: 1rem;
     padding: 0 20px;
     font-size: 18px;
     font-weight: 200;
     text-align: justify;
+    text-indent: 1.5em;
     .md-block({ font-size: 14px;});
     .sm-block({ padding:0;});
     .xs-block({  font-size: 12px;});
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 }
 .b-modal-salamat {
