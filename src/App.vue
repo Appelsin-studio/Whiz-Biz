@@ -18,7 +18,7 @@
             <reference-block/>
             <statistics-block :in-viewport-offset-top='-800' :in-viewport-once='true'/>
             <finance-films :in-viewport-offset-top='-800' :in-viewport-once='true'/>
-            <table-gtc :in-viewport-offset-top='-800' :in-viewport-once='true'/>
+            <!--<table-gtc :in-viewport-offset-top='-800' :in-viewport-once='true'/>-->
             <terms-cooperation/>
             <investor-income/>
             <road-map/>

@@ -1,6 +1,7 @@
 <template>
     <section class="b-terms-cooperation">
-        <div class="skew-block"></div>
+        <!--<div class="skew-block"></div>-->
+        <div class="skew-block--bottom"></div>
         <div class="container">
             <p class="g-number">12</p>
             <h3 class="g-caption-section">
@@ -73,8 +74,24 @@
 <style scoped lang="less">
     @import "~assets/less/_vars";
     .b-terms-cooperation {
+        padding-top: 50px;
         position: relative;
         z-index: 15;
+        .md-block({ padding-top: 0;});
+        .skew-block--bottom {
+            position: absolute;
+            .skew-block(50px);
+            left: 0;
+            right: 0;
+            background: #fff;
+            z-index: 15;
+            .lg-block({
+                .skew-block(50px, -90px);
+            });
+            .sm-block({
+                .skew-block(50px, -60px);
+            });
+        }
         .container {
             padding-top: 50px;
             .md-block({ padding-top: 0;});
