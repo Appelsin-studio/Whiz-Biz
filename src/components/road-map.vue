@@ -43,15 +43,8 @@
                 <p class="black">{{t('Investor profitable from the first days')}}</p>
                 <ul class="prices-list">
                     <li>
-                        <p class="text">1 BTC = 20 000 000 CGEN</p>
-                        <p class="span-block">
-                            20 000 000 CGEN POS mining<br/>
-                            1 {{t('year')}} + 10 000 000 CGEN
-                        </p>
-                    </li>
-                    <li>
-                        <p class="text">{{t('Forecast price 2020 year')}} =</p>
-                        <p class="span-block">0,000001 BTC (100 сатоши)</p>
+                        <p class="text">6650$ = 50 000 WBC</p>
+                        <p class="span-block">{{t('Take part in mining and earn by supporting art')}}</p>
                     </li>
                 </ul>
             </div>
@@ -230,9 +223,7 @@
                 .row-flex();
                 li {
                     .col();
-                    .size(6);
-                    .size-sm(12);
-                    .sm-block({ margin-bottom: 25px });
+                    .size(12);
                     .text {
                         margin-bottom: 15px;
                         font-weight: 900;
