@@ -121,6 +121,10 @@
                 display: none;
             }
         }
+        .skew-block {
+            background: url("/img/clapperboard-s.png") no-repeat 90% 18%,
+                        url("/img/clapperboard-m.png") no-repeat left 50% #fff;
+        }
         .g-number {
             color: #000;
             .line-after--right(@gradientDefault);

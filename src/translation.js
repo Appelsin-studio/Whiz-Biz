@@ -219,9 +219,9 @@ export default {
     ru: 'Кинокартина',
     kk: 'Кинофильмдер'
   },
-  'Work has begun on the Kazakhstan-Hollywood film project': {
-    ru: 'Началась работа над казахстано-голливудским кинопроектом',
-    kk: 'Қазақстан-Голливуд киносының жобасында жұмыс басталды'
+  'Work has begun on the Kazakhstan-American film project': {
+    ru: 'Началась работа над казахстанско-американским кинопроектом',
+    kk: 'Қазақстан-Американ киносының жобасында жұмыс басталды'
   },
   'GHOST TOWN': {
     ru: 'ГОРОД ПРИЗРАК',
@@ -343,7 +343,7 @@ export default {
     kk: 'Голливудтық аңыз, «Оскар©» және «Эмми» кинофильмдерінің продюсері, The Godfather трилогиясы'
   },
   'Producer': {
-    ru: 'Продюсер, со-продюсер ',
+    ru: 'Продюсер, со-продюсер',
     kk: 'Өндіруші'
   },
   'idea': {
@@ -550,9 +550,9 @@ export default {
     ru: 'инвесторам',
     kk: 'инвесторларға'
   },
-  'WB Tokens in the amount of': {
-    ru: 'Токены WB на сумму',
-    kk: 'WB Tokens мөлшерінде'
+  'token': {
+    ru: 'токенов',
+    kk: 'белгі'
   },
   'Participation in the distribution': {
     ru: 'Участие в распределении',

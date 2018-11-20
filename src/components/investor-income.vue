@@ -9,13 +9,13 @@
             <div class="description">
                 <p class="bonus">
                     <span class="light">{{t('Bonus first')}}</span>
-                    <span class="orange">100 {{t('to investors')}}</span>
+                    <span class="orange">&thinsp;{{t('to investors')}}</span>
                 </p>
             </div>
             <ul class="list">
                 <li class="item">
                     <p class="number">01</p>
-                    <p class="text">{{t('WB Tokens in the amount of')}} <span class="bold">0.3 BTC</span></p>
+                    <p class="text"><span class="bold">1800 CSNP </span> <br> {{t('token')}}</p>
                 </li>
                 <li class="item">
                     <p class="number">02</p>

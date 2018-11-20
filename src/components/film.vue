@@ -12,7 +12,7 @@
                     <div class="coub"></div>
                 </div>
                 <div class="wrapper-desc">
-                    <p class="desc--bold black">{{t('Work has begun on the Kazakhstan-Hollywood film project')}} <span
+                    <p class="desc--bold black">{{t('Work has begun on the Kazakhstan-American film project')}} <span
                         class="blue">"{{t('GHOST TOWN')}}"</span></p>
                     <p class="desc"><b class="black">{{t('Directors')}}:</b> Саламат Мухаммед-Али (Salamat Mukhammed-Ali)
                         и Питер Жмутский (Peter Zhmutski) </p>
