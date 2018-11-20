@@ -118,6 +118,9 @@
             max-width: none;
             z-index: 22;
             @media screen and (max-width: 1725px) {
+                max-width: 400px;
+            }
+            @media screen and (max-width: 1300px) {
                 display: none;
             }
         }
