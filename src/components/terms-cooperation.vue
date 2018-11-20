@@ -52,7 +52,7 @@
             <div class="buy-token">
                 <p class="text">
                     <span class="gradient-text">{{t('Become a co-producer')}}</span>
-                    <span class="black">{{t('buying tokens on')}} 1 BTC</span>
+                    <span class="black">{{t('buying 50 000 WB tokens in the amount of')}} 6650$</span>
                 </p>
                 <div class="counter">
                     <span class="bold">{{t('Places:')}}</span>
@@ -240,7 +240,7 @@
             align-items: flex-start;
             .text {
                 margin-bottom: 40px;
-                max-width: 740px;
+                max-width: 850px;
                 font-size: 5rem;
                 letter-spacing: 0.4rem;
                 font-weight: 900;

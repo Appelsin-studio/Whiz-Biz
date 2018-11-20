@@ -22,7 +22,7 @@
                             <span>{{t('to support business in industrial cinema and art')}}</span>
                         </h1>
                         <p class="description"><strong>WHIZ BIZ</strong> -
-                            {{t('is a financial technology company focused on blockchain and cryptographic tokens')}}
+                            {{t('it is a foundation for the support and development of contemporary art. Do you have talent? Win our contests and get a WB digital asset. Develop your talent on a global scale.')}}
                         </p>
                         <a href="#" class="btn" @click.prevent="$modal.show('apply')">{{t('Apply')}}</a>
                     </div>
@@ -63,7 +63,7 @@
             z-index: -1;
         }
         .custom-height {
-            height: 100%;
+            min-height: 100%;
         }
         .custom {
             > img {

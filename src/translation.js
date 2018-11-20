@@ -11,9 +11,9 @@ export default {
     ru: 'по поддержке бизнеса в индустрии кино и искусства',
     kk: 'кино және өнер саласында бизнесті қолдау'
   },
-  'is a financial technology company focused on blockchain and cryptographic tokens': {
-    ru: 'это компания по производству финансовых технологий, ориентированная на использование технологии blockchain и криптографических токенов',
-    kk: 'Blockchain және криптографиялық белгілерге бағытталған қаржы-технологиялық компания'
+  'it is a foundation for the support and development of contemporary art. Do you have talent? Win our contests and get a WB digital asset. Develop your talent on a global scale.': {
+    ru: 'это фонд поддержки и развития современного искусства. У Вас есть талант? Выигрывайте наши конкурсы и получите цифровой актив WB. Развивайте свой талант в мировом масштабе.',
+    kk: 'бұл заманауи өнерді қолдау мен дамытудың негізі. Сізде талант бар ма? Біздің байқауларымызды ұтып, ДБ-ның сандық активін алыңыз. Сіздің талантыңызды жаһандық ауқымда дамытыңыз.'
   },
   'About crypto fund': {
     ru: 'О криптофонде',
@@ -614,9 +614,9 @@ export default {
     ru: 'млн.',
     kk: 'млн.'
   },
-  'Build a budget of 100 BTC through CGEN sales to launch a PR campaign': {
-    ru: 'Собрать бюджет 100 BTC через продажи CGEN для запуска PR кампании',
-    kk: 'PR-науқаны іске қосу үшін CGEN-тің 100 BTC астам бюджетін құрыңыз'
+  'Build a budget of $ 1 million to launch a global PR campaign': {
+    ru: 'Собрать бюджет в 1 миллион долларов США для запуска мировой PR кампании',
+    kk: 'Ғаламдық PR науқанын бастау үшін 1 миллион доллар бюджет жасаңыз'
   },
   'Investor profitable from the first days': {
     ru: 'Инвестору выгодно с первых дней',
@@ -782,8 +782,8 @@ export default {
     ru: 'Стань сопродюсером',
     kk: 'Бірлескен өндіруші болыңыз'
   },
-  'buying tokens on': {
-    ru: 'купив токены на',
-    kk: 'таңбалауыштарды сатып алу'
+  'buying 50 000 WB tokens in the amount of': {
+    ru: 'купив 50 000 WB токенов на сумму',
+    kk: '50 000 WB таңбалауышын сатып алу'
   }
 }

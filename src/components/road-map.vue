@@ -19,7 +19,7 @@
                         <p class="number">
                             <span>01</span>
                         </p>
-                        <p class="text">{{t('Build a budget of 100 BTC through CGEN sales to launch a PR campaign')}}</p>
+                        <p class="text">{{t('Build a budget of $ 1 million to launch a global PR campaign')}}</p>
 
                     </div>
                     <div class="step">
