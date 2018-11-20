@@ -132,7 +132,8 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        background: @gradientMain;
+        background: linear-gradient(to right, rgba(0, 17, 35, 1) 0%, rgba(0, 25, 60, 1) 17%,
+        rgba(98, 0, 160, 1) 59%, rgba(159, 0, 127, 1) 98%);;
         img {
             width: 20vh;
         }
