@@ -4,7 +4,7 @@
         <div class="modal modal-team b-modal-piter ">
             <div class="close-modal" @click="$modal.hide('piter')" title="Close modal">×</div>
             <p class="name-person">Питер Жмутский</p>
-            <p class="job">{{t('Producer, Director, Actor, Screenwriter, Composer')}}</p>
+            <p class="job">{{t('Producer, director, actor, screenwriter, composer')}}</p>
             <p class="person-desc">{{t('Peter Zhmutsky is responsible for the strategic and creative vision of the company, and will also participate as a director / producer for selected projects.')}}</p>
             <p class="person-desc">{{t('Peter Zhmutsky has been working in the film industry for 22 years on both sides, both on camera and on camera. Thanks to his numerous international achievements and awards for the films he created, the United States government recognized P. Zhmutsky as an "extraordinary director" and granted him citizenship for his creative contribution to the development of the American film industry.')}}</p>
             <p class="person-desc">{{t('P. Zhmutsky worked on 25 motion pictures, mainly as a director, producer and actor. Many films by P. Zhmutsky won prestigious awards at the International Film Festivals. Some of his films were released in cinemas around the world, broadcast on major television channels, distributed on platforms such as Netflix, Amazon, On Demand, and sold on DVD / Blu-Ray media around the world, on different languages.')}}</p>
