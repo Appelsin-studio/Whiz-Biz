@@ -91,6 +91,10 @@ export default {
     ru: 'Генеральный продюсер',
     kk: 'Бас продюсер'
   },
+  'Producer, screenwriter, actor': {
+    ru: 'Продюсер, сценарист, актер',
+    kk: 'Өндіруші, сценарийші, актер'
+  },
   'USA': {
     ru: 'США',
     kk: 'AQŞ'
@@ -227,9 +231,9 @@ export default {
     ru: 'Казахстанский кинопроизводитель',
     kk: 'Қазақстандық кинорежиссер'
   },
-  'Responsible for the company\'s strategic vision, controls the comprehensive development of the brand and the franchise.': {
-    ru: 'Отвечает за стратегическое видение компании, контролирует всестороннее развитие бренда и франшизы.',
-    kk: 'Компанияның стратегиялық көзқарасы үшін жауапкершілік бренд пен франчайзингтің кешенді дамуын бақылайды.'
+  'Salamat Mohammed-Ali is responsible for the strategic and creative vision of the company, and will also participate as a director / producer for selected projects.': {
+    ru: 'Саламат Мухаммед-Али отвечает за стратегическое и творческое виденье компании, а также будет принимать участие в качестве режиссера/продюсера для выбранных проектов.',
+    kk: 'Саламат Мохаммед-Али компанияның стратегиялық және шығармашылық көзқарасы үшін жауап береді, сондай-ақ, белгілі жобалар бойынша режиссер / продюсер ретінде қатысады.'
   },
   'He worked as a technical director in the TV company "MIK-TV". Produced and directed, music videos, national commercials, as well as social and documentary films. The founder of the rock band "Epoch".': {
     ru: 'Работал техническим директором в телевизионной компании "МИК-ТВ".\n' +
@@ -314,21 +318,21 @@ export default {
     ru: '',
     kk: ''
   },
-  'Producer, screenwriter, actor': {
-    ru: 'Продюсер, сценарист, актер',
-    kk: 'Өндіруші, сценарий авторы, актер'
+  'Awarded the world\'s largest international film producer, screenwriter and actor': {
+    ru: 'Удостоенный крупнейших международных наград  кинопродюсер, сценарист и актер',
+    kk: 'Әлемдегі ең ірі халықаралық кинорежиссер, сценарист және актер болып тағайындалды'
   },
   'Award-winning filmmaker, producer, and screenwriter': {
     ru: 'Удостоенный международных наград кинорежиссер, продюсер, и сценарист',
-    kk: 'Марапатталған кинорежиссер, продюсер және сценарий'
+    kk: 'Халықаралық марапатқа ие болған кинорежиссер, продюсер, актер, сценарист және композитор'
   },
-  'Producer, Director, Actor, Screenwriter, Composer': {
-    ru: 'Продюсер, режиссер, актер, сценарист, композитор',
+  'Award-winning international film director, producer, actor, screenwriter and composer': {
+    ru: 'Удостоенный международных наград кинорежиссер, продюсер, актер, сценарист и композитор',
     kk: 'Өндіруші, режиссер, актер, сценарийші, композитор'
   },
-  'The founder of the award for children "Altyn Adam" in the United States.': {
-    ru: 'Основатель премии для детей «Алтын Адам» в США.',
-    kk: 'Құрама Штаттарда «Алтын Адам» балаларға арналған сыйлықтың негізін қалаушы.'
+  'The founder of the award for children "Altyn Adam" in the United States': {
+    ru: 'Основатель премии для детей «Алтын Адам» в США',
+    kk: 'Құрама Штаттарда «Алтын Адам» балаларға арналған сыйлықтың негізін қалаушы'
   },
   'Hollywood legend, Oscar and Emmy film awards producer, "The Godfather trilogy': {
     ru: 'легенда Голливуда, обладатель кинопремии «Оскар©» и «Эмми», продюсер трилогии "Крестный отец"',
