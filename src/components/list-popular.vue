@@ -4,7 +4,7 @@
         <div class="container">
             <p class="g-number">05</p>
             <h3 class="g-caption-section">{{t('Fund Promotion and Development Plan')}}
-                <span class="gradient-text">{{t('As well as attracting an audience')}}</span>
+                <span class="gradient-text">Whiz Biz</span>
             </h3>
             <div class="wrapper-list">
                 <div class="item">

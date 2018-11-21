@@ -38,7 +38,7 @@
                 </li>
                 <li class="item">
                     <span class="bold">{{t('Profitable profit sharing')}}</span>
-                    <span class="light">{{t('Investor gets 15% profit from cinema income')}}</span>
+                    <span class="light">{{t('Producer involved in the distribution of 15% of the profits from the movie')}}</span>
                 </li>
                 <li class="item">
                     <span class="bold">{{t('Long-term strategy')}}</span>
@@ -194,7 +194,7 @@
                 .size(6);
                 .size-md(10);
                 .size-xm(12);
-                height: 220px;
+                min-height: 267px;
                 padding: 45px;
                 padding-left: 140px;
                 background-color: #fff;
@@ -202,7 +202,7 @@
                 margin-bottom: 20px;
                 position: relative;
                 .lg-block({ padding: 45px; padding-left: 110px; });
-                .md-block({ height: 200px });
+                .md-block({min-height: auto;});
                 &::after {
                     content: "";
                     position: absolute;
