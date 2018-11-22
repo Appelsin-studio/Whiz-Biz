@@ -228,8 +228,9 @@
                         }
                     }
                     .profile-wrapper {
-                        .lg-block({ padding-left: 0; padding-bottom: 0; align-self: flex-start; });
-                        .xm-block({ padding: 40px; padding-top: 20px; align-items: flex-start; });
+                        .lg-block({ padding-left: 0; padding-bottom: 0; align-self: center; });
+                        .xm-block({ padding: 40px; padding-top: 20px; align-items: flex-start;
+                            align-self: flex-start; });
                     }
                 }
                 .img-wrapper {
