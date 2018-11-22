@@ -20,7 +20,7 @@
                 </p>
             </div>
             <div class="wrapper--team">
-                <div class="person person-12">
+                <div class="person person-4">
                     <div class="img-wrapper">
                         <div class="img" style="background-image: url(/img/person11.png)"></div>
                     </div>
@@ -31,7 +31,7 @@
                     </div>
                     <a href="#" class="btn-modal" @click.prevent="$modal.show('frederickson')"></a>
                 </div>
-                <div class="person person-12">
+                <div class="person person-4">
                     <div class="img-wrapper">
                         <div class="img" style="background-image: url(/img/person22.png)"></div>
                     </div>
@@ -42,7 +42,7 @@
                     </div>
                     <a href="#" class="btn-modal" @click.prevent="$modal.show('salamat')"></a>
                 </div>
-                <div class="person person-12">
+                <div class="person person-4">
                     <div class="img-wrapper">
                         <div class="img" style="background-image: url(/img/person33.png)"></div>
                     </div>
@@ -202,6 +202,7 @@
                     .size-lg(12);
                     .size-xm(10);
                     .size-xs(12);
+                    margin-bottom: 20px;
                     justify-content: center;
                     flex-direction: column;
                     background: @gradientPersonVertical;
