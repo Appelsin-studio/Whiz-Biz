@@ -26,7 +26,7 @@
                     </div>
                     <div class="profile-wrapper">
                         <p class="name">Грэй Фредериксон</p>
-                        <p class="profession">{{t('Awarded the world\'s largest international film producer, screenwriter and actor')}}</p>
+                        <p class="profession">{{t('Winner of the film award "Oscar" and "Emmy", the creator of the trilogy "The Godfather"')}}</p>
                         <p class="country">{{t('USA')}}</p>
                     </div>
                     <a href="#" class="btn-modal" @click.prevent="$modal.show('frederickson')"></a>
@@ -54,7 +54,7 @@
                     </div>
                     <a href="#" class="btn-modal" @click.prevent="$modal.show('piter')"></a>
                 </div>
-                <div class="person person-4">
+                <div class="person person-4 order-4">
                     <div class="img-wrapper">
                         <div class="img" style="background-image: url(/img/person5.png)"></div>
                     </div>
@@ -65,7 +65,7 @@
                     </div>
                     <a href="#" class="btn-modal" @click.prevent="$modal.show('dinara')"></a>
                 </div>
-                <div class="person person-4">
+                <div class="person person-4 order-5">
                     <div class="img-wrapper">
                         <div class="img" style=""></div>
                     </div>
@@ -76,7 +76,7 @@
                     </div>
                     <a href="#" class="btn-modal" @click.prevent="$modal.show('dinara')"></a>
                 </div>
-                <div class="person person-4">
+                <div class="person person-4 order-6">
                     <div class="img-wrapper">
                         <div class="img" style="background-image: url(/img/person44.png)"></div>
                     </div>
@@ -208,6 +208,15 @@
                     background: @gradientPersonVertical;
                     .lg-block({ flex-direction: row; margin-bottom: 20px; background: @gradientPersonHorizontal });
                     .xm-block({ flex-direction: column; });
+                    &.order-4 {
+                        .lg-block({order: 6;});
+                    }
+                    &.order-5 {
+                        .lg-block({order: 5;});
+                    }
+                    &.order-6 {
+                        .lg-block({order: 4;});
+                    }
                     .img-wrapper {
                         .lg-block({ width: 100%; max-width: 380px; });
                         .sm-block({ max-width: 250px; });
@@ -219,7 +228,7 @@
                         }
                     }
                     .profile-wrapper {
-                        .lg-block({ padding-left: 0; padding-bottom: 0; align-self: center; });
+                        .lg-block({ padding-left: 0; padding-bottom: 0; align-self: flex-start; });
                         .xm-block({ padding: 40px; padding-top: 20px; align-items: flex-start; });
                     }
                 }
