@@ -41,7 +41,7 @@
                     <span class="light">{{t('Producer involved in the distribution of 15% of the profits from the movie')}}</span>
                 </li>
                 <li class="item">
-                    <span class="bold">{{t('Long-term strategy')}}</span>
+                    <span class="bold">{{t('Long-Term Development Strategy')}}</span>
                     <span class="light"></span>
                 </li>
                 <li class="item">
@@ -56,7 +56,7 @@
                 </p>
                 <div class="counter">
                     <span class="bold">{{t('Places:')}}</span>
-                    <span class="number gradient-text">30</span>
+                    <span class="number gradient-text">130</span>
                     <span class="light">{{t('left')}}</span>
                 </div>
                 <a href="#" class="btn btn--orange" @click.prevent="$modal.show('apply')">{{t('Apply')}}</a>

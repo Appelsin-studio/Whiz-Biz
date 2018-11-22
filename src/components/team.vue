@@ -22,7 +22,7 @@
             <div class="wrapper--team">
                 <div class="person person-12">
                     <div class="img-wrapper">
-                        <div class="img" style="background-image: url(/img/person1.png)"></div>
+                        <div class="img" style="background-image: url(/img/person11.png)"></div>
                     </div>
                     <div class="profile-wrapper">
                         <p class="name">Грэй Фредериксон</p>
@@ -31,9 +31,9 @@
                     </div>
                     <a href="#" class="btn-modal" @click.prevent="$modal.show('frederickson')"></a>
                 </div>
-                <div class="person person-4">
+                <div class="person person-12">
                     <div class="img-wrapper">
-                        <div class="img" style="background-image: url(/img/person2.png)"></div>
+                        <div class="img" style="background-image: url(/img/person22.png)"></div>
                     </div>
                     <div class="profile-wrapper">
                         <p class="name">Саламат Мухаммед-Али</p>
@@ -42,9 +42,9 @@
                     </div>
                     <a href="#" class="btn-modal" @click.prevent="$modal.show('salamat')"></a>
                 </div>
-                <div class="person person-4">
+                <div class="person person-12">
                     <div class="img-wrapper">
-                        <div class="img" style="background-image: url(/img/person3.png)"></div>
+                        <div class="img" style="background-image: url(/img/person33.png)"></div>
                     </div>
                     <div class="profile-wrapper">
                         <p class="name">Питер Жмутский</p>
@@ -56,7 +56,29 @@
                 </div>
                 <div class="person person-4">
                     <div class="img-wrapper">
-                        <div class="img" style="background-image: url(/img/person4.png)"></div>
+                        <div class="img" style="background-image: url(/img/person5.png)"></div>
+                    </div>
+                    <div class="profile-wrapper">
+                        <p class="name">Алон</p>
+                        <p class="profession"></p>
+                        <p class="country">{{t('USA')}}</p>
+                    </div>
+                    <a href="#" class="btn-modal" @click.prevent="$modal.show('dinara')"></a>
+                </div>
+                <div class="person person-4">
+                    <div class="img-wrapper">
+                        <div class="img" style=""></div>
+                    </div>
+                    <div class="profile-wrapper">
+                        <p class="name"></p>
+                        <p class="profession"></p>
+                        <p class="country"></p>
+                    </div>
+                    <a href="#" class="btn-modal" @click.prevent="$modal.show('dinara')"></a>
+                </div>
+                <div class="person person-4">
+                    <div class="img-wrapper">
+                        <div class="img" style="background-image: url(/img/person44.png)"></div>
                     </div>
                     <div class="profile-wrapper">
                         <p class="name">Динара Батырова</p>
@@ -68,8 +90,7 @@
             </div>
             <section class="b-crowdsale">
                 <div class="wrapper--crowdsale">
-                    <p class="text">Проект реализуется при поддержке <strong class="orange">Crowdsale Network</strong>
-                    </p>
+                    <p class="text">Проект реализуется при поддержке</p>
                     <a href="https://crowdsale.network/" target="_blank" title="CrowdSale Network">
                         <img class="logo-crowdsale" src="/img/crowdsale-logo.png" alt="CrowdSale Network">
                     </a>
@@ -213,6 +234,7 @@
                         height: 320px;
                         background-repeat: no-repeat;
                         background-position: center top;
+                        background-size: contain;
                         .sm-block({ height: 250px; background-size: contain; });
                         z-index: 1;
                     }
